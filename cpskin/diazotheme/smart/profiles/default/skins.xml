@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<object name="portal_skins"
+        allow_any="False"
+        cookie_persistence="False"
+        default_skin="smart theme">
+
+    <object name="smart_images"
+            meta_type="Filesystem Directory View"
+            directory="cpskin.diazotheme.smart:skins/smart_images"/>
+
+ <skin-path name="smart theme"
+            based-on="Sunburst Theme">
+    <layer name="smart_images"
+           insert-after="custom"/>
+ </skin-path>
+
+</object>

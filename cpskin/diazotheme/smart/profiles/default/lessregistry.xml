@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<object name="portal_less">
+
+ <stylesheet title="cpskin.diazotheme.smart LESS Styles"
+    id="++theme++cpskin.diazotheme.smart/less/styles.less"
+    media="all"
+    enabled="1"
+    rendering="link"
+    compression="none"
+    expression="python:here.restrictedTraverse('@@currentTheme')() == 'cpskin.diazotheme.smart'"
+    applyPrefix="True" />
+
+</object>
