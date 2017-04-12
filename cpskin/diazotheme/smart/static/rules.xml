@@ -5,6 +5,5 @@
    <xi:include href="/++theme++cpskin.theme.base/rules.xml"/>
    <!-- Our own rules -->
   <xi:include href="/++theme++cpskin.diazotheme.smart/rules/header.xml"/>
-  <xi:include href="/++theme++cpskin.diazotheme.smart/rules/homepage-header.xml"/>
 
 </rules>

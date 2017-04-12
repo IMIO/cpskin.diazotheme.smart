@@ -1,0 +1,237 @@
+#visual-portal-wrapper{
+    overflow: hidden;
+}
+
+/*   NAVIGATION   */
+
+#portal-globalnav li a,
+#portal-globalnav a:hover,
+#portal-globalnav .selected a,
+#top-navigation #portal-globalnav .activated,
+#navWrapper #portal-globalnav #portaltab-je-suis a,
+#navWrapper #portal-globalnav #portaltab-je-trouve a,
+#navWrapper #portal-globalnav #portaltab-je-suis a:hover,
+#navWrapper #portal-globalnav #portaltab-je-trouve a:hover,
+#navWrapper #portal-globalnav #portaltab-je-suis.selected a,
+#navWrapper #portal-globalnav #portaltab-je-trouve.selected a,
+#navWrapper #portal-globalnav #portaltab-je-suis a.activated,
+#navWrapper #portal-globalnav #portaltab-je-trouve a.activated{
+    background-color: transparent;
+}
+
+#portal-globalnav .selected a,
+#portal-globalnav .selected a:hover,
+#portal-globalnav a:hover,
+#portal-globalnav li a.activated {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/*   sub menu   */
+
+.portal-globalnav-cpskinmenu.navTreeLevel0 {
+    background: #3f5765;
+    margin:0;
+    position: absolute;
+    width: 100%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.portal-globalnav-cpskinmenu a:hover,
+.portal-globalnav-cpskinmenu-tabs a:hover,
+li.sfHover > span > a{
+    background:transparent;
+    color:#fff;
+}
+
+.portal-globalnav-cpskinmenu .selected a,
+.portal-globalnav-cpskinmenu-tabs .selected a,
+.portal-globalnav-cpskinmenu .navTreeItemInPath > span a {
+    text-decoration: none;
+}
+
+.portal-globalnav-cpskinmenu .selected a,
+.portal-globalnav-cpskinmenu-tabs .selected a{
+    border-bottom: 2px dotted #fff;
+}
+
+.portal-globalnav-cpskinmenu a{
+    position: relative;
+}
+
+.portal-globalnav-cpskinmenu a::before{
+    background: transparent none repeat scroll 0 0;
+    border-bottom: 2px solid #fff;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: width 0.2s ease-in-out 0s;
+    width: 0;
+}
+
+.portal-globalnav-cpskinmenu.navTreeLevel0::before,
+.portal-globalnav-cpskinmenu.navTreeLevel0::after,
+.portal-globalnav-cpskinmenu.no_direct_access::before,
+.portal-globalnav-cpskinmenu.no_direct_access::after,
+.portal-globalnav-cpskinmenu.has_direct_access::before,
+.portal-globalnav-cpskinmenu.has_direct_access::after{
+    display: block;
+    width: 1000px;
+    content: "";
+    position: absolute;
+    height: 100%;
+    top:0;
+    bottom:0;
+}
+
+.portal-globalnav-cpskinmenu.navTreeLevel0::before{
+    background: #3f5765;
+    right: 100%;
+}
+
+.portal-globalnav-cpskinmenu.navTreeLevel0::after{
+    background: #3f5765;
+    left: 100%;
+}
+
+.portal-globalnav-cpskinmenu.no_direct_access::before,
+.portal-globalnav-cpskinmenu.has_direct_access::before{
+    background: #6a767c;
+    right: 100%;
+}
+
+.portal-globalnav-cpskinmenu.no_direct_access::after,
+.portal-globalnav-cpskinmenu.has_direct_access::after{
+    background: #6a767c;
+    left: 100%;
+}
+
+.sf-menu ul.portal-globalnav-cpskinmenu.navTreeLevel1{
+    background: #6a767c !important;
+}
+
+ul.portal-globalnav-cpskinmenu li a{
+    color:#fff;
+    float: left;
+    margin: 0em 0 0.6em 0.75em;
+    padding: 0.75em 0 0.3em !important;
+}
+
+li.sfHover > span > a{
+    color:#fff;
+}
+
+.sf-menu ul.navTreeLevel1{
+    background: rgba(63, 87, 101, 0.8) !important;
+    box-shadow: none;
+    margin-top: 0;   
+}
+
+/*   direct access   */
+
+.sf-menu ul.navTreeLevel1.direct_access {
+    background: rgba(255, 255, 255, 0) !important;
+}
+.sf-menu .direct_access li a {
+    padding-left: 1.2em !important;
+    padding-top: 0 !important;
+}
+
+.sf-menu .direct_access li a::before{
+    border-bottom: transparent;
+    display: inline;
+}
+
+.sf-menu .direct_access li a:hover::before{
+    border-bottom: 2px solid #fff;
+}
+
+.sf-menu .direct_access li a::after{
+    content: "";
+}
+
+/*   HOMEPAGE   */
+
+.section-notheme #top-logo-banner{
+    background: #0C2950;
+}
+
+.section-notheme #top-banner {
+    width: 80%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.section-notheme #top-actions {
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    top: 20%;
+    width: 100%;
+}
+
+.section-notheme #portal-searchbox {
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
+.section-notheme #portal-searchbox{
+    margin:0;
+}
+
+.section-notheme #top-banner img{
+    max-width: 100%;
+}
+
+.section-notheme #top-logo {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+
+.section-notheme #top-logo-inner {
+    margin: 20% 0 0 40%;
+}
+
+.section-notheme #top-navigation {
+    margin-top: -25%;
+    float: left;
+    width: 100%;
+}
+
+.section-notheme #portal-header #navWrapper {
+    background-color: transparent;
+}
+
+.section-notheme #portal-globalnav,
+.section-notheme ul.navTreeLevel0{
+   margin-left: 8%;
+}
+
+.section-notheme ul.navTreeLevel0 {
+    z-index: 1;
+    left:32%;
+}
+
+.section-notheme #portal-globalnav .theme1 a {
+    padding-left: 0;
+}
+
+.section-notheme #top-slogan{
+    color:#fff;
+    font-size:350%;
+    margin-top: 2%;
+    position: relative;
+}
+
+.section-notheme #top-solgan-inner {
+    max-width: 1200px;
+    margin-left: 8%;
+}
