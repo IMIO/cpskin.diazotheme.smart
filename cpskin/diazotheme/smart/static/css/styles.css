@@ -464,15 +464,12 @@ li.sfHover > span > a{
     padding: 0 !important;
     width: 50%;
 }
-
 #accueil .evenements .bloc-item:before {
     content: '';
     display: block;
     padding-top: 50%;
 }
 #accueil .evenements .bloc-item:first-child:before {
-    content: '';
-    display: block;
     padding-top: 100%;
 }
 #accueil .evenements .bloc-item .indexview-categories {
@@ -492,48 +489,39 @@ li.sfHover > span > a{
 #accueil .evenements .bloc-item:nth-child(3n+3) .indexview-categories {
     margin-left: 0;
 }
-#accueil .evenements .bloc-item .homepageleadImage {
+#accueil .evenements .bloc-item .pageleadImage {
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
     width: 50%;
-    z-index: 1;
-    overflow: hidden;
 }
-#accueil .evenements .bloc-item .homepageleadImage:after {
+#accueil .evenements .bloc-item:first-child .pageleadImage {
+    width: 100%;
+}
+#accueil .evenements .bloc-item .pageleadImage:after {
     color: #fff;
     content: "";
     display: inline-block;
     font-family: "flexslider-icon";
     font-size: 30px;
-    margin-left: -15px;
+    margin-left: 98%;
     padding-top: 50%;
     position: absolute;
     width: 50%;
 }
-#accueil .evenements .bloc-item:nth-child(3n+3) .homepageleadImage:after {
+#accueil .evenements .bloc-item:nth-child(3n+3) .pageleadImage:after {
     content: "";
     left: 0;
-    margin-right: 10%;
+    margin-left: -4%;
 }
-#accueil .evenements .bloc-item:first-child .homepageleadImage:after {
+#accueil .evenements .bloc-item:first-child .pageleadImage:after {
     content: "";
 }
-#accueil .evenements .bloc-item:first-child .homepageleadImage {
-    float: left;
-    position: absolute;
-    z-index: 1;
-    min-height: 100%;
-    min-width: 100%;
-}
-#accueil .evenements .bloc-item:nth-child(3n+3) .homepageleadImage {
+#accueil .evenements .bloc-item:nth-child(3n+3) .pageleadImage {
     margin-left: 50%;
-}
-#accueil .evenements .bloc-item img {
-    min-height: 100%;
-    min-width: 100%;
-    max-height: none !important;
-    max-width: none !important;
 }
 #accueil .evenements .bloc-item h3 {
     display: block;
@@ -567,8 +555,6 @@ li.sfHover > span > a{
     text-align: center;
     text-transform: uppercase;
     z-index: 3;
-}
-#accueil .evenements .bloc-item:first-child img {
 }
 #accueil .evenements .bloc-item:first-child .indexview-categories {
     background-color: #fff;
