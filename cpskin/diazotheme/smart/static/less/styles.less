@@ -1,0 +1,220 @@
+/*   namur   */
+.slider-multiple::before {
+    background: #e0c4ed;
+    content: "";
+    display: block;
+    height: 140%;
+    position: absolute;
+    right: 0;
+    width: 10000px;
+    z-index: -1;
+}
+
+body.section-notheme #visual-portal-wrapper::after {
+    background: #f3f3f3 none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 25%;
+    top: 0;
+    width: 50%;
+    z-index: -2;
+}
+body.section-notheme #visual-portal-wrapper{
+    position: relative;
+}
+.a-votre-service {
+    background: #0e213f none repeat scroll 0 0;
+    box-sizing: border-box;
+    padding: 5%;
+}
+.a-votre-service h2 {
+    color: #82a9e2;
+}
+.homepage-service {
+    display: inline-block;
+    padding-top: 2%;
+    min-width: 33%;
+}
+.homepage-service li,
+#content .homepage-service li a {
+    color: #fff;
+}
+.flexslider{
+    box-shadow: inherit;
+}
+#content #accueil #flex.slider-unique-titre .slider .linkimg img{
+    margin: auto auto auto 0;
+}
+#accueil .agenda {
+    display: inline-block;
+    margin-bottom: 13.3%;
+    min-width: 100%;
+}
+#accueil .agenda .results::before {
+    background: #dfe8f7 none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 106%;
+    position: absolute;
+    right: 0;
+    top:11%;
+    width: 300%;
+}
+#accueil .agenda .results::after {
+    background: #dfe8f7 none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 106%;
+    left: 100%;
+    top:11%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+#accueil .agenda .results {
+    margin: auto;
+    padding: 1em 0;
+    position: relative;
+}
+#accueil .agenda .bloc-item h3 {
+    color: #0d223f;
+}
+#accueil .agenda .voir-tout {
+    color: #0d223f;
+    display: block;
+    float: none;
+    text-align: center;
+    text-transform: lowercase;
+    text-decoration: underline;
+}
+#accueil .agenda .voir-tout::after{
+    display: none;
+}
+/*   header  */
+#portal-header {
+    z-index: initial;
+}
+/*  top menu action   */
+#top-menu-actions {
+    float: left;
+}
+.top-menu-action {
+    display: inline-block;
+}
+.top-menu-action .actionMenu {
+    float: none;
+}
+.top-menu-action dt {
+    margin: 0 0.25em;
+}
+.top-menu-action dd {
+    background-color: #0C2950;
+    margin-right: 2em;
+    margin-top: 3px;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+.top-menu-action dd a {
+    line-height: 2em;
+    padding: 0 0.75em;
+}
+.top-menu-action  dd a:hover {
+    background: #0b1940;
+    border-radius: 5px;
+}
+/*   search   */
+#top-actions-wrapper {
+    display: inline-block;
+    float: right;
+}
+#btn-search {
+    float: left;
+    visibility: hidden;
+}
+.btn-search:before{
+    content: '\e823';
+    font-family: 'fontello';
+    font-size:150%;
+    visibility: visible;
+}
+#hidden-search {
+    display: inline-block;
+    width: 100%;
+}
+.section-notheme #hidden-search #portal-searchbox{
+    margin-top:2%;
+}
+/*   STICKY NAVIGATION   */
+.nav-is-stuck #top-navigation-inner{
+    background: #0C2950;
+    position: fixed;
+    top:0;
+    width: 100%;
+    margin-top:0 !important;
+    z-index: 2;
+}
+
+.nav-is-stuck .section-notheme #top-navigation{
+    margin: 0;
+}
+.nav-is-stuck .section-notheme #top-actions,
+.nav-is-stuck .section-notheme #hidden-search{
+    margin-top: 3px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+.nav-is-stuck .section-notheme #top-logo{
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+.nav-is-stuck  .section-notheme #top-logo-inner {
+    height: 39px;
+    margin: 0;
+    max-width: 37%;
+}
+
+.nav-is-stuck #portal-logo{
+    margin: 0;
+}
+/*   HOMEPAGE   */
+.results, .titre-rss {
+    padding-left: 0%;
+    width: 100%;
+}
+.results {
+    background-color: transparent;
+}
+li.bloc-item a h3{
+    overflow: visible;
+}
+li.bloc-item a h3::after{
+    display:none;
+}
+/*   SLIDER   */
+/*   element en evidence   */
+.element-en-evidence .pageleadImage {
+    padding-bottom: 35%;
+}
+.element-en-evidence {
+    display: inline-block;
+    margin-bottom: 13.3%;
+}
+/*   multiple   */
+#flex.slider-multiple {
+    position: relative;
+    margin-bottom: 13.3%;
+}
+#accueil #flex.slider-multiple .flex-prev {
+    margin-top:0;
+    top: 18%;
+}
+#accueil #flex.slider-multiple .flex-next {
+    top: 10%;
+}
+#content #accueil .slider-multiple .flex-direction-nav a.flex-disabled {
+    opacity: 0.5!important;
+}

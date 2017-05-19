@@ -1,3 +1,17 @@
+/*   namur  */
+#accueil .element-en-evidence .pageleadImage:after{
+    content:"";
+    display: block;
+    width: 100%;
+    height:100%;
+    position: absolute;
+    opacity: 0.66;
+    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(107,133,178,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(107,133,178,1) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(107,133,178,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#6b85b2',GradientType=1 );
+}
+
 #visual-portal-wrapper{
     overflow: hidden;
 }
@@ -157,15 +171,18 @@ li.sfHover > span > a{
 
 /*   HOMEPAGE   */
 
-.section-notheme #top-logo-banner{
+.section-notheme #top-logo-navigation-actions{
     background: #0C2950;
+    display: table-cell;
+    width: 20%
 }
 
 .section-notheme #top-banner {
-    width: 80%;
-    display: inline-block;
+    display: table-cell;
     vertical-align: top;
+    width: 80%;
     position: relative;
+    z-index: -1;
 }
 
 .section-notheme #top-actions {
@@ -190,19 +207,12 @@ li.sfHover > span > a{
     max-width: 100%;
 }
 
-.section-notheme #top-logo {
-    display: inline-block;
-    width: 20%;
-    vertical-align: top;
-}
-
 .section-notheme #top-logo-inner {
     margin: 20% 0 0 40%;
 }
 
 .section-notheme #top-navigation {
-    margin-top: -25%;
-    float: left;
+    position: absolute;
     width: 100%;
 }
 
@@ -225,24 +235,23 @@ li.sfHover > span > a{
 }
 
 .section-notheme #top-slogan{
-    color:#fff;
-    font-size:350%;
-    margin-top: 2%;
-    position: relative;
+    color: #fff;
+    font-size: 3vw;
+    margin-top: 5%;
+    position: absolute;
 }
 
 .section-notheme #top-solgan-inner {
     max-width: 1200px;
-    margin-left: 8%;
+    margin-left: 25%;
 }
 
 /* POUR PARALLAX */
 #portal-header {
-    z-index: 1 !important;
     top: 0;
 }
 #portal-columns {
-    z-index: 2;
+    z-index: 1;
 }
 
 /*   SLIDE NAVIGATION GENERAL  */
@@ -312,7 +321,7 @@ li.sfHover > span > a{
 
 /*   SLIDE UNIQUE  */
 #accueil #flex.slider-unique-titre  {
-    margin-top: 200px;
+    margin-top: 13.3%;
 }
 #accueil #flex.slider-unique-titre .carousel {
     top: -450px;
@@ -412,13 +421,14 @@ li.sfHover > span > a{
 }
 #accueil .element-en-evidence .pagecaption h3 {
     background: transparent none repeat scroll 0 0 !important;
-    color: #205c90 !important;
+    color: #20385a !important;
     font-size: 30px;
     font-weight: bold;
-    padding: 5% 30% 0;
+    padding: 12% 42% 0;
+    width: 27%;
 }
 #accueil .element-en-evidence .pagecaption .description {
-    padding: 1% 10% 0 40%;
+    padding: 5% 10% 0 51%;
     color: #999 !important;
 }
 #accueil .element-en-evidence .pageleadImage {
@@ -448,14 +458,10 @@ li.sfHover > span > a{
 }
 
 /*   AGENDA   */
-#accueil .evenements .results {
-    margin: auto;
-    padding: 1em 0;
-}
-#accueil .evenements .standard-results {
+#accueil .agenda .standard-results {
     margin-bottom: 50px;
 }
-#accueil .evenements .bloc-item {
+#accueil .agenda .bloc-item {
     background-color: #fff;
     border: medium none !important;
     display: block;
@@ -464,15 +470,15 @@ li.sfHover > span > a{
     padding: 0 !important;
     width: 50%;
 }
-#accueil .evenements .bloc-item:before {
+#accueil .agenda .bloc-item:before {
     content: '';
     display: block;
     padding-top: 50%;
 }
-#accueil .evenements .bloc-item:first-child:before {
+#accueil .agenda .bloc-item:first-child:before {
     padding-top: 100%;
 }
-#accueil .evenements .bloc-item .indexview-categories {
+#accueil .agenda .bloc-item .indexview-categories {
     color: #999;
     float: left;
     font-size: 20px;
@@ -481,15 +487,14 @@ li.sfHover > span > a{
     padding-top: 10%;
     position: absolute;
     text-align: center;
-    text-transform: uppercase;
     top: 0;
     width: 50%;
     z-index: 1;
 }
-#accueil .evenements .bloc-item:nth-child(3n+3) .indexview-categories {
+#accueil .agenda .bloc-item:nth-child(3n+3) .indexview-categories {
     margin-left: 0;
 }
-#accueil .evenements .bloc-item .pageleadImage {
+#accueil .agenda .bloc-item .pageleadImage {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -498,32 +503,32 @@ li.sfHover > span > a{
     top: 0;
     width: 50%;
 }
-#accueil .evenements .bloc-item:first-child .pageleadImage {
+#accueil .agenda .bloc-item:first-child .pageleadImage {
     width: 100%;
 }
-#accueil .evenements .bloc-item .pageleadImage:after {
+#accueil .agenda .bloc-item .pageleadImage:after {
     color: #fff;
-    content: "";
+    content: "◆";
     display: inline-block;
     font-family: "flexslider-icon";
-    font-size: 30px;
-    margin-left: 98%;
-    padding-top: 50%;
+    font-size: 36px;
+    margin-left: 97%;
+    padding-top: 75%;
     position: absolute;
     width: 50%;
 }
-#accueil .evenements .bloc-item:nth-child(3n+3) .pageleadImage:after {
-    content: "";
+#accueil .agenda .bloc-item:nth-child(3n+3) .pageleadImage:after {
+    content: "◆";
     left: 0;
-    margin-left: -4%;
+    margin-left: -6%;
 }
-#accueil .evenements .bloc-item:first-child .pageleadImage:after {
+#accueil .agenda .bloc-item:first-child .pageleadImage:after {
     content: "";
 }
-#accueil .evenements .bloc-item:nth-child(3n+3) .pageleadImage {
+#accueil .agenda .bloc-item:nth-child(3n+3) .pageleadImage {
     margin-left: 50%;
 }
-#accueil .evenements .bloc-item h3 {
+#accueil .agenda .bloc-item h3 {
     display: block;
     font-size: 18px;
     margin-left: 50%;
@@ -534,7 +539,7 @@ li.sfHover > span > a{
     top: 0;
     width: 50%;
 }
-#accueil .evenements .bloc-item .documentByLine {
+#accueil .agenda .bloc-item .documentByLine {
     color: grey;
     display: block;
     font-family: arial;
@@ -547,7 +552,7 @@ li.sfHover > span > a{
     top: 0;
     width: 50%;
 }
-#accueil .evenements .bloc-item:first-child .documentByLine {
+#accueil .agenda .bloc-item:first-child .documentByLine {
     float: left;
     margin-left: 0;
     padding-top: 50%;
@@ -556,7 +561,7 @@ li.sfHover > span > a{
     text-transform: uppercase;
     z-index: 3;
 }
-#accueil .evenements .bloc-item:first-child .indexview-categories {
+#accueil .agenda .bloc-item:first-child .indexview-categories {
     background-color: #fff;
     color: #999;
     float: left;
@@ -569,19 +574,19 @@ li.sfHover > span > a{
     z-index: 2;
     top: 50%;
 }
-#accueil .evenements .bloc-item:first-child h3 {
+#accueil .agenda .bloc-item:first-child h3 {
     margin-left: 0;
     padding-top: 50%;
     z-index: 3;
 }
-#accueil .evenements .bloc-item:nth-child(3n+3) h3 {
+#accueil .agenda .bloc-item:nth-child(3n+3) h3 {
     margin-left: 0;
 }
-#accueil .evenements .bloc-item:nth-child(3n+3) .documentByLine {
+#accueil .agenda .bloc-item:nth-child(3n+3) .documentByLine {
     margin-left: 0;
 }
-#accueil .evenements .bloc-item.no-view:nth-child(2),
-#accueil .evenements .bloc-item.no-view:nth-child(2n+3) {
+#accueil .agenda .bloc-item.no-view:nth-child(2),
+#accueil .agenda .bloc-item.no-view:nth-child(2n+3) {
     opacity: 0;
     -moz-transition: all 500ms linear;
     -webkit-transition: all 500ms linear;
@@ -593,8 +598,8 @@ li.sfHover > span > a{
     -ms-transform: translate(100%, 0px);
     transform: translate3d(100%, 0px, 0px);
 }
-#accueil .evenements .bloc-item.no-view:first-child,
-#accueil .evenements .bloc-item.no-view:nth-child(2n+4) {
+#accueil .agenda .bloc-item.no-view:first-child,
+#accueil .agenda .bloc-item.no-view:nth-child(2n+4) {
     opacity: 0;
     -moz-transition: all 500ms linear;
     -webkit-transition: all 500ms linear;
@@ -606,6 +611,22 @@ li.sfHover > span > a{
     -ms-transform: translate(-100%, 0px);
     transform: translate3d(-100%, 0px, 0px);
 }
+#accueil .agenda .titre-rss{
+    background: transparent;
+    margin-bottom: 1.5em;
+}
+#accueil .agenda .titre-rss a{
+    float: none;
+}
+#accueil .agenda h2 {
+    color: #0e213f;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+}
+#accueil .agenda .bloc-rss{
+    display: none;
+}
 /* ANIMATION GENERAL */
 #accueil .in-view {
     opacity: 1 !important;
@@ -616,7 +637,7 @@ li.sfHover > span > a{
     transform: translate3d(0px, 0px, 0px);
 }
 @media screen and (max-width: 1000px) {
-    #accueil .evenements .bloc-item {
+    #accueil .agenda .bloc-item {
         width: 100%;
     }
     #accueil #flex .flex-direction-nav a {
@@ -628,3 +649,4 @@ li.sfHover > span > a{
         margin-left: 100px !important;
     }
 }
+

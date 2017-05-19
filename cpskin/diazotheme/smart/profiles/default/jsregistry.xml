@@ -4,5 +4,9 @@
     <javascript id="++theme++cpskin.diazotheme.smart/js/cpskin_smart.js"
         cacheable="True" compression="safe" cookable="True"
         enabled="1" expression=""/>
+    
+    <javascript id="++theme++cpskin.diazotheme.smart/js/sticky-navigation.js"
+        cacheable="True" compression="safe" cookable="True"
+        enabled="1" expression=""/>
 
 </object>

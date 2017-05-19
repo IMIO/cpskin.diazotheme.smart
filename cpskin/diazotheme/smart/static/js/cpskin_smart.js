@@ -20,7 +20,7 @@ $(document).ready(function() {
         lastScrollTop = st;
 
         var scrolled = $(window).scrollTop();
-        document.getElementById('portal-header').style.top = scrolled / 2 + "px";
+        document.getElementById('portal-header').style.top = scrolled / 6 + "px";
     });
 
 
@@ -35,7 +35,7 @@ $(document).ready(function() {
             })
         })
     });
-    $('.evenements').each(function() {
+    $('.agenda').each(function() {
         $(this).find('.bloc-item').each(function() {
             $(this).addClass('no-view');
         })
@@ -59,4 +59,17 @@ $(document).ready(function() {
             el.addClass('no-view').removeClass('in-view');
         }
     }
+    
+// search
+    $( ".btn-search" ).click(function() {
+        $( "#hidden-search" ).slideToggle(
+        "fast",
+        function () {
+               $("#searchGadget").focus();
+           });
+        });
+       
+       $("#portal-globalnav a[tabindex]").click(function(){
+        $("#hidden-search").hide('fast');
+       });
 });

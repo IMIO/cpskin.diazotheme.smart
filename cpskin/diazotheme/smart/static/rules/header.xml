@@ -2,48 +2,57 @@
 <rules xmlns="http://namespaces.plone.org/diazo"
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
        xmlns:css="http://namespaces.plone.org/diazo/css">
-  
   <rules if-not="$isinminisitemode" if="$is_homepage">
     <replace css:content-children="#portal-header">
         <div id="top-languages">
           <xsl:copy-of select="//*[@id='portal-languageselector']" />
         </div>
-        <div id="top-logo-banner">
+        <div id="top-logo-navigation-actions">
           <div id="top-logo">
             <div id="top-logo-inner">
               <xsl:copy-of select="./*[@id='portal-logo']"/>
             </div>
           </div>
-          <div id="top-banner">
-            <div id="top-actions">
+          <div id="top-actions">
               <div id="top-actions-inner">
-                <div id="top-actions-actions">
+                <div id="top-actions-wrapper">
+                  <div id="top-actions-actions">
+                  <xsl:copy-of select="//*[@id='top-menu-actions']" />
                   <xsl:copy-of select="./*[@id='portal-personaltools-wrapper']" />
                   <xsl:copy-of select="//*[@id='portal-siteactions']" />
                   <xsl:apply-templates select="./*[@id='social-viewlet']" />
-                  <xsl:copy-of select="./*[@id='portal-searchbox']"/>
+                  <div id="btn-search">
+                    <a href="#"  class="btn-search">
+                    </a>
+                  </div>
                 </div>
                 <div class="visualClear"></div>
+                <div id="hidden-search" style="display:none;">
+                    <xsl:copy-of select="./*[@id='portal-searchbox']"/>
+                </div>
+                </div>
+              </div>
             </div>
-            </div>
-              <xsl:copy-of select="//*[@id='cpskin-banner']/img" />
-            </div>
-          </div>
-        <div id="top-navigation">
+           <div id="top-navigation">
           <div id="top-navigation-inner">
             <xsl:apply-templates select="./*[not(@id) or (@id!='portal-personaltools-wrapper'
                                                           and @id!='portal-logo'
                                                           and @id!='portal-searchbox'
                                                           and @id!='social-viewlet'
-                                                          and @id!='portal-languageselector')]"/>
+                                                          and @id!='portal-languageselector'
+                                                          and @id!='top-menu-actions')]"/>
           </div>
-          <div id="top-slogan">
+        </div>
+           <div id="top-slogan">
             <div id="top-solgan-inner">
               <span>Innovante. Culturelle.</span><br/>
               <span>Attractive</span>
             </div>
+          </div>
+          </div>
+         <div id="top-banner">
+          <xsl:copy-of select="//*[@id='cpskin-banner']/img" />
         </div>
-        </div> 
     </replace>
     <drop css:content="#cpskin-banner" />
     <drop css:content="#minisite-search" />
