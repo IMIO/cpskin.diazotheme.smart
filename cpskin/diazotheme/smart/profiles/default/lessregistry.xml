@@ -1,13 +1,34 @@
 <?xml version="1.0"?>
 <object name="portal_less">
 
+ <stylesheet title="cpskin.diazotheme.smart LESS Variables"
+    id="++theme++cpskin.diazotheme.smart/less/variables.less"
+    media=""
+    enabled="1"
+    rendering="link"
+    applyPrefix="True"
+    expression="python:here.restrictedTraverse('@@currentTheme')() == 'cpskin.diazotheme.smart'"
+    compression="none"
+    insert-before="portal_resources/cpskin/variables.less" />
+
  <stylesheet title="cpskin.diazotheme.smart LESS Styles"
     id="++theme++cpskin.diazotheme.smart/less/styles.less"
     media="all"
     enabled="1"
     rendering="link"
-    compression="none"
+    applyPrefix="True"
     expression="python:here.restrictedTraverse('@@currentTheme')() == 'cpskin.diazotheme.smart'"
-    applyPrefix="True" />
+    compression="none"
+    insert-before="portal_resources/cpskin/styles.less" />
+
+ <stylesheet title="cpskin.diazotheme.smart LESS Large Mobile Styles"
+    id="++theme++cpskin.diazotheme.smart/less/mobilelarge.less"
+    media="handheld, screen and (max-device-width: 1000px), screen and (max-width: 1000px)"
+    enabled="1"
+    rendering="link"
+    applyPrefix="True"
+    expression="python:here.restrictedTraverse('@@currentTheme')() == 'cpskin.diazotheme.smart'"
+    compression="none"
+    insert-after="++theme++cpskin.diazotheme.smart/less/styles.less" />
 
 </object>
