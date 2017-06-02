@@ -8,6 +8,8 @@ $(document).ready(function() {
     var $window = $(window);
     var window_height = $window.height();
 
+// transition
+    $('.element-en-evidence').addClass('test');
 //    Parallax
     var lastScrollTop = 0;
     $( window ).scroll(function() {
@@ -72,4 +74,5 @@ $(document).ready(function() {
        $("#portal-globalnav a[tabindex]").click(function(){
         $("#hidden-search").hide('fast');
        });
+
 });
