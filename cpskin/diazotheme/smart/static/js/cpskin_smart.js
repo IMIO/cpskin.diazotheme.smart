@@ -29,11 +29,10 @@ $(document).ready(function() {
         $(this).find('.pageleadImage, h3, .description').each(function() {
             $(this).addClass('no-view');
         })
-        $(document).scroll(function(){
-            $(this).find('.pageleadImage, h3, .description').each(function() {
-                add_style($(this));
-            })
+        $(this).find('.pageleadImage, h3, .description').each(function() {
+            $(this).addClass('in-view');
         })
+        
     });
     $('.agenda').each(function() {
         $(this).find('.bloc-item').each(function() {

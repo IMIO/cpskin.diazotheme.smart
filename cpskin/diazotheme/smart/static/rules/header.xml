@@ -2,7 +2,7 @@
 <rules xmlns="http://namespaces.plone.org/diazo"
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
        xmlns:css="http://namespaces.plone.org/diazo/css">
-  <rules if-not="$isinminisitemode" if="$is_homepage">
+  <rules if-not="$isinminisitemode">
     <replace css:content-children="#portal-header">
         <div id="top-languages">
           <xsl:copy-of select="//*[@id='portal-languageselector']" />
@@ -13,6 +13,21 @@
               <xsl:copy-of select="./*[@id='portal-logo']"/>
             </div>
           </div>
+            <div id="top-navigation">
+          <div id="top-navigation-inner">
+            <xsl:apply-templates select="./*[not(@id) or (@id!='portal-personaltools-wrapper'
+                                                          and @id!='portal-logo'
+                                                          and @id!='portal-searchbox'
+                                                          and @id!='social-viewlet'
+                                                          and @id!='portal-languageselector'
+                                                          and @id!='top-menu-actions')]"/>
+          </div>
+        </div>
+        <div id="top-slogan">
+          <div id="top-solgan-inner">
+            <xsl:apply-templates select="h1"/>
+          </div>
+        </div>
           <div id="top-actions">
               <div id="top-actions-inner">
                 <div id="top-actions-wrapper">
@@ -32,23 +47,7 @@
                 </div>
                 </div>
               </div>
-            </div>
-           <div id="top-navigation">
-          <div id="top-navigation-inner">
-            <xsl:apply-templates select="./*[not(@id) or (@id!='portal-personaltools-wrapper'
-                                                          and @id!='portal-logo'
-                                                          and @id!='portal-searchbox'
-                                                          and @id!='social-viewlet'
-                                                          and @id!='portal-languageselector'
-                                                          and @id!='top-menu-actions')]"/>
-          </div>
-        </div>
-           <div id="top-slogan">
-            <div id="top-solgan-inner">
-              <span>Innovante. Culturelle.</span><br/>
-              <span>Attractive</span>
-            </div>
-          </div>
+            </div>  
           </div>
          <div id="top-banner">
           <xsl:copy-of select="//*[@id='cpskin-banner']/img" />
@@ -57,5 +56,16 @@
     <drop css:content="#cpskin-banner" />
     <drop css:content="#minisite-search" />
   </rules>
+  <!--rules if="$is_homepage">
+    <after css:theme="#top-navigation">
+      <div id="top-slogan">
+      <div id="top-solgan-inner">
+        <span>Innovante. Culturelle.</span><br/>
+        <span>Attractive</span>
+      </div>
+    </div>
+    </after>
+  </rules-->
+  <drop css:content=".documentFirstHeading"/>
   <drop css:content="#portaltab-index_html" />
 </rules>
