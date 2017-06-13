@@ -1,12 +1,21 @@
 ul.portal-globalnav-cpskinmenu li a {
     color: #0e2240;
 }
-#portal-globalnav a::after, .sf-with-ul::after {
-    content: "\00a0 \00a0 \002039";
+#portal-globalnav a::after {
+    content: " ‹";
     font-size: 150%;
+    position: absolute;
+    right: 8%;
+    top: -22%;
     transform: rotate(270deg);
-    display: inline-block;
-    vertical-align: top;
+}
+.sf-with-ul::after {
+    content: " ‹";
+    font-size: 150%;
+    position: absolute;
+    right: 10px;
+    top: 20%;
+    transform: rotate(270deg);
 }
 .portal-globalnav-cpskinmenu a:hover,
 .portal-globalnav-cpskinmenu-tabs a:hover, li.sfHover > span > a{
