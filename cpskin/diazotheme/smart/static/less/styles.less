@@ -566,9 +566,14 @@ li.bloc-item a h3::after{
     display: none !important;
 }
 #accueil #flex.slider-unique-titre .carousel .flex-viewport ul li .flex-caption a {
-    color: #205c90 !important;
+    color: #ccc !important;
     font-size: 40px;
     font-weight: bold;
+    transition: color 1.2s;
+}
+#accueil #flex.slider-unique-titre .carousel .flex-viewport ul li.flex-active-slide .flex-caption a {
+    color: #205c90 !important;
+    transition: color 1.2s;
 }
 #accueil #flex.slider-unique-titre .slider .flex-direction-nav {
     display: none !important;
