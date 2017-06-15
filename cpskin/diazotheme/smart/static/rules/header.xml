@@ -23,11 +23,14 @@
                                                           and @id!='top-menu-actions')]"/>
           </div>
         </div>
-        <div id="top-slogan">
-          <div id="top-solgan-inner">
-            <xsl:apply-templates select="h1"/>
-          </div>
-        </div>
+        
+            <div id="top-slogan">
+              <div id="top-slogan-inner">
+                <span>Innovante. Culturelle.</span><br/>
+                <span>Attractive</span>
+              </div>
+            </div>
+        
           <div id="top-actions">
               <div id="top-actions-inner">
                 <div id="top-actions-wrapper">
@@ -56,16 +59,6 @@
     <drop css:content="#cpskin-banner" />
     <drop css:content="#minisite-search" />
   </rules>
-  <!--rules if="$is_homepage">
-    <after css:theme="#top-navigation">
-      <div id="top-slogan">
-      <div id="top-solgan-inner">
-        <span>Innovante. Culturelle.</span><br/>
-        <span>Attractive</span>
-      </div>
-    </div>
-    </after>
-  </rules-->
   <drop css:content=".documentFirstHeading"/>
   <drop css:content="#portaltab-index_html" />
 </rules>

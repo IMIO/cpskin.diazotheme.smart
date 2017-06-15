@@ -54,9 +54,7 @@ $(document).ready(function() {
         if( (position >= el_offset_top) && (docScroll <= el_offset_bottom) ){
             el.addClass('in-view');
         }
-        else {
-            el.addClass('no-view').removeClass('in-view');
-        }
+       
     }
     
 // search

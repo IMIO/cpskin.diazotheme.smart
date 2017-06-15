@@ -2,8 +2,21 @@
 <rules xmlns:xi="http://www.w3.org/2001/XInclude">
 
  
-   <xi:include href="/++theme++cpskin.theme.base/rules.xml"/>
+  <!-- Rules from diazotheme.frameworks -->
+  <xi:include href="/++theme++plone/rules/head/ie-classes.xml"/>
+  <xi:include href="/++theme++plone/rules/head/base.xml"/>
+  <xi:include href="/++theme++plone/rules/head/theme.xml"/>
+  <xi:include href="/++theme++plone/rules/utility/responsify.xml"/>
+
+  <!-- Rules from cpskin.theme -->
+  <xi:include href="/++theme++cpskin.theme.base/rules/head.xml"/>
+  <xi:include href="/++theme++cpskin.theme.base/rules/content.xml"/>
+  <xi:include href="/++theme++cpskin.theme.base/rules/login.xml"/>
+   
+   
    <!-- Our own rules -->
   <xi:include href="/++theme++cpskin.diazotheme.smart/rules/header.xml"/>
+  <xi:include href="/++theme++cpskin.diazotheme.smart/rules/footer.xml"/>
+  <xi:include href="/++theme++cpskin.diazotheme.smart/rules/structures.xml"/>
 
 </rules>

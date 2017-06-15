@@ -1,7 +1,7 @@
 #visual-portal-wrapper{
     overflow: hidden;
 }
-body.section-notheme #visual-portal-wrapper::after {
+body.template-folderview #visual-portal-wrapper::after {
     background: #f3f3f3 none repeat scroll 0 0;
     content: "";
     display: block;
@@ -318,6 +318,9 @@ li.sfHover > span > a{
     width: auto;
 }
 /*   HOMEPAGE   */
+.template-folderview #portal-top {
+    z-index: initial;
+}
 .results, .titre-rss {
     padding-left: 0%;
     width: 100%;
@@ -359,13 +362,15 @@ li.bloc-item a h3::after{
     margin:0;
 }
 .section-notheme #top-logo-inner {
-    margin: 20% 0 0 40%;
+    margin: 7% 0 19% 39%;
 }
 .section-notheme #top-navigation {
-    position: absolute;
+    margin-left:39%;
     width: 100%;
 }
-.section-notheme #portal-globalnav,
+.section-notheme #top-banner::after {
+    background: rgba(33, 90, 117, 0.4);
+}
 .section-notheme ul.navTreeLevel0{
    margin-left: 8%;
 }
@@ -378,22 +383,19 @@ li.bloc-item a h3::after{
 }
 .section-notheme #top-slogan{
     color: #fff;
-    font-size: 3vw;
+    font-size: 2.25vw;
+    font-weight: bold;
     margin-top: 5%;
-    position: absolute;
+    margin-left: 39%;
 }
-.section-notheme #top-solgan-inner {
-    max-width: 1200px;
-    margin-left: 25%;
+.section-notheme #top-slogan-inner {
+    margin-right: -2000px;
 }
 .section-notheme #top-logo-navigation-actions > div {
     display: block;
 }
 .section-notheme  #top-logo {
     margin: 0;
-}
-.section-notheme #top-banner::after {
-    display: none;
 }
 .a-votre-service {
     background: #0e213f none repeat scroll 0 0;
@@ -931,8 +933,11 @@ li.bloc-item a h3::after{
 .footer-sitemap-item{
     display: none;
 }
-#portal-footer-wrapper .row {
+#portal-footer-wrapper .cell {
     background-color: #0e213f;
+}
+#portal-footer{
+    margin:1em 0 0;
 }
 .footer-bloc,
 .footer-bloc h3,
@@ -944,4 +949,13 @@ li.bloc-item a h3::after{
 .footer-bloc-plan {
     display: inline-block;
     vertical-align: top;
+}
+
+/*  PAGE LOGIN   */
+#login-form .context {
+    background: #0047b3 none repeat scroll 0 0;
+    border: 0 solid #0047b3;
+}
+.login_message {
+    background: #f2f5fa none repeat scroll 0 0;
 }
