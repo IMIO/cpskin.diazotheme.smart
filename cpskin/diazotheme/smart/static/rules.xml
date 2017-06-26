@@ -11,8 +11,9 @@
   <!-- Rules from cpskin.theme -->
   <xi:include href="/++theme++cpskin.theme.base/rules/head.xml"/>
   <xi:include href="/++theme++cpskin.theme.base/rules/content.xml"/>
-  <xi:include href="/++theme++cpskin.theme.base/rules/right_actions.xml"/>
+  <!--xi:include href="/++theme++cpskin.theme.base/rules/right_actions.xml"/-->
   <xi:include href="/++theme++cpskin.theme.base/rules/login.xml"/>
+  
    
    
    <!-- Our own rules -->

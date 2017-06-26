@@ -58,16 +58,38 @@ $(document).ready(function() {
     }
     
 // search
-    $( ".btn-search" ).click(function() {
+    $( ".btn-search" ).click(function(event) {
         $( "#hidden-search" ).slideToggle(
         "fast",
         function () {
                $("#searchGadget").focus();
            });
+        event.preventDefault();
         });
        
        $("#portal-globalnav a[tabindex]").click(function(){
         $("#hidden-search").hide('fast');
        });
-
+       
+// move to top  
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) {
+                $('#scroll-to-top').fadeIn();
+            } else {
+                $('#scroll-to-top').fadeOut();
+            }
+        });
+ 
+        $('#scroll-to-top a').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 700);
+            return false;
+        });
+    });
+    $("#scroll-to-top").hide();
 });
+
+
+

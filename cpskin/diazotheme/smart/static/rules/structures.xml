@@ -30,7 +30,14 @@
       <drop css:content=".documentDescription" />
       <drop css:content="#plone-document-byline" />
   </rules>
-
+  
+  <replace css:content="#content">
+      <article>
+          <xsl:copy-of select="./@*"/>
+          <xsl:apply-templates select="./*"/>
+      </article>
+      <div id="scroll-to-top"><a href="#top">top</a></div>
+  </replace>
 
 
 </rules>
