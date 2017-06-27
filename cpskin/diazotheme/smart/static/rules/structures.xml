@@ -22,7 +22,9 @@
   <rules css:if-content=".documentFirstHeading">
       <replace css:content=".documentFirstHeading">
           <header>
-              <xsl:copy-of select="."/>
+              <xsl:if test="$is_homepage">
+                <xsl:copy-of select="."/>
+              </xsl:if>
               <xsl:copy-of select="../div/div[@id='plone-document-byline']" />
               <xsl:copy-of select="../*[@class='documentDescription']"/>
           </header>

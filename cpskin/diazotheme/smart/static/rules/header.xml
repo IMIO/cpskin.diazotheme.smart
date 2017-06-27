@@ -67,4 +67,6 @@
 
   <drop css:content=".documentFirstHeading"/>
   <drop css:content="#portaltab-index_html" />
+  <drop css:content="#cpskin-slogan" />
+
 </rules>
