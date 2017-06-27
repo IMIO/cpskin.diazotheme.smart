@@ -34,6 +34,8 @@
               </xsl:if>
             </div>
           </div>
+
+          <xsl:copy-of select="//*[@id='portal-breadcrumbs']" />
         
           <div id="top-actions">
               <div id="top-actions-inner">
