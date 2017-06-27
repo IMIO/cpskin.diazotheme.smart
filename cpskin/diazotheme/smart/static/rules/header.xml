@@ -24,12 +24,16 @@
           </div>
         </div>
         
-            <div id="top-slogan">
-              <div id="top-slogan-inner">
-                <span>Innovante. Culturelle.</span><br/>
-                <span>Attractive</span>
-              </div>
+          <div id="top-slogan">
+            <div id="top-slogan-inner">
+              <xsl:if test="$is_homepage">
+                <xsl:copy-of select="//*[@id='cpskin-slogan']/*" />
+              </xsl:if>
+              <xsl:if test="not($is_homepage)">
+                <xsl:copy-of select="//h1[@class='documentFirstHeading']" />
+              </xsl:if>
             </div>
+          </div>
         
           <div id="top-actions">
               <div id="top-actions-inner">
