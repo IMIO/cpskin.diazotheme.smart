@@ -2,7 +2,7 @@
 <rules xmlns="http://namespaces.plone.org/diazo"
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
        xmlns:css="http://namespaces.plone.org/diazo/css">
-  <rules if-not="$isinminisitemode">
+
     <replace css:content-children="#portal-header">
         <div id="top-languages">
           <xsl:copy-of select="//*[@id='portal-languageselector']" />
@@ -58,7 +58,7 @@
     </replace>
     <drop css:content="#cpskin-banner" />
     <drop css:content="#minisite-search" />
-  </rules>
+
   <drop css:content=".documentFirstHeading"/>
   <drop css:content="#portaltab-index_html" />
 </rules>
