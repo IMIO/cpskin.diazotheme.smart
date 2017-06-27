@@ -24,19 +24,6 @@
           </div>
         </div>
         
-          <div id="top-slogan">
-            <div id="top-slogan-inner">
-              <xsl:if test="$is_homepage">
-                <xsl:copy-of select="//*[@id='cpskin-slogan']/*" />
-              </xsl:if>
-              <xsl:if test="not($is_homepage)">
-                <xsl:copy-of select="//h1[@class='documentFirstHeading']" />
-              </xsl:if>
-            </div>
-          </div>
-
-          <xsl:copy-of select="//*[@id='portal-breadcrumbs']" />
-        
           <div id="top-actions">
               <div id="top-actions-inner">
                 <div id="top-actions-wrapper">
@@ -56,7 +43,19 @@
                 </div>
                 </div>
               </div>
-            </div>  
+            </div>
+          <div id="top-slogan">
+            <div id="top-slogan-inner">
+              <xsl:if test="$is_homepage">
+                <xsl:copy-of select="//*[@id='cpskin-slogan']/*" />
+              </xsl:if>
+              <xsl:if test="not($is_homepage)">
+                <xsl:copy-of select="//h1[@class='documentFirstHeading']" />
+              </xsl:if>
+            </div>
+          </div>
+
+          <xsl:copy-of select="//*[@id='portal-breadcrumbs']" />
           </div>
          <div id="top-banner">
           <xsl:copy-of select="//*[@id='cpskin-banner']/img" />
@@ -64,7 +63,7 @@
     </replace>
     <drop css:content="#cpskin-banner" />
     <drop css:content="#minisite-search" />
-
+  <drop css:content="#portal-breadcrumbs"/>
   <drop css:content=".documentFirstHeading"/>
   <drop css:content="#portaltab-index_html" />
   <drop css:content="#cpskin-slogan" />
