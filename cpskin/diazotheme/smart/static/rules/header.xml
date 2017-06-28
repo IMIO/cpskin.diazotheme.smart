@@ -9,55 +9,87 @@
           <xsl:copy-of select="//*[@id='portal-languageselector']" />
         </div>
         <div id="top-logo-navigation-actions">
-          <div id="top-logo">
+          <div id="top-logo-slogan">
+            <div id="top-logo">
             <div id="top-logo-inner">
               <xsl:copy-of select="./*[@id='portal-logo']"/>
             </div>
           </div>
-            <div id="top-navigation">
-          <div id="top-navigation-inner">
-            <xsl:apply-templates select="./*[not(@id) or (@id!='portal-personaltools-wrapper'
-                                                          and @id!='portal-logo'
-                                                          and @id!='portal-searchbox'
-                                                          and @id!='social-viewlet'
-                                                          and @id!='portal-languageselector'
-                                                          and @id!='top-menu-actions')]"/>
-          </div>
-        </div>
-        
-          <div id="top-actions">
-              <div id="top-actions-inner">
-                <div id="top-actions-wrapper">
-                  <div id="top-actions-actions">
-                  <xsl:copy-of select="//*[@id='top-menu-actions']" />
-                  <xsl:copy-of select="./*[@id='portal-personaltools-wrapper']" />
-                  <xsl:copy-of select="//*[@id='portal-siteactions']" />
-                  <xsl:apply-templates select="./*[@id='social-viewlet']" />
-                  <div id="btn-search">
-                    <a href="#"  class="btn-search">
-                    </a>
-                  </div>
-                </div>
-                <div class="visualClear"></div>
-                <div id="hidden-search" style="display:none;">
-                    <xsl:copy-of select="./*[@id='portal-searchbox']"/>
-                </div>
-                </div>
-              </div>
-            </div>
+          <xsl:if test="not($is_homepage)">
           <div id="top-slogan">
             <div id="top-slogan-inner">
-              <xsl:if test="$is_homepage">
-                <xsl:copy-of select="//*[@id='cpskin-slogan']/*" />
-              </xsl:if>
-              <xsl:if test="not($is_homepage)">
                 <xsl:copy-of select="//h1[@class='documentFirstHeading']" />
-              </xsl:if>
             </div>
           </div>
-
           <xsl:copy-of select="//*[@id='portal-breadcrumbs']" />
+          </xsl:if>
+        </div>
+        <div class="top-navigation-actions">
+            <div id="top-navigation">
+              <div id="top-navigation-inner">
+                <xsl:copy-of  select="./*[@id='portal-globalnav']"/>
+                <xsl:if test="($is_homepage)">
+                  <div id="top-slogan">
+                    <div id="top-slogan-inner">
+                        <xsl:copy-of select="//*[@id='cpskin-slogan']/*" />
+                    </div>
+                   </div>
+                </xsl:if>
+                <xsl:if test="not($is_homepage)">
+                <div id="top-actions">
+                    <div id="top-actions-inner">
+                      <div id="top-actions-wrapper">
+                        <div id="top-actions-actions">
+                        <xsl:copy-of select="//*[@id='top-menu-actions']" />
+                        <xsl:copy-of select="./*[@id='portal-personaltools-wrapper']" />
+                        <xsl:copy-of select="//*[@id='portal-siteactions']" />
+                        <xsl:apply-templates select="./*[@id='social-viewlet']" />
+                        <div id="btn-search">
+                          <a href="#"  class="btn-search">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="visualClear"></div>
+                      <div id="hidden-search" style="display:none;">
+                          <xsl:copy-of select="./*[@id='portal-searchbox']"/>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+              </xsl:if>
+                <xsl:apply-templates select="./*[not(@id) or (@id!='portal-personaltools-wrapper'
+                                                              and @id!='portal-logo'
+                                                              and @id!='portal-searchbox'
+                                                              and @id!='social-viewlet'
+                                                              and @id!='portal-languageselector'
+                                                              and @id!='top-menu-actions'
+                                                              and @id!='portal-globalnav')]"/>
+              </div>
           </div>
+            <xsl:if test="$is_homepage">
+            <div id="top-actions">
+                <div id="top-actions-inner">
+                  <div id="top-actions-wrapper">
+                    <div id="top-actions-actions">
+                    <xsl:copy-of select="//*[@id='top-menu-actions']" />
+                    <xsl:copy-of select="./*[@id='portal-personaltools-wrapper']" />
+                    <xsl:copy-of select="//*[@id='portal-siteactions']" />
+                    <xsl:apply-templates select="./*[@id='social-viewlet']" />
+                    <div id="btn-search">
+                      <a href="#"  class="btn-search">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="visualClear"></div>
+                  <div id="hidden-search" style="display:none;">
+                      <xsl:copy-of select="./*[@id='portal-searchbox']"/>
+                  </div>
+                  </div>
+                </div>
+            </div>
+          </xsl:if>
+        </div>
+        </div>
          <div id="top-banner">
           <xsl:copy-of select="//*[@id='cpskin-banner']/img" />
         </div>

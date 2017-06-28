@@ -38,8 +38,10 @@
           <xsl:copy-of select="./@*"/>
           <xsl:apply-templates select="./*"/>
       </article>
-      <div id="scroll-to-top"><a href="#top">top</a></div>
   </replace>
-
+  
+  <after css:content-children="#visual-portal-wrapper">
+    <div id="scroll-to-top"><a href="#top">top</a></div>
+  </after>
 
 </rules>
