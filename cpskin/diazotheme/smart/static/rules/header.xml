@@ -4,6 +4,7 @@
        xmlns:css="http://namespaces.plone.org/diazo/css">
 
     <replace css:content-children="#portal-header">
+        <xsl:copy-of select="./*[@id='messagesviewlet']"/>
         <div id="top-languages">
           <xsl:copy-of select="//*[@id='portal-languageselector']" />
         </div>
@@ -61,8 +62,9 @@
           <xsl:copy-of select="//*[@id='cpskin-banner']/img" />
         </div>
     </replace>
-    <drop css:content="#cpskin-banner" />
-    <drop css:content="#minisite-search" />
+  <drop css:content="#messagesviewlet" />
+  <drop css:content="#cpskin-banner" />
+  <drop css:content="#minisite-search" />
   <drop css:content="#portal-breadcrumbs"/>
   <drop css:content=".documentFirstHeading"/>
   <drop css:content="#portaltab-index_html" />
