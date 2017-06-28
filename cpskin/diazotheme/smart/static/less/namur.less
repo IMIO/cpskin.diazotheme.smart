@@ -15,8 +15,59 @@
 
 /*  navigation  */
 
+#portal-column-one {
+    padding-top: 1em;
+}
+
+div#portal-column-content {
+    padding-top: 4em;
+}
+
 .nav-is-stuck .section-notheme #top-navigation {
     z-index:9;
+}
+
+dt.actionMenuHeader a::after {
+    content: " ";
+}
+
+#portal-personaltools dt,
+#social-viewlet {
+    margin: 0 0.75em;
+}
+
+#portal-personaltools a {
+    font-size: 120%;
+}
+
+#portal-top a,
+#portal-globalnav li a {
+    font-family: Montserrat;
+}
+
+#portal-globalnav li a {
+    border-bottom: 1px solid transparent;
+    color: #ecc2ed;
+    font-weight: bold;
+    margin-right: 2em;
+    padding: 0.8% 0 0.8% 2%;
+    text-transform: none;
+}
+
+#portal-globalnav a::after {
+    right: -0.5em;
+    font-weight:normal;
+}
+
+#portal-globalnav li a:focus,
+#visual-portal-wrapper .portal-globalnav-cpskinmenu a:focus {
+    outline: none;
+    }
+    
+
+#portal-globalnav .selected a, #portal-globalnav .selected a:hover, #portal-globalnav a:hover, #portal-globalnav li a.activated {
+    border-bottom: 1px solid white;
+    text-decoration: none;
 }
 
 .portal-globalnav-cpskinmenu.navTreeLevel0 {
@@ -88,31 +139,108 @@
 .portal-globalnav-cpskinmenu.navTreeLevel0, 
 .portal-globalnav-cpskinmenu.navTreeLevel0::after,
 .sf-menu ul.navTreeLevel1, 
-.sf-menu ul.navTreeLevel1::after{
+.sf-menu ul.navTreeLevel1::after,
+.sf-menu ul.navTreeLevel2,
+.sf-menu ul.navTreeLevel2::after{
     box-shadow: 5px 4px 4px #192f53;
     }
 
 .portal-globalnav-cpskinmenu.navTreeLevel0::before,    
-.sf-menu ul.navTreeLevel1::before {
+.sf-menu ul.navTreeLevel1::before,
+.sf-menu ul.navTreeLevel2::before {
     box-shadow: -5px 4px 4px #192f53;
     right: 99%;
+}
+
+.sf-menu ul.navTreeLevel1.direct_access::after,
+.sf-menu ul.navTreeLevel1.direct_access{
+    box-shadow:none;
+}
+
+#portal-column-one .portletStaticText > h3 {
+    font-size: 100%;
+    font-weight: bold;
+    padding-left: 0.5em;
+}
+
+.sf-menu ul.navTreeLevel2 {
+    background: green none repeat scroll 0 0;
+    border-top: 1px solid #e9e9e9 !important;
+    box-sizing: border-box;
+    margin-top: 1em;
+}
+    
+.sf-menu ul.navTreeLevel2::before, 
+.sf-menu ul.navTreeLevel2::after {
+    background: #ffffff none repeat scroll 0 0;
+    border-top: 1px solid #e9e9e9;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: -1px;
+    width: 2000px;
+}
+
+.sf-menu ul.navTreeLevel2::after {
+    left:100%;
 }
 
 /*  fin navigation  */
 
 /*  portlet navigation  */
 
+dl.portlet dt, .portletWrapper dl.portlet dt a{
+    font-weight:bold;
+    text-transform:none;
+}
+
+#portal-column-one .portletNavigationTree dd ul li a {
+    color:#0645a6;
+    border-bottom: 0px solid transparent;
+}
+
+.icons-on #portal-column-one .portletNavigationTree dd ul li a {
+    padding-left: 1em !important;
+}
+
+#portal-column-one .portletNavigationTree dd ul li a {
+    padding-left: 1em !important;
+}
+
+#portal-columns #content a:hover,
+#portal-columns dl.portlet a:hover,
+dl.portlet ul.navTree .navTreeCurrentItem,
+.navTreeItemInPath {
+    color: #000000 !important;
+}
+
+dl.portlet ul.navTree .navTreeCurrentItem {
+    background-color: transparent;
+}
+
+#portal-column-one .portletNavigationTree dd .navTreeCurrentNode .contenttype-folder::before,
+#portal-column-one .portletNavigationTree dd .cnavOpen .contenttype-folder::before,
+#portal-column-one .portletNavigationTree dd .navTreeItemInPath .contenttype-folder::before {
+    left: 0.2em;
+    margin-top: 0;
+    transform: rotate(90deg);
+}
+
 #portal-column-one .portletNavigationTree dd .contenttype-folder::before {
     content: "›";
     font-size: 150%;
-    left: 0.4em;
+    left: 0em;
     margin-top: -3px;
     position: absolute;
+    transition: transform 0.1s ease 0s;
+    color:#8d9397;
 }
 
 #portal-column-one .portletNavigationTree dd .contenttype-folder{
     background: none;
-    }
+}
 
 
 
@@ -202,7 +330,7 @@
 
 #portal-column-content::after {
     background: #f3f3f3 none repeat scroll 0 0;
-    bottom: 0;
+    bottom: -200em;
     content: "";
     left: 100%;
     position: absolute;

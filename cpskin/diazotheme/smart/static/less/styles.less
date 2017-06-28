@@ -89,6 +89,11 @@ body.section-notheme #visual-portal-wrapper{
 }
 
 /*   search   */
+
+.LSBox #searchGadget{
+    width: 21em;
+}
+
 #top-actions-wrapper {
     display: inline-block;
     float: right;
@@ -144,7 +149,8 @@ body.section-notheme #visual-portal-wrapper{
     color: #fff;
     text-decoration: underline;
 }
-#portal-globalnav a::after {
+#portal-globalnav a::after,
+#top-actions-wrapper dt.actionMenuHeader a::after {
     content: " ‹";
     font-size: 150%;
     position: absolute;
@@ -152,9 +158,13 @@ body.section-notheme #visual-portal-wrapper{
     top: -22%;
     transform: rotate(270deg);
 }
+dt.actionMenuHeader{
+    padding-right: 1em;
+}
 #portal-globalnav li a {
     padding: 0.8% 21px 0.8% 2%;
     position: relative;
+    display:inline-block;
 }
 .sf-with-ul::after {
     content: " ‹";
@@ -306,7 +316,7 @@ li.sfHover > span > a{
     margin-top: 3px;
     position: fixed;
     top: 0;
-    z-index: 3;
+    z-index: 9;
 }
 .nav-is-stuck #top-logo{
     position: fixed;
@@ -1014,9 +1024,6 @@ li.bloc-item a h3::after{
 
 /*   FOOTER   */
 
-#portal-footer-wrapper {
-    z-index: -1;
-}
 
 .footer-sitemap-item{
     display: none;
