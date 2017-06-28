@@ -350,9 +350,14 @@ div#top-slogan{
     color:#8bb3ee;
 }
 /*   HOMEPAGE   */
+.template-folderview #portal-column-content::before,
+.template-folderview #portal-column-content::after{
+    display:none;
+}
 .template-folderview #top-logo-navigation-actions #portal-breadcrumbs{
     display:none;
 }
+
 #accueil .bloc-collection,
 #accueil .bloc-document,
 #accueil .bloc-collection-slider{
@@ -408,7 +413,7 @@ li.bloc-item a h3::after{
 .section-notheme ul.navTreeLevel0{
    margin-left: 8%;
 }
-.section-notheme ul.navTreeLevel0 {
+.section-notheme #top-navigation ul.navTreeLevel0 {
     z-index: 1;
     left:32%;
 }

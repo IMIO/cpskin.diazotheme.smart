@@ -1,20 +1,3 @@
-
-body.template-folderview #visual-portal-wrapper::after {
-    background: #3548b1 none repeat scroll 0 0;
-    content: "";
-    display: block;
-    height: 100%;
-    position: absolute;
-    right: 25%;
-    top: 0;
-    width: 50%;
-    z-index: -2;
-}
-
-body.section-notheme #visual-portal-wrapper::after {
-    background: #fff none repeat scroll 0 0;
-}
-
 #formfield-form-widgets-date_adoption_historique::after,
 #formfield-form-widgets-date_adoption::after,
 #formfield-form-widgets-date_publication_historique::after,
@@ -351,15 +334,10 @@ dl.messagesviewlet-info dt, dl.messagesviewlet-warning dt, dl.messagesviewlet-si
 }
 
 #visual-portal-wrapper #messagesviewlet dt:before {
-    content: "";
-    height: 1.75em;
-    display: inline;
-    background-image: url("/porte-voix.png");
-    width: 1.75em;
+    content: "\e839";
     left: 0.25em;
     position: absolute;
-    background-size: 100%;
-    top: 0.25em;
+    font-family: 'fontello';
 }
 
 #visual-portal-wrapper #messagesviewlet dt:after {
