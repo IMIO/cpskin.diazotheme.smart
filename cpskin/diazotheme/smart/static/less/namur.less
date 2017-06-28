@@ -14,6 +14,11 @@
 }
 
 /*  navigation  */
+
+.nav-is-stuck .section-notheme #top-navigation {
+    z-index:9;
+}
+
 .portal-globalnav-cpskinmenu.navTreeLevel0 {
     border-top: 1px solid lightgray;
     margin-top: 2em;
@@ -28,7 +33,90 @@
     color: white;
     }
 
+   .sf-menu .direct_access li a {
+    display: inline-block;
+}
+
+#top-navigation ul.navTreeLevel1.direct_access > li {
+    display: block;
+    }
+
+#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-administration .portal-globalnav-cpskinmenu.navTreeLevel1.has_direct_access {
+    padding-right: 75%;
+    }
+
+  
+#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-administration ul.direct_access,
+#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-securite ul.direct_access,
+#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-territoire ul.direct_access{
+    left: 25% !important;
+    width: 75% !important;
+    }
+    
+#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-administration .portal-globalnav-cpskinmenu.navTreeLevel1.has_direct_access li {
+    width:100% !important;
+    }
+
+#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-administration ul.direct_access li a,
+#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-securite ul.direct_access li a,
+#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-territoire ul.direct_access li a {
+    width: 44%;
+    }
+
+
+#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-vie-politique .portal-globalnav-cpskinmenu.navTreeLevel1.has_direct_access {
+    padding-right: 50%;
+    }
+    
+#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-vie-politique ul.direct_access {
+    left: 50% !important;
+    width: 50% !important;
+    }
+    
+#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-vie-politique .portal-globalnav-cpskinmenu.navTreeLevel1.has_direct_access li {
+    width:50% !important;
+    }
+    
+#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-vie-politique .direct_access li a{
+    width:100%;
+    }
+
+.sf-menu .direct_access li a{
+    width:100%;
+    }
+
+.portal-globalnav-cpskinmenu.navTreeLevel0, 
+.portal-globalnav-cpskinmenu.navTreeLevel0::after,
+.sf-menu ul.navTreeLevel1, 
+.sf-menu ul.navTreeLevel1::after{
+    box-shadow: 5px 4px 4px #192f53;
+    }
+
+.portal-globalnav-cpskinmenu.navTreeLevel0::before,    
+.sf-menu ul.navTreeLevel1::before {
+    box-shadow: -5px 4px 4px #192f53;
+    right: 99%;
+}
+
 /*  fin navigation  */
+
+/*  portlet navigation  */
+
+#portal-column-one .portletNavigationTree dd .contenttype-folder::before {
+    content: "›";
+    font-size: 150%;
+    left: 0.4em;
+    margin-top: -3px;
+    position: absolute;
+}
+
+#portal-column-one .portletNavigationTree dd .contenttype-folder{
+    background: none;
+    }
+
+
+
+/*   fin portlet navigation  */
 
 #formfield-form-widgets-date_adoption_historique,
 #formfield-form-widgets-date_adoption,
@@ -46,11 +134,11 @@
     width: 33.333%;
 }
 
-#formfield-form-widgets-date_adoption_historique span,
-#formfield-form-widgets-date_adoption span,
-#formfield-form-widgets-date_publication_historique span,
-#formfield-form-widgets-date_publication span,
-#formfield-form-widgets-date_echeance span{
+#formfield-form-widgets-date_adoption_historique > span,
+#formfield-form-widgets-date_adoption > span,
+#formfield-form-widgets-date_publication_historique > span,
+#formfield-form-widgets-date_publication > span,
+#formfield-form-widgets-date_echeance > span{
     background: rgba(0, 0, 0, 0) url("date.jpg") no-repeat scroll left center;
     padding-left: 1.5em;
 }
@@ -94,7 +182,7 @@
     padding-top: 0;
     position: relative;
     top: -7em;
-    z-index: 1 !important;
+    z-index: 0 !important;
 }
 
 #portal-columns #content {
@@ -111,8 +199,9 @@
     width: 2000px;
     z-index: -1;
 }
+
 #portal-column-content::after {
-    background: lightgray none repeat scroll 0 0;
+    background: #f3f3f3 none repeat scroll 0 0;
     bottom: 0;
     content: "";
     left: 100%;
@@ -564,6 +653,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     bottom: -1.35em;
     position: absolute;
     right: 20%;
+    z-index: 1;
 }
 
 #content .faceted-widget.faceted-layout-widget.section-affichage li {
