@@ -19,8 +19,8 @@
       </nav>
   </replace>
   
-  <rules css:if-content=".documentFirstHeading">
-      <replace css:content=".documentFirstHeading">
+  <rules css:if-content="h1">
+      <replace content="//h1[1]">
           <header>
               <xsl:if test="$is_homepage">
                 <xsl:copy-of select="."/>

@@ -21,7 +21,7 @@
                 <xsl:copy-of select="//*[@id='cpskin-slogan']/*" />
               </xsl:if>
               <xsl:if test="not($is_homepage)">
-                <xsl:copy-of select="//h1[@class='documentFirstHeading']" />
+                <xsl:copy-of select="//h1[1]" />
               </xsl:if>
              </div>
           </div>
@@ -90,11 +90,12 @@
           <xsl:copy-of select="//*[@id='cpskin-banner']/img" />
         </div>
     </replace>
+
   <drop css:content="#messagesviewlet" />
   <drop css:content="#cpskin-banner" />
   <drop css:content="#minisite-search" />
   <drop css:content="#portal-breadcrumbs"/>
-  <drop css:content=".documentFirstHeading"/>
+  <drop content="//h1[1]"/>
   <drop css:content="#portaltab-index_html" />
   <drop css:content="#cpskin-slogan" />
 
