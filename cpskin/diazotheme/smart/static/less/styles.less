@@ -118,6 +118,7 @@ body.section-notheme #visual-portal-wrapper{
 #btn-search {
     float: left;
     visibility: hidden;
+    height:1em;
 }
 .btn-search:before{
     content: '\e823';
@@ -209,6 +210,10 @@ dt.actionMenuHeader{
 #top-navigation-inner li.sfHover > span > a{
     background:transparent;
     color:#3F8BDD;
+}
+
+#top-navigation-inner {
+    padding-top:2em;
 }
 .portal-globalnav-cpskinmenu .selected a,
 .portal-globalnav-cpskinmenu-tabs .selected a,
@@ -386,8 +391,8 @@ div#top-slogan{
     color:#8bb3ee;
 }
 /*   HOMEPAGE   */
-.template-folderview #portal-column-content::before,
-.template-folderview #portal-column-content::after{
+.template-folderview #portal-column-content.position-0::before,
+.template-folderview #portal-column-content.position-0::after{
     display:none;
 }
 .template-folderview #top-logo-navigation-actions #portal-breadcrumbs{
