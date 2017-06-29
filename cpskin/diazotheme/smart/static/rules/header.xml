@@ -15,26 +15,22 @@
               <xsl:copy-of select="./*[@id='portal-logo']"/>
             </div>
           </div>
-          <xsl:if test="not($is_homepage)">
           <div id="top-slogan">
             <div id="top-slogan-inner">
+              <xsl:if test="$is_homepage">
+                <xsl:copy-of select="//*[@id='cpskin-slogan']/*" />
+              </xsl:if>
+              <xsl:if test="not($is_homepage)">
                 <xsl:copy-of select="//h1[@class='documentFirstHeading']" />
-            </div>
+              </xsl:if>
+             </div>
           </div>
           <xsl:copy-of select="//*[@id='portal-breadcrumbs']" />
-          </xsl:if>
         </div>
         <div class="top-navigation-actions">
             <div id="top-navigation">
               <div id="top-navigation-inner">
                 <xsl:copy-of  select="./*[@id='portal-globalnav']"/>
-                <xsl:if test="($is_homepage)">
-                  <div id="top-slogan">
-                    <div id="top-slogan-inner">
-                        <xsl:copy-of select="//*[@id='cpskin-slogan']/*" />
-                    </div>
-                   </div>
-                </xsl:if>
                 <xsl:if test="not($is_homepage)">
                 <div id="top-actions">
                     <div id="top-actions-inner">
