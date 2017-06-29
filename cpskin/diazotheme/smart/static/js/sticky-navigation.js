@@ -16,12 +16,12 @@ $(document).ready(function(){
 				scrollValFix = classFound ? scrollValue : scrollValue + navHeight;
 			if (window.matchMedia("(min-width: 1024px)").matches){
 				
-				if (wScrollTop > scrollValFix && !classFound && wScrollTop < lastScroll ) {
+				if (wScrollTop > scrollValFix && !classFound && wScrollTop > lastScroll ) {
 					el_html.className = el_html.className + ' nav-is-stuck';
 				}
 				
 				// if nav-is-stuck class exists
-				if ( (classFound &&  wScrollTop > lastScroll) || w.pageYOffset == 0) {
+				if ( (classFound &&  wScrollTop < lastScroll) || w.pageYOffset == 0) {
 					el_html.className = el_html.className.replace( regexp, '' );
 				}				
 			}	
@@ -39,12 +39,12 @@ $(document).ready(function(){
 					if (window.matchMedia("(min-width: 1024px)").matches) {
                         if ( d.getElementsByClassName('in-minisite-in-portal') || d.getElementsByClassName('in-minisite-out-portal') ) {
 					
-							if (wScrollTop > scrollValFix && !classFound && wScrollTop < MinilastScroll) {
+							if (wScrollTop > scrollValFix && !classFound && wScrollTop > MinilastScroll) {
 								el_html.className = el_html.className + ' nav-is-Substuck';
 							}
 			
 							// if nav-is-Substuck class exists
-							if ( (classFound && wScrollTop > MinilastScroll) || w.pageYOffset == 0) {
+							if ( (classFound && wScrollTop < MinilastScroll) || w.pageYOffset == 0) {
 								el_html.className = el_html.className.replace( regexp, '' );
 							}
 						}
