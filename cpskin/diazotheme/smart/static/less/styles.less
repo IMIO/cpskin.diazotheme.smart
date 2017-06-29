@@ -33,13 +33,10 @@ body.section-notheme #visual-portal-wrapper{
 #top-logo-slogan{
     margin-left: 10%;
     width: 22%;
+    position: relative;
 }
 #top-logo-slogan #top-slogan{
    margin-right:-168%;
-}
-#top-logo-slogan #portal-breadcrumbs {
-    margin-right: -168%;
-    padding-left: 8%;
 }
 #top-logo {
     margin: 0 20% 0 8%;
@@ -48,6 +45,12 @@ body.section-notheme #visual-portal-wrapper{
     position: absolute;
     width: 100%;
     z-index: 1;
+}
+#portal-logo{
+    margin:0.5em 0;
+}
+#portal-logo > img{
+    width: 60%;
 }
 #top-banner::after {
     background: rgba(14, 33, 63, 0.6);
@@ -61,10 +64,14 @@ body.section-notheme #visual-portal-wrapper{
 }
 #top-banner img{
     max-width: 100%;
+    min-height: 500px;
 }
 #top-logo-navigation-actions > div {
     display: inline-block;
     vertical-align: top;
+}
+#top-logo-slogan #portal-breadcrumbs {
+    margin-right: -168%;
 }
 .top-navigation-actions {
     width: 60%;
@@ -75,6 +82,12 @@ body.section-notheme #visual-portal-wrapper{
 }
 .section-notheme .top-navigation-actions{
     width: 100%;
+}
+.section-notheme #top-logo-slogan #portal-breadcrumbs {
+    position: absolute;
+    padding: 0;
+    margin-left:0;
+    left:39%;
 }
 /*  top menu action   */
 #top-menu-actions {
@@ -376,15 +389,19 @@ div#top-slogan{
     font-size: 2.25vw;
     font-weight: bold;
     padding-left: 8%;
-    margin-top: 2%
+    margin-top: 11%
 }
 #top-slogan h1 {
-    color: #fff;
-    font-size: 100%;    
+    color: #ffffff;
+    font-family: montserrat;
+    font-size: 70%;
+    font-weight: bold;
+    letter-spacing: 0;
 }
 #portal-breadcrumbs{
     color: #8bb3ee;
     margin-left:8%;
+    margin-top: 18%;
 }
 #portal-breadcrumbs a,
 .breadcrumbSeparator{
@@ -457,8 +474,9 @@ li.bloc-item a h3::after{
     padding-left: 0;
 }
 .section-notheme #top-slogan{
-    margin-top: 5%;
-    margin-left: 0;
+    position: absolute;
+    padding: 0;
+    left:39%;
 }
 .section-notheme #top-slogan-inner {
     margin-right: -2000px;
