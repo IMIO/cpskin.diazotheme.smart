@@ -381,6 +381,10 @@ li.sfHover > span > a{
 .nav-is-stuck .portal-globalnav-cpskinmenu.navTreeLevel0 {
     position: absolute;
 }
+.nav-is-stuck .portal-globalnav-cpskinmenu-tabs li,
+.nav-is-stuck .portal-globalnav-cpskinmenu li {
+    width: auto;
+}
 /*   TITLE   */
 div#top-slogan{
     display:block;
@@ -1021,9 +1025,6 @@ li.bloc-item a h3::after{
     padding: 2% 11% 0 0;
     width: 60%;
 }
-.oembed-wrapper.oembed-video iframe {
-    width: 100%;
-}
 #accueil li.bloc-item a.medialink .pagecaption h3 {
     display: inline-block;
     opacity: 1;
@@ -1113,10 +1114,16 @@ li.bloc-item a h3::after{
     opacity: 1;
 }
 /*  PAGE LOGIN   */
+.template-login_form div#portal-column-content {
+    padding: 0;
+}
+.template-login_form #portal-columns #content {
+    margin: 0;
+}
 #login-form .context {
     background: #0047b3 none repeat scroll 0 0;
     border: 0 solid #0047b3;
 }
 .login-message-inner {
-    background: #f2f5fa none repeat scroll 0 0;
+    background: #f2f5fa;
 }

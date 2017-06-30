@@ -31,6 +31,16 @@
     compression="none"
     insert-after="++theme++cpskin.diazotheme.smart/less/styles.less" />
 
+<stylesheet title="cpskin.diazotheme.smart LESS Mobile Styles"
+    id="++theme++cpskin.diazotheme.smart/less/mobile.less"
+    media="handheld, screen and (max-device-width: 480px), screen and (max-width: 480px)"
+    enabled="1"
+    rendering="link"
+    applyPrefix="True"
+    expression="python:here.restrictedTraverse('@@currentTheme')() == 'cpskin.diazotheme.smart'"
+    compression="none"
+    insert-after="++theme++cpskin.diazotheme.smart/less/namur.less" />
+
  <stylesheet title="cpskin.diazotheme.smart LESS Large Mobile Styles"
     id="++theme++cpskin.diazotheme.smart/less/mobilelarge.less"
     media="handheld, screen and (max-device-width: 1000px), screen and (max-width: 1000px)"
@@ -39,6 +49,6 @@
     applyPrefix="True"
     expression="python:here.restrictedTraverse('@@currentTheme')() == 'cpskin.diazotheme.smart'"
     compression="none"
-    insert-after="++theme++cpskin.diazotheme.smart/less/namur.less" />
+    insert-after="++theme++cpskin.diazotheme.smart/less/mobile.less" />
 
 </object>
