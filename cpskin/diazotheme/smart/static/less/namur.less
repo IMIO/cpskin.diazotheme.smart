@@ -86,11 +86,11 @@ h3 {
 
 .portal-globalnav-cpskinmenu.navTreeLevel0 {
     border-top: 1px solid lightgray;
-    margin-top:2em;
+    margin-top:1.5em;
     padding: 2em 0;
 }
 .sf-menu ul.portal-globalnav-cpskinmenu.navTreeLevel1 {
-    margin-top: 4em;
+    margin-top: 3.9em;
     }
     
     .sf-menu .direct_access li a {
@@ -685,13 +685,15 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
     margin-right: 1.6em;
 }
 
-.template-facetednavigation_view .organization-title, .template-facetednavigation_view .contact-title,
-.template-facetednavigation_view .organization-entry .contact-info, .template-facetednavigation_view .contact-entry .contact-info {
+.template-facetednavigation_view #portal-columns .organization-title, 
+.template-facetednavigation_view #portal-columns .contact-title,
+.template-facetednavigation_view #portal-columns.organization-entry .contact-info,
+.template-facetednavigation_view #portal-columns .contact-entry .contact-info {
     margin-left: 0;
     position: relative;
 }
 
-.template-facetednavigation_view .contact-title, .template-facetednavigation_view .organization-title {
+.template-facetednavigation_view #portal-columns .contact-title, .template-facetednavigation_view #portal-columns .organization-title {
     font-size: 85%;
 }
 
@@ -702,7 +704,7 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
     border-style: solid;
     border-width: 0 2px 2px;
     box-shadow: 0 2px 2px #f7f7f7;
-    height: 16em;
+    height: 18em;
     padding-top: 4em;
     position: relative;
 }
@@ -710,6 +712,10 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
 .template-facetednavigation_view #faceted-form .contact-entry:hover {
     box-shadow: 0 10px 25px 0 #e2d5e1;
     border-color: #ededed;
+}
+
+.organization-address {
+    margin-top: 0.5em;
 }
 
 /*  Fin vue annuaire  */
