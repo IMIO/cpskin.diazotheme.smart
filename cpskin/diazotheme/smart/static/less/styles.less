@@ -64,7 +64,6 @@ body.main-homepage #visual-portal-wrapper{
 }
 #top-banner img{
     max-width: 100%;
-    min-height: 500px;
 }
 #top-logo-navigation-actions > div {
     display: inline-block;
@@ -217,6 +216,7 @@ dt.actionMenuHeader{
 /*   sub menu   */
 .portal-globalnav-cpskinmenu.navTreeLevel0 {
     background: #fff;
+    margin-left:-1em;
 }
 .portal-globalnav-cpskinmenu a:hover,
 .portal-globalnav-cpskinmenu-tabs a:hover,
@@ -351,10 +351,11 @@ li.sfHover > span > a{
 .nav-is-stuck #top-navigation{
     display: inline-block;
     margin: 0;
-    padding-left: 39%;
+    padding-left: 32%;
 }
 .nav-is-stuck .main-homepage #top-navigation{
     margin: 0;
+    padding-left: 29%;
 }
 .nav-is-stuck .main-homepage #top-actions {
     position: relative;
@@ -365,7 +366,7 @@ li.sfHover > span > a{
     position: fixed;
     top: 0;
     z-index: 3;
-    padding-left:14%;
+    padding-left:2%;
     height: 75px;
     overflow: hidden;
     margin:0;
@@ -384,10 +385,12 @@ li.sfHover > span > a{
 div#top-slogan{
     display:block;
     color: #fff;
-    font-size: 2.25vw;
+    font-size: 2vw;
     font-weight: bold;
     padding-left: 8%;
-    margin-top: 11%
+    margin-top: 11%;
+    height:2em;
+    line-height: 1.1em;
 }
 #top-slogan h1 {
     color: #ffffff;
@@ -399,7 +402,7 @@ div#top-slogan{
 #portal-breadcrumbs{
     color: #8bb3ee;
     margin-left:8%;
-    margin-top: 18%;
+    margin-top: 20%;
 }
 #portal-breadcrumbs a,
 .breadcrumbSeparator{
@@ -457,11 +460,11 @@ li.bloc-item a h3::after{
     margin:0;
 }
 .main-homepage #top-logo-inner {
-    margin: 7% 0 19% 39%;
+    margin: 7% 0 19% 65%;
 }
 .main-homepage #top-navigation {
     margin-right: -302%;
-    padding-left: 39%;
+    padding-left: 65%;
     width: auto;
 }
 .main-homepage #top-banner::after {
@@ -474,14 +477,12 @@ li.bloc-item a h3::after{
 .main-homepage #top-slogan{
     position: absolute;
     padding: 0;
-    left:39%;
+    left:65%;
 }
 .main-homepage #top-slogan-inner {
     margin-right: -2000px;
 }
-.main-homepage #top-logo-navigation-actions > div {
-    display: block;
-}
+
 .main-homepage  #top-logo {
     margin: 0;
 }

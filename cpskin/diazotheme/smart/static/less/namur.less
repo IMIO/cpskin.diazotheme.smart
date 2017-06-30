@@ -1,11 +1,3 @@
-.top-navigation-actions {
-    margin-top: -2em;
-}
-
-#portal-breadcrumbs {
-    margin-top: 10em;
-}
-
 #formfield-form-widgets-date_adoption_historique::after,
 #formfield-form-widgets-date_adoption::after,
 #formfield-form-widgets-date_publication_historique::after,
@@ -17,7 +9,7 @@
     left: 0;
     position: absolute;
     top: 0;
-    width: 300%;
+    width: 400%;
     z-index: -1;
 }
 
@@ -29,6 +21,13 @@
 
 div#portal-column-content {
     padding-top: 4em;
+    padding-left:1em;
+    box-sizing:border-box;
+}
+
+.userrole-authenticated div#portal-column-content .documentEditable {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 8px;
 }
 
 .nav-is-stuck .main-homepage#top-navigation {
@@ -48,6 +47,10 @@ dt.actionMenuHeader a::after {
     font-size: 120%;
 }
 
+#portal-top{
+    margin-bottom: -10%;
+}
+
 #portal-top a,
 #portal-globalnav li a,
 h1,
@@ -61,7 +64,7 @@ h3 {
     color: #ecc2ed;
     font-weight: bold;
     margin-right: 2em;
-    padding: 0.8% 0 0.8% 2%;
+    padding: 0;
     text-transform: none;
 }
 
@@ -122,6 +125,7 @@ h3 {
 #portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-securite ul.direct_access li a,
 #portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-territoire ul.direct_access li a {
     width: 44%;
+    box-sizing:border-box;
     }
 
 
@@ -222,7 +226,8 @@ dl.portlet dt, .portletWrapper dl.portlet dt a{
 #portal-columns #content a:hover,
 #portal-columns dl.portlet a:hover,
 dl.portlet ul.navTree .navTreeCurrentItem,
-.navTreeItemInPath {
+.navTreeItemInPath,
+#portal-column-one .portletNavigationTree dd .cnavOpen .contenttype-folder {
     color: #000000 !important;
 }
 
@@ -232,7 +237,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 #portal-column-one .portletNavigationTree dd .navTreeCurrentNode .contenttype-folder::before,
 #portal-column-one .portletNavigationTree dd .cnavOpen .contenttype-folder::before,
-#portal-column-one .portletNavigationTree dd .navTreeItemInPath .contenttype-folder::before {
+#portal-column-one .portletNavigationTree dd .navTreeItemInPath.contenttype-folder::before {
     left: 0.2em;
     margin-top: 0;
     transform: rotate(90deg);
@@ -299,10 +304,12 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     text-transform: uppercase;
 }
 
-#content-core{
-    overflow: hidden;
-}
 
+#content-core {
+    box-sizing: border-box;
+    float: left;
+    width:100%;
+}
 
 #formfield-form-widgets-date_adoption_historique.empty,
 #formfield-form-widgets-date_adoption.empty,
@@ -319,8 +326,35 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 #portal-columns {
     padding-top: 0;
     position: relative;
-    top: -10em;
     z-index: 0 !important;
+}
+
+#portal-column-one::before {
+    background: white none repeat scroll 0 0;
+    bottom: -2000px;
+    content: "";
+    position: absolute;
+    right: -25%;
+    top: 0;
+    width: 2000px;
+    z-index: -2;
+}
+
+.nav-is-stuck .main-homepage #top-navigation-inner{
+    padding-top:2em;
+}
+
+.main-homepage #top-navigation-inner{
+    padding-top:0em;
+}
+
+.main-homepage #portal-columns::before {
+    display: none;
+}
+
+.main-homepage #top-banner img {
+    margin-left: -20%;
+    max-width: 120%;
 }
 
 #portal-columns #content {
@@ -329,13 +363,18 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 #portal-column-content::before {
     background: white none repeat scroll 0 0;
-    bottom: 0;
+    border-left: 1px solid #e5e5e5;
+    bottom: -3000px;
     content: "";
     position: absolute;
     right: 0;
     top: 0;
-    width: 2000px;
+    width: 100%;
     z-index: -1;
+}
+
+#portal-column-content.width-full::before{
+    width: 300%;
 }
 
 #portal-column-content::after {
@@ -394,6 +433,10 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     right: 100%;
     top: 0;
     width: 1000px;
+}
+
+#portal-column-content.width-3\:4 .faceted-widget.faceted-criteria-widget.section-filtres-actifs::before{
+    display:none;
 }
 
 .widget-fieldset.faceted-criteria {
@@ -572,6 +615,22 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
     padding: 2em 0 2em 2em;
     position: relative;
 }
+
+
+#top-area::before {
+    background: #0047b1 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    right: 90%;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#portal-column-content.width-3\:4 #top-area::before{
+    display:none;
+    }
 
 #content #top-area .widget-fieldset legend, #content .section-affichage .widget-fieldset ul li label, #content .faceted-criteria a {
     font-size: 100%;
@@ -823,3 +882,79 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     color: black !important;
     text-shadow: 0 0 0 transparent;
 }
+
+/*  Document */
+
+
+#aboveContentContact {
+    float: left;
+    width: 100%;
+}
+
+#viewlet-above-content-body .wrapped-coord {
+    box-sizing: border-box;
+    float: left;
+    padding: 0.5em 1em 1.5em;
+    width: 40%;
+}
+
+#phone > a {
+    display: block;
+}
+
+#aboveContentContact .schedule {
+    float: right;
+    padding-bottom: 1em;
+}
+
+#form-widgets-IScheduledContent-schedule {
+    float: left;
+}
+
+.schedule {
+    float: left;
+}
+
+.schedule::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.schedule-widget-day {
+    clear: both;
+    width:100%;
+}
+
+.schedule-widget-day > div {
+    float: left;
+    margin-right: 0.5em;
+    padding: 0.25em 0;
+}
+
+.schedule-widget-day .comment {
+    font-size: 100%;
+    font-style: italic;
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.schedule-widget-day .title {
+    box-sizing: border-box;
+    font-weight: normal;
+    min-width: 76px;
+    padding-left: 0.75em;
+}
+
+.schedule-widget-day:nth-child(2n) {
+    background: #f1f1f1 none repeat scroll 0 0;
+    float: left;
+}
+
+
+.activity {
+    clear: both;
+}
+
+/*  Fin document */
