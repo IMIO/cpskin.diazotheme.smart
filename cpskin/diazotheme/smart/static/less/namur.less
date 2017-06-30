@@ -514,21 +514,22 @@ dl.messagesviewlet-info dt, dl.messagesviewlet-warning dt, dl.messagesviewlet-si
     margin-right:0;
 }
 
-#visual-portal-wrapper #messagesviewlet dt:before {
+#visual-portal-wrapper #messagesviewlet dt::before {
     content: "\e839";
-    left: 0.25em;
+    left: -1em;
     position: absolute;
     font-family: 'fontello';
+    font-size: 150%;
 }
 
-#visual-portal-wrapper #messagesviewlet dt:after {
+#visual-portal-wrapper #messagesviewlet dt::after {
     content: "";
     position: absolute;
     border-right: 2px solid white;
     height: 1em;
     width: 0em;
     top: 0.6em;
-    right: 1em;
+    right: 0em;
 }
 
 dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-significant dd {

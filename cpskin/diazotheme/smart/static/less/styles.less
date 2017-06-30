@@ -152,6 +152,21 @@ body.main-homepage #visual-portal-wrapper{
     right: 0;
     top: 0;
 }
+/*   messageviewlet   */
+#visual-portal-wrapper #messagesviewlet{
+    position: relative;
+    z-index: 1;
+}
+#messagesviewlet dl.messagesviewlet-info,
+#messagesviewlet dl.messagesviewlet-warning,
+#messagesviewlet dl.messagesviewlet-significant {
+    border: 0 none;
+}
+#messagesviewlet dl.messagesviewlet-info dt,
+#messagesviewlet dl.messagesviewlet-warning dt,
+#messagesviewlet dl.messagesviewlet-significant dt{
+    background-color: transparent;
+}
 /*   NAVIGATION   */
 #portal-top .portal-globalnav-cpskinmenu{
     z-index: 2;
@@ -161,6 +176,9 @@ body.main-homepage #visual-portal-wrapper{
 }
 li#portaltab-index_html {
     display: none;
+}
+#navWrapper{
+    display: inline-block;
 }
 #portal-globalnav,
 #portal-globalnav li a,
