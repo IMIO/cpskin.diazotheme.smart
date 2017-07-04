@@ -2,7 +2,8 @@ Changelog
 =========
 
 
-0.1 (unreleased)
+0.1.1 (2017-06-30)
 ----------------
 
-- Initial release.
+- theme for namur
+  [mgennart]
