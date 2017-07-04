@@ -20,7 +20,7 @@
 }
 
 div#portal-column-content {
-    padding-top: 4em;
+    padding-top: 0em;
     padding-left:1em;
     box-sizing:border-box;
 }
@@ -304,13 +304,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     text-transform: uppercase;
 }
 
-
-#content-core {
-    box-sizing: border-box;
-    float: left;
-    width:100%;
-}
-
 #formfield-form-widgets-date_adoption_historique.empty,
 #formfield-form-widgets-date_adoption.empty,
 #formfield-form-widgets-date_publication_historique.empty,
@@ -324,14 +317,47 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 }
 
 #portal-columns {
-    padding-top: 0;
+    padding-top: 1em;
     position: relative;
     z-index: 0 !important;
 }
 
+/*#portal-columns #content {
+    margin: -1em 0;
+}*/
+
+
+#content-core {
+    box-sizing: border-box;
+    float: left;
+    width:100%;
+}
+
+.portaltype-reglement #portal-column-content{
+    padding-left:0;
+}
+
+.portaltype-reglement #portal-columns {
+    padding-top: 1em;
+}
+
+.portaltype-reglement #content,
+.template-facetednavigation_view #content{
+    margin: 0;
+}
+
+.portaltype-reglement #content-core{
+    overflow: hidden;
+}
+
+.portaltype-reglement #formfield-form-widgets-texte_legislatif {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
 #portal-column-one::before {
     background: white none repeat scroll 0 0;
-    bottom: -2000px;
+    height: 2000px;
     content: "";
     position: absolute;
     right: -25%;
@@ -357,14 +383,10 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     max-width: 120%;
 }
 
-#portal-columns #content {
-    margin: -1em 0;
-}
-
 #portal-column-content::before {
     background: white none repeat scroll 0 0;
     border-left: 1px solid #e5e5e5;
-    bottom: -3000px;
+    height: 3000px;
     content: "";
     position: absolute;
     right: 0;
@@ -379,7 +401,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 #portal-column-content::after {
     background: #f3f3f3 none repeat scroll 0 0;
-    bottom: -200em;
+    height: 2000px;
     content: "";
     left: 100%;
     position: absolute;
@@ -615,6 +637,11 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
     color: white;
     padding: 2em 0 2em 2em;
     position: relative;
+    margin-top: -1em;
+}
+
+.userrole-anonymous ul.pod-template {
+    display: none;
 }
 
 
@@ -654,13 +681,13 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
 }
 
 .contact-title::before {
-    content: url("./personne-picto.jpg");
+    content: url("../images/personne-picto.jpg");
     position: absolute;
     top: -4em;
 }
 
 .organization-title::before {
-    content: url("./organization-picto.jpg");
+    content: url("../images/organization-picto.jpg");
     position: absolute;
     top: -4.5em;
 }
