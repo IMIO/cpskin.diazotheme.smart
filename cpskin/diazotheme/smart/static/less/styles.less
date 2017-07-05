@@ -634,7 +634,7 @@ li.bloc-item a h3::after{
 }
 #accueil #flex.slider-multiple .carousel .flex-viewport li a {
     color: #000 !important;
-    height: 50% !important;
+    height: 74% !important;
     overflow: hidden;
     width: 100% !important;
 }
@@ -1085,13 +1085,38 @@ li.bloc-item a h3::after{
 .footer-sitemap-item{
     display: none;
 }
-#portal-footer-wrapper .cell {
-    background: #022241 url("./footer-map.jpg") no-repeat scroll right 0;
-    min-height: 25em;
+
+#portal-footer-wrapper {
+    background: #0d2241 url("./footer-map.jpg") no-repeat scroll right 0;
+    float: left;
+    width: 100%;
 }
+
+#portal-footer-wrapper .row{
+    background:transparent;
+}
+    
 #portal-footer{
     margin:1em 0 0;
 }
+
+#footer-social{
+    display:none;
+}
+
+#footer-sitemap{
+    max-width:1500px;
+}
+
+#portal-footer-wrapper #footer-sitemap{
+    background-color:transparent;
+}
+
+#portal-footer-wrapper #footer-sitemap::before,
+#portal-footer-wrapper #footer-sitemap::after{
+    display:none;
+}
+
 .footer-bloc,
 .footer-bloc h3,
 .footer-bloc a,
