@@ -1,7 +1,8 @@
-0.3 (unreleased)
+0.3 (2017-07-05)
 ----------------
 
-- Nothing changed yet.
+- Change css for footer.
+  [mgennart]
 
 
 0.2 (2017-07-05)
