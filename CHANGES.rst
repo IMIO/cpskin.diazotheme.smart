@@ -1,7 +1,8 @@
-0.2 (unreleased)
+0.2 (2017-07-05)
 ----------------
 
-- Nothing changed yet.
+- Change css for view faceted list.
+  [mgennart]
 
 
 0.1 (2017-06-30)
