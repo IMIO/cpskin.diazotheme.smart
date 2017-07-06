@@ -325,10 +325,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     position: relative;
     z-index: 0 !important;
 }
-
-
-
-
 #content-core {
     box-sizing: border-box;
     float: left;
@@ -511,8 +507,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 
 /*  message viewlet  */
-
-
 
 #visual-portal-wrapper #messagesviewlet {
     width: 100%;
@@ -992,5 +986,31 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .activity {
     clear: both;
 }
+/*   Slider   */
+.flex-direction-nav a.flex-next::before {
+    content: "\e83f";
+    font-family: fontello;
+}
+.flex-direction-nav a::before{
+    content: "\e840";
+    font-family: fontello;
+}
+#accueil #flex .flex-direction-nav a::before {
+    color: #89b7e9;
+}
+#accueil #flex .flex-direction-nav a{
+    border-color:#89b7e9 !important;
+}
 
+/*   Slider multi   */
+#content .slider-multiple a.voir-tout {
+    color: #fff;
+    display: inline-block;
+    margin-top: 3%;
+    right: 7%;
+}
 /*  Fin document */
+/*   FOOTER   */
+#portal-footer-wrapper .cell {
+    background: #022241 url("footer-map.jpg") no-repeat scroll right 0;
+}

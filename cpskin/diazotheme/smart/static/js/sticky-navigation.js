@@ -48,11 +48,9 @@ $(document).ready(function(){
 								el_html.className = el_html.className.replace( regexp, '' );
 							}
 						}
-                    }
-				
-				
+          }	
 			}
-        };
+    };
 	
     
 		onScrolling = function() {

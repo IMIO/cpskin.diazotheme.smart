@@ -7,9 +7,10 @@
 $(document).ready(function() {
     var $window = $(window);
     var window_height = $window.height();
+    var faceted = document.getElementsByClassName('faceted-results');
 
 //    Parallax
-    var lastScrollTop = 0;
+   var lastScrollTop = 0;
     $( window ).scroll(function() {
         var st = $(this).scrollTop();
         if (st > lastScrollTop){
@@ -45,6 +46,16 @@ $(document).ready(function() {
             })
         })
     });
+    if (faceted !== null) {
+      $(faceted).each(function() {
+        $(document).scroll(function(){
+            $(this).find('.event-entry').each(function() {
+                add_style($(this));
+            })
+        })
+      });
+    }
+    
 
     function add_style(el) {
         el_offset_top = el.offset().top;
@@ -71,7 +82,7 @@ $(document).ready(function() {
         $("#hidden-search").hide('fast');
        });
        
-// move to top  
+// move to top
     $(function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() > 300) {
