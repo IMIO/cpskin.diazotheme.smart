@@ -1,7 +1,8 @@
-0.4 (unreleased)
+0.4 (2017-07-06)
 ----------------
 
-- Nothing changed yet.
+- Add css for agenda.
+  [mgennart]
 
 
 0.3 (2017-07-05)
