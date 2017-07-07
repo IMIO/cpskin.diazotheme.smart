@@ -1,7 +1,8 @@
 0.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fix style.less.
+  [bsuttor]
 
 
 0.4 (2017-07-06)
