@@ -22,6 +22,7 @@ xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="/++theme++cpskin.theme.base/rules/content.xml"/>
   <xi:include href="/++theme++cpskin.theme.base/rules/login.xml"/>
   <xi:include href="/++theme++cpskin.theme.base/rules/right_actions.xml"/>
+  <xi:include href="/++theme++cpskin.theme.base/rules/annuaire.xml"/>
 
   <!-- Our own rules -->
   <xi:include href="/++theme++cpskin.diazotheme.smart/rules/header.xml"/>

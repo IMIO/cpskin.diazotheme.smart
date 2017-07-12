@@ -1,7 +1,8 @@
 0.6 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Add new annuaire.xml rules coming from cpskin.theme : #17751
+  [laulaz]
 
 
 0.5 (2017-07-07)
