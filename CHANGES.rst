@@ -1,6 +1,9 @@
 0.6 (unreleased)
 ----------------
 
+- Remove unused skin.
+  [bsuttor]
+
 - Add new annuaire.xml rules coming from cpskin.theme : #17751
   [laulaz]
 

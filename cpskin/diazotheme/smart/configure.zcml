@@ -30,10 +30,4 @@
     <!-- CPSkin theme -->
     <plone:static directory="static" name="cpskin.diazotheme.smart" type="theme" />
 
-    <cmf:registerDirectory
-        name="skins"
-        directory="skins"
-        recursive="True"
-        />
-
 </configure>
