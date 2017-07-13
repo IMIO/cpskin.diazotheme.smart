@@ -1,6 +1,9 @@
 0.6 (unreleased)
 ----------------
 
+- Change margin for slide #18057
+  [Aurore]
+
 - Remove unused skin.
   [bsuttor]
 
