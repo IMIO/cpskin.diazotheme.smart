@@ -55,6 +55,10 @@ dt.actionMenuHeader a::after {
     margin-bottom: -14em;
 }
 
+.main-homepage #portal-top{
+    margin-bottom: -4em;
+}
+
 #portal-top a,
 #portal-globalnav li a,
 h1,
@@ -445,6 +449,25 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     float: left;
 }
 
+.section-citizen-dashboard #top-area .faceted-widget.faceted-criteria-widget.section-filtres-actifs {
+    background: #e5ebf7 none repeat scroll 0 0;
+    clear: left;
+    margin-bottom: -2em;
+    padding-bottom: 0.75em;
+    padding-left: 1em;
+    padding-top: 2em;
+    position: relative;
+    margin-top: 1em;
+    width: 100%;
+    float: left;
+    margin-left: -2em;
+    padding-right: 1em;
+}
+
+.section-citizen-dashboard #content .documentByLine {
+    display: none;
+}
+
 .faceted-widget.faceted-criteria-widget.section-filtres-actifs::before {
     background: #e5ebf7 none repeat scroll 0 0;
     bottom: 0;
@@ -627,13 +650,41 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
 
 /*  Vue annuaire  */
 
+.section-annuaire #portal-columns {
+    /*padding-right: 6%;*/
+    box-sizing: border-box;
+}
+
+.section-annuaire div#portal-column-content{
+    padding-left:0;
+}
+
+.section-annuaire #top-area{ 
+    margin-right: -2em;
+}
+
+.template-facetednavigation_view.portaltype-directory.section-annuaire #portal-column-content::before{
+    background: transparent;
+}
+
 #top-area {
     background: #0047b1 none repeat scroll 0 0;
-    border-radius: 2px;
     color: white;
     padding: 2em 0 2em 2em;
     position: relative;
     margin-top: -1em;
+    margin-left: -1em;
+}
+
+#center-area::before {
+    content: "";
+    top: 0;
+    position: absolute;
+    background: white;
+    bottom: 0;
+    width: 300%;
+    z-index: -1;
+    right: 0;
 }
 
 .userrole-anonymous ul.pod-template {
@@ -747,15 +798,70 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
 
 /*  Fiche annuaire  */
 
+dl.portalMessage.info {
+    margin-right: -4em;
+    margin-left: -2em;
+    margin-top: 0em;
+    margin-bottom: 0 !important;
+    border: 0px solid transparent;
+    background: #3d8acd;
+    color: white;
+    padding-left: 0;
+}
 
-#organization > .contact-details label, #person > .contact-details label{
-    color: #4d80d1;
+dl.portalMessage dt {
+    background-color: transparent;
+}
+
+.section-annuaire.portaltype-organization #content{
+    margin:0 0em 2em;
+}
+
+.section-annuaire.portaltype-organization #portal-columns {
+    max-width: 1200px;
+}
+
+.portaltype-organization article#content {
+    overflow: hidden;
+    margin-right: 0;
+}
+
+#contact-schedule {
+    background: #fdf6fd none repeat scroll 0 0;
+    border-left: 5px solid #f1d3ee;
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 2em;
+    overflow: hidden;
+    padding: 2em 2em 1em 3em;
+    width: 104%;
+}
+
+.contact-details, #contact-schedule .Schedule {
+    border-width: 0;
+    box-sizing: border-box;
+    float: left;
+    margin: 0;
+    position: relative;
+    width: 40%;
+}
+#contact-schedule .Schedule legend {
+    color: #0a2340;
+    font-size: 100%;
+    font-weight: bold;
+    padding-top: 0;
+}
+
+#organization .contact-details label, #person .contact-details label{
+    color: #0a2340;
  }
 
 #organization > .contact-details, #person > .contact-details {
     background: #0047b1 none repeat scroll 0 0;
     color: white;
+    float: left;
     padding: 1em;
+    width: 98%;
 }
 
 #organization > .contact-details a, #person > .contact-details a {
@@ -765,21 +871,44 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
     text-decoration: underline;
 }
 
-.contact-details p {
-    clear: none;
-    display: inline-block;
+.contact-details p, .contact-details > div {
+    clear: both;
+    display: inline;
     float: left;
-    width: 25%;
 }
 
 .contact-details p a{
     clear:both;
 }
 
-#organization #download_vcard, #person #download_vcard {
-    float: right;
-    margin-bottom: 1em;
-    margin-top: -3em;
+#download_vcard {
+    background: #0e213f none repeat scroll 0 0;
+    bottom: -2em;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em 5em 0.5em 1em;
+    position: absolute;
+    right: -164%;
+}
+
+#contact-schedule #download_vcard > a {
+    color: white;
+}
+
+#contact-schedule #download_vcard > a::before {
+    content: "\e83a";
+    font-family: fontello;
+    font-weight: normal;
+    margin-right: 0.5em;
+}
+
+#contact-schedule #download_vcard > a img{
+    display: none;
+}
+
+#contact-schedule #download_vcard > a:hover{
+    color:white !important;
+    text-decoration: underline;
 }
 
 #organizations li:nth-child(2){
@@ -805,7 +934,7 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
 /*  Fin fiche annuaire  */
 
 
-#top-area .select2-container .select2-choice {
+.faceted-form #top-area .select2-container .select2-choice {
     background-color: #0047b1;
     background-image: none;
     border-color: #3970c1;
@@ -815,6 +944,10 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
     color: white;
     font-weight: bold;
     padding: 0;
+}
+
+#portal-columns #content .faceted-form #top-area .select2-container .select2-choice:hover{
+    color:white !important;
 }
 
 .select2-dropdown-open .select2-choice, .select2-container-active .select2-choice, .select2-container-active .select2-choices {
@@ -978,11 +1111,10 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     padding-left: 0.75em;
 }
 
-.schedule-widget-day:nth-child(2n) {
+/*.schedule-widget-day:nth-child(2n) {
     background: #f1f1f1 none repeat scroll 0 0;
     float: left;
-}
-
+}*/
 
 .activity {
     clear: both;
