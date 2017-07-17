@@ -1,5 +1,5 @@
-0.6 (unreleased)
-----------------
+0.5.1 (2017-07-17)
+------------------
 
 - Change margin for slide #18057
   [Aurore]
