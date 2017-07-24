@@ -52,7 +52,7 @@ dt.actionMenuHeader a::after {
 }
 
 #portal-top{
-    margin-bottom: -14em;
+    margin-bottom: -12em;
 }
 
 .main-homepage #portal-top{
@@ -1120,6 +1120,30 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     clear: both;
 }
 /*   Slider   */
+
+#accueil .slider-unique-titre {
+    margin-bottom: 5em;
+    padding-bottom: 0;
+    padding-top: 3em;
+}
+
+#accueil #flex.slider-unique-titre .slider .flex-viewport .flex-caption {
+    text-align: left;
+}
+
+#accueil #flex.slider-multiple .carousel .flex-viewport li .flex-caption h2 {
+    padding: 5px 60px 0;
+}
+
+#accueil .slider-unique-titre .read-next-link {
+    display: none;
+}
+
+.flex-viewport {
+    margin-top: -7em;
+    margin-bottom: 2em;
+}
+
 .flex-direction-nav a.flex-next::before {
     content: "\e83f";
     font-family: fontello;
@@ -1144,6 +1168,40 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 /*  Fin document */
 /*   FOOTER   */
+
 #portal-footer-wrapper .cell {
-    background: #022241 url("footer-map.jpg") no-repeat scroll right 0;
+    background: #022241 url("./footer-map.jpg") no-repeat scroll right -80px;
+}
+
+.footer-static{
+    width:100%;
+}
+
+.footer-bloc {
+    margin-top: 2em;
+}
+
+.footer-bloc > h3 {
+    font-size: 110%;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.footer-bloc > p,
+#footer-sitemap .footer-bloc a{
+    color: #93b2de;
+}
+
+.bloc-adresse, .bloc-liens {
+    margin-left: 5%;
+}
+
+.footer-bloc-plan {
+    float: right;
+    width: 40%;
+}
+
+.footer-bloc-plan > a {
+   display: block;
+   height: 20em;
 }
