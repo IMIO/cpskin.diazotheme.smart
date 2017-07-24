@@ -1,7 +1,8 @@
 0.5.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Adapt homepage.
+  [osnickers]
 
 
 0.5.2 (2017-07-17)
