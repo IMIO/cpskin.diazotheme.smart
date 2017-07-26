@@ -803,8 +803,6 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
 }
 
 /*  Fin fiche annuaire  */
-
-
 #top-area .select2-container .select2-choice {
     background-color: #0047b1;
     background-image: none;
@@ -915,8 +913,6 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 
 /*  Document */
-
-
 #aboveContentContact {
     float: left;
     width: 100%;
@@ -970,20 +966,16 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     padding-left: 1em;
     padding-right: 1em;
 }
-
 .schedule-widget-day .title {
     box-sizing: border-box;
     font-weight: normal;
     min-width: 76px;
     padding-left: 0.75em;
 }
-
 .schedule-widget-day:nth-child(2n) {
     background: #f1f1f1 none repeat scroll 0 0;
     float: left;
 }
-
-
 .activity {
     clear: both;
 }
@@ -1011,6 +1003,257 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     right: 7%;
 }
 /*  Fin document */
+/*   Page je suis   */
+.section-je-suis #form-widgets-text > div {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+}
+.section-je-suis .je-suis-texte{
+    background: #fff;
+    padding: 3%;
+}
+.section-je-suis .je-suis-image img {
+    max-width: 100%;
+}
+.section-je-suis #visual-portal-wrapper #accueil .a-lagenda,
+.section-je-suis #visual-portal-wrapper #accueil .publications {
+    background: #f3f3f3;
+    clear: none;
+    float: left;
+    width: 50%;
+    position: relative;
+    margin: 0;
+}
+.section-je-suis #accueil .bloc-collection,
+.section-je-suis #accueil .bloc-document,
+.section-je-suis #accueil .bloc-collection-slider {
+    margin: 0 0 5.3%;
+}
+.section-je-suis .a-lagenda  .results::before,
+.section-je-suis .publications .results::before{
+    background: #f3f3f3 none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 96%;
+    position: absolute;
+    right: 0;
+    top:4%;
+    width: 300%;
+}
+.section-je-suis .a-lagenda .results::after,
+.section-je-suis .publications .results::after{
+    background: #f3f3f3 none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 96%;
+    left: 100%;
+    top:4%;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+.section-je-suis .a-lagenda .results,
+.section-je-suis .publications .results{
+    margin: auto;
+    padding: 1em 0;
+    position: relative;
+}
+.section-je-suis .a-lagenda .standard-results,
+.section-je-suis .publications .standard-results {
+    margin-bottom: 50px;
+}
+.section-je-suis .a-lagenda .bloc-item,
+.section-je-suis .publications .bloc-item{
+    background-color: #fff;
+    border: medium none !important;
+    display: block;
+    margin: 0 !important;
+    max-height: none !important;
+    padding: 0 !important;
+    width: 50%;
+}
+.section-je-suis .a-lagenda .bloc-item::before,
+.section-je-suis .publications .bloc-item::before{
+    content: '';
+    display: block;
+    padding-top: 50%;
+}
+.section-je-suis .a-lagenda .bloc-item:first-child:before,
+.section-je-suis .publications .bloc-item:first-child:before{
+    padding-top: 200%;
+}
+.section-je-suis .a-lagenda .bloc-item .indexview-categories,
+.section-je-suis .publications .bloc-item .indexview-categories {
+    color: #999;
+    float: left;
+    font-size: 20px;
+    height: 100%;
+    margin-left: 50%;
+    padding-top: 10%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 50%;
+    z-index: 1;
+}
+.section-je-suis .a-lagenda:nth-child(3n+3) .indexview-categories,
+.section-je-suis .publications:nth-child(3n+3) .indexview-categories {
+    margin-left: 0;
+}
+.section-je-suis .a-lagenda .bloc-item .pageleadImage,
+.section-je-suis .publications .bloc-item .pageleadImage{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    z-index: 1;
+}
+.section-je-suis .a-lagenda .bloc-item:first-child .pageleadImage,
+.section-je-suis .publications .bloc-item:first-child .pageleadImage{
+    width: 100%;
+}
+.section-je-suis .a-lagenda .bloc-item:first-child h3,
+.section-je-suis .publications .bloc-item:first-child h3{
+    left: 2%;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 2%;
+    top: 70%;
+    width: 45%;
+    z-index: 4;
+}
+.section-je-suis .a-lagenda .bloc-item h3,
+.section-je-suis .publications .bloc-item h3{
+    color: #000e2d;
+    display: block;
+    font-size: 18px;
+    margin-left: 50%;
+    margin-top: 20%;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    width: 50%;
+}
+.section-je-suis .a-lagenda .bloc-item .documentByLine,
+.section-je-suis .publications .bloc-item .documentByLine{
+    color: grey;
+    display: block;
+    font-family: arial;
+    font-size: 14px;
+    height: 100%;
+    margin-left: 50%;
+    margin-top: 30%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 50%;
+}
+.section-je-suis .a-lagenda .bloc-item:first-child .documentByLine,
+.section-je-suis .publications .bloc-item:first-child .documentByLine{
+    float: left;
+    margin-left: 4.5%;
+    padding-top: 50%;
+    position: absolute;
+    text-align: left;
+    text-transform: uppercase;
+    z-index: 4;
+}
+.section-je-suis .a-lagenda .titre-rss,
+.section-je-suis .publications .titre-rss{
+    background: #fff;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    width: 54%;
+    z-index: 4;
+}
+.section-je-suis .a-lagenda .titre-rss a,
+.section-je-suis .publications .titre-rss a{
+    float: none;
+}
+.section-je-suis .a-lagenda h2,
+.section-je-suis .publications h2{
+    color: #c6c6c6;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 25% 0 0 7%;
+}
+.section-je-suis .a-lagenda .bloc-rss,
+.section-je-suis .publications .bloc-rss{
+    display: none;
+}
+
+.section-je-suis .a-lagenda .voir-tout::after,
+.section-je-suis .publications .voir-tout::after {
+    border-bottom: 3px solid;
+    content: "";
+    display: block;
+    height: 5px;
+}
+.section-je-suis #content .a-lagenda .voir-tout,
+.section-je-suis #content .publications .voir-tout {
+    color: #061a39;
+    display: block;
+    font-weight: bold;
+    position: absolute;
+    left:4%;
+    top:85%;
+    width: 37%;
+    z-index: 4;
+}
+.section-je-suis .vos-demarches{
+    background: #0E213F;
+    float: left;
+    clear: none;
+    width: 50%;
+    padding: 4%;
+    box-sizing: border-box;
+    vertical-align: top;
+    min-height: 400px;
+}
+.section-je-suis .vos-demarches .results,
+.section-je-suis .ladministration-a-votre-service .results{
+    padding-top: 2%;
+}
+.section-je-suis .vos-demarches .bloc-item,
+.section-je-suis .ladministration-a-votre-service .bloc-item{
+    width: 100%;
+}
+.section-je-suis .vos-demarches .titre-rss,
+.section-je-suis .ladministration-a-votre-service .titre-rss{
+    background-color: transparent;
+}
+.section-je-suis .vos-demarches .titre-rss h2,
+.section-je-suis .vos-demarches h3,
+.section-je-suis .ladministration-a-votre-service .titre-rss h2,
+.section-je-suis .ladministration-a-votre-service h3{
+    color: #fff;
+}
+.section-je-suis .vos-demarches .bloc-item h3::before,
+.section-je-suis .ladministration-a-votre-service .bloc-item h3::before{
+    content: "\00203A";
+    font-size: 175%;
+    padding-right: 10px;
+}
+.section-je-suis .vos-demarches .bloc-rss,
+.section-je-suis .ladministration-a-votre-service .bloc-rss{
+    display: none;
+}
+.section-je-suis .ladministration-a-votre-service{
+    background: #3548B1;
+    float: left;
+    width: 25%;
+    padding: 4%;
+    box-sizing: border-box;
+    clear: none;
+    min-height: 400px;
+}
 /*   FOOTER   */
 #portal-footer-wrapper .cell {
     background: #022241 url("footer-map.jpg") no-repeat scroll right 0;

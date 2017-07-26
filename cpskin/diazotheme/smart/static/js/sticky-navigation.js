@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var el_html = d.documentElement,
 		el_body = d.getElementsByTagName('body')[0],
 		header = d.getElementById('top-navigation-inner'),
-		header_miniSite = d.getElementById('container-minisite-globalnav'),
+		header_miniSite = d.getElementById('minisite-navigation-inner'),
 		lastScroll = w.pageYOffset || el_body.scrollTop;
 		MinilastScroll = w.pageYOffset || el_body.scrollTop;
 	
@@ -66,7 +66,6 @@ $(document).ready(function(){
           miniSiteMenuIsStuck( d.getElementById('header_miniSite'), wScrollTop, MinilastScroll );
           MinilastScroll = wScrollTop;
       }
-	
 			
 		};
 		
