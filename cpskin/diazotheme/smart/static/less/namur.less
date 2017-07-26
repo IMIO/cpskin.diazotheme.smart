@@ -289,9 +289,14 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 #formfield-form-widgets-date_adoption > span,
 #formfield-form-widgets-date_publication_historique > span,
 #formfield-form-widgets-date_publication > span,
-#formfield-form-widgets-date_echeance > span{
-    background: rgba(0, 0, 0, 0) url("date.jpg") no-repeat scroll left center;
+#formfield-form-widgets-date_echeance > span,
+.event-date > span,
+.event-dates > span{
+    background-image: url("date.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
     padding-left: 1.5em;
+    background-size: 12px;
 }
 
 #formfield-form-widgets-date_adoption_historique label,
@@ -299,7 +304,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 #formfield-form-widgets-date_publication_historique label,
 #formfield-form-widgets-date_publication label,
 #formfield-form-widgets-date_echeance label{
-    color: #c5cae8;
+    color: #8bb3ee;
 }
 
 
@@ -312,12 +317,22 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     text-transform: uppercase;
 }
 
-#formfield-form-widgets-date_adoption_historique.empty,
-#formfield-form-widgets-date_adoption.empty,
-#formfield-form-widgets-date_publication_historique.empty,
-#formfield-form-widgets-date_publication.empty,
-#formfield-form-widgets-date_echeance.empty {
-    display:none;
+#formfield-form-widgets-date_adoption_historique.empty > span,
+#formfield-form-widgets-date_adoption.empty > span,
+#formfield-form-widgets-date_publication_historique.empty > span,
+#formfield-form-widgets-date_publication.empty > span,
+#formfield-form-widgets-date_echeance.empty > span {
+    background:none;
+}
+
+#formfield-form-widgets-date_adoption_historique.empty:before,
+#formfield-form-widgets-date_adoption.empty:before,
+#formfield-form-widgets-date_publication_historique.empty:before,
+#formfield-form-widgets-date_publication.empty:before,
+#formfield-form-widgets-date_echeance.empty:before {
+    bottom: 0em;
+    content: "--";
+    position: absolute;
 }
 
 #faceted-top-column::before{
@@ -344,7 +359,8 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 }
 
 .portaltype-reglement #content,
-.template-facetednavigation_view #content{
+.template-facetednavigation_view #content,
+.portaltype-event #content{
     margin: 0;
 }
 
@@ -464,6 +480,116 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     padding-right: 1em;
 }
 
+
+#content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li input:checked + label {
+    background: white none repeat scroll 0 0;
+    color: black;
+    padding-bottom: 0.4em;
+    padding-left: 1em;
+    text-shadow: 0 0 0 transparent;
+}
+#content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li label {
+    display: inline-block;
+    height: 18px;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    text-shadow: 2px 1px 3px #3548b1;
+    z-index: 1;
+}
+#content .section-affichage .widget-fieldset ul li label {
+    color: #ffffff;
+}
+#content #top-area .widget-fieldset legend, #content .section-affichage .widget-fieldset ul li label, #content .faceted-criteria a {
+    font-size: 100%;
+    font-weight: bold;
+}
+#content label {
+}
+.section-affichage .widget-fieldset ul li label {
+    color: #545454;
+    font-size: 17px;
+    text-transform: none;
+}
+.section-affichage .widget-fieldset ul li label {
+    padding: 0.4em 1em 0 2em;
+}
+.section-affichage .widget-fieldset ul li label {
+    color: #545454;
+    font-size: 17px;
+    text-transform: none;
+}
+.section-affichage .widget-fieldset ul li label {
+    padding: 0.4em 1em 0 2em;
+}
+.widget-fieldset ul li label {
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    padding: 0.3em 1em 0 2.2em;
+    text-transform: uppercase;
+}
+.widget-fieldset ul li label {
+    font-weight: normal;
+    padding-left: 0.5em;
+}
+label {
+    font-weight: bold;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+#faceted-form li {
+    line-height: 1em;
+}
+#content li, dl.portlet li, .portletStaticText li {
+    line-height: 1.5em;
+}
+#content ul, .portletStaticText ul {
+    list-style-type: disc;
+}
+.widget-fieldset ul {
+    list-style: outside none none;
+}
+* ul, ol {
+    list-style: outside none none;
+}
+fieldset, .editionComment {
+    line-height: 1.5em;
+}
+#top-area {
+    color: white;
+}
+#content-core {
+    color: #333333;
+}
+#content {
+    font-size: 100%;
+}
+#content {
+    font-size: 80%;
+    line-height: 1.5em;
+}
+body, h1, h2, h3, h4, h5, h6, #portal-globalnav li a {
+    font-family: Open Sans;
+}
+body {
+    color: Black;
+    font: 100% Arial,FreeSans,sans-serif;
+}
+
+#portal-columns #content .section-affichage fieldset.widget-fieldset ul {
+    margin-top: 0;
+}
+
+.faceted-widget {
+    margin-bottom: 1em;
+}
+
+.faceted-widget.faceted-taxonomy_select2-widget.section-par-categories {
+    clear: both;
+}
+
 .section-citizen-dashboard #content .documentByLine {
     display: none;
 }
@@ -512,18 +638,61 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     color: #1a2548;
 }
 
-.faceted-widget.faceted-alphabetic-widget {
+.faceted-top-column .faceted-widget.faceted-alphabetic-widget {
     clear: both;
     max-width: 100%;
 }
 
 #content .faceted-widget.faceted-alphabetic-widget legend{
-    color: #5084d5;
+    color: #8bb3ee;
     padding-left: 0;
 }
 
-.faceted_letter {
+.faceted-top-column .faceted_letter {
     background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.faceted-top-column .faceted_letter_selected, .faceted-top-column .faceted_letter:hover {
+    background-color: transparent !important;
+    border: 1px solid #f5c5f2;
+    color: #f5c5f2;
+}
+
+
+#portal-column-content #content #top-area .widget-fieldset.faceted-criteria dl {
+    border: 1px solid lightgray;
+    margin-right: 0.5em;
+    margin-top: -0.5em;
+    padding: 0.25em 0.25em 0 0.5em !important;
+}
+
+
+#portal-column-content #content #top-area .widget-fieldset.faceted-criteria .faceted-criteria-reset {
+    border: 1px solid lightgray;
+    margin-right: 0.5em;
+    margin-top: -0.5em;
+    padding: 0.25em 0.25em 0.5em 0.5em;
+}
+
+
+.faceted-text {
+    background: #3548b1 none repeat scroll 0 0;
+    color: white;
+    font-style: italic;
+    margin-bottom: -1em;
+    padding: 1em 0 1em 2em;
+    position: relative;
+}
+
+.faceted-text::before {
+    background: #3548b1 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 200%;
 }
 
 /* Fin vue faceted  */
@@ -668,7 +837,7 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
 }
 
 #top-area {
-    background: #0047b1 none repeat scroll 0 0;
+    background: #3548b1 none repeat scroll 0 0;
     color: white;
     padding: 2em 0 2em 2em;
     position: relative;
@@ -693,7 +862,7 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
 
 
 #top-area::before {
-    background: #0047b1 none repeat scroll 0 0;
+    background: #3548b1 none repeat scroll 0 0;
     bottom: 0;
     content: "";
     position: absolute;
@@ -717,7 +886,7 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
 }
 
 #top-area::before {
-    background: #0047b1 none repeat scroll 0 0;
+    background: #3548b1 none repeat scroll 0 0;
     bottom: 0;
     content: "";
     position: absolute;
@@ -799,9 +968,6 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
 /*  Fiche annuaire  */
 
 dl.portalMessage.info {
-    margin-right: -4em;
-    margin-left: -2em;
-    margin-top: 0em;
     margin-bottom: 0 !important;
     border: 0px solid transparent;
     background: #3d8acd;
@@ -857,7 +1023,7 @@ dl.portalMessage dt {
  }
 
 #organization > .contact-details, #person > .contact-details {
-    background: #0047b1 none repeat scroll 0 0;
+    background: #3548b1 none repeat scroll 0 0;
     color: white;
     float: left;
     padding: 1em;
@@ -935,9 +1101,9 @@ dl.portalMessage dt {
 
 
 .faceted-form #top-area .select2-container .select2-choice {
-    background-color: #0047b1;
+    background-color: #3548b1;
     background-image: none;
-    border-color: #3970c1;
+    border-color: #8bb3ee;
     border-radius: 0;
     border-style: solid;
     border-width: 0 0 1px;
@@ -966,7 +1132,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 
 #visual-portal-wrapper #portal-columns #content .faceted-text-widget.section-recherche .widget-fieldset input[type="text"],
 #visual-portal-wrapper #portal-columns #content .faceted-text-widget.section-search .widget-fieldset input[type="text"]{
-    background: #0047b1 none repeat scroll 0 0;
+    background: #3548b1 none repeat scroll 0 0;
     border: 1px solid white !important;
     color: white;
     height: 1.75em;
@@ -1001,13 +1167,22 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     margin-left: 1em;
 }
 
+#content .widget-fieldset legend{
+    color: #8bb3ee;
+}
+
 #content .faceted-criteria dd {
     font-weight: normal;
     margin-left: 0 !important;
 }
 
+
+.section-agenda .faceted-widget.faceted-text-widget.section-search {
+    margin-top: 2em;
+}
+
 .faceted-widget.faceted-layout-widget.section-affichage {
-    bottom: -1.35em;
+    bottom: -2.35em;
     position: absolute;
     right: 20%;
     z-index: 1;
@@ -1028,7 +1203,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     padding-top: 0.5em;
     padding-left: 1em;
     z-index: 1;
-    text-shadow: 2px 1px 3px #0047b1;
+    text-shadow: 2px 1px 3px #3548b1;
 }
 
 #content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li input:checked + label {
