@@ -1,5 +1,28 @@
-0.6 (unreleased)
-----------------
+0.5.4 (unreleased)
+------------------
+
+- Nothing changed yet.
+
+
+0.5.3 (2017-07-24)
+------------------
+
+- Adapt homepage.
+  [osnickers]
+
+
+0.5.2 (2017-07-17)
+------------------
+
+- Update css.
+  [osnickers]
+
+
+0.5.1 (2017-07-17)
+------------------
+
+- Change margin for slide #18057
+  [Aurore]
 
 - Remove unused skin.
   [bsuttor]
