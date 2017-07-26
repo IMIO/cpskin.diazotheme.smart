@@ -455,9 +455,9 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     background: #e5ebf7 none repeat scroll 0 0;
     clear: left;
     margin-bottom: -2em;
-    padding-bottom: 0.75em;
+    padding-bottom: 1.5em;
     padding-left: 1em;
-    padding-top: 2em;
+    padding-top: 2.75em;
     position: relative;
     margin-top: 1em;
     width: 100%;
@@ -469,9 +469,9 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     background: #e5ebf7 none repeat scroll 0 0;
     clear: left;
     margin-bottom: -2em;
-    padding-bottom: 0.75em;
+    padding-bottom: 1.5em;
     padding-left: 1em;
-    padding-top: 2em;
+    padding-top: 2.75em;
     position: relative;
     margin-top: 1em;
     width: 100%;
@@ -907,7 +907,20 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
     position: absolute;
     top: -4.5em;
 }
+.organization-email > a {
+    color: #3548b1 !important;
+}
 
+.contact-entry > a::after {
+    border: 1px solid #3548b1;
+    border-radius: 50%;
+    bottom: 1.25em;
+    color: #3548b1;
+    content: "+";
+    padding: 0 0.5em 0.1em;
+    position: absolute;
+    right: 1.5em;
+}
 
 .template-facetednavigation_view .contact-photo, .template-facetednavigation_view .organization-logo{
     display:none;
@@ -948,7 +961,7 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
     border-style: solid;
     border-width: 0 2px 2px;
     box-shadow: 0 2px 2px #f7f7f7;
-    height: 18em;
+    height: 20em;
     padding-left: 1.75em;
     padding-top: 5.5em;
     position: relative;
@@ -1203,7 +1216,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     padding-top: 0.5em;
     padding-left: 1em;
     z-index: 1;
-    text-shadow: 2px 1px 3px #3548b1;
+    text-shadow: 1px 1px 3px #3548b1;
 }
 
 #content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li input:checked + label {

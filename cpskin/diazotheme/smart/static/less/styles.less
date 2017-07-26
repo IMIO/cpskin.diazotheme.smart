@@ -534,6 +534,12 @@ li.bloc-item a h3::after{
 #content .homepage-service li a {
     color: #fff;
 }
+
+#content .homepage-service li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 /*   SLIDER   */
 /*   element en evidence   */
 .element-en-evidence {
@@ -1148,14 +1154,26 @@ li.bloc-item a h3::after{
 }
 
 /* Vue détails événement  */
+.event p {
+    margin-right: 3em;
+}
+
+.timezone {
+    display: none;
+}
 
 .event.summary.details {
     background: #3548b1 none repeat scroll 0 0;
     color: white;
     margin-left: 0 !important;
     margin-bottom: 2em !important;
-    padding: 3em 0;
+    padding: 2em 0;
     position: relative;
+    width:100%;
+}
+
+.event.summary.details, .event.summary.details ul {
+    margin-left: 0 !important;
 }
 
 .event.summary.details::before {
@@ -1168,16 +1186,21 @@ li.bloc-item a h3::after{
     width: 100%;
 }
 
-.event.summary.details li {
+.event.summary.details > li {
     float: left;
     list-style-type: none;
     padding-right: 4%;
     width: 29%;
 }
 
+.event.summary.details li {
+    list-style-type: none;
+}
+
 .event.summary.details li > strong {
     display: block;
     color:#8bb3ee;
+    margin-top: 1em;
 }
 
 .event-dates > span {
