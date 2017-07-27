@@ -1,8 +1,8 @@
-0.5.5 (unreleased)
+0.5.5 (2017-07-27)
 ------------------
 
-- Nothing changed yet.
-
+- Change css to mini site and homepage.
+  [mgennart]
 
 0.5.4 (2017-07-26)
 ------------------

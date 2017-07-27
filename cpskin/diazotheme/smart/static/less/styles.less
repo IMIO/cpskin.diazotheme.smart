@@ -418,7 +418,7 @@ div#top-slogan{
     font-size: 2vw;
     font-weight: bold;
     padding-left: 8%;
-    margin-top: 11%;
+    margin-top: 14%;
     height:2em;
     line-height: 1.1em;
 }
@@ -516,6 +516,9 @@ li.bloc-item a h3::after{
 .main-homepage  #top-logo {
     margin: 0;
 }
+#portal-columns #accueil .a-votre-service {
+    margin-bottom: 9%;
+}
 .a-votre-service {
     background: #0e213f none repeat scroll 0 0;
     box-sizing: border-box;
@@ -538,7 +541,10 @@ li.bloc-item a h3::after{
     color: white;
     text-decoration: underline;
 }
-
+.media-homepage iframe {
+    height: 400px;
+    width: 600px;
+}
 /*   SLIDER   */
 /*   element en evidence   */
 .element-en-evidence {
@@ -586,13 +592,11 @@ li.bloc-item a h3::after{
     opacity: 0.5!important;
 }
 /*   unique   */
-#accueil .bloc-collection-slider.slider.slider-unique-titre {
-    margin-bottom: 5%;
-}
 .slider-unique-titre #slider-slider .slides {
     margin-top: 0 !important;
 }
 #accueil .slider-unique-titre {
+    margin-bottom:5%;
     padding-bottom: 12%;
 }
 
@@ -632,7 +636,9 @@ li.bloc-item a h3::after{
     margin-top: 100px;
     text-align: right;
 }
-
+#visual-portal-wrapper #content #flex .flex-direction-nav a {
+    color: transparent !important;
+}
 /*   SLIDE MULTIPLE  */
 #accueil #flex.slider-multiple .slider {
     display: none;
@@ -1131,6 +1137,10 @@ li.bloc-item a h3::after{
 #accueil .agenda .voir-tin::after{
     display: none;
 }
+.agenda .voir-tout {
+    right: 50%;
+    top: 5%;
+}
 /*   SLIDER VIDEO   */
 .medialink .pagecaption > div {
     box-sizing: border-box;
@@ -1250,11 +1260,11 @@ li.bloc-item a h3::after{
 }
 
 #portal-footer-wrapper .cell {
+    background: #022241 url("./footer-map.jpg") no-repeat scroll right -80px;
     min-height: 25em;
 }
 
 #portal-footer-wrapper {
-    background: #0d2241 url("./footer-map.jpg") no-repeat scroll right 0;
     float: left;
     width: 100%;
 }
@@ -1349,6 +1359,13 @@ li.bloc-item a h3::after{
     top:75px;
 }
 /*   NAVIGATION MINI SITE  */
+[id="minisite-logo-nav"] {
+    width: 100%;
+}
+[id="minisite-globalnav"]{
+    display: table-cell;
+    width: 100%;
+}
 .container-minisite-globalnav-logo{
     background: #ffffff;
     position: relative;
