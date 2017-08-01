@@ -28,6 +28,7 @@ div#portal-column-content {
 .userrole-authenticated div#portal-column-content .documentEditable {
     background: #ffffff;
     border-radius: 8px;
+    min-height: 34em;
 }
 
 .userrole-authenticated.main-homepage div#portal-column-content .documentEditable {
@@ -46,7 +47,10 @@ dt.actionMenuHeader a::after {
 #social-viewlet {
     margin: 0 0.75em;
 }
-
+.sc_social_bookmarks_wrapper {
+    border: 0 solid #ccc;
+    margin-top: 1em;
+}
 #portal-personaltools a {
     font-size: 120%;
 }
@@ -347,6 +351,9 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     padding-top: 1em;
     position: relative;
     z-index: 0 !important;
+}
+.userrole-authenticated div#portal-column-content .documentEditable {
+    min-height: 34em;
 }
 #content-core {
     box-sizing: border-box;
@@ -909,7 +916,13 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
 .organization-title::before {
     content: url("../images/organization-picto.jpg");
     position: absolute;
-    top: -4.5em;
+    top: -6em;
+}
+.faceted-widget.faceted-layout-widget.section-affichage label[title="Vue annuaire"]::before {
+    content: "\e836";
+    font-family: fontello;
+    font-size: 14px;
+    margin-right: 1em;
 }
 .organization-email > a {
     color: #3548b1 !important;
@@ -1240,6 +1253,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 /*  Document */
 #aboveContentContact {
     float: left;
+    margin: -0.5em 0 0 0.26em;
     width: 100%;
 }
 
@@ -1248,6 +1262,20 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     float: left;
     padding: 0.5em 1em 1.5em;
     width: 40%;
+}
+#content li.related-contact {
+    margin: 0;
+}
+.coordinates {
+    background: #fdf6fd none repeat scroll 0 0;
+    border-left: 5px solid #f1d3ee;
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 1em;
+    margin-left: -1.8%;
+    padding: 2em;
+    position: relative;
+    width: 101.8%;
 }
 
 #phone > a {
@@ -1348,6 +1376,14 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 /*  Fin document */
 /*   Page je suis   */
+.section-je-suis #form-widgets-text>div {
+    width: 53%;
+    margin-right: -11em;
+    margin-top: -1.7em;
+    padding-left: 7em;
+    padding-top: 7em;
+    padding-right: 7em;
+}
 .section-je-suis #portal-columns {
     background: white none repeat scroll 0 0;
 }
@@ -1358,11 +1394,20 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     width: 49%;
 }
 .section-je-suis .je-suis-texte{
-    background: #fff;
-    padding: 3%;
+    z-index: 1;
+    position: relative;
+    min-height:620px;
+}
+.je-suis-image {
+    z-index: -1;
 }
 .section-je-suis .je-suis-image img {
     max-width: 100%;
+}
+.userrole-anonymous.section-je-suis .je-suis-image img {
+    right: -6em;
+    position: absolute;
+    top: -9em;
 }
 .section-je-suis #visual-portal-wrapper #accueil .a-lagenda,
 .section-je-suis #visual-portal-wrapper #accueil .publications {
@@ -1492,7 +1537,6 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     display: block;
     font-family: arial;
     font-size: 14px;
-    height: 100%;
     margin-left: 50%;
     margin-top: 30%;
     position: absolute;
@@ -1554,7 +1598,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     width: 37%;
     z-index: 4;
 }
-.section-je-suis .vos-demarches{
+.section-je-suis .index-1{
     background: #0E213F;
     float: left;
     clear: none;
@@ -1564,38 +1608,38 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     vertical-align: top;
     min-height: 400px;
 }
-.section-je-suis .vos-demarches .results,
-.section-je-suis .ladministration-a-votre-service .results{
+.section-je-suis .index-1 .results,
+.section-je-suis .index-2 .results{
     padding-top: 2%;
 }
-.section-je-suis .vos-demarches .bloc-item,
-.section-je-suis .ladministration-a-votre-service .bloc-item{
+.section-je-suis .index-1 .bloc-item,
+.section-je-suis .index-2 .bloc-item{
     width: 100%;
 }
-.section-je-suis .vos-demarches .titre-rss,
-.section-je-suis .ladministration-a-votre-service .titre-rss{
+.section-je-suis .index-1 .titre-rss,
+.section-je-suis .index-2 .titre-rss{
     background-color: transparent;
 }
-.section-je-suis .vos-demarches .titre-rss h2,
-.section-je-suis .vos-demarches h3,
-.section-je-suis .ladministration-a-votre-service .titre-rss h2,
-.section-je-suis .ladministration-a-votre-service h3{
+.section-je-suis .index-1 .titre-rss h2,
+.section-je-suis .index-1 h3,
+.section-je-suis .index-2 .titre-rss h2,
+.section-je-suis .index-2 h3{
     color: #fff;
 }
-.section-je-suis .vos-demarches .bloc-item h3::before,
-.section-je-suis .ladministration-a-votre-service .bloc-item h3::before{
+.section-je-suis .index-1 .bloc-item h3::before,
+.section-je-suis .index-2 .bloc-item h3::before{
     content: "\00203A";
     font-size: 175%;
     padding-right: 10px;
 }
-.section-je-suis .vos-demarches .bloc-rss,
-.section-je-suis .ladministration-a-votre-service .bloc-rss{
+.section-je-suis .index-1 .bloc-rss,
+.section-je-suis .index-2 .bloc-rss{
     display: none;
 }
-.section-je-suis .ladministration-a-votre-service{
+.section-je-suis .index-2{
     background: #3548B1;
     float: left;
-    width: 25%;
+    width: 27%;
     padding: 4%;
     box-sizing: border-box;
     clear: none;

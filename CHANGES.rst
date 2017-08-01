@@ -1,7 +1,8 @@
-0.5.6 (unreleased)
+0.5.6 (2017-08-01)
 ------------------
 
-- Nothing changed yet.
+- Change css for related contact.
+  [mgennart]
 
 
 0.5.5 (2017-07-27)
