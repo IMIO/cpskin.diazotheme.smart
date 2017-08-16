@@ -1,7 +1,8 @@
-0.5.7 (unreleased)
+0.5.7 (2017-08-16)
 ------------------
 
-- Nothing changed yet.
+- Responsive
+  [mgennart]
 
 
 0.5.6 (2017-08-01)
