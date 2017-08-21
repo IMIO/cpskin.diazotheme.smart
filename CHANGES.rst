@@ -1,7 +1,34 @@
-0.5.4 (unreleased)
+0.5.8 (unreleased)
 ------------------
 
 - Nothing changed yet.
+
+
+0.5.7 (2017-08-16)
+------------------
+
+- Responsive
+  [mgennart]
+
+
+0.5.6 (2017-08-01)
+------------------
+
+- Change css for related contact.
+  [mgennart]
+
+
+0.5.5 (2017-07-27)
+------------------
+
+- Change css to mini site and homepage.
+  [mgennart]
+
+0.5.4 (2017-07-26)
+------------------
+
+- Add css for mini site.
+  [mgennart]
 
 
 0.5.3 (2017-07-24)
