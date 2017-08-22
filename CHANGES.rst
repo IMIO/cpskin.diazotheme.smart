@@ -1,7 +1,8 @@
-0.5.8 (unreleased)
+0.5.8 (2017-08-22)
 ------------------
 
-- Nothing changed yet.
+- Change rules for navigation in homepage.
+  [mgennart]
 
 
 0.5.7 (2017-08-16)
