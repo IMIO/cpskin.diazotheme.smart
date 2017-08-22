@@ -3,21 +3,6 @@
     width: 600px;
 }
 
-#formfield-form-widgets-date_adoption_historique::after,
-#formfield-form-widgets-date_adoption::after,
-#formfield-form-widgets-date_publication_historique::after,
-#formfield-form-widgets-date_publication::after,
-#formfield-form-widgets-date_echeance::after {
-    background: #3548b1 none repeat scroll 0 0;
-    content: "";
-    height: 6.75em;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 400%;
-    z-index: -1;
-}
-
 /*  navigation  */
 
 #portal-column-one {
@@ -52,6 +37,11 @@ dt.actionMenuHeader a::after {
 #social-viewlet {
     margin: 0 0.75em;
 }
+
+#social-viewlet {
+    display: none;
+}
+
 .sc_social_bookmarks_wrapper {
     border: 0 solid #ccc;
     margin-top: 1em;
@@ -66,6 +56,19 @@ dt.actionMenuHeader a::after {
 
 .main-homepage #portal-top{
     margin-bottom: -4em;
+}
+
+.template-search.main-homepage #portal-top {
+    margin-bottom: -11em;
+}
+
+.template-search.main-homepage #portal-breadcrumbs{
+    display: none;
+}
+
+#searchResultsSort {
+    float: right;
+    margin-right: 2em;
 }
 
 #portal-top a,
@@ -245,7 +248,7 @@ dl.portlet dt, .portletWrapper dl.portlet dt a{
 dl.portlet ul.navTree .navTreeCurrentItem,
 .navTreeItemInPath,
 #portal-column-one .portletNavigationTree dd .cnavOpen .contenttype-folder {
-    color: #000000 !important;
+    color: #000000;
 }
 
 dl.portlet ul.navTree .navTreeCurrentItem {
@@ -292,6 +295,22 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     padding: 2em 1em 0 2em;
     position: relative;
     width: 33.333%;
+    z-index: 0;
+}
+
+#formfield-form-widgets-date_adoption_historique::after,
+#formfield-form-widgets-date_adoption::after,
+#formfield-form-widgets-date_publication_historique::after,
+#formfield-form-widgets-date_publication::after,
+#formfield-form-widgets-date_echeance::after {
+    background: #3548b1 none repeat scroll 0 0;
+    content: "";
+    height: 7em;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 300%;
+    z-index: -1;
 }
 
 #formfield-form-widgets-date_adoption_historique > span,
@@ -339,8 +358,9 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 #formfield-form-widgets-date_publication_historique.empty:before,
 #formfield-form-widgets-date_publication.empty:before,
 #formfield-form-widgets-date_echeance.empty:before {
-    bottom: 0em;
-    content: "--";
+    bottom: 0;
+    content: "-- / -- / ----";
+    left: 4em;
     position: absolute;
 }
 
@@ -1271,16 +1291,27 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 #content li.related-contact {
     margin: 0;
 }
+
 .coordinates {
     background: #fdf6fd none repeat scroll 0 0;
-    border-left: 5px solid #f1d3ee;
+    border-left: 0.5em solid #f1d3ee;
     box-sizing: border-box;
     float: left;
     margin-bottom: 1em;
-    margin-left: -1.8%;
+    margin-left: -1.8em;
     padding: 2em;
     position: relative;
-    width: 101.8%;
+    width: calc(100%);
+}
+
+.coordinates::after {
+    background: #fdf6fd none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    right: -1.8em;
+    top: 0;
+    width: 1.8em;
 }
 
 #phone > a {
@@ -1402,6 +1433,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     z-index: 1;
     position: relative;
     min-height:620px;
+    background: #fff;
 }
 .je-suis-image {
     z-index: -1;
@@ -1673,6 +1705,11 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .footer-bloc > p,
 #footer-sitemap .footer-bloc a{
     color: #93b2de;
+}
+
+.footer-bloc li, .footer-bloc p {
+    display: block;
+    padding: 0.4em 0 0;
 }
 
 .bloc-adresse, .bloc-liens {
