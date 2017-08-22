@@ -131,6 +131,10 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
     font-size: 100%;
     padding:0;
 }
+
+dl.actionMenu.deactivated dd {
+    display: none;
+}
 /*   search   */
 .LSBox #searchGadget{
     width: 21em;
@@ -143,6 +147,7 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
     float: left;
     visibility: hidden;
     height:1em;
+    margin-left: 1em;
 }
 .btn-search:before{
     content: '\e823';
@@ -163,6 +168,13 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
     right: 0;
     top: 0;
 }
+
+#search-results .contenttype-link,
+#search-results .contenttype-link + dd,
+.LSRow .contenttype-link {
+    display: none;
+}
+
 /*   messageviewlet   */
 #visual-portal-wrapper #messagesviewlet{
     position: relative;
@@ -265,7 +277,7 @@ dt.actionMenuHeader{
 }
 .portal-globalnav-cpskinmenu .selected a,
 .portal-globalnav-cpskinmenu-tabs .selected a{
-    border-bottom: 2px dotted #fff;
+    border-bottom: 0px dotted #fff;
 }
 .portal-globalnav-cpskinmenu a{
     position: relative;
@@ -353,18 +365,33 @@ li.sfHover > span > a{
     padding-right: 2%;
 }
 .sf-menu .direct_access li a {
+    margin-bottom: 0em !important;
+    padding-bottom: 0.75em !important;
     padding-left: 1.2em !important;
-    padding-top: 0 !important;
+    padding-top: 0.25em !important;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .sf-menu .direct_access li a::before{
+    content:'\e83f';
+    font-size: 75%;
+    top: 0.75em;
     border-bottom: transparent;
     display: inline;
 }
-.sf-menu .direct_access li a:hover::before{
-    border-bottom: 2px solid #fff;
-}
+
 .sf-menu .direct_access li a::after{
     content: "";
+    bottom: 0;
+    left: 90%;
+    position: absolute;
+    top: 0;
+    width: 10%;
+    background: transparent; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, transparent , #526272); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, transparent, #526272); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, transparent, #526272); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, transparent , #526272); /* Standard syntax */
 }
 
 /*   STICKY NAVIGATION   */
@@ -475,7 +502,11 @@ div#top-slogan{
 #accueil .bloc-collection,
 #accueil .bloc-document,
 #accueil .bloc-collection-slider{
-    margin: 0 0 13.3%;
+    margin: 0 0 12%;
+}
+#accueil .bloc-document{
+    padding: 2em;
+    background: rgba(255,255,255,0.7);
 }
 .template-folderview #portal-top {
     z-index: initial;
@@ -562,10 +593,11 @@ li.bloc-item a h3::after{
     color: #fff;
 }
 
-#content .homepage-service li a:hover {
-    color: white;
+#portal-columns #content .homepage-service li a:hover {
+    color: white !important;
     text-decoration: underline;
 }
+
 .media-homepage iframe {
     height: 400px;
     width: 600px;
@@ -622,7 +654,7 @@ li.bloc-item a h3::after{
 }
 #accueil .slider-unique-titre {
     margin-bottom:5%;
-    padding-bottom: 12%;
+    padding-bottom: 7%;
 }
 
 /* POUR PARALLAX */
@@ -817,6 +849,7 @@ li.bloc-item a h3::after{
     position: relative;
     width: 100%;
     z-index: 2;
+    top:0;
 }
 #accueil .element-en-evidence .pagecaption h3 {
     background: transparent none repeat scroll 0 0 !important;
@@ -1154,6 +1187,7 @@ li.bloc-item a h3::after{
     font-size: 2.5em;
     font-weight: bold;
     text-align: center;
+    background: rgba(255,255,255,0.7);
 }
 #accueil .agenda .bloc-rss{
     display: none;
