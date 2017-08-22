@@ -35,7 +35,7 @@ div#portal-column-content {
     background: transparent;
 }
 
-.nav-is-stuck .main-homepage#top-navigation {
+.nav-is-stuck .main-homepage.template-folderview #top-navigation {
     z-index:9;
 }
 
@@ -59,7 +59,7 @@ dt.actionMenuHeader a::after {
     margin-bottom: -12em;
 }
 
-.main-homepage #portal-top{
+.main-homepage.template-folderview #portal-top{
     margin-bottom: -4em;
 }
 
@@ -395,19 +395,19 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     z-index: -2;
 }
 
-.nav-is-stuck .main-homepage #top-navigation-inner{
+.nav-is-stuck .main-homepage.template-folderview #top-navigation-inner{
     padding-top:2em;
 }
 
-.main-homepage #top-navigation-inner{
+.main-homepage.template-folderview #top-navigation-inner{
     padding-top:0em;
 }
 
-.main-homepage #portal-columns::before {
+.main-homepage.template-folderview #portal-columns::before {
     display: none;
 }
 
-.main-homepage #top-banner img {
+.main-homepage.template-folderview #top-banner img {
     margin-left: -20%;
     max-width: 120%;
 }
@@ -1600,12 +1600,21 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 .section-je-suis .index-1{
     background: #0E213F;
-    float: left;
+    display: table-cell;
     clear: none;
     width: 50%;
     padding: 4%;
     box-sizing: border-box;
     vertical-align: top;
+    min-height: 400px;
+}
+.section-je-suis .index-2{
+    background: #3548B1;
+    display:table-cell;
+    width: 50%;
+    padding: 4%;
+    box-sizing: border-box;
+    clear: none;
     min-height: 400px;
 }
 .section-je-suis .index-1 .results,
@@ -1635,15 +1644,6 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .section-je-suis .index-1 .bloc-rss,
 .section-je-suis .index-2 .bloc-rss{
     display: none;
-}
-.section-je-suis .index-2{
-    background: #3548B1;
-    float: left;
-    width: 27%;
-    padding: 4%;
-    box-sizing: border-box;
-    clear: none;
-    min-height: 400px;
 }
 /*   FOOTER   */
 

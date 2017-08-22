@@ -5,9 +5,6 @@
     <rules if-not="$isinminisitemode">
       <replace css:content-children="#portal-header">
         <xsl:copy-of select="./*[@id='messagesviewlet']"/>
-        <div id="top-languages">
-          <xsl:copy-of select="//*[@id='portal-languageselector']" />
-        </div>
         <div id="top-logo-navigation-actions">
           <div id="top-logo-slogan">
             <div id="top-logo">
@@ -33,7 +30,7 @@
             <div id="top-navigation">
               <div id="top-navigation-inner">
                 <xsl:copy-of  select="./*[@id='portal-globalnav']"/>
-                <xsl:if test="not($is_homepage)">
+                <xsl:if test="not((contains(/html/body/@class, 'main-homepage')) and (contains(/html/body/@class, 'template-folderview')))">
                 <div id="top-actions">
                     <div id="top-actions-inner">
                       <div id="top-actions-wrapper">
@@ -42,6 +39,9 @@
                         <xsl:copy-of select="./*[@id='portal-personaltools-wrapper']" />
                         <xsl:copy-of select="//*[@id='portal-siteactions']" />
                         <xsl:apply-templates select="./*[@id='social-viewlet']" />
+                        <div id="top-languages">
+                          <xsl:apply-templates select="./*[@id='portal-languageselector']" />
+                        </div>
                         <div id="btn-search">
                           <a href="#"  class="btn-search">
                           </a>
@@ -64,27 +64,30 @@
                                                               and @id!='portal-globalnav')]"/>
               </div>
           </div>
-            <xsl:if test="$is_homepage">
+          <xsl:if test="((contains(/html/body/@class, 'main-homepage')) and (contains(/html/body/@class, 'template-folderview')))">
             <div id="top-actions">
-                <div id="top-actions-inner">
-                  <div id="top-actions-wrapper">
-                    <div id="top-actions-actions">
-                    <xsl:copy-of select="//*[@id='top-menu-actions']" />
-                    <xsl:copy-of select="./*[@id='portal-personaltools-wrapper']" />
-                    <xsl:copy-of select="//*[@id='portal-siteactions']" />
-                    <xsl:apply-templates select="./*[@id='social-viewlet']" />
-                    <div id="btn-search">
-                      <a href="#"  class="btn-search">
-                      </a>
-                    </div>
+              <div id="top-actions-inner">
+                <div id="top-actions-wrapper">
+                  <div id="top-actions-actions">
+                  <xsl:copy-of select="//*[@id='top-menu-actions']" />
+                  <xsl:copy-of select="./*[@id='portal-personaltools-wrapper']" />
+                  <xsl:copy-of select="//*[@id='portal-siteactions']" />
+                  <xsl:apply-templates select="./*[@id='social-viewlet']" />
+                  <div id="top-languages">
+                    <xsl:apply-templates select="./*[@id='portal-languageselector']" />
                   </div>
-                  <div class="visualClear"></div>
-                  <div id="hidden-search" style="display:none;">
-                      <xsl:copy-of select="./*[@id='portal-searchbox']"/>
-                  </div>
+                  <div id="btn-search">
+                    <a href="#"  class="btn-search">
+                    </a>
                   </div>
                 </div>
-            </div>
+                <div class="visualClear"></div>
+                <div id="hidden-search" style="display:none;">
+                    <xsl:copy-of select="./*[@id='portal-searchbox']"/>
+                </div>
+                </div>
+              </div>
+           </div>
           </xsl:if>
         </div>
         </div>

@@ -12,7 +12,7 @@ body.template-folderview #visual-portal-wrapper::after {
     width: 29%;
     z-index: -2;
 }
-body.main-homepage #visual-portal-wrapper{
+body.main-homepage.template-folderview #visual-portal-wrapper{
     position: relative;
 }
 
@@ -26,6 +26,7 @@ body.main-homepage #visual-portal-wrapper{
 #top-actions {
     background-color: transparent;
     display: inline-block;
+    vertical-align: middle;
 }
 #top-actions-inner li.LSRow a {
     color: #3b3b3b;
@@ -75,14 +76,14 @@ body.main-homepage #visual-portal-wrapper{
 .top-navigation-actions {
     width: 60%;
 }
-.main-homepage #top-logo-slogan {
+.main-homepage.template-folderview #top-logo-slogan {
     margin-left: 0;
     width: 100%;
 }
-.main-homepage .top-navigation-actions{
+.main-homepage.template-folderview .top-navigation-actions{
     width: 100%;
 }
-.main-homepage #top-logo-slogan #portal-breadcrumbs {
+.main-homepage.template-folderview #top-logo-slogan #portal-breadcrumbs {
     position: absolute;
     padding: 0;
     margin-left:0;
@@ -117,7 +118,19 @@ body.main-homepage #visual-portal-wrapper{
     background: #0b1940;
     border-radius: 5px;
 }
-
+/*   languages   */
+#top-languages {
+    float: left;
+    margin: 0 0.75em 0 0;
+}
+#portal-languageselector {
+    background: transparent ;
+    border-radius: 0;
+    display: inline;
+    float: none;
+    font-size: 100%;
+    padding:0;
+}
 /*   search   */
 .LSBox #searchGadget{
     width: 21em;
@@ -142,7 +155,7 @@ body.main-homepage #visual-portal-wrapper{
     width: 100%;
     position: relative;
 }
-.main-homepage #hidden-search #portal-searchbox{
+.main-homepage.template-folderview #hidden-search #portal-searchbox{
     margin-top:2%;
 }
 #portal-searchbox {
@@ -177,6 +190,7 @@ li#portaltab-index_html {
 }
 #navWrapper{
     display:inline-block;
+    vertical-align: middle;
 }
 #portal-globalnav,
 #portal-globalnav li a,
@@ -375,11 +389,11 @@ li.sfHover > span > a{
     margin: 0;
     padding-left: 32%;
 }
-.nav-is-stuck .main-homepage #top-navigation{
+.nav-is-stuck .main-homepage.template-folderview #top-navigation{
     margin: 0;
     padding-left: 29%;
 }
-.nav-is-stuck .main-homepage #top-actions{
+.nav-is-stuck .main-homepage.template-folderview #top-actions{
     position: relative;
     right: 0;
     top: 0;
@@ -388,28 +402,31 @@ li.sfHover > span > a{
     position: fixed;
     top: 0;
     z-index: 3;
-    padding-left:13%;
     height: 75px;
     overflow: hidden;
     margin:0;
+    padding-left:2%;
 }
 
-.nav-is-stuck .main-homepage #top-logo-slogan {
+.nav-is-stuck .main-homepage.template-folderview #top-logo-slogan {
     margin-left: 52%;
 }
 
-.nav-is-stuck .main-homepage #top-logo-inner,
+.nav-is-stuck .main-homepage.template-folderview #top-logo-inner,
 .nav-is-stuck #top-logo-inner{
     margin: 3%;
 }
 .nav-is-stuck #portal-logo{
     margin-top: 0;
 }
-.nav-is-stuck .main-homepage ul.navTreeLevel0{
+.nav-is-stuck .main-homepage.template-folderview ul.navTreeLevel0{
     position: absolute;
 }
-.nav-is-stuck .main-homepage .portal-globalnav-cpskinmenu li{
+.nav-is-stuck .main-homepage.template-folderview .portal-globalnav-cpskinmenu li{
     display: inline;
+}
+.nav-is-stuck #top-actions{
+    vertical-align: initial;
 }
 /*   TITLE   */
 div#top-slogan{
@@ -432,7 +449,9 @@ div#top-slogan{
 #portal-breadcrumbs{
     color: #8bb3ee;
     margin-left:8%;
-    margin-top:0%;
+    margin-top:12%;
+    position: relative;
+    z-index: 1;
 }
 #portal-breadcrumbs a,
 .breadcrumbSeparator{
@@ -443,10 +462,16 @@ div#top-slogan{
 .template-folderview #portal-column-content.position-0::after{
     display:none;
 }
-.template-folderview #top-logo-navigation-actions #portal-breadcrumbs{
+.main-homepage.template-folderview #top-logo-navigation-actions #portal-breadcrumbs,
+.template-folderview.in-minisite-in-portal #top-logo-navigation-actions #portal-breadcrumbs,
+.template-folderview.in-minisite-out-portal #top-logo-navigation-actions #portal-breadcrumbs{
     display:none;
 }
-
+.in-minisite-in-portal #top-logo-navigation-actions #portal-breadcrumbs
+.in-minisite-out-portal #top-logo-navigation-actions #portal-breadcrumbs{
+    position: relative;
+    z-index: 1;
+}
 #accueil .bloc-collection,
 #accueil .bloc-document,
 #accueil .bloc-collection-slider{
@@ -468,52 +493,52 @@ li.bloc-item a h3{
 li.bloc-item a h3::after{
     display:none;
 }
-.main-homepage #top-logo-navigation-actions{
+.main-homepage.template-folderview #top-logo-navigation-actions{
     background: #0E213F;
     display: table-cell;
     width: 20%;
     position: static;
 }
-.main-homepage #top-banner {
+.main-homepage.template-folderview #top-banner {
     display: table-cell;
     vertical-align: top;
     width: 80%;
     position: relative;
     z-index: -1;
 }
-.main-homepage #top-actions {
+.main-homepage.template-folderview #top-actions {
     position: absolute;
     right: 10%;
     top: 10%;
 }
-.main-homepage #portal-searchbox{
+.main-homepage.template-folderview #portal-searchbox{
     margin:0;
 }
-.main-homepage #top-logo-inner {
+.main-homepage.template-folderview #top-logo-inner {
     margin: 7% 0 19% 65%;
 }
-.main-homepage #top-navigation {
+.main-homepage.template-folderview #top-navigation {
     margin-right: -302%;
     padding-left: 65%;
     width: auto;
 }
-.main-homepage #top-banner::after {
-    background: rgba(33, 90, 117, 0.4);
+.main-homepage.template-folderview #top-banner::after {
+    display:none;
 }
 
-.main-homepage #portal-globalnav .theme1 a {
+.main-homepage.template-folderview #portal-globalnav .theme1 a {
     padding-left: 0;
 }
-.main-homepage #top-slogan{
+.main-homepage.template-folderview #top-slogan{
     position: absolute;
     padding: 0;
     left:65%;
 }
-.main-homepage #top-slogan-inner {
+.main-homepage.template-folderview #top-slogan-inner {
     margin-right: -2000px;
 }
 
-.main-homepage  #top-logo {
+.main-homepage.template-folderview  #top-logo {
     margin: 0;
 }
 #portal-columns #accueil .a-votre-service {
@@ -939,7 +964,7 @@ li.bloc-item a h3::after{
     display: inline-block;
     font-family: "flexslider-icon";
     font-size: 36px;
-    margin-left: 97%;
+    margin-left: 96%;
     padding-top: 75%;
     position: absolute;
     width: 50%;
@@ -958,7 +983,7 @@ li.bloc-item a h3::after{
 .event-entry:nth-child(20) .pageleadImage:after{
     content: "◆";
     left: 0;
-    margin-left: -6%;
+    margin-left: -5.5%;
 }
 /*#accueil .agenda .bloc-item:first-child .pageleadImage:after,
 .event-entry:first-child .pageleadImage:after{
@@ -1063,6 +1088,15 @@ li.bloc-item a h3::after{
     margin-left: 0;
 }
 
+#accueil .agenda .bloc-item{
+    opacity: 0;
+}
+#accueil .agenda .bloc-item.in-viewfirst-child,
+#accueil .agenda .bloc-item.in-view:nth-child(2n+3),
+#accueil .agenda .bloc-item.in-view:nth-child(2),
+#accueil .agenda .bloc-item.in-view:nth-child(2n+4){
+    opacity: 1;
+}
 #accueil .agenda .bloc-item.no-view:nth-child(2),
 #accueil .agenda .bloc-item.no-view:nth-child(2n+4){
     opacity: 0;
@@ -1088,8 +1122,7 @@ li.bloc-item a h3::after{
     -o-transform: translate(-100%, 0px);
     -ms-transform: translate(-100%, 0px);
     transform: translate3d(-100%, 0px, 0px);
-    }
-    
+}
 .event-entry.no-view:nth-child(2),
 .event-entry.no-view:nth-child(2n+4){
     opacity: 1 !important;
@@ -1108,8 +1141,7 @@ li.bloc-item a h3::after{
     -o-transform: translate(0px, 0px) !important;
     -ms-transform: translate(0px, 0px) !important;
     transform: translate3d(0px, 0px, 0px);
-    }
-
+}
 #accueil .agenda .titre-rss{
     background: transparent;
     margin-bottom: 1.5em;
