@@ -33,7 +33,7 @@
 
 <stylesheet title="cpskin.diazotheme.smart LESS Mobile Styles"
     id="++theme++cpskin.diazotheme.smart/less/mobile.less"
-    media="handheld, screen and (max-device-width: 480px), screen and (max-width: 480px)"
+    media="handheld, screen and (max-device-width: 600px), screen and (max-width: 600px)"
     enabled="1"
     rendering="link"
     applyPrefix="True"
@@ -50,5 +50,6 @@
     expression="python:here.restrictedTraverse('@@currentTheme')() == 'cpskin.diazotheme.smart'"
     compression="none"
     insert-after="++theme++cpskin.diazotheme.smart/less/mobile.less" />
+ 
 
 </object>
