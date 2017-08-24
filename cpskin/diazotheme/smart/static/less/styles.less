@@ -575,7 +575,7 @@ li.bloc-item a h3::after{
 #portal-columns #accueil .a-votre-service {
     margin-bottom: 9%;
 }
-.a-votre-service {
+#accueil .a-votre-service {
     background: #0e213f none repeat scroll 0 0;
     box-sizing: border-box;
     padding: 5%;
@@ -597,7 +597,6 @@ li.bloc-item a h3::after{
     color: white !important;
     text-decoration: underline;
 }
-
 .media-homepage iframe {
     height: 400px;
     width: 600px;
@@ -1182,6 +1181,9 @@ li.bloc-item a h3::after{
 #accueil .agenda .titre-rss a{
     float: none;
 }
+.main-homepage #accueil .agenda h2{
+    background: transparent;
+}
 #accueil .agenda h2 {
     color: #0e213f;
     font-size: 2.5em;
@@ -1463,6 +1465,17 @@ li.bloc-item a h3::after{
 .in-minisite-out-portal .top-slogan-breadcrumbs{
     position: absolute;
     width: 100%;
+    z-index: 1;
+}
+.in-minisite-in-portal .top-slogan-breadcrumbs{
+    top:15em;
+}
+.in-minisite-out-portal .top-slogan-breadcrumbs{
+    top:10em;
+}
+.nav-is-stuck .in-minisite-in-portal .top-slogan-breadcrumbs,
+.nav-is-stuck .in-minisite-out-portal .top-slogan-breadcrumbs{
+    z-index: 0;
 }
 /*   NEWS   */
 .section-actualite #faceted-results .photoAlbumEntry {
