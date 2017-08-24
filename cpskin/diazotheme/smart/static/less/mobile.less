@@ -2,25 +2,32 @@
 .main-homepage.template-folderview #portal-top {
     margin-bottom: 0;
 }
+
+.main-homepage.template-folderview #top-banner{
+    display: block;
+    width: 100%;
+    z-index: 0;
+}
+
 .main-homepage #top-logo-navigation-actions {
     display: block;
     width: 100%;
 }
 .main-homepage #top-logo-slogan{
-    margin: 0 0 10%;
+    margin: 0 0 3em;
     width: 50%;
 }
 .main-homepage.template-folderview #top-logo-inner {
-    margin: 28% 0 0;
+    margin: 0 0 0.75em 0;
     position: relative;
     z-index: 1;
 }
 #portal-logo > img {
-    width: auto;
+    width: 25%;
 }
 .main-homepage #top-logo-slogan #top-slogan,
 #top-logo-slogan #top-slogan{
-    font-size: 4vw;
+    font-size: 3vw;
     left: 0;
     margin: 4% 0 0 1em;
     padding: 0;
@@ -29,20 +36,20 @@
 }
 .main-homepage.template-folderview #top-actions {
     right: 0;
-    top: 3%;
+    top: 0.75em;
 }
 .main-homepage #top-actions,
 #top-actions {
     position: absolute;
     left: 0;
-    top: 2%;
+    top: 0.75em;
     right:0%;
 }
 .top-navigation-actions {
     margin-top: 0;
 }
 .main-homepage.template-folderview #top-navigation {
-    margin-right: -123%;
+    margin-right: -500%;
     padding-left: 0;
     width: auto;
 }
@@ -55,15 +62,128 @@
     margin: 0;
     width: 10%;
 }
-#portal-searchbox {
+
+#top-logo-inner #portal-searchbox {
+    background: #0e213f none repeat scroll 0 0;
+    box-sizing: border-box;
     left: 0;
-    top: 129%;
-    position: absolute !important;
-    width: 200%;
-    z-index: 1;
+    margin: 0;
+    padding: 12em 1em 6em 1em;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 }
+
+#top-logo-inner #portal-searchbox form {
+    width: 100%;
+}
+
+
+#portal-header #top-navigation-inner #search-btn {
+    float: left;
+    margin-left: 10px;
+    margin-top: -38em;
+    position: relative;
+    z-index: 2;
+}
+
+#top-navigation-inner #mobnav-btn{
+    font-size: 18px;
+    font-weight: normal;
+    padding: 0.6em 0;
+    margin: 0;
+}
+
+#top-navigation-inner #mobnav-btn::before, #top-navigation-inner .advb-title::before {
+    font-size: 15px;
+    padding-right: 0.5em;
+    margin-left: 1em;
+}
+
+#top-navigation-inner #advanced-breadcrumbs .advb-submenu {
+    border-top: 1px solid #0E213F;
+    margin: 0;
+    width: 100%;
+}
+
+#top-navigation-inner #advanced-breadcrumbs #advb-submenu-level-2.advb-submenu {
+    border-top: 0 solid white;
+}
+
+#top-navigation-inner .advb-submenu .submenu {
+    border-radius: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#top-navigation-inner .advb-submenu ul li:first-child {
+    border-top: 0 solid white;
+}
+
+#top-navigation-inner .advb-submenu ul li:last-child {
+    padding-bottom: 0.6em;
+}
+
+#top-navigation-inner .advb-submenu ul li {
+    border-left: 0 dashed white;
+    border-top: 1px dashed #f2f2f2;
+    box-sizing: border-box;
+    font-size: 17px;
+    padding: 0.5em 0 0.25em 1.5em;
+    width: 100%;
+}
+
+#top-navigation-inner #mobnav-btn, .advb-title {
+    border-radius: 0;
+}
+
+#top-navigation-inner #title-level-2, #top-navigation-inner #title-level-3, #top-navigation-inner #title-level-4{
+    padding: 0.5em 0;
+}
+
+#top-navigation-inner #advanced-breadcrumbs .nofollow::after {
+    content: " ‹";
+    float: left;
+    margin-left: -1.25em;
+    transform: rotate(270deg);
+}
+
+#top-navigation-inner #advanced-breadcrumbs .follow::after {
+    content: " ‹";
+    float: left;
+    margin-left: -1.25em;
+    transform: rotate(180deg);
+}
+
+#top-navigation-inner #advb-submenu-level-2.advb-submenu,
+#top-navigation-inner #advb-submenu-level-3.advb-submenu,
+#top-navigation-inner #advb-submenu-level-4.advb-submenu{
+    padding-left: 0;
+}
+
+#portal-searchbox .LSBox{
+    position:relative;
+}
+
+#portal-searchbox .LSBox::after {
+    margin-left: 0;
+    position: absolute;
+    top: 0.75em;
+}
+
+#portal-searchbox .LSBox .searchButton{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display:block;
+}
+
 .LSBox #searchGadget {
-    width: 20em !important;
+    width: 80% !important;
+    height:auto;
 }
 .main-homepage #top-banner{
     z-index: 0;
@@ -74,12 +194,7 @@
 #top-logo-navigation-actions {
     position: relative;
 }
-#top-navigation-inner {
-    padding: 2em 0 1em;
-}
-#top-navigation {
-    background-color: transparent;
-}
+
 #top-actions-actions #btn-search {
     display: none;
 }
@@ -121,9 +236,14 @@
     font-size: 4vw;
 }
 /*   NAVIGATION   */
+
+#top-navigation {
+    background-color: transparent;
+}
 #top-navigation-inner {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
+    padding: 2em 0 0;
 }
 .advb-submenu .submenu{
     float: left;
