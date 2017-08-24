@@ -1,7 +1,8 @@
-0.5.9 (unreleased)
+0.5.9 (2017-08-24)
 ------------------
 
-- Nothing changed yet.
+- Change css for responsive and add file for print.
+  [mgennart]
 
 
 0.5.8 (2017-08-22)

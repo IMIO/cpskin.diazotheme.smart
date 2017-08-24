@@ -50,5 +50,15 @@
     expression="python:here.restrictedTraverse('@@currentTheme')() == 'cpskin.diazotheme.smart'"
     compression="none"
     insert-after="++theme++cpskin.diazotheme.smart/less/mobile.less" />
+ 
+  <stylesheet title="cpskin.diazotheme.smart LESS Print"
+    id="++theme++cpskin.diazotheme.smart/less/printnamur.less"
+    media="print"
+    enabled="1"
+    rendering="link"
+    applyPrefix="True"
+    expression="python:here.restrictedTraverse('@@currentTheme')() == 'cpskin.diazotheme.smart'"
+    compression="none"
+    insert-after="++theme++cpskin.diazotheme.smart/cpskin/mobilelarge.less" />
 
 </object>
