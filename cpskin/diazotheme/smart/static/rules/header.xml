@@ -12,7 +12,7 @@
               <xsl:copy-of select="./*[@id='portal-logo']"/>
             </div>
           </div>
-          <xsl:if test= "not($isInPortalMode)">
+          <xsl:if test= "not($is_in_portal_mode)">
             <div id="top-slogan">
               <div id="top-slogan-inner">
                 <xsl:if test="$is_homepage">
@@ -91,7 +91,7 @@
           </xsl:if>
         </div>
         </div>
-        <xsl:if test="$isInPortalMode">
+        <xsl:if test="$is_in_portal_mode">
             <div class="container-minisite-globalnav-logo">
               <xsl:copy-of select="//*[@id='minisite-actions']"/>
               <div id="minisite-navigation-inner">

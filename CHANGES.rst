@@ -1,6 +1,9 @@
 0.5.10 (unreleased)
 -------------------
 
+- Avoid camelcase in manifest.cfg
+  See http://blog.affinitic.be/2014/08/12/beware-of-uppercase-letters-in-your-config-files/
+
 - Add upgrade step for print less file
   [laulaz]
 
