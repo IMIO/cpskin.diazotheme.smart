@@ -1,8 +1,12 @@
 0.5.10 (unreleased)
 -------------------
 
+- Banner condition is now on folder_view, not on homepage : #18467
+  [laulaz]
+
 - Avoid camelcase in manifest.cfg
   See http://blog.affinitic.be/2014/08/12/beware-of-uppercase-letters-in-your-config-files/
+  [laulaz]
 
 - Add upgrade step for print less file
   [laulaz]

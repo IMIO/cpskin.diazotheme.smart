@@ -15,10 +15,10 @@
           <xsl:if test= "not($is_in_portal_mode)">
             <div id="top-slogan">
               <div id="top-slogan-inner">
-                <xsl:if test="$is_homepage">
+                <xsl:if test="$is_folder_view">
                   <xsl:copy-of select="//*[@id='cpskin-slogan']/*" />
                 </xsl:if>
-                <xsl:if test="not($is_homepage)">
+                <xsl:if test="not($is_folder_view)">
                   <xsl:copy-of select="//h1[1]" />
                 </xsl:if>
                </div>
@@ -104,10 +104,10 @@
              <div class="top-slogan-breadcrumbs">
             <div id="top-slogan">
               <div id="top-slogan-inner">
-                <xsl:if test="$is_homepage">
+                <xsl:if test="$is_folder_view">
                   <xsl:copy-of select="//*[@id='cpskin-slogan']/*" />
                 </xsl:if>
-                <xsl:if test="not($is_homepage)">
+                <xsl:if test="not($is_folder_view)">
                   <xsl:copy-of select="//h1[1]" />
                 </xsl:if>
               </div>
@@ -153,10 +153,10 @@
           <div class="top-slogan-breadcrumbs">
             <div id="top-slogan">
               <div id="top-slogan-inner">
-                <xsl:if test="$is_homepage">
+                <xsl:if test="$is_folder_view">
                   <xsl:copy-of select="//*[@id='cpskin-slogan']/*" />
                 </xsl:if>
-                <xsl:if test="not($is_homepage)">
+                <xsl:if test="not($is_folder_view)">
                   <xsl:copy-of select="//h1[1]" />
                 </xsl:if>
               </div>
