@@ -17,3 +17,11 @@ def upgrade_to_less(context):
         'lessregistry'
     )
     logger.info('LESS files installed and configurations done !')
+
+
+def upgrade_portal_less(context):
+    context.runImportStepFromProfile(
+        'profile-cpskin.diazotheme.smart:default',
+        'lessregistry'
+    )
+    logger.info('LESS registry refreshed !')

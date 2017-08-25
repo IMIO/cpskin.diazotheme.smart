@@ -1,7 +1,8 @@
 0.5.10 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add migration for print less file
+  [laulaz]
 
 
 0.5.9 (2017-08-24)
