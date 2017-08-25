@@ -1,7 +1,7 @@
 0.5.10 (unreleased)
 -------------------
 
-- Add migration for print less file
+- Add upgrade step for print less file
   [laulaz]
 
 
