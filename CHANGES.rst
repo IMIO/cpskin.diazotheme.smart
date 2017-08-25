@@ -1,4 +1,4 @@
-0.5.10 (unreleased)
+0.5.10 (2017-08-25)
 -------------------
 
 - Banner condition is now on folder_view, not on homepage : #18467
