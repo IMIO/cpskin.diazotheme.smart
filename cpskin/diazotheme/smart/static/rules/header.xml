@@ -30,7 +30,7 @@
             <div id="top-navigation">
               <div id="top-navigation-inner">
                 <xsl:copy-of  select="./*[@id='portal-globalnav']"/>
-                <xsl:if test="not((contains(/html/body/@class, 'main-homepage')) and (contains(/html/body/@class, 'template-folderview')))">
+                <xsl:if test="not((is_homepage) and (is_folder_view))">
                 <div id="top-actions">
                     <div id="top-actions-inner">
                       <div id="top-actions-wrapper">
@@ -64,7 +64,7 @@
                                                               and @id!='portal-globalnav')]"/>
               </div>
           </div>
-          <xsl:if test="((contains(/html/body/@class, 'main-homepage')) and (contains(/html/body/@class, 'template-folderview')))">
+          <xsl:if test="((is_homepage) and (is_folder_view))">
             <div id="top-actions">
               <div id="top-actions-inner">
                 <div id="top-actions-wrapper">
@@ -101,7 +101,8 @@
                 </div> 
             </div>
             </div>
-             <div class="top-slogan-breadcrumbs">
+             <div class="mini-site-top-slogan-breadcrumbs">
+              <xsl:copy-of select="//*[@id='portal-breadcrumbs']" />
             <div id="top-slogan">
               <div id="top-slogan-inner">
                 <xsl:if test="$is_folder_view">
@@ -112,7 +113,6 @@
                 </xsl:if>
               </div>
             </div>
-            <xsl:copy-of select="//*[@id='portal-breadcrumbs']" />
           </div>
           </xsl:if>
         <div id="top-banner">
@@ -150,7 +150,8 @@
             </div>
             </div>
           </xsl:if>
-          <div class="top-slogan-breadcrumbs">
+          <div class="mini-site-top-slogan-breadcrumbs">
+            <xsl:copy-of select="//*[@id='portal-breadcrumbs']" />
             <div id="top-slogan">
               <div id="top-slogan-inner">
                 <xsl:if test="$is_folder_view">
@@ -161,7 +162,6 @@
                 </xsl:if>
               </div>
             </div>
-            <xsl:copy-of select="//*[@id='portal-breadcrumbs']" />
           </div>
          <div id="top-banner">
           <xsl:copy-of select="//*[@id='cpskin-banner']/img" />
