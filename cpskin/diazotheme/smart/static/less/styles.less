@@ -16,9 +16,21 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
     position: relative;
 }
 
+.portal-globalnav-cpskinmenu.navTreeLevel0::before,
+.portal-globalnav-cpskinmenu.navTreeLevel0::after,
+.portal-globalnav-cpskinmenu.no_direct_access::before,
+.portal-globalnav-cpskinmenu.no_direct_access::after,
+.portal-globalnav-cpskinmenu.has_direct_access::before,
+.portal-globalnav-cpskinmenu.has_direct_access::after {
+    top: -1px !important;
+}
+
 /*   HEADER  */
 #portal-header {
     z-index: auto;
+}
+.main-homepage #portal-header {
+    background: transparent;
 }
 #portal-header #navWrapper {
     background-color: transparent;
@@ -32,7 +44,6 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
     color: #3b3b3b;
 }
 #top-logo-slogan{
-    margin-left: 10%;
     width: 22%;
     position: relative;
 }
@@ -43,16 +54,29 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
     margin: 0 20% 0 8%;
 }
 #top-logo-navigation-actions {
-    position: absolute;
+    position: relative;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
+    margin: 0 auto;
+    max-width: 1300px;
 }
 #portal-logo{
-    margin:0.5em 0;
+    margin:1% 0;
+    width:100%;
 }
 #portal-logo > img{
+    width: 30%;
+}
+
+.main-homepage #portal-logo > img{
     width: 60%;
 }
+
+#top-banner{
+    position: absolute;
+    top: 0;
+}
+
 #top-banner::after {
     background: rgba(14, 33, 63, 0.6);
     content: "";
@@ -74,7 +98,8 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
     margin-right: -168%;
 }
 .top-navigation-actions {
-    width: 60%;
+    width: 78%;
+    margin-right: -22%;
 }
 .main-homepage.template-folderview #top-logo-slogan {
     margin-left: 0;
@@ -82,6 +107,7 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
 }
 .main-homepage.template-folderview .top-navigation-actions{
     width: 100%;
+    margin-top: 2%;
 }
 .main-homepage.template-folderview #top-logo-slogan #portal-breadcrumbs {
     position: absolute;
@@ -136,6 +162,11 @@ dl.actionMenu.deactivated dd {
     display: none;
 }
 /*   search   */
+
+.LSBox {
+    border: 2px solid #e3e3e3;
+}
+
 .LSBox #searchGadget{
     width: 21em;
 }
@@ -164,9 +195,14 @@ dl.actionMenu.deactivated dd {
     margin-top:2%;
 }
 #portal-searchbox {
+    display: none;
     position: absolute;
     right: 0;
     top: 0;
+}
+
+#hidden-search #portal-searchbox {
+    display: block;
 }
 
 #search-results .contenttype-link,
@@ -191,9 +227,19 @@ dl.actionMenu.deactivated dd {
     background-color: transparent;
 }
 /*   NAVIGATION   */
-#portal-top .portal-globalnav-cpskinmenu{
+#portal-top #top-navigation-inner > .portal-globalnav-cpskinmenu {
+    margin-left: -11%;
     z-index: 2;
 }
+
+.main-homepage #portal-top #top-navigation-inner > .portal-globalnav-cpskinmenu{
+    margin-left: 0%;
+}
+
+.nav-is-stuck .main-homepage #portal-top #top-navigation-inner > .portal-globalnav-cpskinmenu{
+    margin-left: -11%;
+}
+
 #portal-globalnav li {
     display: inline-block;
 }
@@ -318,6 +364,7 @@ dt.actionMenuHeader{
 .portal-globalnav-cpskinmenu.navTreeLevel0::after{
     background: #fff;
     left: 100%;
+    z-index: -1;
 }
 .portal-globalnav-cpskinmenu.no_direct_access::before,
 .portal-globalnav-cpskinmenu.has_direct_access::before{
@@ -357,25 +404,32 @@ li.sfHover > span > a{
     width: 1200px;
     height: 100%;
     position: absolute;
-    left: 100%;
+    left: 96%;
     top: 0;
+    z-index: 1;
+}
+
+.sf-menu ul.navTreeLevel1::after {
+    z-index: 1;
 }
 .sf-menu ul.navTreeLevel1.direct_access {
     background: #526272 !important;
     padding-right: 2%;
+    box-sizing: border-box;
 }
+
 .sf-menu .direct_access li a {
-    margin-bottom: 0em !important;
-    padding-bottom: 0.75em !important;
+    color: white;
+    display: inline-block;
     padding-left: 1.2em !important;
-    padding-top: 0.25em !important;
     overflow: hidden;
     white-space: nowrap;
+    width:100%;
 }
 .sf-menu .direct_access li a::before{
     content:'\e83f';
     font-size: 75%;
-    top: 0.75em;
+    top: 1.25em;
     border-bottom: transparent;
     display: inline;
 }
@@ -411,10 +465,21 @@ li.sfHover > span > a{
     z-index: 2;
     max-height:8em;
 }
+
+.nav-is-stuck #top-logo-navigation-actions .top-navigation-actions::before {
+    background: #0e213f none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 100%;
+}
+
 .nav-is-stuck #top-navigation{
     display: inline-block;
     margin: 0;
-    padding-left: 32%;
+    padding-left: 11%;
 }
 .nav-is-stuck .main-homepage.template-folderview #top-navigation{
     margin: 0;
@@ -449,9 +514,9 @@ li.sfHover > span > a{
 .nav-is-stuck .main-homepage.template-folderview ul.navTreeLevel0{
     position: absolute;
 }
-.nav-is-stuck .main-homepage.template-folderview .portal-globalnav-cpskinmenu li{
+/*.nav-is-stuck .main-homepage.template-folderview .portal-globalnav-cpskinmenu li{
     display: inline;
-}
+}*/
 .nav-is-stuck #top-actions{
     vertical-align: initial;
 }
@@ -462,7 +527,7 @@ div#top-slogan{
     font-size: 2vw;
     font-weight: bold;
     padding-left: 8%;
-    margin-top: 14%;
+    margin-top: 10%;
     height:2em;
     line-height: 1.1em;
 }
@@ -567,6 +632,7 @@ li.bloc-item a h3::after{
 }
 .main-homepage.template-folderview #top-slogan-inner {
     margin-right: -2000px;
+    padding-top: 10px;
 }
 
 .main-homepage.template-folderview  #top-logo {
@@ -626,7 +692,11 @@ li.bloc-item a h3::after{
 }
 /*   multiple   */
 .slider-multiple::before {
-    background: #e0c4ed;
+    background: transparent; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #dd30c6, #dec8ec); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dd30c6, #dec8ec); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dd30c6, #dec8ec); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dd30c6, #dec8ec); /* Standard syntax */
     content: "";
     display: block;
     height: 140%;
@@ -1329,9 +1399,10 @@ li.bloc-item a h3::after{
     display: none;
 }
 
-#portal-footer-wrapper .cell {
-    background: #022241 url("./footer-map.jpg") no-repeat scroll right -80px;
-    min-height: 25em;
+
+#portal-footer-wrapper div.position-0 {
+    background: #022241 none repeat scroll 0 0;
+    z-index: 0;
 }
 
 #portal-footer-wrapper {
@@ -1364,6 +1435,13 @@ li.bloc-item a h3::after{
     display:none;
 }
 
+.footer-bloc {
+    margin-top: 2em;
+    position: relative;
+    z-index: 1;
+    float:left;
+}
+
 .footer-bloc,
 .footer-bloc h3,
 .footer-bloc a,
@@ -1375,6 +1453,70 @@ li.bloc-item a h3::after{
     display: inline-block;
     vertical-align: top;
 }
+
+.footer-static{
+    width:100%;
+}
+
+.footer-bloc > h3 {
+    font-size: 110%;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.footer-bloc > p,
+#footer-sitemap .footer-bloc a{
+    color: #93b2de;
+}
+
+.footer-bloc li, .footer-bloc p {
+    display: block;
+    padding: 0.4em 0 0;
+}
+
+.footer-bloc.bloc-logo {
+    width: 15%;
+}
+
+.bloc-adresse, .bloc-liens {
+    padding-left: 5%;
+    width:20%;
+    box-sizing: border-box;
+}
+
+.footer-bloc-plan {
+    float: right;
+    width: 30%;
+    position: relative;
+    z-index: 0;
+}
+
+.footer-bloc-plan::after {
+    background: #022241 url("./footer-map.jpg") no-repeat scroll center -80px;
+    bottom: 0;
+    content: "";
+    left: -40%;
+    position: absolute;
+    top: 0;
+    width: 152%;
+    z-index: -1;
+}
+
+.footer-bloc-plan::before {
+    background: rgba(0, 0, 0, 0) linear-gradient(to left, transparent, #022241) repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    right: 122%;
+    top: 0;
+    width: 5em;
+}
+
+.footer-bloc-plan > a {
+   display: block;
+   height: 20em;
+}
+
 /*  MOVE TO TOP  */
 #scroll-to-top {
     bottom: 30px;
@@ -1417,6 +1559,7 @@ li.bloc-item a h3::after{
 .in-minisite-in-portal #top-logo-navigation-actions {
     background: #0e213f none repeat scroll 0 0;
     position: relative;
+    z-index:2;
 }
 .in-minisite-in-portal #top-logo {
     height: 75px;
@@ -1454,9 +1597,43 @@ li.bloc-item a h3::after{
     width: 100%;
     margin-top:0 !important;
     padding-bottom: 2%;
-    z-index: 2;
+    z-index: 1;
     max-height:8em;
 }
+/* EDITO MINI SITE  */
+
+/*.template-folderview #accueil .bloc-document.edito div {
+    background: transparent none repeat scroll 0 0;
+    color: white;
+    float: right;
+    font-size: 110%;
+    margin-top: -30em;
+    position: relative;
+    text-align: justify;
+    width: 40%;
+}
+
+.template-folderview #accueil .bloc-document.edito h2 {
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
+    line-height: 1.25em;
+    margin-bottom: 1em;
+}
+
+.template-folderview #accueil .bloc-document.edito #form-widgets-text h2::before {
+    background: white none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    margin-right: 1em;
+    position: absolute;
+    right: 100%;
+    top: 0.6em;
+    width: 1.75em;
+}
+*/
+
+/* FIN EDITO MINI SITE  */
 /*   SLOGAN MINI SITE   */
 .in-minisite-in-portal div#top-slogan,
 .in-minisite-out-portal div#top-slogan{

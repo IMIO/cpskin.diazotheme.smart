@@ -46,11 +46,11 @@ dt.actionMenuHeader a::after {
 }
 
 #portal-top{
-    margin-bottom: -12em;
+    margin-bottom: 0;
 }
 
 .main-homepage.template-folderview #portal-top{
-    margin-bottom: -4em;
+    margin-bottom: -5%;
 }
 
 .template-search.main-homepage #portal-top {
@@ -107,14 +107,6 @@ h3 {
 .sf-menu ul.portal-globalnav-cpskinmenu.navTreeLevel1 {
     margin-top: 3.9em;
     }
-    
-    .sf-menu .direct_access li a {
-    color: white;
-    }
-
-   .sf-menu .direct_access li a {
-    display: inline-block;
-}
 
 #top-navigation ul.navTreeLevel1.direct_access > li {
     display: block;
@@ -132,7 +124,9 @@ h3 {
     width: 75% !important;
     }
     
-#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-administration .portal-globalnav-cpskinmenu.navTreeLevel1.has_direct_access li {
+#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-administration .portal-globalnav-cpskinmenu.navTreeLevel1.has_direct_access li,
+#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-securite .portal-globalnav-cpskinmenu.navTreeLevel1.has_direct_access li,
+#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-territoire .portal-globalnav-cpskinmenu.navTreeLevel1.has_direct_access li{
     width:100% !important;
     }
 
@@ -158,10 +152,6 @@ h3 {
     }
     
 #portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-vie-politique .direct_access li a{
-    width:100%;
-    }
-
-.sf-menu .direct_access li a{
     width:100%;
     }
 
@@ -450,12 +440,23 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 #portal-column-content::after {
     background: #f3f3f3 none repeat scroll 0 0;
-    height: 2000px;
     content: "";
     left: 100%;
     position: absolute;
-    top: 10em;
+    top: 8em;
     width: 2000px;
+    z-index: -1;
+    bottom: 0em;
+}
+
+#portal-top::after {
+    background: #f3f3f3 none repeat scroll 0 0;
+    content: "";
+    height: 10em;
+    left: 50%;
+    position: absolute;
+    top: 100%;
+    width: 50%;
     z-index: -1;
 }
 
@@ -1273,7 +1274,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 /*  Document */
 #aboveContentContact {
     float: left;
-    margin: -0.5em 0 0 0.26em;
+    margin: -0.5em 0 0 0;
     width: 100%;
 }
 
@@ -1293,8 +1294,8 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     box-sizing: border-box;
     float: left;
     margin-bottom: 1em;
-    margin-left: -1.8em;
-    padding: 2em 2em 0 2em;
+    margin-left: -1.5em;
+    padding: 2em;
     position: relative;
     width: calc(100%);
     min-height:12em;
@@ -1309,7 +1310,6 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     top: 0;
     width: 1.8em;
 }
-
 
 #phone > a {
     display: block;
@@ -1367,6 +1367,9 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .activity {
     clear: both;
 }
+
+
+
 /*   Slider   */
 #accueil #flex.slider-unique-titre .slider .flex-viewport .flex-caption {
     text-align: left;
@@ -1679,46 +1682,5 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .section-je-suis .index-2 .bloc-rss{
     display: none;
 }
-/*   FOOTER   */
 
-#portal-footer-wrapper .cell {
-    background: #022241 url("./footer-map.jpg") no-repeat scroll right -80px;
-}
 
-.footer-static{
-    width:100%;
-}
-
-.footer-bloc {
-    margin-top: 2em;
-}
-
-.footer-bloc > h3 {
-    font-size: 110%;
-    margin-bottom: 1em;
-    text-transform: uppercase;
-}
-
-.footer-bloc > p,
-#footer-sitemap .footer-bloc a{
-    color: #93b2de;
-}
-
-.footer-bloc li, .footer-bloc p {
-    display: block;
-    padding: 0.4em 0 0;
-}
-
-.bloc-adresse, .bloc-liens {
-    margin-left: 5%;
-}
-
-.footer-bloc-plan {
-    float: right;
-    width: 40%;
-}
-
-.footer-bloc-plan > a {
-   display: block;
-   height: 20em;
-}

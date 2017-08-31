@@ -21,8 +21,10 @@
     margin: 0 0 0.75em 0;
     z-index: 1;
 }
-#portal-logo > img {
-    width: 25%;
+
+#portal-logo > img,
+.main-homepage #portal-logo > img{
+    width: 20%;
 }
 .main-homepage #top-logo-slogan #top-slogan,
 #top-logo-slogan #top-slogan{
@@ -94,6 +96,7 @@
     font-weight: normal;
     padding: 0.6em 0;
     margin: 0;
+    background: #34495e;
 }
 
 #top-navigation-inner #mobnav-btn::before, #top-navigation-inner .advb-title::before {
@@ -151,11 +154,17 @@
     transform: rotate(270deg);
 }
 
+#top-navigation-inner #advanced-breadcrumbs .follow {
+    margin-left: 0.3em;
+}
+
 #top-navigation-inner #advanced-breadcrumbs .follow::after {
-    content: " ‹";
+    content: "\e83f";
     float: left;
-    margin-left: -1.25em;
-    transform: rotate(180deg);
+    font-family: fontello;
+    font-size: 60%;
+    margin-left: -2.1em;
+    margin-top: 0.3em;
 }
 
 #top-navigation-inner #advb-submenu-level-2.advb-submenu,
@@ -188,6 +197,10 @@
 }
 .main-homepage #top-banner{
     z-index: 0;
+}
+
+#top-banner{
+    position: relative;
 }
 #portal-header {
     background: #0e213f;
@@ -394,6 +407,7 @@
 }
 #right-actions-viewlet-inner > a::after {
     color: #0f2241;
+    text-shadow: 0 0 0 transparent;
 }
 .shown-right-panel,
 .shown-right-panel #document-toc{
@@ -499,6 +513,7 @@ body.template-facetednavigation_view .contact-entry{
     background-position: 35% 370px; 
 }
 
-.footer-bloc{
-    margin-top: 71%;
+.bloc-adresse, .bloc-liens, .footer-bloc-plan{
+    clear: left;
+    width: 100%;
 }
