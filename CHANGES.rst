@@ -1,7 +1,20 @@
-0.5.10 (unreleased)
+0.5.11 (unreleased)
 -------------------
 
-- Add migration for print less file
+- Nothing changed yet.
+
+
+0.5.10 (2017-08-25)
+-------------------
+
+- Banner condition is now on folder_view, not on homepage : #18467
+  [laulaz]
+
+- Avoid camelcase in manifest.cfg
+  See http://blog.affinitic.be/2014/08/12/beware-of-uppercase-letters-in-your-config-files/
+  [laulaz]
+
+- Add upgrade step for print less file
   [laulaz]
 
 
