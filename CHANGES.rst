@@ -1,7 +1,8 @@
 0.5.13 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Improve homepage.
+  [osnickers]
 
 
 0.5.12 (2017-08-31)
