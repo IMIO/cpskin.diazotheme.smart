@@ -466,7 +466,8 @@ li.sfHover > span > a{
     max-height:8em;
 }
 
-.nav-is-stuck #top-logo-navigation-actions .top-navigation-actions::before {
+.nav-is-stuck #top-logo-navigation-actions .top-navigation-actions::before,
+.in-minisite-in-portal #top-logo-navigation-actions .top-navigation-actions::before{
     background: #0e213f none repeat scroll 0 0;
     bottom: 0;
     content: "";
@@ -489,6 +490,7 @@ li.sfHover > span > a{
     position: relative;
     right: 0;
     top: 0;
+    vertical-align: middle;
 }
 .nav-is-stuck #top-logo{
     position: fixed;
@@ -699,7 +701,7 @@ li.bloc-item a h3::after{
     background: linear-gradient(to right, #dd30c6, #dec8ec); /* Standard syntax */
     content: "";
     display: block;
-    height: 140%;
+    height: 130%;
     position: absolute;
     right: 0;
     width: 10000px;
@@ -770,7 +772,7 @@ li.bloc-item a h3::after{
     display: none;
 }
 #accueil #flex.slider-multiple .carousel .flex-viewport {
-    height: 400px !important;
+    height: 450px !important;
 }
 #accueil #flex.slider-multiple .carousel .flex-viewport ul {
     height: 100% !important;
@@ -782,18 +784,20 @@ li.bloc-item a h3::after{
 }
 #accueil #flex.slider-multiple .carousel .flex-viewport li a {
     color: #000 !important;
-    height: 73% !important;
+    height: 60% !important;
     overflow: hidden;
     width: 102% !important;
+    margin-bottom:1em;
 }
 #accueil #flex.slider-multiple .carousel .flex-viewport li img {
     display: block !important;
     height: auto;
-    min-height: 100%;
     min-width: 100%;
 }
 #accueil #flex.slider-multiple .carousel .flex-viewport .publication-date {
-    background: #fff none repeat scroll 0 0;
+    background: #ffffff none repeat scroll 0 0;
+    color: #bebebe;
+    font-weight: bold;
     width: 102%;
 }
 #accueil #flex.slider-multiple .carousel .flex-viewport li .flex-caption {
@@ -806,7 +810,25 @@ li.bloc-item a h3::after{
     padding: 40px 60px 0;
     font-size: 16px;
     font-weight: bold;
+    text-align: center;
 }
+
+#accueil #flex.slider-multiple .carousel .flex-viewport li .flex-caption a {
+    height: 7em !important;
+    position: relative;
+}
+
+#accueil #flex.slider-multiple .carousel .flex-viewport li .flex-caption a::after {
+    border-bottom: 2px solid #3548b1;
+    color: #3548b1;
+    content: "Lire l\'article";
+    font-size: 86%;
+    left: 39%;
+    position: absolute;
+    top: 76%;
+    z-index: 1;
+}
+
 
 /*   SLIDE UNIQUE  */
 #content #accueil #flex.slider-unique-titre .slider .linkimg img{
@@ -929,9 +951,40 @@ li.bloc-item a h3::after{
     padding: 6% 42% 0;
     width: 46%;
 }
+
+#accueil .element-en-evidence .pagecaption h3::before {
+    background: #0e2240 none repeat scroll 0 0;
+    content: "";
+    float: left;
+    height: 2px;
+    margin-left: -2.5em;
+    margin-top: 0.5em;
+    width: 1.5em;
+}
+
 #accueil .element-en-evidence .pagecaption .description {
     padding: 5% 10% 6% 51%;
     color: #999 !important;
+}
+
+#accueil .element-en-evidence .bloc-item .description::after {
+    border-bottom: 2px solid #3548b1;
+    bottom: 0;
+    color: #3548b1;
+    content: "Lire la suite";
+    font-weight: bold;
+    left: 51%;
+    position: absolute;
+}
+
+#accueil .element-en-evidence .medialink .pagecaption h3::before {
+    display: none;
+}
+
+#accueil .element-en-evidence .bloc-item .medialink .description::after {
+    content: "En savoir plus";
+    left: 9%;
+    margin-bottom: -3em;
 }
 
 #accueil .element-en-evidence .pageleadImage {
@@ -978,6 +1031,11 @@ li.bloc-item a h3::after{
     display: inline-block;
     min-width: 100%;
 }
+
+#accueil .agenda{
+    margin-top: 6em;
+}
+
 #accueil .agenda .results::before{
     background: #dfe8f7 none repeat scroll 0 0;
     content: "";
@@ -1289,18 +1347,21 @@ li.bloc-item a h3::after{
     width: 54%;
 }
 #accueil li.bloc-item a.medialink .pagecaption h3 {
+    left: 4%;
     opacity: 1;
+    top: -2em;
     transform: none;
     transition: none 0s ease 0s ;
 }
 #accueil .element-en-evidence .medialink .pagecaption .description {
     display: inline-block;
+    margin: -3em 0 0 1.5%;
     opacity: 1;
-    padding: 0;
+    padding: 0 0 0 2.7%;
+    position: relative;
     transform: none;
     transition: none 0s ease 0s ;
     width: 31%;
-    margin-top:3%;
 }
 
 /* Vue détails événement  */
@@ -1476,6 +1537,7 @@ li.bloc-item a h3::after{
 
 .footer-bloc.bloc-logo {
     width: 15%;
+    padding-left: 5%;
 }
 
 .bloc-adresse, .bloc-liens {
@@ -1635,33 +1697,23 @@ li.bloc-item a h3::after{
 
 /* FIN EDITO MINI SITE  */
 /*   SLOGAN MINI SITE   */
-.mini-site-top-slogan-breadcrumbs #portal-breadcrumbs{
-    display: inline-block;
-    vertical-align: top;
+.in-minisite-in-portal div#top-slogan,
+.in-minisite-out-portal div#top-slogan{
+    margin-top:0;
 }
-.mini-site-top-slogan-breadcrumbs{
-    position: absolute;
+.in-minisite-in-portal .top-slogan-breadcrumbs,
+.in-minisite-out-portal .top-slogan-breadcrumbs{
     width: 100%;
     z-index: 1;
 }
-.mini-site-top-slogan-breadcrumbs{
+.in-minisite-in-portal .top-slogan-breadcrumbs{
     top:15em;
 }
-.in-minisite-out-portal .mini-site-top-slogan-breadcrumbs{
+.in-minisite-out-portal .top-slogan-breadcrumbs{
     top:10em;
 }
-.mini-site-top-slogan-breadcrumbs div#top-slogan{
-    margin-top:0;
-    padding-left:19%;
-    display: inline-block;
-    vertical-align: top;
-    width: 35%;
-}
-.mini-site-top-slogan-breadcrumbs #cpskin-slogan-description{
-    margin-top:10%;
-    font-size: 1vw;
-}
-.nav-is-stuck .mini-site-top-slogan-breadcrumbs{
+.nav-is-stuck .in-minisite-in-portal .top-slogan-breadcrumbs,
+.nav-is-stuck .in-minisite-out-portal .top-slogan-breadcrumbs{
     z-index: 0;
 }
 /*   NEWS   */

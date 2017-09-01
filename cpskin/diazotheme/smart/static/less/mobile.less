@@ -1,3 +1,7 @@
+body{
+    padding: 0 !important;
+}
+
 /*   HEADER   */
 .main-homepage.template-folderview #portal-top {
     margin-bottom: 0;
@@ -13,12 +17,17 @@
     display: block;
     width: 100%;
 }
+
+dl.actionMenu.activated dd {
+    right: -2em;
+}
+
 .main-homepage #top-logo-slogan{
     margin: 0 0 3em;
     width: 50%;
 }
 .main-homepage.template-folderview #top-logo-inner {
-    margin: 0 0 0.75em 0;
+    margin: 1.5em 0 0.75em 0;
     z-index: 1;
 }
 
@@ -233,7 +242,6 @@
 }
 #top-logo-slogan {
     margin-left: 0;
-    padding-top:14%;
     width: 100%;
 }
 #top-logo {
@@ -293,6 +301,7 @@
 }
 #portal-columns{
     top:0;
+    padding-right: 2.5em;
 }
 /*   SLIDER UNIQUE  */
 #accueil .element-en-evidence .pagecaption h3 {
@@ -335,9 +344,9 @@
     height: 111%;
 }
 /*   SLIDER TITLE UNIQUE   */
-#accueil .slider-unique-titre{
+/*#accueil .slider-unique-titre{
     padding-bottom: 45%;
-}
+}*/
 #accueil #flex.slider-unique-titre .slider .linkimg{
     width: 600px !important;
 }
@@ -351,6 +360,11 @@
     margin-left: 21%;
     width: 60%;
 }
+
+#accueil #flex.slider-unique-titre .carousel{
+    top:-500px;
+}
+
 #accueil #flex.slider-unique-titre .carousel .flex-viewport ul li .flex-caption a {
     font-size: 25px;
     width: 77%;
@@ -402,7 +416,7 @@
 }
 /*   right action panel   */
 #right-actions-viewlet{
-    right: 1em;
+    right: 0.2em;
     top:0;
 }
 #right-actions-viewlet-inner > a::after {
