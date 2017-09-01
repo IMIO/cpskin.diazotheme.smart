@@ -569,7 +569,7 @@ div#top-slogan{
 #accueil .bloc-collection,
 #accueil .bloc-document,
 #accueil .bloc-collection-slider{
-    margin: 0 0 12%;
+    margin-bottom: 10%;
 }
 #accueil .bloc-document{
     padding: 2em;
@@ -665,7 +665,7 @@ li.bloc-item a h3::after{
     color: white !important;
     text-decoration: underline;
 }
-.media-homepage iframe {
+.main-homepage iframe {
     height: 400px;
     width: 600px;
 }
@@ -776,6 +776,7 @@ li.bloc-item a h3::after{
 }
 #accueil #flex.slider-multiple .carousel .flex-viewport ul {
     height: 100% !important;
+    background-color: white;
 }
 #accueil #flex.slider-multiple .carousel .flex-viewport li {
     background-color: #fff !important;
@@ -802,7 +803,7 @@ li.bloc-item a h3::after{
 }
 #accueil #flex.slider-multiple .carousel .flex-viewport li .flex-caption {
     background: #fff;
-    height: 50% !important;
+    height: 20% !important;
     width: 102% !important;
 }
 #accueil #flex.slider-multiple .carousel .flex-viewport li .flex-caption h2 {
@@ -818,7 +819,7 @@ li.bloc-item a h3::after{
     position: relative;
 }
 
-#accueil #flex.slider-multiple .carousel .flex-viewport li .flex-caption a::after {
+/*#accueil #flex.slider-multiple .carousel .flex-viewport li .flex-caption a::after {
     border-bottom: 2px solid #3548b1;
     color: #3548b1;
     content: "Lire l\'article";
@@ -827,8 +828,15 @@ li.bloc-item a h3::after{
     position: absolute;
     top: 76%;
     z-index: 1;
-}
+}*/
 
+#accueil #flex.slider-multiple .carousel .flex-viewport li .read-next-link a {
+    border-bottom: 2px solid #3548b1 !important;
+    color: #3548b1 !important;
+    font-size: 86%;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
 
 /*   SLIDE UNIQUE  */
 #content #accueil #flex.slider-unique-titre .slider .linkimg img{
@@ -963,7 +971,7 @@ li.bloc-item a h3::after{
 }
 
 #accueil .element-en-evidence .pagecaption .description {
-    padding: 5% 10% 6% 51%;
+    padding: 5% 10% 6% 50%;
     color: #999 !important;
 }
 
@@ -973,7 +981,7 @@ li.bloc-item a h3::after{
     color: #3548b1;
     content: "Lire la suite";
     font-weight: bold;
-    left: 51%;
+    left: 50%;
     position: absolute;
 }
 
@@ -1033,7 +1041,7 @@ li.bloc-item a h3::after{
 }
 
 #accueil .agenda{
-    margin-top: 6em;
+    margin-top: 0em;
 }
 
 #accueil .agenda .results::before{
@@ -1346,6 +1354,10 @@ li.bloc-item a h3::after{
     padding: 2% 6% 0 0;
     width: 54%;
 }
+#accueil .element-en-evidence.media-homepage .pagecaption {
+    padding-top: 1em;
+}
+
 #accueil li.bloc-item a.medialink .pagecaption h3 {
     left: 4%;
     opacity: 1;
