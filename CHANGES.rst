@@ -1,7 +1,8 @@
 0.5.14 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Change portal-breadcrumbs position : #18598
+  [laulaz]
 
 
 0.5.13 (2017-09-01)
