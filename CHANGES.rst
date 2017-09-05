@@ -1,4 +1,4 @@
-0.5.14 (unreleased)
+0.5.14 (2017-09-05)
 -------------------
 
 - Change portal-breadcrumbs position : #18598
