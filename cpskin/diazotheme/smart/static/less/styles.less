@@ -1,15 +1,15 @@
 /*.td_cell_citizen-state-column .line-state.active#visual-portal-wrapper{
     overflow: hidden;
 }*/
-body.template-folderview #visual-portal-wrapper::after {
+body.template-folderview.main-homepage #visual-portal-wrapper::after {
     background: #f3f3f3 none repeat scroll 0 0;
     content: "";
     display: block;
     height: 100%;
     position: absolute;
-    right: 35%;
+    right: 21%;
     top: 0;
-    width: 29%;
+    width: 57%;
     z-index: -2;
 }
 body.main-homepage.template-folderview #visual-portal-wrapper{
@@ -68,6 +68,10 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
     width: 30%;
 }
 
+.nav-is-stuck #portal-logo > img {
+    width: 35%;
+}
+
 .main-homepage #portal-logo > img{
     width: 60%;
 }
@@ -75,6 +79,7 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
 #top-banner{
     position: absolute;
     top: 0;
+    z-index: -1;
 }
 
 #top-banner::after {
@@ -96,6 +101,9 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
 }
 #top-logo-slogan #portal-breadcrumbs {
     margin-right: -168%;
+}
+.section-notheme #portal-breadcrumbs {
+    display: block;
 }
 .top-navigation-actions {
     width: 78%;
@@ -180,10 +188,11 @@ dl.actionMenu.deactivated dd {
     height:1em;
     margin-left: 1em;
 }
-.btn-search:before{
-    content: '\e823';
-    font-family: 'fontello';
-    font-size:150%;
+
+.btn-search::before {
+    content: "\e828";
+    font-family: "fontello";
+    font-size: 125%;
     visibility: visible;
 }
 #hidden-search {
@@ -207,8 +216,36 @@ dl.actionMenu.deactivated dd {
 
 #search-results .contenttype-link,
 #search-results .contenttype-link + dd,
-.LSRow .contenttype-link {
+.LSRow .contenttype-link,
+#search-results .contenttype-folder,
+#search-results .contenttype-folder + dd,
+.LSRow .contenttype-folder,
+#search-results-bar span:first-child,
+input[value="Folder"],
+input[value="Folder"] + label,
+input[value="Folder"] + label + br,
+input[value="Link"],
+input[value="Link"] + label,
+input[value="Link"] + label + br{
     display: none;
+}
+
+.template-search #content #search-results div.pagination.listingBar a.previous::before {
+    background: white none repeat scroll 0 0;
+    content: "";
+    height: 1.5em;
+    margin-left: 0.75em;
+    position: absolute;
+    width: 1.25em;
+}
+
+.template-search #content #search-results div.pagination.listingBar .next::before {
+    background: white none repeat scroll 0 0;
+    content: "";
+    height: 1.5em;
+    margin-left: 1px;
+    position: absolute;
+    width: 1em;
 }
 
 /*   messageviewlet   */
@@ -526,26 +563,30 @@ li.sfHover > span > a{
 div#top-slogan{
     display:block;
     color: #fff;
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: bold;
     padding-left: 8%;
     margin-top: 10%;
     height:2em;
     line-height: 1.1em;
+    position: relative;
+    z-index: 1;
+    
 }
 #top-slogan h1 {
     color: #ffffff;
     font-family: montserrat;
-    font-size: 70%;
+    font-size: 60%;
     font-weight: bold;
     letter-spacing: 0;
 }
-#portal-breadcrumbs{
+#portal-header #portal-breadcrumbs{
+    margin: 1em auto 1.5em;
+    max-width: 1300px;
+    padding-left: 3%;
     color: #8bb3ee;
-    margin-left:8%;
-    margin-top:12%;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 #portal-breadcrumbs a,
 .breadcrumbSeparator{
@@ -617,7 +658,7 @@ li.bloc-item a h3::after{
 }
 .main-homepage.template-folderview #top-navigation {
     margin-right: -302%;
-    padding-left: 65%;
+    margin-left: 65%;
     width: auto;
 }
 .main-homepage.template-folderview #top-banner::after {
@@ -666,9 +707,13 @@ li.bloc-item a h3::after{
     text-decoration: underline;
 }
 .main-homepage iframe {
+    box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.15);
     height: 400px;
+    margin-bottom: 6em;
+    margin-left: 0.5em;
     width: 600px;
 }
+
 /*   SLIDER   */
 /*   element en evidence   */
 .element-en-evidence {
@@ -726,6 +771,16 @@ li.bloc-item a h3::after{
 #accueil .slider-unique-titre {
     margin-bottom:5%;
     padding-bottom: 7%;
+}
+
+.bloc-collection-slider.grands-dossiers.slider-unique-titre::before {
+    color: #bebebe;
+    content: "DOSSIERS";
+    font-weight: bold;
+    margin-top: -3em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 }
 
 /* POUR PARALLAX */
@@ -954,14 +1009,64 @@ li.bloc-item a h3::after{
     background: transparent none repeat scroll 0 0 !important;
     text-shadow: 1px 1px 20px #fff;
     color: #20385a !important;
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: bold;
     padding: 6% 42% 0;
     width: 46%;
 }
 
+
+#portal-column-content.position-1\:4.width-3\:4 .event.summary.details::before {
+    background: #3548b1 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 1.3em;
+}
+#content ul, .portletStaticText ul {
+    list-style-type: disc;
+}
+#content ul {
+    margin-bottom: 1em;
+}
+#content ul, #content ol {
+}
+#content ul, .portletStaticText ul {
+    list-style-type: disc;
+    margin-left: 2em;
+}
+.event.summary.details, .event.summary.details ul {
+    margin-left: 0;
+}
+.event.summary.details {
+    background: #3548b1 none repeat scroll 0 0;
+    color: white;
+    margin-bottom: 2em;
+    margin-left: 0;
+    padding: 2em 0;
+    position: relative;
+    width: 100%;
+}
+.event.summary {
+    clear: right;
+    float: right;
+}
+
+#content {
+    font-size: 90%;
+    line-height: 1.5em;
+    min-height: 400px;
+}
+
+#content-core {
+    color: #333333;
+}
+
 #accueil .element-en-evidence .pagecaption h3::before {
     background: #0e2240 none repeat scroll 0 0;
+    box-shadow: 0 0 20px white;
     content: "";
     float: left;
     height: 2px;
@@ -969,7 +1074,6 @@ li.bloc-item a h3::after{
     margin-top: 0.5em;
     width: 1.5em;
 }
-
 #accueil .element-en-evidence .pagecaption .description {
     padding: 5% 10% 6% 50%;
     color: #999 !important;
@@ -991,8 +1095,10 @@ li.bloc-item a h3::after{
 
 #accueil .element-en-evidence .bloc-item .medialink .description::after {
     content: "En savoir plus";
+    float: left;
     left: 9%;
-    margin-bottom: -3em;
+    margin-top: 3em;
+    position: static;
 }
 
 #accueil .element-en-evidence .pageleadImage {
@@ -1354,7 +1460,12 @@ li.bloc-item a h3::after{
     padding: 2% 6% 0 0;
     width: 54%;
 }
-#accueil .element-en-evidence.media-homepage .pagecaption {
+
+#accueil .bloc-collection.media-homepage.element-en-evidence {
+    margin-bottom: 0;
+}
+
+#accueil .media-homepage.element-en-evidence .pagecaption {
     padding-top: 1em;
 }
 
@@ -1407,6 +1518,31 @@ li.bloc-item a h3::after{
     right: 100%;
     top: 0;
     width: 100%;
+}
+
+
+#portal-column-content.position-1\:4.width-3\:4 .event.summary.details::before {
+    width: 1.3em;
+}
+
+#portal-column-content.position-1\:4.width-3\:4 #accueil .agenda .results::before,
+#portal-column-content.position-1\:4.width-3\:4 #accueil .agenda .results::after{
+    display: none;
+}
+
+#portal-column-content.position-1\:4.width-3\:4 #accueil .agenda .bloc-item:nth-child(3) .pageleadImage::after,
+#portal-column-content.position-1\:4.width-3\:4 #accueil .agenda .bloc-item:nth-child(4) .pageleadImage::after,
+#portal-column-content.position-1\:4.width-3\:4 .event-entry:nth-child(3) .pageleadImage::after,
+#portal-column-content.position-1\:4.width-3\:4 .event-entry:nth-child(4) .pageleadImage::after,
+#portal-column-content.position-1\:4.width-3\:4 .event-entry:nth-child(7) .pageleadImage::after,
+#portal-column-content.position-1\:4.width-3\:4 .event-entry:nth-child(8) .pageleadImage::after,
+#portal-column-content.position-1\:4.width-3\:4 .event-entry:nth-child(11) .pageleadImage::after,
+#portal-column-content.position-1\:4.width-3\:4 .event-entry:nth-child(12) .pageleadImage::after,
+#portal-column-content.position-1\:4.width-3\:4 .event-entry:nth-child(15) .pageleadImage::after,
+#portal-column-content.position-1\:4.width-3\:4 .event-entry:nth-child(16) .pageleadImage::after,
+#portal-column-content.position-1\:4.width-3\:4 .event-entry:nth-child(19) .pageleadImage::after,
+#portal-column-content.position-1\:4.width-3\:4 .event-entry:nth-child(20) .pageleadImage::after {
+    margin-left: -8%;
 }
 
 .event.summary.details > li {
@@ -1496,7 +1632,7 @@ li.bloc-item a h3::after{
 }
 
 #footer-sitemap{
-    max-width:1500px;
+    max-width:1400px;
 }
 
 #portal-footer-wrapper #footer-sitemap{
@@ -1548,7 +1684,7 @@ li.bloc-item a h3::after{
 }
 
 .footer-bloc.bloc-logo {
-    width: 15%;
+    width: 10%;
     padding-left: 5%;
 }
 
@@ -1732,3 +1868,81 @@ li.bloc-item a h3::after{
 .section-actualite #faceted-results .photoAlbumEntry {
     width: 33%;
 }
+
+.section-actualite #faceted-results .photoAlbumEntry a {
+    display: inline;
+    width: 100%;
+    padding: 0;
+}
+
+.section-actualite #faceted-results .photoAlbumEntry a::before,
+.section-actualite #faceted-results .photoAlbumEntry a .photoAlbumEntryDescription{
+    display: none;
+}
+
+.section-actualite #faceted-results .photoAlbumEntry img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.section-actualite #faceted-results .photoAlbumEntryTitle {
+    box-sizing: border-box;
+    font-size: 150%;
+    padding: 2em 2em 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.section-actualite #faceted-results .photoAlbumEntry a:hover::after {
+    width: 100% !important;
+}
+
+/*  cpsin navigation view  */
+
+.navigation-view-menus > a, .navigation-view-direct-access > a {
+    background: #dde7f2 none repeat scroll 0 0;
+    box-sizing: border-box;
+    float: left;
+    height: 16em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    min-width: 14em;
+    padding: 2em 2em 2em 2.5em;
+    position: relative;
+    width: 22%;
+}
+
+.navigation-view-menus > a h2 {
+    color: #0e2240;
+    font-size: 1.5em;
+    line-height: 1.1em;
+}
+
+.navigation-view-menus a::before {
+    content: " ‹";
+    font-size: 200%;
+    left: 0.5em;
+    position: absolute;
+    top: 1.05em;
+    transform: rotate(270deg);
+}
+
+.navigation-view-direct-accesses a::before {
+    bottom: 0.5em;
+    content: "\e83f";
+    font-family: fontello;
+    font-size: 100%;
+    left: 0.9em;
+    position: absolute;
+    top: 1em;
+}
+
+#content .navigation-view-direct-access > a {
+    background: #f2f2f2 none repeat scroll 0 0;
+    font-weight: bold;
+    height: 7.5em;
+    line-height: 1.3em;
+    overflow: hidden;
+    padding: 1em 1em 1em 2.5em;
+}
+

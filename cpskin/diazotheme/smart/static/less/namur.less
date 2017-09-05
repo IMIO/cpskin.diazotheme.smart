@@ -50,11 +50,11 @@ dt.actionMenuHeader a::after {
 }
 
 .main-homepage.template-folderview #portal-top{
-    margin-bottom: -5%;
+    margin-bottom: -3%;
 }
 
 .template-search.main-homepage #portal-top {
-    margin-bottom: -11em;
+    margin-bottom: 1em;
 }
 
 .template-search.main-homepage #portal-breadcrumbs{
@@ -66,12 +66,21 @@ dt.actionMenuHeader a::after {
     margin-right: 2em;
 }
 
+#portal-top,
 #portal-top a,
 #portal-globalnav li a,
 h1,
 h2,
 h3 {
     font-family: Montserrat !important;
+}
+
+
+
+#portal-columns #content a:hover,
+#portal-columns dl.portlet a:hover,
+#portal-columns #content li:hover{
+    color: #0e2240 !important;
 }
 
 #portal-globalnav li a {
@@ -81,6 +90,7 @@ h3 {
     margin-right: 2em;
     padding: 0;
     text-transform: none;
+    font-size: 140%;
 }
 
 #portal-globalnav a::after {
@@ -265,6 +275,14 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 
 /*   fin portlet navigation  */
+
+#formfield-form-widgets-texte label,
+#formfield-form-widgets-taxonomy_infospubliques label,
+#formfield-form-widgets-ILeadImage-image label,
+#formfield-form-widgets-ILeadImage-image_caption label,
+#form-widgets-ILeadImage-image .discreet {
+    display: none;
+}
 
 #formfield-form-widgets-date_adoption_historique,
 #formfield-form-widgets-date_adoption,
@@ -457,7 +475,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     position: absolute;
     top: 100%;
     width: 50%;
-    z-index: -1;
+    z-index: -2;
 }
 
 .main-homepage #portal-top::after{
@@ -541,6 +559,11 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 }
 #content label {
 }
+
+#content #map {
+    right: 0.7%;
+    width: 101% !important;
+}
 .section-affichage .widget-fieldset ul li label {
     color: #545454;
     font-size: 17px;
@@ -599,20 +622,12 @@ fieldset, .editionComment {
 #content-core {
     color: #333333;
 }
-#content {
-    font-size: 100%;
-}
+
 #content {
     font-size: 80%;
     line-height: 1.5em;
 }
-body, h1, h2, h3, h4, h5, h6, #portal-globalnav li a {
-    font-family: Open Sans;
-}
-body {
-    color: Black;
-    font: 100% Arial,FreeSans,sans-serif;
-}
+
 
 #portal-columns #content .section-affichage fieldset.widget-fieldset ul {
     margin-top: 0;
@@ -1315,6 +1330,11 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     width: 1.8em;
 }
 
+.width-full .coordinates::after {
+    right: -1.75em;
+    width: 1.75em;
+}
+
 #phone > a {
     display: block;
 }
@@ -1439,13 +1459,30 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .section-je-suis #form-widgets-text>div {
     width: 53%;
     margin-right: -11em;
-    margin-top: -1.7em;
-    padding-left: 7em;
+    margin-top: -2em;
+    padding-left: 0em;
     padding-top: 7em;
     padding-right: 7em;
 }
 .section-je-suis #portal-columns {
-    background: white none repeat scroll 0 0;
+    background: transparent none repeat scroll 0 0;
+}
+.section-je-suis #accueil{
+    position: relative;
+}
+
+.section-je-suis #accueil .bloc-document::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    right: 100%;
+}
+
+.section-je-suis #accueil .bloc-document {
+    background: #fff none repeat scroll 0 0;
 }
 .section-je-suis #form-widgets-text > div {
     box-sizing: border-box;
@@ -1464,6 +1501,10 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 .section-je-suis .je-suis-image img {
     max-width: 100%;
+}
+
+.section-je-suis .index-1 a.voir-tout {
+    color: #fff !important;
 }
 .userrole-anonymous.section-je-suis .je-suis-image img {
     right: -6em;
@@ -1608,8 +1649,8 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .section-je-suis .a-lagenda .bloc-item:first-child .documentByLine,
 .section-je-suis .publications .bloc-item:first-child .documentByLine{
     float: left;
-    margin-left: 4.5%;
-    padding-top: 50%;
+    margin-left: 4%;
+    padding-top: 41%;
     position: absolute;
     text-align: left;
     text-transform: uppercase;
@@ -1707,4 +1748,12 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     display: none;
 }
 
+/*  other actions  */
 
+.shown-right-panel dt {
+    color: #bca3b9;
+}
+
+.shown-right-panel #document-toc .portletHeader {
+    color: #bca3b9;
+}
