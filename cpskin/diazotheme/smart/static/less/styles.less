@@ -7,9 +7,9 @@ body.template-folderview.main-homepage #visual-portal-wrapper::after {
     display: block;
     height: 100%;
     position: absolute;
-    right: 21%;
+    right: 22%;
     top: 0;
-    width: 57%;
+    width: 55%;
     z-index: -2;
 }
 body.main-homepage.template-folderview #visual-portal-wrapper{
@@ -217,9 +217,11 @@ dl.actionMenu.deactivated dd {
 #search-results .contenttype-link,
 #search-results .contenttype-link + dd,
 .LSRow .contenttype-link,
+.LSRow .contenttype-link + .LSDescr,
 #search-results .contenttype-folder,
 #search-results .contenttype-folder + dd,
 .LSRow .contenttype-folder,
+.LSRow .contenttype-folder + .LSDescr,
 #search-results-bar span:first-child,
 input[value="Folder"],
 input[value="Folder"] + label,
@@ -228,6 +230,27 @@ input[value="Link"],
 input[value="Link"] + label,
 input[value="Link"] + label + br{
     display: none;
+}
+
+.LSTable {
+    clear: both;
+}
+
+.LSRow{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.LSRow a{
+    margin-top: 1em;
+}
+
+.LSRow > img {
+    float: left;
+    margin-right: 0.5em;
+}
+
+#LSResult .LSDescr {
+    margin-left: 2.1em;
 }
 
 .template-search #content #search-results div.pagination.listingBar a.previous::before {
@@ -509,9 +532,10 @@ li.sfHover > span > a{
     bottom: 0;
     content: "";
     position: absolute;
-    right: 100%;
+    right: -100%;
     top: 0;
-    width: 100%;
+    width: 300%;
+    z-index: -1;
 }
 
 .nav-is-stuck #top-navigation{
@@ -557,13 +581,18 @@ li.sfHover > span > a{
     display: inline;
 }*/
 .nav-is-stuck #top-actions{
-    vertical-align: initial;
+    vertical-align: middle;
 }
 /*   TITLE   */
+
+.main-homepage div#top-slogan{
+    font-size: 3vw;
+}
+
 div#top-slogan{
     display:block;
     color: #fff;
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: bold;
     padding-left: 8%;
     margin-top: 10%;
@@ -770,7 +799,6 @@ li.bloc-item a h3::after{
 }
 #accueil .slider-unique-titre {
     margin-bottom:5%;
-    padding-bottom: 7%;
 }
 
 .bloc-collection-slider.grands-dossiers.slider-unique-titre::before {
@@ -844,6 +872,7 @@ li.bloc-item a h3::after{
     overflow: hidden;
     width: 102% !important;
     margin-bottom:1em;
+    line-height: 1.25em;
 }
 #accueil #flex.slider-multiple .carousel .flex-viewport li img {
     display: block !important;
@@ -1025,9 +1054,7 @@ li.bloc-item a h3::after{
     top: 0;
     width: 1.3em;
 }
-#content ul, .portletStaticText ul {
-    list-style-type: disc;
-}
+
 #content ul {
     margin-bottom: 1em;
 }
@@ -1612,6 +1639,7 @@ li.bloc-item a h3::after{
 #portal-footer-wrapper div.position-0 {
     background: #022241 none repeat scroll 0 0;
     z-index: 0;
+    padding-bottom: 3em;
 }
 
 #portal-footer-wrapper {
@@ -1883,9 +1911,11 @@ li.bloc-item a h3::after{
 .section-actualite #faceted-results .photoAlbumEntry img {
     max-width: 100%;
     width: 100%;
+    height:240px;
 }
 
-.section-actualite #faceted-results .photoAlbumEntryTitle {
+.subsection-actualites #content #faceted-results .photoAlbumEntryTitle {
+    height: 8.5em;
     box-sizing: border-box;
     font-size: 150%;
     padding: 2em 2em 1em;

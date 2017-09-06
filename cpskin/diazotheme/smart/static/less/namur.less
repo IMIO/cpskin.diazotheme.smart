@@ -65,6 +65,10 @@ dt.actionMenuHeader a::after {
     float: right;
     margin-right: 2em;
 }
+body,
+.portlet-static-liens-utiles h3{
+    font-family: Merriweather !important;
+}
 
 #portal-top,
 #portal-top a,
@@ -250,29 +254,61 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     background-color: transparent;
 }
 
-#portal-column-one .portletNavigationTree dd .navTreeCurrentNode .contenttype-folder::before,
-#portal-column-one .portletNavigationTree dd .cnavOpen .contenttype-folder::before,
-#portal-column-one .portletNavigationTree dd .navTreeItemInPath.contenttype-folder::before {
-    left: 0.2em;
-    margin-top: 0;
-    transform: rotate(90deg);
-}
-
-#portal-column-one .portletNavigationTree dd .contenttype-folder::before {
+#portal-column-one .portletNavigationTree dd a::before{
+    background: white none repeat scroll 0 0;
+    color: #8d9397;
     content: "›";
+    float: left;
     font-size: 150%;
-    left: 0em;
-    margin-top: -3px;
-    position: absolute;
+    margin-left: -0.75em;
+    margin-top: -5px;
+    padding: 4px 4px 4px 0;
     transition: transform 0.1s ease 0s;
-    color:#8d9397;
+    opacity: 0;
 }
 
-#portal-column-one .portletNavigationTree dd .contenttype-folder{
-    background: none;
+#portal-column-one .portletNavigationTree dd a.navTreeCurrentNode::before,
+#portal-column-one .portletNavigationTree dd a:hover::before{
+    background: white none repeat scroll 0 0;
+    color: #8d9397;
+    content: "›";
+    float: left;
+    font-size: 150%;
+    margin-left: -0.75em;
+    margin-top: -5px;
+    opacity: 1;
+    padding: 4px 4px 4px 0;
+    transition: opacity 0.4s ease-out 0s;
 }
 
+.portletNavigationTree ul.navTree.navTreeLevel1 {
+    margin-left: 0.5em;
+}
 
+.icons-on .contenttype-folder {
+    background-position: -1px -637px;
+}
+
+.icons-on .contenttype-link {
+    background-position:  0 -1068px;
+}
+
+.portlet-static-liens-utiles h3 {
+    padding-left: 0 !important;
+    margin-bottom: 0.5em;
+}
+
+.portlet-static-liens-utiles ul {
+    margin-left: 0em;
+}
+
+.portlet-static-liens-utiles ul li{
+    color:gray;
+}
+
+.portlet-static-liens-utiles ul li a {
+    margin-left: 0em;
+}
 
 /*   fin portlet navigation  */
 
@@ -563,6 +599,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 #content #map {
     right: 0.7%;
     width: 101% !important;
+    top: 2em;
 }
 .section-affichage .widget-fieldset ul li label {
     color: #545454;
@@ -594,10 +631,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 label {
     font-weight: bold;
 }
-* {
-    margin: 0;
-    padding: 0;
-}
+
 #faceted-form li {
     line-height: 1em;
 }
@@ -619,15 +653,6 @@ fieldset, .editionComment {
 #top-area {
     color: white;
 }
-#content-core {
-    color: #333333;
-}
-
-#content {
-    font-size: 80%;
-    line-height: 1.5em;
-}
-
 
 #portal-columns #content .section-affichage fieldset.widget-fieldset ul {
     margin-top: 0;
@@ -1489,7 +1514,13 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     display: inline-block;
     vertical-align: top;
     width: 49%;
+    margin-top: -1em;
 }
+
+.userrole-anonymous.section-je-suis #form-widgets-text > div{
+    margin-top: -2em;
+}
+
 .section-je-suis .je-suis-texte{
     z-index: 1;
     position: relative;
@@ -1509,7 +1540,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .userrole-anonymous.section-je-suis .je-suis-image img {
     right: -6em;
     position: absolute;
-    top: -9em;
+    top: -5em;
 }
 .section-je-suis #visual-portal-wrapper #accueil .a-lagenda,
 .section-je-suis #visual-portal-wrapper #accueil .publications {
@@ -1750,10 +1781,18 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 
 /*  other actions  */
 
-.shown-right-panel dt {
+
+#right-actions-viewlet-inner .shown-right-panel dt {
     color: #bca3b9;
+    font-size: 100%;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-top: 0.75em;
 }
 
-.shown-right-panel #document-toc .portletHeader {
+#right-actions-viewlet-inner .shown-right-panel #document-toc .portletHeader {
     color: #bca3b9;
+    margin-bottom: 0;
+    margin-top:0;
 }
