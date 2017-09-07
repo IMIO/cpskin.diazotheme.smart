@@ -359,9 +359,9 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 #formfield-form-widgets-date_echeance > span,
 .event-date > span,
 .event-dates > span{
-    background-image: url('date.jpg');
+    background-image: url("../images/date.jpg");
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: left center;
     padding-left: 1.5em;
     background-size: 12px;
 }
@@ -711,7 +711,7 @@ fieldset, .editionComment {
 
 #content a:link, dl.portlet a:link,
 #content a:visited, dl.portlet a:visited {
-    color: #1a2548;
+    color: #3548b1;
 }
 
 .faceted-top-column .faceted-widget.faceted-alphabetic-widget {
@@ -1345,14 +1345,23 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     min-height:12em;
 }
 
+#belowContentContact .coordinates .wrapped-coord {
+    height: 8em;
+    overflow: hidden;
+}
+
+#belowContentContact .related-contact:nth-child(2n+1) .coordinates::after {
+    display: none;
+}
+
 .coordinates::after {
     background: #fdf6fd none repeat scroll 0 0;
     bottom: 0;
     content: "";
     position: absolute;
-    right: -1.8em;
+    right: -1.75em;
     top: 0;
-    width: 1.8em;
+    width: 1.75em;
 }
 
 .width-full .coordinates::after {
@@ -1795,4 +1804,8 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     color: #bca3b9;
     margin-bottom: 0;
     margin-top:0;
+}
+
+#right-actions-viewlet-inner .shown-right-panel .TOC1Digit li {
+    list-style-type: disc;
 }
