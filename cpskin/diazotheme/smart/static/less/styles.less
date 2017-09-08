@@ -27,6 +27,8 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
 
 /*   HEADER  */
 #portal-header {
+    margin: 0 auto;
+    max-width: 1920px;
     z-index: auto;
 }
 .main-homepage #portal-header {
@@ -42,6 +44,18 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
 }
 #top-actions-inner li.LSRow a {
     color: #3b3b3b;
+}
+#siteaction-langues > a::before {
+    color: white;
+    content: "🌐";
+    font-size: 110%;
+    font-weight: bold;
+    position: absolute;
+}
+#top-actions-inner #siteaction-langues > a,
+#top-actions-inner #siteaction-langues > a:hover {
+    color: transparent;
+    margin-left: 1em;
 }
 #top-logo-slogan{
     width: 22%;
@@ -69,7 +83,8 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
 }
 
 .in-minisite-in-portal #portal-logo > img {
-    width: 25%;
+    margin-top: 0.5em;
+    width: 36%;
 }
 
 .nav-is-stuck #portal-logo > img {
@@ -1097,6 +1112,24 @@ li.bloc-item a h3::after{
 
 #content-core {
     color: #333333;
+
+}
+
+#content p {
+    margin-right: 1em;
+}
+
+
+#content #parent-fieldname-text p:first-child {
+    margin-top: 1.5em;
+}
+
+#content p:last-child{
+    margin-bottom:1.5em;
+}
+
+.bloc-main {
+    margin-right: 1em;
 }
 
 #accueil .element-en-evidence .pagecaption h3::before {
@@ -1659,8 +1692,133 @@ li.bloc-item a h3::after{
     background:transparent;
 }
     
-#portal-footer{
-    margin:1em 0 0;
+
+#siteaction-langues > a::before {
+    color: white;
+    content: "🌐";
+    font-size: 125%;
+    font-weight: bold;
+    position: absolute;
+}
+#top-actions-inner #siteaction-langues > a, #top-actions-inner #siteaction-langues > a:hover {
+    color: transparent;
+    margin-left: 1em;
+}
+#portal-top, #portal-top a, #portal-globalnav li a, .portlet.portletNavigationTree a, .portlet-static-liens-utiles h3, .portlet-static-liens-utiles a, h1, h2, h3 {
+    font-family: Montserrat;
+}
+#top-actions-inner a, #top-actions-inner li a:hover {
+    color: white;
+}
+a:link, a:visited {
+    color: #205c90;
+}
+* *:link, *:visited {
+    text-decoration: none;
+}
+a {
+    outline: medium none;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+#portal-siteactions {
+    font-size: 85%;
+    text-align: center;
+}
+* ul, ol {
+    list-style: outside none none;
+}
+* ul, ol {
+    list-style: outside none none;
+}
+* ul, ol {
+    list-style: outside none none;
+}
+* ul, ol {
+    list-style: outside none none;
+}
+#portal-top, #portal-top a, #portal-globalnav li a, .portlet.portletNavigationTree a, .portlet-static-liens-utiles h3, .portlet-static-liens-utiles a, h1, h2, h3 {
+    font-family: Montserrat;
+}
+body, .portlet-static-liens-utiles h3 {
+    font-family: Merriweather;
+}
+body, h1, h2, h3, h4, h5, h6, #portal-globalnav li a {
+    font-family: Open Sans;
+}
+body {
+    color: black;
+    font: 100% Arial,FreeSans,sans-serif;
+}
+#portal-footer {
+    margin: 1em 0 0;
+    padding-top: 1.5em;
+    text-align: center;
+}
+
+#siteaction-langues > a::before {
+    color: white;
+    content: "🌐";
+    font-size: 125%;
+    font-weight: bold;
+    position: absolute;
+}
+#top-actions-inner #siteaction-langues > a, #top-actions-inner #siteaction-langues > a:hover {
+    color: transparent;
+    margin-left: 1em;
+}
+#portal-top, #portal-top a, #portal-globalnav li a, .portlet.portletNavigationTree a, .portlet-static-liens-utiles h3, .portlet-static-liens-utiles a, h1, h2, h3 {
+    font-family: Montserrat;
+}
+#top-actions-inner a, #top-actions-inner li a:hover {
+    color: white;
+}
+a:link, a:visited {
+    color: #205c90;
+}
+* *:link, *:visited {
+    text-decoration: none;
+}
+a {
+    outline: medium none;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+#portal-siteactions {
+    font-size: 85%;
+    text-align: center;
+}
+* ul, ol {
+    list-style: outside none none;
+}
+* ul, ol {
+    list-style: outside none none;
+}
+* ul, ol {
+    list-style: outside none none;
+}
+* ul, ol {
+    list-style: outside none none;
+}
+#portal-top, #portal-top a, #portal-globalnav li a, .portlet.portletNavigationTree a, .portlet-static-liens-utiles h3, .portlet-static-liens-utiles a, h1, h2, h3 {
+    font-family: Montserrat;
+}
+body, .portlet-static-liens-utiles h3 {
+    font-family: Merriweather;
+}
+body, h1, h2, h3, h4, h5, h6, #portal-globalnav li a {
+    font-family: Open Sans;
+}
+body {
+    color: black;
+    font: 100% Arial,FreeSans,sans-serif;
+}
+#portal-footer p {
+    margin-top: 1em;
 }
 
 #footer-social{
@@ -1820,15 +1978,14 @@ li.bloc-item a h3::after{
     position: relative;
 }
 .nav-is-Substuck .in-minisite-in-portal .container-minisite-globalnav-logo{
-    top:75px;
+    top:88px;
 }
 /*   NAVIGATION MINI SITE  */
-[id="minisite-logo-nav"] {
-    width: 100%;
-}
-[id="minisite-globalnav"]{
+
+#minisite-globalnav{
     display: table-cell;
     width: 100%;
+    vertical-align: middle;
 }
 .container-minisite-globalnav-logo{
     background: #ffffff;
