@@ -1,7 +1,8 @@
-0.5.18 (unreleased)
+0.5.18 (2017-09-13)
 -------------------
 
-- Nothing changed yet.
+- Change css for ie and mobile.
+  [mgennart]
 
 
 0.5.17 (2017-09-08)
