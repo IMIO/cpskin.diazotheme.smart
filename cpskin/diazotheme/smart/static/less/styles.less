@@ -57,6 +57,7 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
 #top-actions-inner #siteaction-langues > a:hover {
 color: transparent;
 margin-left: 1em;
+cursor:pointer;
 }
 
 #top-logo-slogan{
@@ -128,14 +129,20 @@ margin-left: 1em;
 .top-navigation-actions {
     width: 78%;
     margin-right: -22%;
+    position: relative;
 }
+
+.main-homepage .top-navigation-actions {
+    position: inherit;
+}
+
 .main-homepage.template-folderview #top-logo-slogan {
     margin-left: 0;
     width: 100%;
 }
 .main-homepage.template-folderview .top-navigation-actions{
     width: 100%;
-    margin-top: 2%;
+    margin-top: 26%;
 }
 .main-homepage.template-folderview #top-logo-slogan #portal-breadcrumbs {
     position: absolute;
@@ -395,6 +402,7 @@ dt.actionMenuHeader{
 
 #top-navigation-inner {
     padding-top:2em;
+    padding-bottom: 2em;
 }
 .portal-globalnav-cpskinmenu .selected a,
 .portal-globalnav-cpskinmenu-tabs .selected a,
@@ -541,13 +549,12 @@ li.sfHover > span > a{
     top:0;
     width: 100%;
     margin-top:0 !important;
-    padding-bottom: 2%;
     z-index: 2;
     max-height:8em;
 }
 
 .nav-is-stuck #top-logo-navigation-actions .top-navigation-actions::before,
-.in-minisite-in-portal #top-logo-navigation-actions .top-navigation-actions::before{
+.in-minisite-in-portal #top-navigation::before{
     background: #0e213f none repeat scroll 0 0;
     bottom: 0;
     content: "";
@@ -607,6 +614,7 @@ li.sfHover > span > a{
 
 .main-homepage div#top-slogan{
     font-size: 3vw;
+    margin-top:36%;
 }
 
 div#top-slogan{
@@ -730,7 +738,7 @@ li.bloc-item a h3::after{
     margin: 0;
 }
 #portal-columns #accueil .a-votre-service {
-    margin-bottom: 9%;
+    margin-bottom: 3%;
 }
 #accueil .a-votre-service {
     background: #0e213f none repeat scroll 0 0;
@@ -740,17 +748,32 @@ li.bloc-item a h3::after{
 .a-votre-service h2 {
     color: #82a9e2;
 }
-.homepage-service {
+#accueil .homepage-service {
     display: inline-block;
     padding-top: 2%;
     min-width: 33%;
 }
+#accueil .homepage-service ul{
+   list-style-type: none;
+}
+.homepage-service li a::before {
+    content: "-";
+    margin-right: 0.3em;
+    position: absolute;
+    margin-left: -1em;
+}
+
+#accueil .homepage-service li a:hover::before{
+    text-decoration: none;
+}
+
 .homepage-service li,
 #content .homepage-service li a {
     color: #fff;
 }
 
-#portal-columns #content .homepage-service li a:hover {
+#portal-columns #content .homepage-service li a:hover,
+#portal-columns #content .homepage-service li:hover{
     color: white !important;
     text-decoration: underline;
 }
@@ -817,18 +840,19 @@ li.bloc-item a h3::after{
     margin-top: 0 !important;
 }
 #accueil .slider-unique-titre {
-    margin-bottom:5%;
+    margin-bottom:7%;
+    padding-top: 3%;
 }
 
 #accueil .slider-unique-titre .flexslider ul.slides img {
-			    padding-top: 2em;
+	padding-top: 4em;
 }
 
 .bloc-collection-slider.grands-dossiers.slider-unique-titre::before {
     color: #bebebe;
     content: "DOSSIERS";
     font-weight: bold;
-    margin-top: -3em;
+    margin-top: 1em;
     position: absolute;
     text-align: center;
     width: 100%;
@@ -1674,7 +1698,6 @@ li.bloc-item a h3::after{
     display: none;
 }
 
-
 #portal-footer-wrapper div.position-0 {
     background: #022241 none repeat scroll 0 0;
     z-index: 0;
@@ -1692,6 +1715,10 @@ li.bloc-item a h3::after{
     
 #portal-footer{
     margin:1em 0 0;
+}
+
+#portal-footer p{
+    margin-top: 2em;
 }
 
 #footer-social{
@@ -1730,7 +1757,10 @@ li.bloc-item a h3::after{
     vertical-align: top;
 }
 
-.footer-static{
+#footer-sitemap div.footer-static {
+    padding-bottom: 1.25em;
+    padding-left: 0.5em;
+    padding-top: 1em;
     width:100%;
 }
 
@@ -1824,6 +1854,13 @@ li.bloc-item a h3::after{
 .template-login_form #portal-columns #content {
     margin: 0;
 }
+#fieldset-openid-login label, #login-form label {
+    margin-bottom: 0.5em;
+    width: auto;
+}
+#login-password .discreet {
+    font-size: 100%;
+}
 #login-form .context {
     background: #0047b3 none repeat scroll 0 0;
     border: 0 solid #0047b3;
@@ -1837,7 +1874,6 @@ li.bloc-item a h3::after{
     display: none;
 }
 .in-minisite-in-portal #top-logo-navigation-actions {
-    background: #0e213f none repeat scroll 0 0;
     position: relative;
     z-index:2;
 }
@@ -1853,7 +1889,7 @@ li.bloc-item a h3::after{
 }
 /*   NAVIGATION MINI SITE  */
 #minisite-logo-nav {
-    display: table-cell;
+    display: table;
     width: 100%;
     vertical-align: middle;
 }
@@ -1874,7 +1910,6 @@ li.bloc-item a h3::after{
     top:0;
     width: 100%;
     margin-top:0 !important;
-    padding-bottom: 2%;
     z-index: 1;
     max-height:8em;
 }
@@ -1930,28 +1965,28 @@ li.bloc-item a h3::after{
     z-index: 0;
 }
 /*   NEWS   */
-.section-actualite #faceted-results .photoAlbumEntry {
+.collection-news-item #faceted-results .photoAlbumEntry {
     width: 33%;
 }
 
-.section-actualite #faceted-results .photoAlbumEntry a {
+.collection-news-item #faceted-results .photoAlbumEntry a {
     display: inline;
     width: 100%;
     padding: 0;
 }
 
-.section-actualite #faceted-results .photoAlbumEntry a::before,
-.section-actualite #faceted-results .photoAlbumEntry a .photoAlbumEntryDescription{
+.collection-news-item #faceted-results .photoAlbumEntry a::before,
+.collection-news-item #faceted-results .photoAlbumEntry a .photoAlbumEntryDescription{
     display: none;
 }
 
-.section-actualite #faceted-results .photoAlbumEntry img {
+.collection-news-item #faceted-results .photoAlbumEntry img {
     max-width: 100%;
     width: 100%;
     height:240px;
 }
 
-.subsection-actualites #content #faceted-results .photoAlbumEntryTitle {
+.collection-news-item #content #faceted-results .photoAlbumEntryTitle {
     height: 8.5em;
     box-sizing: border-box;
     font-size: 150%;
@@ -1960,7 +1995,7 @@ li.bloc-item a h3::after{
     width: 100%;
 }
 
-.section-actualite #faceted-results .photoAlbumEntry a:hover::after {
+.collection-news-item #faceted-results .photoAlbumEntry a:hover::after {
     width: 100% !important;
 }
 

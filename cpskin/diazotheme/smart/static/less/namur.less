@@ -125,8 +125,12 @@ h3 {
 }
     
 
-#portal-globalnav .selected a, #portal-globalnav .selected a:hover, #portal-globalnav a:hover, #portal-globalnav li a.activated {
+#portal-globalnav .selected a:hover, #portal-globalnav a:hover, #portal-globalnav li a.activated {
     border-bottom: 1px solid white;
+    text-decoration: none;
+}
+
+#portal-globalnav .selected a{
     text-decoration: none;
 }
 
@@ -149,21 +153,18 @@ h3 {
 
   
 #portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-administration ul.direct_access,
-#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-securite ul.direct_access,
-#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-territoire ul.direct_access{
+#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-securite ul.direct_access{
     left: 25% !important;
     width: 75% !important;
     }
     
 #portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-administration .portal-globalnav-cpskinmenu.navTreeLevel1.has_direct_access li,
-#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-securite .portal-globalnav-cpskinmenu.navTreeLevel1.has_direct_access li,
-#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-territoire .portal-globalnav-cpskinmenu.navTreeLevel1.has_direct_access li{
+#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-securite .portal-globalnav-cpskinmenu.navTreeLevel1.has_direct_access li{
     width:100% !important;
     }
 
 #portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-administration ul.direct_access li a,
-#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-securite ul.direct_access li a,
-#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-territoire ul.direct_access li a {
+#portal-globalnav-cpskinmenu-ma-ville-fr-ma-ville-securite ul.direct_access li a{
     width: 44%;
     box-sizing:border-box;
     }
@@ -270,7 +271,12 @@ dl.portlet dt, .portletWrapper dl.portlet dt a{
 dl.portlet ul.navTree .navTreeCurrentItem,
 .navTreeItemInPath,
 #portal-column-one .portletNavigationTree dd .cnavOpen .contenttype-folder {
-    color: #000000;
+    color: #0e2240;
+}
+
+#portal-columns #content #content-core .event.summary.details li a:hover,
+#portal-columns #content #content-core .event.summary.details li:hover{
+    color: #fff !important;
 }
 
 dl.portlet ul.navTree .navTreeCurrentItem {
@@ -1097,20 +1103,27 @@ dl.portalMessage dt {
     background-color: transparent;
 }
 
-.section-annuaire.portaltype-organization #content{
+.section-annuaire.portaltype-organization #content,
+.section-annuaire.portaltype-person #content{
     margin:0 0em 2em;
 }
 
-.section-annuaire.portaltype-organization #portal-columns {
+.section-annuaire.portaltype-organization #portal-columns,
+.section-annuaire.portaltype-person #portal-columns{
     max-width: 1200px;
 }
 
-.portaltype-organization article#content {
+.portaltype-organization article#content,
+.portaltype-person article#content{
     overflow: hidden;
     margin-right: 0;
 }
 
-#contact-schedule {
+.section-annuaire.portaltype-person .photo {
+    max-width: 175px;
+}
+
+#contact-schedule, #person > .contact-details {
     background: #fdf6fd none repeat scroll 0 0;
     border-left: 5px solid #f1d3ee;
     box-sizing: border-box;
@@ -1118,7 +1131,7 @@ dl.portalMessage dt {
     margin-bottom: 2em;
     overflow: hidden;
     padding: 2em 2em 1em 3em;
-    width: 104%;
+    width: 103%;
 }
 
 .contact-details, #contact-schedule .Schedule {
@@ -1139,21 +1152,6 @@ dl.portalMessage dt {
 #organization .contact-details label, #person .contact-details label{
     color: #0a2340;
  }
-
-#organization > .contact-details, #person > .contact-details {
-    background: #3548b1 none repeat scroll 0 0;
-    color: white;
-    float: left;
-    padding: 1em;
-    width: 98%;
-}
-
-#organization > .contact-details a, #person > .contact-details a {
-    clear: both;
-    color: white;
-    display: block;
-    text-decoration: underline;
-}
 
 .contact-details p, .contact-details > div {
     clear: both;
@@ -1195,24 +1193,9 @@ dl.portalMessage dt {
     text-decoration: underline;
 }
 
-#organizations li:nth-child(2){
-   margin-left: 1em;
-}
-
-#organizations li:nth-child(3){
-   margin-left: 2em;
-}
-
-#organizations li:nth-child(4){
-   margin-left: 3em;
-}
-
-#organizations li:nth-child(5){
-   margin-left: 4em;
-}
-
-#organizations li:nth-child(6){
-   margin-left: 5em;
+.portaltype-person #held_positions .held_position .organization {
+    background-color: transparent;
+    border: 0 solid black;
 }
 
 /*  Fin fiche annuaire  */
