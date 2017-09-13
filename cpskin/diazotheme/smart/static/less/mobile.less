@@ -407,23 +407,76 @@ dl.actionMenu.activated dd {
     font-size: 10px;
     margin-top:35%;
 }
-#accueil .agenda .bloc-item .pageleadImage::after,
-.event-entry .pageleadImage::after{
-    margin-left: 93%;
+.event-entry{
+    width: 100%;
+}
+#accueil .agenda .bloc-item:nth-child(even) .pageleadImage::after,
+.event-entry:nth-child(even) .pageleadImage::after,
+#accueil .agenda .bloc-item:nth-child(4) .pageleadImage::after,
+.event-entry:nth-child(4) .pageleadImage::after,
+.event-entry:nth-child(8) .pageleadImage::after,
+.event-entry:nth-child(12) .pageleadImage::after,
+.event-entry:nth-child(16) .pageleadImage::after,
+.event-entry:nth-child(20) .pageleadImage::after{
+    margin-left: -6%;
+}
+
+#accueil .agenda .bloc-item:nth-child(even) .pageleadImage,
+.event-entry:nth-child(even) .pageleadImage{
+    margin-left: 50%;
+}
+#accueil .agenda .bloc-item:nth-child(even) h3,
+.event-entry:nth-child(even) h3 {
+    margin-left: 0;
+}
+#accueil .agenda .bloc-item:nth-child(even) .documentByLine,
+.event-entry:nth-child(even) .documentByLine{
+    margin-left: 0;
+}
+#accueil .agenda .bloc-item:nth-child(even) .indexview-categories,
+.event-entry:nth-child(even) .indexview-categories{
+    margin-left: 0;
+}
+#accueil .agenda .bloc-item:nth-child(3) .pageleadImage,
+.event-entry:nth-child(3) .pageleadImage,
+.event-entry:nth-child(7) .pageleadImage,
+.event-entry:nth-child(11) .pageleadImage,
+.event-entry:nth-child(15) .pageleadImage,
+.event-entry:nth-child(19) .pageleadImage {
+    margin-left: 0;
+}
+#accueil .agenda .bloc-item:nth-child(3) h3,
+#accueil .agenda .bloc-item:nth-child(3) .documentByLine,
+#accueil .agenda .bloc-item:nth-child(3) .indexview-categories,
+.event-entry:nth-child(3),
+.event-entry:nth-child(7),
+.event-entry:nth-child(11),
+.event-entry:nth-child(15),
+.event-entry:nth-child(19),
+.event-entry:nth-child(3) .indexview-categories,
+.event-entry:nth-child(7) .indexview-categories,
+.event-entry:nth-child(11) .indexview-categories,
+.event-entry:nth-child(15) .indexview-categories,
+.event-entry:nth-child(19) .indexview-categories,
+.event-entry:nth-child(3) .documentByLine,
+.event-entry:nth-child(7) .documentByLine,
+.event-entry:nth-child(11) .documentByLine,
+.event-entry:nth-child(15) .documentByLine,
+.event-entry:nth-child(19) .documentByLine,
+.event-entry:nth-child(3) h3,
+.event-entry:nth-child(7) h3,
+.event-entry:nth-child(11) h3,
+.event-entry:nth-child(15) h3,
+.event-entry:nth-child(19) h3 {
+    margin-left: 50%;
 }
 #accueil .agenda .bloc-item:nth-child(3) .pageleadImage::after,
-#accueil .agenda .bloc-item:nth-child(4) .pageleadImage::after,
 .event-entry:nth-child(3) .pageleadImage::after,
-.event-entry:nth-child(4) .pageleadImage::after,
 .event-entry:nth-child(7) .pageleadImage::after,
-.event-entry:nth-child(8) .pageleadImage::after,
 .event-entry:nth-child(11) .pageleadImage::after,
-.event-entry:nth-child(12) .pageleadImage::after,
 .event-entry:nth-child(15) .pageleadImage::after,
-.event-entry:nth-child(16) .pageleadImage::after,
-.event-entry:nth-child(19) .pageleadImage::after,
-.event-entry:nth-child(20) .pageleadImage::after{
-    margin-left: -11%;
+.event-entry:nth-child(19) .pageleadImage::after {
+    margin-left: 96%;
 }
 /*   video   */
 .main-homepage iframe {
