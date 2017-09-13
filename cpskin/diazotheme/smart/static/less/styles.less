@@ -1998,10 +1998,25 @@ li.bloc-item a h3::after{
     width: 33%;
 }
 
+.news-date {
+    color: #bebebe;
+    font-weight: bold;
+    position: relative;
+    top: 2em;
+}
+
 .collection-news-item #faceted-results .photoAlbumEntry a {
+    border-bottom:0px solid white !important;
     display: inline;
     width: 100%;
     padding: 0;
+}
+
+
+#visual-portal-wrapper .collection-news-item #faceted-results .photoAlbumEntry a:focus,
+#visual-portal-wrapper #portal-logo:focus,
+#visual-portal-wrapper #portal-logo:focus img{
+    outline: 0 none;
 }
 
 .collection-news-item #faceted-results .photoAlbumEntry a::before,
@@ -2016,9 +2031,10 @@ li.bloc-item a h3::after{
 }
 
 .collection-news-item #content #faceted-results .photoAlbumEntryTitle {
-    height: 8.5em;
     box-sizing: border-box;
     font-size: 150%;
+    height: 8.5em;
+    line-height: 1.25em;
     padding: 2em 2em 1em;
     text-align: center;
     width: 100%;
