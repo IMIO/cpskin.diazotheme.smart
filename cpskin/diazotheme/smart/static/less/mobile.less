@@ -57,6 +57,7 @@ dl.actionMenu.activated dd {
 }
 .top-navigation-actions {
     margin-top: 0;
+    position: static;
 }
 .main-homepage.template-folderview #top-navigation {
     margin-right: -500%;
@@ -74,14 +75,18 @@ dl.actionMenu.activated dd {
     width: 10%;
 }
 
+.main-homepage.template-search #portal-header {
+    background: #0e213f none repeat scroll 0 0;
+}
+
 #top-logo-inner #portal-searchbox {
     background: #0e213f none repeat scroll 0 0;
     box-sizing: border-box;
     left: 0;
     margin: 0;
-    padding: 34% 1em 12% 1em;
+    padding: 20% 10% 0% 5%;
     position: absolute;
-    top: 0;
+    top: -1em;
     width: 100%;
     z-index: 2;
 }
@@ -92,13 +97,23 @@ dl.actionMenu.activated dd {
 
 
 #portal-header #top-navigation-inner #search-btn {
-    float: left;
+  /*  float: left;  
     margin-left: 10px;
-    margin-top: -38em;
-    position: relative;
+    margin-top: -38em;  */
+    position: absolute;
     z-index: 2;
+    right: 0;
     background-position: left center;
     background-size: 90%;
+}
+
+#portal-header #search-btn{
+    margin-right: 12px;
+    margin-top: 6px;
+}
+
+#LSResult fieldset{
+    margin: 2em 0 0 0;
 }
 
 #top-navigation-inner #mobnav-btn{
@@ -188,7 +203,7 @@ dl.actionMenu.activated dd {
 }
 
 #portal-searchbox .LSBox::after {
-    margin-left: -24px;
+    right: 0;
     position: absolute;
     top: 0.75em;
 }
@@ -204,8 +219,9 @@ dl.actionMenu.activated dd {
 .LSBox #searchGadget {
     width: 80% !important;
     height:auto;
+    box-sizing: border-box;
 }
-.main-homepage #top-banner{
+#top-banner{
     z-index: 0;
 }
 
@@ -215,6 +231,11 @@ dl.actionMenu.activated dd {
 #portal-header {
     background: #0e213f;
 }
+
+.main-homepage.template-folderview .top-navigation-actions {
+    margin-top: 0;
+}
+
 #top-logo-navigation-actions {
     position: relative;
 }
@@ -304,6 +325,10 @@ dl.actionMenu.activated dd {
     top:0;
     padding-right: 2.5em;
 }
+
+#portal-column-one{
+    padding-left: 1em;
+}
 /*   SLIDER UNIQUE  */
 
 
@@ -320,9 +345,13 @@ dl.actionMenu.activated dd {
 }
 
 /*   SLIDER TITLE UNIQUE   */
-/*#accueil .slider-unique-titre{
-    padding-bottom: 45%;
-}*/
+#accueil .slider-unique-titre{
+    margin-bottom: 0%;
+}
+
+#accueil .slider-unique-titre .flex-container {
+    margin-top: -3em;
+}
 
 #accueil .element-en-evidence .pagecaption .description {
     padding: 5% 0 6% 50%;
@@ -391,7 +420,7 @@ dl.actionMenu.activated dd {
 /*   AGENDA   */
 
 #accueil .agenda {
-    margin-top: 0;
+    margin-top: -4em;
 }
 #accueil .agenda .bloc-item .indexview-categories{
     font-size: 17px;
@@ -488,8 +517,17 @@ dl.actionMenu.activated dd {
 /*   right action panel   */
 #right-actions-viewlet{
     right: 0.2em;
-    top:0;
+    top:2em;
 }
+
+#right-actions-viewlet-inner{
+    z-index: 0;
+}
+
+#other-actions {
+    padding-top: 4.5em;
+}
+
 #right-actions-viewlet-inner > a::after {
     color: #0f2241;
     text-shadow: 0 0 0 transparent;
@@ -520,6 +558,34 @@ dl.actionMenu.activated dd {
     right: -7%;
     width: 111%;
 }
+
+#content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li label{
+    font-size:80%;
+}
+
+#contact-schedule, #person>.contact-details{
+    padding: 2em 2em 1em 2em;
+}
+
+.contact-details, #contact-schedule .Schedule {
+    width: 100%;
+}
+
+#aboveContentContact .schedule {
+    float: left;
+}
+
+#download_vcard {
+    bottom: -2.5em;
+    position: relative;
+    padding: 0.5em 2em 0.5em 1em;
+    right: -6em;
+}
+
+div#activity {
+    padding-left: 1em;
+}
+
 #content .widget-fieldset li{
     float: none;
     display: inline;
@@ -579,11 +645,21 @@ body.template-facetednavigation_view .contact-entry{
     font-size: 100%;
 }
 /*   MINI SITES   */
-/*   hedear   */
+/*   header   */
 .in-minisite-in-portal #top-logo{
     height: auto;
 }
 /*   navigation   */
+
+#minisite-navigation-inner{
+    padding: 0;
+}
+
+#minisite-logo-nav > ul,
+#minisite-globalnav a{
+    display: block;
+}
+
 [id="minisite-navigation-inner"] #minisite-logo,
 [id="minisite-globalnav"]{
     display: block;
@@ -603,6 +679,11 @@ body.template-facetednavigation_view .contact-entry{
 
 #portal-footer-wrapper .cell{
     background-position: 35% 370px; 
+}
+
+.footer-bloc.bloc-logo{
+    margin-bottom: -5%;
+    width: 15%;   
 }
 
 .bloc-adresse, .bloc-liens, .footer-bloc-plan{
