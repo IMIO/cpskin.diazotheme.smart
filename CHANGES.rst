@@ -1,7 +1,7 @@
 0.5.20 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Change mobile css.
 
 
 0.5.19 (2017-09-13)
