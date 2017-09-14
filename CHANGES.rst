@@ -1,7 +1,14 @@
-0.5.19 (unreleased)
+0.5.20 (unreleased)
 -------------------
 
 - Nothing changed yet.
+
+
+0.5.19 (2017-09-13)
+-------------------
+
+- Change css for mobile.
+  [mgennart]
 
 
 0.5.18 (2017-09-13)
