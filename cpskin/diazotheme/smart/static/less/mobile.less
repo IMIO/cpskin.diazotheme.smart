@@ -520,8 +520,8 @@ dl.actionMenu.activated dd {
     top:2em;
 }
 
-#right-actions-viewlet-inner{
-    z-index: 0;
+#right-actions-viewlet-inner>a::before{
+    display: none;
 }
 
 #other-actions {
@@ -548,6 +548,8 @@ dl.actionMenu.activated dd {
 #viewlet-above-content-body .wrapped-coord{
     width: 100%;
 }
+
+
 /*   directory   */
 #visual-portal-wrapper #portal-columns #content .faceted-text-widget.section-recherche .widget-fieldset input[type="text"],
 #visual-portal-wrapper #portal-columns #content .faceted-text-widget.section-search .widget-fieldset input[type="text"]{
