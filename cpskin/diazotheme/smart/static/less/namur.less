@@ -69,6 +69,7 @@ dt.actionMenuHeader a::after {
     float: right;
     margin-right: 2em;
 }
+
 body,
 .portlet-static-liens-utiles h3{
     font-family: "Merriweather" !important;
@@ -571,7 +572,13 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 .faceted-widget.faceted-layout-widget.section-affichage label[title="Vue cartographique"]::before {
     content: "\e837";
     font-family: fontello;
-    margin-right: 0.75em;
+    margin-right: 0.5em;
+}
+
+.faceted-widget.faceted-layout-widget.section-affichage label[title="Vue agenda"]::before {
+    content: "";
+    font-family: fontello;
+    margin-right: 0.5em;
 }
 
 .faceted-taxonomy_select2-widget legend, .faceted-widget.faceted-text-widget.section-recherche legend {
@@ -1021,7 +1028,7 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
     top: -6em;
 }
 .faceted-widget.faceted-layout-widget.section-affichage label[title="Vue annuaire"]::before {
-    content: "\e836";
+    content: "\f00b";
     font-family: fontello;
     font-size: 14px;
     margin-right: 0.75em;
@@ -1582,7 +1589,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .section-je-suis #accueil .bloc-collection,
 .section-je-suis #accueil .bloc-document,
 .section-je-suis #accueil .bloc-collection-slider {
-    margin: 0 0 5.3%;
+    margin: 5em 0 5.3%;
 }
 .section-je-suis .a-lagenda  .results::before,
 .section-je-suis .publications .results::before{
