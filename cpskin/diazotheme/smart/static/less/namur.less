@@ -14,6 +14,10 @@ div#portal-column-content {
     box-sizing:border-box;
 }
 
+div#portal-column-content.position-1\:4{
+        border-left: 1px solid #e5e5e5;
+}
+
 .userrole-authenticated div#portal-column-content .documentEditable {
     background: #ffffff;
     border-radius: 8px;
@@ -104,8 +108,7 @@ h3 {
 
 
 #portal-columns #content a:hover,
-#portal-columns dl.portlet a:hover,
-#portal-columns #content li:hover{
+#portal-columns dl.portlet a:hover{
     color: #0e2240 !important;
 }
 
@@ -461,6 +464,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     box-sizing: border-box;
     float: left;
     width:100%;
+    background: white;
 }
 
 .portaltype-reglement #portal-column-content{
@@ -516,10 +520,9 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 #portal-column-content::before {
     background: white none repeat scroll 0 0;
-    border-left: 1px solid #e5e5e5;
     content: "";
     position: absolute;
-    right: 0;
+    right: 3.5em;
     top: 0;
     bottom:0;
     width: 100%;
@@ -532,13 +535,13 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 #portal-column-content::after {
     background: #f3f3f3 none repeat scroll 0 0;
+    bottom: 0;
     content: "";
-    left: 100%;
     position: absolute;
+    right: -196.5em;
     top: 8em;
-    width: 2000px;
+    width: 200em;
     z-index: -1;
-    bottom: 0em;
 }
 
 #portal-top::after {
@@ -626,7 +629,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     display: inline-block;
     height: 18px;
     padding-left: 1em;
-    padding-top: 0.5em;
+    padding-top: 0.6em;
     text-shadow: 0px 0px 4px #3548b1;
     z-index: 1;
 }
@@ -939,6 +942,11 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
 
 /*  Vue annuaire  */
 
+.section-annuaire #content-core {
+   margin: 0 auto;
+   padding: 0 2em;
+}
+
 .section-annuaire #portal-columns {
     /*padding-right: 6%;*/
     box-sizing: border-box;
@@ -965,7 +973,7 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
     margin-left: -1em;
 }
 
-#center-area::before {
+/*#center-area::before {
     content: "";
     top: 0;
     position: absolute;
@@ -973,8 +981,8 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
     bottom: 0;
     width: 300%;
     z-index: -1;
-    right: 0;
-}
+    right: 4em;
+}*/
 
 .userrole-anonymous ul.pod-template {
     display: none;
@@ -1316,10 +1324,14 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     display: none;
 }
 
+#content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li{
+    min-height: 2.2em;
+}
+
 #content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li label {
     display: inline-block;
     height: 18px;
-    padding-top: 0.5em;
+    padding-top: 0.3em;
     padding-left: 1em;
     z-index: 1;
     text-shadow: 1px 1px 3px #3548b1;
@@ -1328,14 +1340,14 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 #content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li input:checked + label {
     background: white none repeat scroll 0 0;
     color: black !important;
-    padding-bottom: 0.4em;
+    padding-bottom: 0.6em;
     padding-left: 1em;
     text-shadow: 0px 0px 0px transparent;
 }
 
 #content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li label:hover {
     background: white none repeat scroll 0 0;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.6em;
     padding-left: 1em;
     color: black !important;
     text-shadow: 0 0 0 transparent;
