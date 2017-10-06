@@ -19,9 +19,11 @@ body{
 }
 
 dl.actionMenu.activated dd {
-    right: -2em;
+    right: -3em;
 }
-
+#top-menu-je-suis .actionMenuContent{
+    right: -9em;
+}
 .main-homepage #top-logo-slogan{
     margin: 0 0 3em;
     width: 50%;
@@ -97,9 +99,6 @@ dl.actionMenu.activated dd {
 
 
 #portal-header #top-navigation-inner #search-btn {
-  /*  float: left;  
-    margin-left: 10px;
-    margin-top: -38em;  */
     position: absolute;
     z-index: 2;
     right: 0;
@@ -610,11 +609,18 @@ body.template-facetednavigation_view .contact-entry{
     width: 100%;
 }
 /*  je suis   */
+
 .section-je-suis #form-widgets-text > div {
-    background: #fff;
+    background: transparent;
     margin-top: 13em;
     padding: 1em 0;
     width: 100%;
+}
+.userrole-anonymous.section-je-suis #form-widgets-text > div {
+    margin-top: 11em;
+}
+.userrole-anonymous.section-je-suis .je-suis-image img {
+    right: 0em;
 }
 .section-je-suis .a-lagenda .titre-rss,
 .section-je-suis .publications .titre-rss{
@@ -633,12 +639,15 @@ body.template-facetednavigation_view .contact-entry{
 .section-je-suis .a-lagenda .bloc-item:first-child h3,
 .section-je-suis .publications .bloc-item:first-child h3{
     font-size: 10px;
-    top:57%;
+    top:64%;
 }
 .section-je-suis .a-lagenda .bloc-item:first-child .documentByLine,
 .section-je-suis .publications .bloc-item:first-child .documentByLine{
     font-size: 9px;
-    padding-top:115%;
+    padding-top:30%;
+}
+.section-je-suis .a-lagenda .bloc-item:first-child .documentByLine{
+    
 }
 .section-je-suis #content .a-lagenda .voir-tout,
 .section-je-suis #content .publications .voir-tout{
@@ -662,6 +671,17 @@ body.template-facetednavigation_view .contact-entry{
 .section-je-suis .index-1,
 .section-je-suis .index-2{
     float: left;
+}
+.section-je-suis #content #accueil .bloc-item{
+    width: 46%;
+}
+.section-je-suis #accueil .bloc-collection.index-1,
+.section-je-suis #accueil .bloc-collection.index-2{
+    margin: 0em;
+}
+.section-je-suis #content #accueil .index-1 .bloc-item,
+.section-je-suis #content #accueil .index-2 .bloc-item {
+    width: 100%;
 }
 /*   MINI SITES   */
 /*   header   */
@@ -687,7 +707,6 @@ body.template-facetednavigation_view .contact-entry{
     display: block;
     padding: 0.5em 0;
 }
-
 /*  Vue faceted  */
 .collection-news-item #faceted-results .photoAlbumEntry {
     width: 100%;
