@@ -26,6 +26,11 @@ dl.actionMenu.activated dd {
     margin: 0 0 3em;
     width: 50%;
 }
+
+div#top-slogan{
+    font-size: 3vw;
+}
+
 .main-homepage.template-folderview #top-logo-inner {
     margin: 1.5em 0 0.75em 0;
     z-index: 1;
@@ -321,13 +326,14 @@ dl.actionMenu.activated dd {
 #portal-top{
     margin-bottom: 0;
 }
+
 #portal-columns{
     top:0;
-    padding-right: 2.5em;
 }
 
 #portal-column-one{
     padding-left: 1em;
+    padding-right: 2.9em;
 }
 /*   SLIDER UNIQUE  */
 
@@ -427,7 +433,7 @@ dl.actionMenu.activated dd {
     margin-top: -4em;
 }
 #accueil .agenda .bloc-item .indexview-categories{
-    font-size: 17px;
+    font-size: 3vw;
 }
 #accueil .agenda .bloc-item h3,
 .event-entry h3{
@@ -509,6 +515,11 @@ dl.actionMenu.activated dd {
 .event-entry:nth-child(19) .pageleadImage::after {
     margin-left: 96%;
 }
+
+.event.summary.details>li {
+    width: 100%;
+}
+
 /*   video   */
 .main-homepage iframe {
     height: auto;
@@ -557,7 +568,7 @@ dl.actionMenu.activated dd {
 /*   directory   */
 #visual-portal-wrapper #portal-columns #content .faceted-text-widget.section-recherche .widget-fieldset input[type="text"],
 #visual-portal-wrapper #portal-columns #content .faceted-text-widget.section-search .widget-fieldset input[type="text"]{
-    width: 10em !important;
+    height: 1.5em;
 }
 .faceted-widget.faceted-layout-widget.section-affichage {
     bottom: -2em;
@@ -566,7 +577,7 @@ dl.actionMenu.activated dd {
 }
 
 #content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li label{
-    font-size:80%;
+    font-size:75%;
 }
 
 #contact-schedule, #person>.contact-details{
@@ -688,7 +699,32 @@ body.template-facetednavigation_view .contact-entry{
     padding: 0.5em 0;
 }
 
-/*  Vue faceted  */
+/*  Content  */
+
+#portal-columns #portal-column-content {
+    padding-right: 2.9em;
+}
+
+#content {
+    min-height: 0px;
+}
+
+/*  Faceted  */
+
+div.faceted-select2-container {
+    max-width: 200px;
+    min-width: 200px;
+}
+
+#top-area {
+    padding: 2em 0 2em 0em;
+}
+
+.template-facetednavigation_view #faceted-results {
+    padding-left: 0;
+    padding-right: 1em;
+}
+
 .collection-news-item #faceted-results .photoAlbumEntry {
     width: 100%;
 }
@@ -698,6 +734,13 @@ body.template-facetednavigation_view .contact-entry{
     width: 100%;
 }
 /*   FOOTER   */
+.footer-mini-site .footer-bloc {
+    padding-left: 0;
+}
+
+.footer-mini-site .bloc-adresse, .footer-mini-site .bloc-liens {
+    width: 100%;
+}
 
 #portal-footer-wrapper .cell{
     background-position: 35% 370px; 

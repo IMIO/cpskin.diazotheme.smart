@@ -1,6 +1,14 @@
 /*.td_cell_citizen-state-column .line-state.active#visual-portal-wrapper{
     overflow: hidden;
 }*/
+.userrole-reader a#plone-contentmenu-actions-iterate_checkin {
+    display: none !important;
+}
+
+.userrole-manager a#plone-contentmenu-actions-iterate_checkin {
+    display: block !important;
+}
+
 body.template-folderview.main-homepage #visual-portal-wrapper::after {
     background: #f3f3f3 none repeat scroll 0 0;
     content: "";
@@ -313,7 +321,7 @@ input[value="Link"] + label + br{
 }
 /*   NAVIGATION   */
 #portal-top #top-navigation-inner > .portal-globalnav-cpskinmenu {
-    margin-left: -11%;
+    margin-left: -16%;
     z-index: 2;
 }
 
@@ -621,7 +629,7 @@ div#top-slogan{
     font-size: 2vw;
     font-weight: bold;
     padding-left: 8%;
-    margin-top: 3em;
+    margin-top: 2em;
     margin-bottom:1em;
     height:2.4em;
     line-height: 1.2em;
@@ -1675,7 +1683,6 @@ li.bloc-item a h3::after{
 }
 
 #content-core .event.summary.details a, #content-core .event.summary.details a:hover {
-    border-bottom: 1px solid #fff;
     color: white !important;
 }
 
@@ -1845,7 +1852,58 @@ li.bloc-item a h3::after{
 
 .logo-feder {
     width: 20%;
-    margin-bottom: 1em;
+}
+
+#portal-columns .footer-mini-site {
+    background: #f1d2ef none repeat scroll 0 0;
+    float: left;
+    margin: -5em 0 -7em;
+    padding: 5em 0;
+    width: 100%;
+    position: relative;
+}
+
+.footer-mini-site > div:before, #accueil .footer-mini-site > div:after{
+    background: #f1d2ef none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 1000px;
+    z-index: 0;
+}
+
+.footer-mini-site > div:before{
+    right: 100%;
+}
+
+.footer-mini-site > div:after{
+    left: 100%;
+}
+
+.footer-mini-site .footer-bloc.bloc-logo {
+    width: 15%;
+}
+
+.footer-mini-site .bloc-adresse, .footer-mini-site .bloc-liens {
+    width: 30%;
+}
+
+.footer-mini-site .footer-bloc {
+    padding-left: 5%;
+}
+
+#portal-columns .footer-mini-site .footer-bloc > ul {
+    list-style-type: none !important;
+    margin-left: 0 !important;
+}
+
+#portal-columns .footer-mini-site .footer-bloc p, #portal-columns .footer-mini-site .footer-bloc h2, #portal-columns .footer-mini-site .footer-bloc h3, #portal-columns .footer-mini-site .footer-bloc h4 {
+    color: #20385a;
+}
+
+.footer-mini-site #form-widgets-text > div:first-child {
+    padding-left: 0;
 }
 
 /*  MOVE TO TOP  */
