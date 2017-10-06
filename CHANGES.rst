@@ -1,7 +1,8 @@
-0.5.23 (unreleased)
+0.5.23 (2017-10-06)
 -------------------
 
-- Nothing changed yet.
+- Change css.
+  [osnickers]
 
 
 0.5.22 (2017-10-02)

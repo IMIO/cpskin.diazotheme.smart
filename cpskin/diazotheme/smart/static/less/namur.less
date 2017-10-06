@@ -96,6 +96,7 @@ h2 {
     font-size: 32px;
     margin-bottom: 0.25em;
     padding-top: 1em;
+    margin-top:0;
 }
 
 h3 {
@@ -439,7 +440,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 #formfield-form-widgets-date_publication.empty:before,
 #formfield-form-widgets-date_echeance.empty:before {
     bottom: 0;
-    content: "-- / -- / ----";
+    content: "--";
     left: 4em;
     position: absolute;
 }
@@ -451,6 +452,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 .faceted-top-column .faceted-alphabetic-widget {
     text-align: left;
 }
+/*  Portal-columns */
 
 #portal-columns {
     position: relative;
@@ -467,13 +469,17 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     background: white;
 }
 
+#relatedItemBox dt {
+    text-transform: uppercase;
+}
+
 .portaltype-reglement #portal-column-content{
     padding-left:0;
 }
 
-.portaltype-reglement #portal-columns {
-    padding-top: 1em;
-}
+/* .portaltype-reglement #portal-columns {
+    padding-top: 0em;
+} */
 
 .portaltype-reglement #content,
 .template-facetednavigation_view #content,
@@ -490,15 +496,15 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     padding-right: 1em;
 }
 
-#portal-column-one::before {
+#portal-columns::before {
     background: white none repeat scroll 0 0;
-    height: 2000px;
+    bottom: 0;
     content: "";
     position: absolute;
-    right: -25%;
+    right: 3.5em;
     top: 0;
     width: 2000px;
-    z-index: -2;
+    z-index: 0;
 }
 
 .nav-is-stuck .main-homepage.template-folderview #top-navigation-inner{
@@ -535,7 +541,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 #portal-column-content::after {
     background: #f3f3f3 none repeat scroll 0 0;
-    bottom: 0;
+    bottom: -8em;
     content: "";
     position: absolute;
     right: -196.5em;
@@ -545,12 +551,12 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 }
 
 #portal-top::after {
-    background: #f3f3f3 none repeat scroll 0 0;
+    background: #f3f3f3;
     content: "";
-    height: 10em;
+    height: 50em;
     left: 50%;
     position: absolute;
-    top: 100%;
+    top: 0;
     width: 50%;
     z-index: -2;
 }
@@ -640,14 +646,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     font-size: 100%;
     font-weight: bold;
 }
-#content label {
-}
 
-#content #map {
-    right: 0.7%;
-    width: 101% !important;
-    top: 2em;
-}
 .section-affichage .widget-fieldset ul li label {
     color: #545454;
     font-size: 17px;
@@ -1261,9 +1260,10 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     background: #3548b1 none repeat scroll 0 0;
     border: 1px solid white !important;
     color: white;
-    height: 1.75em;
+    height: 2em;
     min-width: 7em;
-    width: 20em !important;
+    width: 100% !important;
+    box-sizing: border-box;
 }
 
 #faceted-form fieldset.widget-fieldset{
