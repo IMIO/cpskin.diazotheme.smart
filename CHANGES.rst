@@ -1,7 +1,8 @@
 0.5.24 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Move social viewlet to bottom
+  [laulaz]
 
 
 0.5.23 (2017-10-06)
