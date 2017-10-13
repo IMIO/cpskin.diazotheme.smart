@@ -1,6 +1,9 @@
-0.5.24 (unreleased)
+0.5.24 (2017-10-13)
 -------------------
 
+- Change css.
+  [osnickers]
+  
 - Move social viewlet to bottom
   [laulaz]
 
