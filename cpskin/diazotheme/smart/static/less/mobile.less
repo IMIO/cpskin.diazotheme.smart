@@ -334,6 +334,16 @@ div#top-slogan{
     padding-left: 1em;
     padding-right: 2.9em;
 }
+
+.userrole-authenticated div#portal-column-content .documentEditable {
+    min-height: 0;
+}
+
+#content {
+    min-height: 0;
+}
+
+
 /*   SLIDER UNIQUE  */
 
 
@@ -569,10 +579,19 @@ div#top-slogan{
 #visual-portal-wrapper #portal-columns #content .faceted-text-widget.section-search .widget-fieldset input[type="text"]{
     height: 1.5em;
 }
+
+#top-area .faceted-widget.faceted-criteria-widget.section-filtres-actifs{
+    margin-bottom:-2.1em;
+}
+
 .faceted-widget.faceted-layout-widget.section-affichage {
-    bottom: -2em;
+    bottom: -2.1em;
     right: -7%;
     width: 111%;
+}
+
+.faceted-widget.faceted-layout-widget.section-affichage ul{
+    text-align: right;
 }
 
 #content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li label{
@@ -621,6 +640,10 @@ body.template-facetednavigation_view .contact-entry{
 }
 /*  je suis   */
 
+.section-je-suis #top-banner {
+    height: 1em;
+}
+
 .section-je-suis #form-widgets-text > div {
     background: transparent;
     margin-top: 13em;
@@ -628,7 +651,7 @@ body.template-facetednavigation_view .contact-entry{
     width: 100%;
 }
 .userrole-anonymous.section-je-suis #form-widgets-text > div {
-    margin-top: 11em;
+    margin-top: 75%;
 }
 .userrole-anonymous.section-je-suis .je-suis-image img {
     right: 0em;
