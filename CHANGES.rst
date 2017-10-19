@@ -1,7 +1,8 @@
 0.5.26 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Bad release.
+  [bsuttor]
 
 
 0.5.25 (2017-10-16)
