@@ -334,6 +334,16 @@ div#top-slogan{
     padding-left: 1em;
     padding-right: 2.9em;
 }
+
+.userrole-authenticated div#portal-column-content .documentEditable {
+    min-height: 0;
+}
+
+#content {
+    min-height: 0;
+}
+
+
 /*   SLIDER UNIQUE  */
 
 
@@ -431,7 +441,8 @@ div#top-slogan{
 #accueil .agenda {
     margin-top: -4em;
 }
-#accueil .agenda .bloc-item .indexview-categories{
+#accueil .agenda .bloc-item .indexview-categories,
+.event-entry .indexview-categories{
     font-size: 3vw;
 }
 #accueil .agenda .bloc-item h3,
@@ -440,8 +451,7 @@ div#top-slogan{
     margin-top: 25%;
 }
 #accueil .agenda .bloc-item .documentByLine, .event-entry .documentByLine{
-    font-size: 10px;
-    margin-top:35%;
+    font-size: 7px;
 }
 .event-entry{
     width: 100%;
@@ -569,10 +579,19 @@ div#top-slogan{
 #visual-portal-wrapper #portal-columns #content .faceted-text-widget.section-search .widget-fieldset input[type="text"]{
     height: 1.5em;
 }
+
+#top-area .faceted-widget.faceted-criteria-widget.section-filtres-actifs{
+    margin-bottom:-2.1em;
+}
+
 .faceted-widget.faceted-layout-widget.section-affichage {
-    bottom: -2em;
+    bottom: -2.1em;
     right: -7%;
     width: 111%;
+}
+
+.faceted-widget.faceted-layout-widget.section-affichage ul{
+    text-align: right;
 }
 
 #content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li label{
@@ -621,6 +640,10 @@ body.template-facetednavigation_view .contact-entry{
 }
 /*  je suis   */
 
+.section-je-suis #top-banner {
+    height: 1em;
+}
+
 .section-je-suis #form-widgets-text > div {
     background: transparent;
     margin-top: 13em;
@@ -628,7 +651,7 @@ body.template-facetednavigation_view .contact-entry{
     width: 100%;
 }
 .userrole-anonymous.section-je-suis #form-widgets-text > div {
-    margin-top: 11em;
+    margin-top: 75%;
 }
 .userrole-anonymous.section-je-suis .je-suis-image img {
     right: 0em;
@@ -655,7 +678,7 @@ body.template-facetednavigation_view .contact-entry{
 .section-je-suis .a-lagenda .bloc-item:first-child .documentByLine,
 .section-je-suis .publications .bloc-item:first-child .documentByLine{
     font-size: 9px;
-    padding-top:30%;
+    padding-top:25%;
 }
 .section-je-suis .a-lagenda .bloc-item:first-child .documentByLine{
     
@@ -724,6 +747,7 @@ body.template-facetednavigation_view .contact-entry{
 
 #portal-columns #portal-column-content {
     padding-right: 2.9em;
+    width:100%;
 }
 
 #content {
@@ -756,12 +780,11 @@ div.faceted-select2-container {
     width: 100%;
 }
 /*   FOOTER   */
-.footer-mini-site .footer-bloc {
-    padding-left: 0;
-}
 
-.footer-mini-site .bloc-adresse, .footer-mini-site .bloc-liens {
+.footer-mini-site #form-widgets-text .footer-bloc {
     width: 100%;
+    padding-left: 0;
+    clear:both;
 }
 
 #portal-footer-wrapper .cell{

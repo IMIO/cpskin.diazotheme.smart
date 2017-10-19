@@ -27,6 +27,7 @@ xmlns:xi="http://www.w3.org/2001/XInclude">
   <!-- Our own rules -->
   <xi:include href="/++theme++cpskin.diazotheme.smart/rules/header.xml"/>
   <xi:include href="/++theme++cpskin.diazotheme.smart/rules/footer.xml"/>
+  <xi:include href="/++theme++cpskin.diazotheme.smart/rules/social.xml"/>
   <xi:include href="/++theme++cpskin.diazotheme.smart/rules/structures.xml"/>
 
  <!-- Copy over the content -->

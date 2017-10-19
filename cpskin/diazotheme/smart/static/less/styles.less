@@ -700,13 +700,31 @@ li.bloc-item a h3::after{
     background: #0E213F;
     display: table-cell;
     min-width: 300px;
-    width: 20%;
+    width: 25%;
     position: static;
 }
+
+/*.main-homepage.template-folderview  #portal-globalnav {
+    width: 500%;
+}
+
+.main-homepage.template-folderview #portal-globalnav li {
+    padding-right: 10%;
+    box-sizing:border-box;
+}
+
+.main-homepage.template-folderview #portal-globalnav li a {
+    margin-right: 0em;
+}
+*/
+.main-homepage.template-folderview #portal-globalnav li a{
+    margin-right:4.5em;
+}
+
 .main-homepage.template-folderview #top-banner {
     display: table-cell;
     vertical-align: top;
-    width: 80%;
+    width: 75%;
     position: relative;
     z-index: -1;
 }
@@ -719,11 +737,11 @@ li.bloc-item a h3::after{
     margin:0;
 }
 .main-homepage.template-folderview #top-logo-inner {
-    margin: 7% 0 19% 65%;
+    margin: 20% 0 6% 60%;
 }
 .main-homepage.template-folderview #top-navigation {
     margin-right: -302%;
-    margin-left: 65%;
+    margin-left: 60%;
     width: auto;
 }
 .main-homepage.template-folderview #top-banner::after {
@@ -736,7 +754,7 @@ li.bloc-item a h3::after{
 .main-homepage.template-folderview #top-slogan{
     position: absolute;
     padding: 0;
-    left:65%;
+    left:60%;
 }
 .main-homepage.template-folderview #top-slogan-inner {
     margin-right: -2000px;
@@ -820,16 +838,16 @@ li.bloc-item a h3::after{
 /*   multiple   */
 .slider-multiple::before {
     background: transparent; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #dd30c6, #dec8ec); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #dd30c6, #dec8ec); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #dd30c6, #dec8ec); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #dd30c6, #dec8ec); /* Standard syntax */
+    background: -webkit-linear-gradient(left,#fbd0f8,#c9b0d8); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right,#fbd0f8,#c9b0d8); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right,#fbd0f8,#c9b0d8); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right,#fbd0f8,#c9b0d8); /* Standard syntax */
     content: "";
     display: block;
     height: 130%;
     position: absolute;
     right: 0;
-    width: 10000px;
+    width: 130%;
 }
 #flex.slider-multiple {
     position: relative;
@@ -940,6 +958,7 @@ li.bloc-item a h3::after{
     color: #bebebe;
     font-weight: bold;
     width: 102%;
+    font-size: 85%;
 }
 #flex.slider-multiple .carousel .flex-viewport li .flex-caption {
     background: #fff;
@@ -965,6 +984,7 @@ li.bloc-item a h3::after{
     font-size: 86%;
     font-weight: bold;
     padding-bottom: 2px;
+    font-family: Open Sans;
 }
 
 /*   SLIDE UNIQUE  */
@@ -1008,10 +1028,28 @@ li.bloc-item a h3::after{
     width: 100%;
     text-align: right;
 }
+#accueil #flex.slider-unique-titre .carousel .flex-viewport ul li .flex-caption a{
+        position: relative;
+}
+
+#accueil #flex.slider-unique-titre .carousel .flex-viewport ul li .flex-caption a::after {
+    content: ".";
+    position: absolute;
+    font-size: 200%;
+    left: 95%;
+    top:0;
+    z-index: 6;
+    line-height: 0em;
+    color:#ccc ;
+}
+
 #accueil #flex.slider-unique-titre .carousel .flex-viewport ul li.flex-active-slide .flex-caption a {
     color: #205c90 !important;
     transition: color 1.2s;
+    padding-right: 1em;
+    box-sizing: border-box;
 }
+
 #accueil #flex.slider-unique-titre .slider .flex-direction-nav {
     display: none !important;
 }
@@ -1102,6 +1140,7 @@ li.bloc-item a h3::after{
 
 #content ul {
     margin-bottom: 1em;
+    padding-right: 2em;
 }
 #content ul, #content ol {
 }
@@ -1142,7 +1181,7 @@ li.bloc-item a h3::after{
 }
 
 #content p {
-    margin-right: 1em;
+    margin-right: 2em;
 }
 			
 #content #parent-fieldname-text p:first-child {
@@ -1180,6 +1219,7 @@ li.bloc-item a h3::after{
     font-weight: bold;
     left: 50%;
     position: absolute;
+    font-family: Open Sans;
 }
 
 #accueil .element-en-evidence .medialink .pagecaption h3::before {
@@ -1298,23 +1338,38 @@ li.bloc-item a h3::after{
 .event-entry:first-child:before{
     padding-top: 100%;
 }*/
-#accueil .agenda .bloc-item .indexview-categories {
+#accueil .agenda .bloc-item .indexview-categories,
+.faceted-agenda-ungrouped-view .event-entry .indexview-categories{
     color: #adbbcf;
     float: left;
-    font-size: 16px;
+    font-size: 14px;
     height: 100%;
     margin-left: 50%;
-    padding-top: 10%;
+    padding-top: 11%;
     position: absolute;
-    text-align: center;
+    text-align: left;
     top: 0;
     width: 50%;
     z-index: 0;
     font-family: arial;
     text-transform: uppercase;
+    padding-left: 7%;
+    padding-right: 7%;
+    box-sizing: border-box;
+    font-weight: bold;
 }
 #accueil .agenda .bloc-item:nth-child(3) .indexview-categories,
-#accueil .agenda .bloc-item:nth-child(4) .indexview-categories{
+#accueil .agenda .bloc-item:nth-child(4) .indexview-categories,
+.faceted-agenda-ungrouped-view .event-entry:nth-child(3) .indexview-categories,
+.faceted-agenda-ungrouped-view .event-entry:nth-child(4) .indexview-categories,
+.faceted-agenda-ungrouped-view .event-entry:nth-child(7) .indexview-categories,
+.faceted-agenda-ungrouped-view .event-entry:nth-child(8) .indexview-categories,
+.faceted-agenda-ungrouped-view .event-entry:nth-child(11) .indexview-categories,
+.faceted-agenda-ungrouped-view .event-entry:nth-child(12) .indexview-categories,
+.faceted-agenda-ungrouped-view .event-entry:nth-child(15) .indexview-categories,
+.faceted-agenda-ungrouped-view .event-entry:nth-child(16) .indexview-categories,
+.faceted-agenda-ungrouped-view .event-entry:nth-child(19) .indexview-categories,
+.faceted-agenda-ungrouped-view .event-entry:nth-child(20) .indexview-categories{
     margin-left: 0;
 }
 #accueil .agenda .bloc-item .pageleadImage,
@@ -1383,11 +1438,14 @@ li.bloc-item a h3::after{
     display: block;
     font-size: 18px;
     margin-left: 50%;
-    margin-top: 20%;
     position: absolute;
-    text-align: center;
-    top: 0;
+    text-align: left;
+    bottom: 25%;
     width: 50%;
+    padding-left: 7%;
+    padding-right: 7%;
+    box-sizing: border-box;
+    line-height: 1.2em;
 }
 #accueil .agenda .bloc-item .documentByLine,
 .event-entry .documentByLine{
@@ -1395,14 +1453,16 @@ li.bloc-item a h3::after{
     display: block;
     font-family: arial;
     font-size: 14px;
-    height: 100%;
     margin-left: 50%;
-    margin-top: 36%;
+    margin-top: 37%;
     position: absolute;
-    text-align: center;
+    text-align: left;
     top: 0;
     width: 50%;
     font-weight: bold;
+    padding-left: 7%;
+    padding-right: 2%;
+    box-sizing: border-box;
 }
 /*#accueil .agenda .bloc-item:first-child .documentByLine,
 .event-entry:first-child .documentByLine{
@@ -2098,7 +2158,8 @@ li.bloc-item a h3::after{
 
 #visual-portal-wrapper .collection-news-item #faceted-results .photoAlbumEntry a:focus,
 #visual-portal-wrapper #portal-logo:focus,
-#visual-portal-wrapper #portal-logo:focus img{
+#visual-portal-wrapper #portal-logo:focus img,
+#accueil #flex.slider-unique-titre .carousel .flex-viewport ul li.flex-active-slide .flex-caption a{
     outline: 0 none;
 }
 

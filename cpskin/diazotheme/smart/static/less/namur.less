@@ -1,3 +1,4 @@
+
 #portal-footer-wrapper ul#portal-siteactions {
     display: none;
 }
@@ -459,9 +460,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     z-index: 0 !important;
     padding-top:0em;
 }
-.userrole-authenticated div#portal-column-content .documentEditable {
-    min-height: 34em;
-}
+
 #content-core {
     box-sizing: border-box;
     float: left;
@@ -501,10 +500,14 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     bottom: 0;
     content: "";
     position: absolute;
-    right: 3.5em;
+    right: 4.5em;
     top: 0;
     width: 2000px;
-    z-index: 0;
+    z-index: -1;
+}
+
+.section-je-suis #portal-columns::before{
+    top:4.5em;
 }
 
 .nav-is-stuck .main-homepage.template-folderview #top-navigation-inner{
@@ -597,10 +600,10 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 #top-area .faceted-widget.faceted-criteria-widget.section-filtres-actifs {
     background: #e5ebf7 none repeat scroll 0 0;
     clear: left;
-    margin-bottom: -2em;
-    padding-bottom: 1.5em;
+    margin-bottom: -2.2em;
+    padding-bottom: 2.5em;
     padding-left: 1em;
-    padding-top: 2.75em;
+    padding-top: 2.25em;
     position: relative;
     margin-top: 1em;
     width: 100%;
@@ -747,7 +750,7 @@ fieldset, .editionComment {
 
 
 #content #top-area .widget-fieldset.faceted-criteria > legend, .widget-fieldset.faceted-criteria > dl {
-    padding: 0 1em 1em 0 !important;
+    padding: 0.6em 1em 1em 0 !important;
     color: #7086a6 !important;
 }
 
@@ -785,7 +788,7 @@ fieldset, .editionComment {
 #portal-column-content #content #top-area .widget-fieldset.faceted-criteria dl {
     border: 1px solid lightgray;
     margin-right: 1em;
-    margin-top: -0.5em;
+    margin-top: 0.25em;
     padding: 0.25em 0.25em 0 0.5em !important;
 }
 
@@ -793,7 +796,7 @@ fieldset, .editionComment {
 #portal-column-content #content #top-area .widget-fieldset.faceted-criteria .faceted-criteria-reset {
     border: 1px solid lightgray;
     margin-right: 0.5em;
-    margin-top: -0.5em;
+    margin-top: 0.25em;
     padding: 0.25em 0.25em 0.5em 0.5em;
 }
 
@@ -884,6 +887,7 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
     display: table;
     float: none;
     margin: 3em auto 2em;
+    position: relative;
 }
 
 #portal-columns #content div.pagination.listingBar a {
@@ -1154,6 +1158,7 @@ dl.portalMessage dt {
     overflow: hidden;
     padding: 2em 2em 1em 3em;
     width: 103%;
+    margin-top:-1.5em;
 }
 
 .contact-details, #contact-schedule .Schedule {
@@ -1308,9 +1313,9 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 
 .faceted-widget.faceted-layout-widget.section-affichage {
-    bottom: -2.35em;
+    bottom: -2.5em;
     position: absolute;
-    right: 20%;
+    right: 5%;
     z-index: 1;
 }
 
@@ -1397,14 +1402,14 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     bottom: 0;
     content: "";
     position: absolute;
-    right: -1.75em;
+    right: -3.75em;
     top: 0;
-    width: 1.75em;
+    width: 3.75em;
 }
 
 .width-full .coordinates::after {
-    right: -1.75em;
-    width: 1.75em;
+    right: -3.75em;
+    width: 3.75em;
 }
 
 #phone > a {
@@ -1509,6 +1514,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     margin-top: 5%;
     padding-bottom: 0.25em;
     right: 7%;
+    font-family: Open Sans;
 }
 
 #content #accueil #flex.slider-multiple a.voir-tout:hover {
@@ -1520,6 +1526,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     color: #3548b1;
     font-weight: bold;
     margin-top:2em;
+    font-family: Open Sans;
 }
 
 #content #accueil .agenda a.voir-tout:hover{
@@ -1528,6 +1535,11 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 
 /*  Fin document */
 /*   Page je suis   */
+
+.section-je-suis #portal-top::after{
+    display: none;
+}
+
 .section-je-suis #form-widgets-text>div {
     width: 53%;
     margin-right: -11em;
@@ -1728,7 +1740,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .section-je-suis .publications .bloc-item:first-child .documentByLine{
     float: left;
     margin-left: 4%;
-    padding-top: 41%;
+    padding-top: 37%;
     position: absolute;
     text-align: left;
     text-transform: uppercase;
