@@ -1,7 +1,8 @@
 0.6.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Remove social viewlet rules : we will now put them in right actions : #19300
+  [laulaz]
 
 
 0.6.1 (2017-10-24)
