@@ -15,9 +15,9 @@ body.template-folderview.main-homepage #visual-portal-wrapper::after {
     display: block;
     height: 100%;
     position: absolute;
-    right: 22%;
+    right: 23%;
     top: 0;
-    width: 55%;
+    width: 53%;
     z-index: -2;
 }
 body.main-homepage.template-folderview #visual-portal-wrapper{
@@ -50,6 +50,10 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
     display: inline-block;
     vertical-align: middle;
 }
+
+#top-actions-inner a, #top-actions-inner li a:hover{
+    margin-right: 2.75em;
+}
 #top-actions-inner li.LSRow a {
     color: #3b3b3b;
 }
@@ -63,9 +67,10 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
 }
 #top-actions-inner #siteaction-langues > a,
 #top-actions-inner #siteaction-langues > a:hover {
-color: transparent;
-margin-left: 1em;
-cursor:pointer;
+    color: transparent;
+    margin-left: 0.75em;
+    cursor:pointer;
+    margin-right: 2em;
 }
 
 #top-logo-slogan{
@@ -75,9 +80,15 @@ cursor:pointer;
 #top-logo-slogan #top-slogan{
    margin-right:-168%;
 }
-#top-logo {
+
+.main-homepage #top-logo {
     margin: 0 20% 0 8%;
 }
+
+#top-logo {
+    margin: 0 28% 0 0%;
+}
+
 #top-logo-navigation-actions {
     position: relative;
     width: 100%;
@@ -168,6 +179,7 @@ cursor:pointer;
 }
 .top-menu-action .actionMenu {
     float: none;
+    margin-left:0;
 }
 .top-menu-action dt {
     margin: 0 0.25em;
@@ -368,15 +380,17 @@ li#portaltab-index_html {
 }
 #portal-globalnav {
     display: inline-block;
+    vertical-align: middle;
 }
 #portal-globalnav a::after,
 #top-actions-wrapper dt.actionMenuHeader a::after {
     content: " ‹";
     font-size: 150%;
     position: absolute;
-    right: 8%;
+    float: right;
     top: -22%;
     transform: rotate(270deg);
+    margin-left: 0.25em;
 }
 dt.actionMenuHeader{
     padding-right: 1em;
@@ -774,6 +788,7 @@ li.bloc-item a h3::after{
 }
 .a-votre-service h2 {
     color: #82a9e2;
+    margin-left: 0.5em;
 }
 #accueil .homepage-service {
     display: inline-block;
@@ -797,6 +812,7 @@ li.bloc-item a h3::after{
 .homepage-service li,
 #content .homepage-service li a {
     color: #fff;
+    font-family: Montserrat;
 }
 
 #portal-columns #content .homepage-service li a:hover,
@@ -808,7 +824,7 @@ li.bloc-item a h3::after{
     box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.15);
     height: 400px;
     margin-bottom: 6em;
-    margin-left: 0.5em;
+    margin-left: 0em;
     width: 600px;
 }
 
@@ -863,11 +879,16 @@ li.bloc-item a h3::after{
     opacity: 0.5!important;
 }
 /*   unique   */
+
+#accueil .slider-unique-titre .flex-direction-nav {
+    display: none;
+}
+
 .slider-unique-titre #slider-slider .slides {
     margin-top: 0 !important;
 }
 #accueil .slider-unique-titre {
-    margin-bottom:7%;
+    margin-bottom:10%;
     padding-top: 3%;
 }
 
@@ -883,6 +904,20 @@ li.bloc-item a h3::after{
     position: absolute;
     text-align: center;
     width: 100%;
+    font-family: Montserrat;
+    letter-spacing: 2px;
+}
+
+#accueil #flex.slider-unique-titre .slider .flex-viewport .flex-caption p a::after {
+    content: "Lire la suite";
+    float: left;
+    clear: both;
+    margin-top: 3em;
+    border-bottom: 2px solid #3548b1 !important;
+    color: #3548b1;
+    font-family: Montserrat;
+    position: absolute;
+    left: 3em;
 }
 
 /* POUR PARALLAX */
@@ -984,16 +1019,47 @@ li.bloc-item a h3::after{
     font-size: 86%;
     font-weight: bold;
     padding-bottom: 2px;
-    font-family: Open Sans;
+    font-family: Montserrat;
 }
 
 /*   SLIDE UNIQUE  */
+
+#accueil #flex.slider-unique-titre .flex-container {
+    position: relative;
+}
+
+#accueil #flex.slider-unique-titre .carousel {
+    top: 5em;
+    position: absolute;
+}
+
+#content #accueil #flex.slider-unique-titre .carousel .flex-caption > h2{
+    font-size: 1.5em;
+    line-height: 1.75em;
+    margin-top: -0.5em;
+    font-weight: bold;
+}
+#content #accueil #flex.slider-unique-titre .slider .flex-caption > h2{
+    font-size: 1.5em;
+    line-height: 1.75em;
+    padding-top: 0em;
+    font-weight: bold;
+    margin-bottom:0.75em;
+}
+
+#content #accueil #flex.slider-unique-titre .slider .flex-caption p{
+    padding-bottom: 2em;
+}
+
+#content #accueil #flex.slider-unique-titre .slider .flex-caption p a{
+    color: #8a8a8a !important;
+    line-height: 1.85em;
+}
+
 #content #accueil #flex.slider-unique-titre .slider .linkimg img{
     margin: auto auto auto 0;
 }
-#accueil #flex.slider-unique-titre .carousel {
-    top: -485px;
-}
+
 #accueil #flex.slider-unique-titre .slider {
     top: 120px;
 }
@@ -1059,20 +1125,20 @@ li.bloc-item a h3::after{
     z-index: 1;
 }
 #accueil #flex.slider-unique-titre .slider .linkimg img {
-    width: 60% !important;
+    width: 72% !important;
     margin: auto;
     height: auto;
 }
 #accueil #flex.slider-unique-titre .slider .flex-viewport .flex-caption {
-    background-color: #fff;
-    box-shadow: 5px 8px 9px 0 rgba(50, 46, 85, 0.2);
+    background-color: #ffffff;
+    box-shadow: 5px 8px 9px 0 rgba(50,46,85,0.2);
     margin-bottom: 60px;
-    margin-left: 50%;
-    margin-top: 200px;
-    padding: 30px;
+    margin-left: 65%;
+    margin-top: 225px;
+    padding: 2.5em 2em 2em 3em;
     position: relative;
-    text-align: center;
-    width: 30%;
+    text-align: left;
+    width: 25%;
     z-index: 2;
 }
 #accueil #flex.slider-unique-titre .slider .flex-viewport li {
@@ -1194,6 +1260,11 @@ li.bloc-item a h3::after{
 			
 .bloc-main {
     margin-right: 1em;
+    padding: 2em 2.5em;
+    width: 101.5%;
+    box-sizing: border-box;
+    margin-top: 1.5em;
+    border:0px solid white;
 }
 
 #accueil .element-en-evidence .pagecaption h3::before {
@@ -1219,19 +1290,30 @@ li.bloc-item a h3::after{
     font-weight: bold;
     left: 50%;
     position: absolute;
-    font-family: Open Sans;
+    font-family: Montserrat;
 }
 
 #accueil .element-en-evidence .medialink .pagecaption h3::before {
     display: none;
 }
 
-#accueil .element-en-evidence .bloc-item .medialink .description::after {
+#accueil .element-en-evidence.media-homepage .bloc-item .description::after {
+    display: none;
+}
+
+
+/*#accueil .element-en-evidence .bloc-item .medialink .description::after {
     content: "En savoir plus";
     float: left;
     left: 9%;
     margin-top: 3em;
     position: static;
+}*/
+
+.element-en-evidence .voir-tout-content a {
+    right: 15%;
+    position: relative;
+    border-bottom: 2px solid #3548b1 !important;
 }
 
 #accueil .element-en-evidence .pageleadImage {
@@ -1635,7 +1717,7 @@ li.bloc-item a h3::after{
 }
 
 #accueil li.bloc-item a.medialink .pagecaption h3 {
-    left: 4%;
+    left: 3%;
     opacity: 1;
     top: -2em;
     transform: none;
@@ -1645,7 +1727,7 @@ li.bloc-item a h3::after{
     display: inline-block;
     margin: -3em 0 0 1.5%;
     opacity: 1;
-    padding: 0 0 0 2.7%;
+    padding: 0 0 0 1.7%;
     position: relative;
     transform: none;
     transition: none 0s ease 0s ;
@@ -1767,6 +1849,12 @@ li.bloc-item a h3::after{
 .voir-tout::after{
     display: none;
 }
+
+/*  viewlet-below-content-body   */
+#relatedcontactsmap {
+    padding-right: 1.25em;
+}
+
 /*   FOOTER   */
 .footer-sitemap-item{
     display: none;
@@ -1874,24 +1962,24 @@ li.bloc-item a h3::after{
 }
 
 .footer-bloc-plan::after {
-    background: #022241 url("../images/footer-map.jpg") no-repeat scroll center -80px;
-    bottom: 0;
+    background: #022241 url("../images/footer-map.jpg") no-repeat scroll left -80px;
+    bottom: -10em;
     content: "";
-    left: -40%;
+    left: -100%;
     position: absolute;
     top: 0;
-    width: 152%;
+    width: 250%;
     z-index: -1;
 }
 
 .footer-bloc-plan::before {
-    background: rgba(0, 0, 0, 0) linear-gradient(to left, transparent, #022241) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, transparent, #022241) repeat scroll 0 0;
     bottom: 0;
     content: "";
     position: absolute;
-    right: 122%;
+    right: -55%;
     top: 0;
-    width: 5em;
+    width: 25%;
 }
 
 .footer-bloc-plan > a {
@@ -2163,6 +2251,10 @@ li.bloc-item a h3::after{
 }
 
 /*  cpsin navigation view  */
+
+.template-cpskin_navigation_view #content-core {
+    padding: 3em 0;
+}
 
 .navigation-view-menus > a, .navigation-view-direct-access > a {
     background: #dde7f2 none repeat scroll 0 0;

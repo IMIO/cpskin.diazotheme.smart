@@ -98,6 +98,7 @@ h2 {
     margin-bottom: 0.25em;
     padding-top: 1em;
     margin-top:0;
+    line-height: 1.15em;
 }
 
 h3 {
@@ -250,7 +251,8 @@ h3 {
 }
 
 #minisite-navigation-inner{
-   padding: 0 0 0 8.5em;
+   padding: 0;
+   max-width: 1300px;
 }
 
 /*  fin navigation  */
@@ -1369,7 +1371,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     box-sizing: border-box;
     float: left;
     padding: 0.5em 1em 1.5em;
-    width: 40%;
+    width: 50%;
 }
 #content li.related-contact {
     margin: 0;
@@ -1391,6 +1393,11 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .wrapped-coord {
     height: 10em;
     overflow: hidden;
+}
+
+.wrapped-coord .fax {
+    background: none;
+    padding: 0.3em 0 0.3em 0em;
 }
 
 #belowContentContact .related-contact:nth-child(2n+1) .coordinates::after {
@@ -1419,6 +1426,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 #aboveContentContact .schedule {
     float: right;
     padding-bottom: 1em;
+    width:40%;
 }
 
 #form-widgets-IScheduledContent-schedule {
@@ -1443,7 +1451,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .schedule-widget-day > div {
     float: left;
     margin-right: 0.5em;
-    padding: 0.25em 0;
+    padding: 0.25em 0 0;
 }
 
 .schedule-widget-day .comment {
@@ -1452,7 +1460,11 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     margin: 0;
     padding-left: 1em;
     padding-right: 1em;
+    padding-top: 0px !important;
+    line-height: 1em;
+    padding-bottom: 0.5em;
 }
+
 .schedule-widget-day .title {
     box-sizing: border-box;
     font-weight: normal;
@@ -1472,9 +1484,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 
 
 /*   Slider   */
-#accueil #flex.slider-unique-titre .slider .flex-viewport .flex-caption {
-    text-align: left;
-}
+
 
 #accueil #flex.slider-multiple .carousel .flex-viewport li .flex-caption h2 {
     padding: 5px 60px 0;
@@ -1514,7 +1524,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     margin-top: 5%;
     padding-bottom: 0.25em;
     right: 7%;
-    font-family: Open Sans;
+    font-family: Montserrat;
 }
 
 #content #accueil #flex.slider-multiple a.voir-tout:hover {
@@ -1526,7 +1536,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     color: #3548b1;
     font-weight: bold;
     margin-top:2em;
-    font-family: Open Sans;
+    font-family: Montserrat;
 }
 
 #content #accueil .agenda a.voir-tout:hover{
