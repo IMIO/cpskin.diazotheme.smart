@@ -2107,17 +2107,43 @@ li.bloc-item a h3::after{
     top:86px;
 }
 /*   NAVIGATION MINI SITE  */
+#container-minisite-globalnav ul {
+    display: table-cell;
+    margin: 0;
+    vertical-align: middle;
+    width: 100%;
+}
+[id="minisite-globalnav"] li:first-child {
+    display: none;
+}
+[id="minisite-navigation-inner"] {
+    clear:right;
+    margin: 0 auto;
+    max-width: 1920px;
+}
 #minisite-logo-nav {
     display: table;
     width: 100%;
     vertical-align: middle;
 }
-
 #minisite-logo-nav > ul {
     display: table-cell;
     vertical-align: middle;
 }
-
+[id="minisite-navigation-inner"] #minisite-logo {
+    display: table-cell;
+    float: none;
+    max-width: 200px;
+    padding-left: 0;
+    position: relative;
+    top: 0;
+    vertical-align: top;
+}
+#minisite-actions-inner {
+    width: 100%;
+    background: #C5CAE9;
+    float: left;
+}
 .container-minisite-globalnav-logo{
     background: #ffffff;
     position: relative;
