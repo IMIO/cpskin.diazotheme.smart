@@ -3,6 +3,9 @@
 
 - Remove social viewlet rules : we will now put them in right actions : #19300
   [laulaz]
+  
+- Change css.
+  [osnickers]
 
 
 0.6.1 (2017-10-24)
