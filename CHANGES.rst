@@ -1,4 +1,4 @@
-0.6.2 (unreleased)
+0.6.2 (2017-10-25)
 ------------------
 
 - Remove social viewlet rules : we will now put them in right actions : #19300
