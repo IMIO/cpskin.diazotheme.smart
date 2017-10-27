@@ -617,14 +617,14 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     background: #e5ebf7 none repeat scroll 0 0;
     clear: left;
     margin-bottom: -2em;
-    padding-bottom: 1.5em;
+    padding-bottom: 3em;
     padding-left: 1em;
     padding-top: 2.75em;
     position: relative;
     margin-top: 1em;
     width: 100%;
     float: left;
-    margin-left: -2em;
+    margin-left: -0.5em;
     padding-right: 1em;
 }
 
@@ -1884,6 +1884,9 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     width: auto !important;
     height: 1.5em !important;
 }
+#social-share-container.shown-right-panel #widget {
+    overflow: visible !important;
+}
 
 #viewlet-social-like.vertical > div {
     float: left !important;
@@ -1905,3 +1908,26 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     margin-top: 9px;
     margin-left: 3px;
 }
+//Citizen
+.citizen {
+    background: #245987;
+}
+.section-citizen-drafts .citizen,
+.subsection-event-citoyen .citizen{
+    z-index: 1;
+    right: 4.6%;
+}
+.section-citizen-drafts #content-core,
+.subsection-event-citoyen #content-core{
+    margin-top:3em;
+}
+.portaltype-organization.user-citizen #viewlet-below-content-title {
+    position: relative;
+}
+.portaltype-organization.userrole-citizen-editor #contact-schedule{
+    margin-top:2.5em;
+}
+.userrole-citizen-editor dl.portalMessage.info {
+    margin-bottom: 1em !important;
+}
+
