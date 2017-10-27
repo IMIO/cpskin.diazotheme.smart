@@ -1,4 +1,7 @@
 /* FOR DEVICES WITH NARROW DESKTOP */
+body {
+    padding: 0 !important;
+}
 
 #accueil .evenements .bloc-item {
     width: 100%;
@@ -14,4 +17,34 @@
 
 #accueil #flex.slider-multiple .carousel .flex-viewport li a {
     height: 53%;
+}
+.footer-bloc.bloc-adresse{
+    width: 37%;
+}
+.footer-bloc.bloc-liens{
+    width: 33%;
+}
+@media (orientation : portrait){
+    .main-homepage.template-folderview #top-banner img {
+        max-width: 185%;
+    }
+    .nav-is-stuck .main-homepage #top-logo{
+        left:9%;
+    }
+    .nav-is-stuck #top-navigation-inner{
+        padding-left: 4em;
+    }
+    .nav-is-stuck .main-homepage #top-navigation-inner{
+        padding-left: 0em;
+    }
+    ul.navTreeLevel0 {
+        max-width: 760px;
+        margin-left: -16% !important;
+    }
+}
+@media (orientation: landscape){
+    ul.navTreeLevel0 {
+        max-width: 1000px;
+        margin-left: -16% !important;
+    }
 }
