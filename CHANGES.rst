@@ -1,7 +1,8 @@
 0.6.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix display for social share
+  [amariscal]
 
 
 0.6.2 (2017-10-25)
