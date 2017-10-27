@@ -1874,18 +1874,25 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     list-style-type: disc;
 }
 
-#social-share-container.shown-right-panel {
+#social-share-container {
     width: 10em !important;
     bottom: -7em;
-    overflow: hidden;
+    position: absolute;
+    right: 3em;
+    background-color: #fff;
+    z-index: 10;
+    padding: 1em;
+    box-shadow: -10px 10px 20px rgba(0,0,0,0.2);
+    display: block;
 }
-#social-share-container.shown-right-panel iframe{
-    visibility: visible !important;
-    width: auto !important;
-    height: 1.5em !important;
+
+#social-share-container.shown-right-panel {
+    opacity: 1;
+    display: block;
 }
-#social-share-container.shown-right-panel #widget {
-    overflow: visible !important;
+#social-share-container.hidden-right-panel {
+    opacity: 0;
+    display: block;
 }
 
 #viewlet-social-like.vertical > div {
