@@ -339,10 +339,6 @@ div#top-slogan{
     min-height: 0;
 }
 
-#content {
-    min-height: 0;
-}
-
 
 /*   SLIDER UNIQUE  */
 
@@ -577,6 +573,16 @@ div#top-slogan{
     padding: 0.5em 1em 1.5em 0;
 }
 
+.coordinates::after{
+    right: -34px;
+    width: 34px;
+}
+
+/*#belowContentContact .coordinates::after {
+    width: 24px;
+    right: -24px;
+}*/
+
 #belowContentContact .related-contact:nth-child(2n+1) .coordinates::after {
     display: block;
 }
@@ -756,6 +762,7 @@ body.template-facetednavigation_view .contact-entry{
 
 #content {
     min-height: 0px;
+    float:left;
 }
 
 .subsection-vie-politique .image-right {
