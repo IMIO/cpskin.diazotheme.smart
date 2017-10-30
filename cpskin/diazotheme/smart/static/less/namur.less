@@ -1029,13 +1029,13 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
     z-index: 0;
 }
 
-.contact-title::before {
+.portaltype-directory .contact-title::before {
     content: url("../images/personne-picto.jpg");
     position: absolute;
     top: -4em;
 }
 
-.organization-title::before {
+.portaltype-directory .organization-title::before {
     content: url("../images/organization-picto.jpg");
     position: absolute;
     top: -6em;
@@ -1535,8 +1535,8 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 #content #accueil #flex.slider-multiple a.voir-tout:hover {
     color: white !important;
 }
-
-#content #accueil .agenda a.voir-tout {
+#content #accueil .agenda a.voir-tout,
+#content #accueil .media-homepage a.voir-tout{
     border-bottom: 2px solid #3548b1 !important;
     color: #3548b1;
     font-weight: bold;
@@ -1544,7 +1544,8 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     font-family: Montserrat;
 }
 
-#content #accueil .agenda a.voir-tout:hover{
+#content #accueil .agenda a.voir-tout:hover,
+#content #accueil .media-homepage a.voir-tout:hover{
     color: #3548b1;
 }
 
@@ -1814,6 +1815,9 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     box-sizing: border-box;
     vertical-align: top;
     min-height: 400px;
+}
+.section-je-suis #portal-columns #content .index-1 a.voir-tout:hover{
+    color:#abccff !important
 }
 .section-je-suis .index-2{
     background: #3548B1;
