@@ -577,9 +577,8 @@ div#top-slogan{
     padding: 0.5em 1em 1.5em 0;
 }
 
-.coordinates::after {
-    right: -3.1em;
-    width: 3.1em;
+#belowContentContact .related-contact:nth-child(2n+1) .coordinates::after {
+    display: block;
 }
 
 
@@ -608,7 +607,7 @@ div#top-slogan{
 }
 
 #contact-schedule, #person>.contact-details{
-    padding: 2em 2em 1em 2em;
+    padding: 2em 0.5em 1em 2em;
 }
 
 .contact-details, #contact-schedule .Schedule {
@@ -755,13 +754,12 @@ body.template-facetednavigation_view .contact-entry{
 
 /*  Content  */
 
-#portal-columns #portal-column-content {
-    padding-right: 2.9em;
-    width:100%;
-}
-
 #content {
     min-height: 0px;
+}
+
+.subsection-vie-politique .image-right {
+    float: left;
 }
 
 /*  Faceted  */

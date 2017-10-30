@@ -119,7 +119,7 @@ h3 {
     border-bottom: 1px solid transparent;
     color: #ecc2ed;
     font-weight: bold;
-    margin-right: 2em;
+    margin-right: 3vw;
     padding: 0;
     text-transform: none;
     font-size: 140%;
@@ -497,7 +497,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     padding-right: 1em;
 }
 
-#portal-columns::before {
+/*#portal-columns::before {
     background: white none repeat scroll 0 0;
     bottom: 0;
     content: "";
@@ -510,7 +510,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 .section-je-suis #portal-columns::before{
     top:4.5em;
-}
+}*/
 
 .nav-is-stuck .main-homepage.template-folderview #top-navigation-inner{
     padding-top:2em;
@@ -533,10 +533,10 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     background: white none repeat scroll 0 0;
     content: "";
     position: absolute;
-    right: 3.5em;
+    right: 55px;
     top: 0;
     bottom:0;
-    width: 100%;
+    width: 200%;
     z-index: -1;
 }
 
@@ -1158,7 +1158,7 @@ dl.portalMessage dt {
     float: left;
     margin-bottom: 2em;
     overflow: hidden;
-    padding: 2em 2em 1em 3em;
+    padding: 2em 0.5em 1em 3em;
     width: 103%;
     margin-top:-1.5em;
 }
@@ -1199,7 +1199,7 @@ dl.portalMessage dt {
     font-weight: bold;
     padding: 0.5em 5em 0.5em 1em;
     position: absolute;
-    right: -164%;
+    right: -162%;
 }
 
 #contact-schedule #download_vcard > a {
@@ -1365,6 +1365,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     float: left;
     margin: -0.5em 0 0 0;
     width: 100%;
+    background:white;
 }
 
 #viewlet-above-content-body .wrapped-coord {
@@ -1879,10 +1880,10 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     bottom: -7em;
     overflow: hidden;
 }
-#social-share-container.shown-right-panel iframe{
+#social-share-container.shown-right-panel #viewlet-social-like iframe{
     visibility: visible !important;
     width: auto !important;
-    height: 1.5em !important;
+    height: 30px !important;
 }
 #social-share-container.shown-right-panel #widget {
     overflow: visible !important;
@@ -1893,6 +1894,10 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     clear: both;
     margin-bottom: 0.5em;
     height: 1.5em;
+}
+
+#viewlet-social-like.vertical {
+    min-height: 2em !important;
 }
 
 #social-share::after {
