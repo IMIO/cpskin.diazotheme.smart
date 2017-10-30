@@ -3,6 +3,9 @@
 
 - Fix display for social share
   [amariscal]
+  
+- Change css for mobile.
+  [mgennart]
 
 
 0.6.2 (2017-10-25)
