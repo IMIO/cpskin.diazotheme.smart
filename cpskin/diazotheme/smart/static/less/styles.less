@@ -112,12 +112,16 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
     margin: 0 auto;
     max-width: 1300px;
 }
+
+.main-homepage #portal-logo{
+        margin:1% 0;
+}
 #portal-logo{
-    margin:1% 0;
+    margin:8% 0 0;
     width:100%;
 }
 #portal-logo > img{
-    width: 30%;
+    width: 38%;
 }
 
 .in-minisite-in-portal #portal-logo > img {
@@ -125,7 +129,7 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
 }
 
 .nav-is-stuck #portal-logo > img {
-    width: 35%;
+    width: 60%;
 }
 
 .main-homepage #portal-logo > img{
@@ -139,7 +143,7 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
 }
 
 #top-banner::after {
-    background: rgba(14, 33, 63, 0.6);
+    background: rgba(14, 34, 64, 0.60);
     content: "";
     display: block;
     height: 100%;
@@ -150,6 +154,7 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
 }
 #top-banner img{
     max-width: 100%;
+    filter:grayscale(25%);
 }
 #top-logo-navigation-actions > div {
     display: inline-block;
@@ -766,6 +771,11 @@ li.bloc-item a h3::after{
 .main-homepage.template-folderview #portal-searchbox{
     margin:0;
 }
+
+#top-logo-inner {
+    margin-left: 10%;
+}
+
 .main-homepage.template-folderview #top-logo-inner {
     margin: 20% 0 6% 60%;
 }
@@ -880,6 +890,18 @@ li.bloc-item a h3::after{
     position: absolute;
     right: 0;
     width: 130%;
+}
+
+div#portal-column-content.position-1\:4 #content #flex.slider-multiple .carousel .flex-viewport li a.linkimg.slider_multiple_link{
+    height:48% !important;
+}
+
+div#portal-column-content.position-1\:4 #flex.slider-multiple .carousel .flex-viewport li .flex-caption {
+    height: 32% !important;
+}
+
+div#portal-column-content.position-1\:4 .slider-multiple::before{
+    width: 100%;
 }
 #flex.slider-multiple {
     position: relative;
@@ -1330,9 +1352,13 @@ li.bloc-item a h3::after{
     position: static;
 }*/
 
+.element-en-evidence .voir-tout-content {
+    text-align: center;
+}
+
 .element-en-evidence .voir-tout-content a {
-    right: 15%;
     position: relative;
+    float:none;
     border-bottom: 2px solid #3548b1 !important;
 }
 
@@ -1713,7 +1739,7 @@ li.bloc-item a h3::after{
 }
 .agenda .voir-tout-content {
     display: inline-block;
-    margin-left: 50%;
+    margin-left: 45%;
     text-align: center;
 }
 .agenda .voir-tout {
@@ -1944,7 +1970,7 @@ li.bloc-item a h3::after{
 #footer-sitemap div.footer-static {
     padding-bottom: 1.25em;
     padding-left: 0.5em;
-    padding-top: 1em;
+    padding-top: 0em;
     width:100%;
 }
 
@@ -1967,6 +1993,7 @@ li.bloc-item a h3::after{
 .footer-bloc.bloc-logo {
     width: 10%;
     padding-left: 5%;
+    padding-top:1em;
 }
 
 .bloc-adresse, .bloc-liens {
@@ -2015,7 +2042,7 @@ li.bloc-item a h3::after{
 #portal-columns .footer-mini-site {
     background: #f1d2ef none repeat scroll 0 0;
     float: left;
-    margin: -5em 0 -7em;
+    margin: 6em 0 -7em;
     padding: 5em 0;
     width: 100%;
     position: relative;
