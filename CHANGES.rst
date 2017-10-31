@@ -1,8 +1,17 @@
-0.6.3 (unreleased)
+0.6.4 (unreleased)
+------------------
+
+- Nothing changed yet.
+
+
+0.6.3 (2017-10-30)
 ------------------
 
 - Fix display for social share
   [amariscal]
+  
+- Change css for mobile.
+  [mgennart]
 
 
 0.6.2 (2017-10-25)
