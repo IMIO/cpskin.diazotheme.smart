@@ -1,8 +1,12 @@
 /* FOR DEVICES WITH NARROW DESKTOP */
+//général
 body {
     padding: 0 !important;
 }
-
+.nav-is-stuck .main-homepage.template-folderview #top-actions{
+    position: absolute;
+    top: 3%;
+}
 #accueil .evenements .bloc-item {
     width: 100%;
 }
@@ -20,6 +24,35 @@ body {
 }
 #portal-column-one .portletNavigationTree dd ul li a {
     padding-left: 3em !important;
+}
+#accueil #flex.slider-multiple .flex-prev,
+#accueil #flex.slider-multiple .flex-next{
+    top: 102%;
+}
+.section-je-suis .a-lagenda .titre-rss,
+.section-je-suis .publications .titre-rss {
+    height: 70%;
+    top: 30%;
+    width: 54%;
+}
+.section-je-suis #accueil .bloc-collection,
+.section-je-suis #accueil .bloc-document,
+.section-je-suis #accueil .bloc-collection-slider {
+    margin: 5em 0 9.3%;
+}
+.section-je-suis .a-lagenda h2,
+.section-je-suis .publications h2{
+    padding-top: 16%;
+}
+body.section-je-suis .a-lagenda .bloc-item h3,
+body.section-je-suis .publications .bloc-item h3{
+    top: 57% !important;
+    font-size: 14px;
+}
+.section-je-suis .a-lagenda .bloc-item:first-child .documentByLine,
+.section-je-suis .publications .bloc-item:first-child .documentByLine {
+    padding-top: 21%;
+    font-size: 10px;
 }
 .footer-bloc.bloc-adresse{
     width: 37%;
@@ -51,10 +84,33 @@ body {
     #portal-column-one{
         margin-right: 1%;
     }
+    //homepage
+    .main-homepage iframe {
+        height: 200px;
+        width: 400px;
+    }
+    #accueil li.bloc-item a.medialink .pagecaption h3{
+        left:4%;
+        width: 50%;
+    }
+    #accueil .element-en-evidence .medialink .pagecaption .description {
+        padding: 3% 0 0 2.7%;
+        width: 42%;
+    }
+    
+    
 }
 @media (orientation: landscape){
     ul.navTreeLevel0 {
         max-width: 1000px;
         margin-left: -16% !important;
+    }
+    //homepage
+    #accueil li.bloc-item a.medialink .pagecaption h3 {
+        left: 10%;
+    }
+    #accueil .element-en-evidence .medialink .pagecaption .description {
+        padding: 0 0 0 8.7%;
+        width: 40%;
     }
 }
