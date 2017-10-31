@@ -111,7 +111,8 @@ h3 {
 
 
 #portal-columns #content a:hover,
-#portal-columns dl.portlet a:hover{
+#portal-columns dl.portlet a:hover,
+.navTreeCurrentItem{
     color: #0e2240 !important;
 }
 
@@ -468,6 +469,10 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     float: left;
     width:100%;
     background: white;
+}
+
+.entries {
+    padding-top: 1.5em;
 }
 
 #relatedItemBox dt {
@@ -1090,7 +1095,9 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
 }
 
 .template-facetednavigation_view #portal-columns .contact-title, .template-facetednavigation_view #portal-columns .organization-title {
-    font-size: 85%;
+    font-size: 90%;
+    font-family: Montserrat;
+    color: #0e2240;
 }
 
 .template-facetednavigation_view #faceted-form .organization-entry, .template-facetednavigation_view #faceted-form .contact-entry {
@@ -1124,11 +1131,17 @@ dl.portalMessage.info {
     border: 0px solid transparent;
     background: #3d8acd;
     color: white;
-    padding-left: 0;
+    padding: 0.5em;
 }
 
 dl.portalMessage dt {
     background-color: transparent;
+    text-transform: uppercase;
+    font-family: Montserrat;
+}
+dl.portalMessage dt::after {
+    content: ":";
+    margin-left: 0.25em;
 }
 
 .section-annuaire.portaltype-organization #content,
@@ -1300,6 +1313,12 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     margin-left: 1em;
 }
 
+#content-core #faceted-results .photoAlbumEntryTitle,
+.section-je-suis #faceted-results .photoAlbumEntryTitle,
+.section-je-trouve #faceted-results .photoAlbumEntryTitle{
+    font-family:Montserrat;
+}
+
 #content .widget-fieldset legend{
     color: #8bb3ee;
 }
@@ -1389,7 +1408,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     box-sizing: border-box;
     float: left;
     margin-bottom: 2em;
-    margin-left: -1.5em;
+    margin-left: -1.4em;
     padding: 2em 2em 1em 2em;
     position: relative;
     width: 100%;
@@ -1399,6 +1418,11 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 div#viewlet-below-content-body {
     float: left;
     padding-bottom: 1.25em;
+    width:100%;
+}
+
+#belowContentContact .coordinates{
+    height: 16em;
 }
 
 #belowContentContact .wrapped-coord {
@@ -1425,10 +1449,10 @@ div#viewlet-below-content-body {
     width: 24px;
 }
 
-.width-full .coordinates::after {
+/*.width-full .coordinates::after {
     right: -3.75em;
     width: 3.75em;
-}
+}*/
 
 #phone > a {
     display: block;
@@ -1441,7 +1465,7 @@ div#viewlet-below-content-body {
 }
 
 #form-widgets-IScheduledContent-schedule {
-    float: left;
+    float: right;
 }
 
 .schedule {
