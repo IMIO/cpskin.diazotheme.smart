@@ -43,7 +43,7 @@
 
  <stylesheet title="cpskin.diazotheme.smart LESS Large Mobile Styles"
     id="++theme++cpskin.diazotheme.smart/less/mobilelarge.less"
-    media="handheld, screen and (max-device-width: 1000px), screen and (max-width: 1000px)"
+    media="handheld, screen and (min-device-width: 768px) and (max-device-width: 1024px), screen and (min-device-width: 768px) and (max-width: 1024px)"
     enabled="1"
     rendering="link"
     applyPrefix="True"
