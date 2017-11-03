@@ -1,8 +1,8 @@
-0.6.5 (unreleased)
+0.6.5 (2017-11-03)
 ------------------
 
-- Nothing changed yet.
-
+- Change css
+  [mgennart]
 
 0.6.4 (2017-10-31)
 ------------------
