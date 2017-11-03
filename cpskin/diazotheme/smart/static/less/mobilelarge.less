@@ -7,6 +7,9 @@ body {
     position: absolute;
     top: 3%;
 }
+#top-slogan h1{
+    font-size: 130%;
+}
 #accueil .evenements .bloc-item {
     width: 100%;
 }
@@ -28,6 +31,9 @@ body {
 #accueil #flex.slider-multiple .flex-prev,
 #accueil #flex.slider-multiple .flex-next{
     top: 102%;
+}
+#accueil #flex.slider-unique-titre .slider .flex-viewport .flex-caption{
+    margin-left: 64%;
 }
 .section-je-suis .a-lagenda .titre-rss,
 .section-je-suis .publications .titre-rss {
@@ -78,9 +84,6 @@ body.section-je-suis .publications .bloc-item h3{
         margin-left: -16% !important;
     }
     //content
-    /*div.cell {
-        float: right;
-    }*/
     #portal-column-one, #portal-column-two{
         padding-right:55px;
     }
@@ -103,13 +106,63 @@ body.section-je-suis .publications .bloc-item h3{
         padding: 3% 0 0 2.7%;
         width: 42%;
     }
-    
-    
+    #accueil li.bloc-item a.medialink .pagecaption h3 {
+        left: 6%;
+    }
+    #accueil .element-en-evidence .medialink .pagecaption .description {
+        padding: 3% 0 0 4.7%;
+        width: 40%;
+    }
+    //contact
+    #viewlet-above-content-body .wrapped-coord{
+        padding:0.5em 0em 1.5em;
+    }
+    #viewlet-above-content-body .wrapped-coord,
+    #aboveContentContact .schedule{
+        float: left;
+        width: 100%;
+    }
+    #form-widgets-IScheduledContent-schedule{
+        float: left;
+    }
+    .schedule-widget-day .comment{
+        padding-top: 0.5em !important;
+    }
+    .template-facetednavigation_view .organization-entry,
+    body.template-facetednavigation_view .contact-entry{
+        width: 32%;
+    }
+    .citizen{
+        right: 1em;
+    }
+    #login-password, .login_message {
+        display: block;
+        width: 100%;
+    }
+    .td_cell_citizen-state-column div{
+        font-size: 12px;
+    }
+    .line-state.active::before{
+        width: 11em;
+        left:  -13.5em;
+        top: -4.2em;
+    }
+    .line-state.active::after{
+        height: 18em;
+        right: 3.5em;
+    }
 }
 @media (orientation: landscape){
     #top-navigation-inner ul.navTreeLevel0 {
         max-width: 1000px;
         margin-left: -16% !important;
+    }
+    #accueil li.bloc-item a.medialink .pagecaption h3 {
+        left: 11%;
+    }
+    #accueil .element-en-evidence .medialink .pagecaption .description {
+        padding: 3% 0 0 9.7%;
+        width: 40%;
     }
 }
 
@@ -120,13 +173,5 @@ body.section-je-suis .publications .bloc-item h3{
     }
     #portal-column-one{
     padding-right: 55px;
-    }
-    //homepage
-    #accueil li.bloc-item a.medialink .pagecaption h3 {
-        left: 10%;
-    }
-    #accueil .element-en-evidence .medialink .pagecaption .description {
-        padding: 0 0 0 8.7%;
-        width: 40%;
     }
 }
