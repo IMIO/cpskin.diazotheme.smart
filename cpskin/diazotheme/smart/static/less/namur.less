@@ -1,18 +1,27 @@
 
+div#form-widgets-texte {
+    padding-top: 1em;
+}
+
 #portal-footer-wrapper ul#portal-siteactions {
     display: none;
+}
+
+.template-sendtomanager_form #form,
+.template-sendtomanager_form .discreet{
+    padding: 2em;
 }
 
 /*  navigation  */
 
 #portal-column-one {
     padding-top: 1em;
+    padding-left:0.5em
 }
 
 div#portal-column-content {
     padding-top: 0em;
     padding-left:1em;
-    box-sizing:border-box;
 }
 
 div#portal-column-content.position-1\:4{
@@ -549,7 +558,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     width: 300%;
 }
 
-#portal-column-content::after {
+#portal-column-content::after{
     background: #f3f3f3 none repeat scroll 0 0;
     bottom: -8em;
     content: "";
@@ -560,7 +569,18 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     z-index: -1;
 }
 
-#portal-top::after {
+/*#top-banner::after{
+    background: #f3f3f3 none repeat scroll 0 0;
+    bottom: -8em;
+    content: "";
+    position: absolute;
+    left: 90%;
+    top: 8em;
+    width: 200em;
+    z-index: -1;
+}*/
+
+/*#portal-top::after {
     background: #f3f3f3;
     content: "";
     height: 50em;
@@ -569,7 +589,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     top: 0;
     width: 50%;
     z-index: -2;
-}
+}*/
 
 .main-homepage #portal-top::after{
     display: none;
@@ -1581,7 +1601,7 @@ div#viewlet-below-content-body {
 /*  Fin document */
 /*   Page je suis   */
 
-.section-je-suis #portal-top::after{
+.section-je-suis #portal-top::after, .width-full #portal-top::after{
     display: none;
 }
 
@@ -1927,6 +1947,8 @@ div#viewlet-below-content-body {
 #social-share-container.hidden-right-panel {
     opacity: 0;
     display: block;
+    right:-1000%;
+    position: relative;
 }
 
 #viewlet-social-like.vertical > div {

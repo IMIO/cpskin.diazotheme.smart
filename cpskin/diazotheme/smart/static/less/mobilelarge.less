@@ -40,21 +40,37 @@ body {
     .nav-is-stuck .main-homepage #top-navigation-inner{
         padding-left: 0em;
     }
-    ul.navTreeLevel0 {
+    #top-navigation-inner ul.navTreeLevel0 {
         max-width: 760px;
         margin-left: -16% !important;
     }
     //content
-    div.cell {
+    /*div.cell {
         float: right;
+    }*/
+    #portal-column-one, #portal-column-two{
+        padding-right:55px;
+    }
+    #portal-columns #portal-column-content {
+    padding-right: 0;
     }
     #portal-column-one{
         margin-right: 1%;
     }
 }
 @media (orientation: landscape){
-    ul.navTreeLevel0 {
+    #top-navigation-inner ul.navTreeLevel0 {
         max-width: 1000px;
         margin-left: -16% !important;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px){
+    #portal-column-content {
+    width: 65%;
+    padding-right: 0 !important;
+    }
+    #portal-column-one{
+    padding-right: 55px;
     }
 }

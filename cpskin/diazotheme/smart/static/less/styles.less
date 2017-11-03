@@ -140,18 +140,25 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
     position: absolute;
     top: 0;
     z-index: -1;
+    height:650px;
+    background: #f3f3f3;
 }
 
-#top-banner::after {
+.template-folderview #top-banner{
+    height: auto;
+}
+
+/*#top-banner::before {
     background: rgba(14, 34, 64, 0.60);
     content: "";
     display: block;
     height: 100%;
-    left: 0;
+    right: 0;
     position: absolute;
     top: 0;
     width: 100%;
-}
+    z-index: 1;
+}*/
 #top-banner img{
     max-width: 100%;
     filter:grayscale(25%);
@@ -678,6 +685,7 @@ div#top-slogan{
     font-weight: bold;
     letter-spacing: 0;
     line-height: 1.2em;
+    padding-right:1em;
 }
 #portal-header #portal-breadcrumbs{
     margin: 1em auto 1.5em;
@@ -762,6 +770,7 @@ li.bloc-item a h3::after{
     width: 75%;
     position: relative;
     z-index: -1;
+    height:auto;
 }
 .main-homepage.template-folderview #top-actions {
     position: absolute;
@@ -1302,9 +1311,8 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
 }
 			
 .bloc-main {
-    margin-right: 1em;
+    margin-right: 1.25em;
     padding: 2em 2.5em;
-    width: 101.5%;
     box-sizing: border-box;
     margin-top: 1.5em;
     border:0px solid white;
