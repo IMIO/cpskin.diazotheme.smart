@@ -183,6 +183,14 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
     position: inherit;
 }
 
+.template-login_form #top-logo-navigation-actions .top-navigation-actions {
+    display: none;
+}
+
+.template-login_form #portal-top #portal-header {
+    background: #0e2240;
+}
+
 .main-homepage.template-folderview #top-logo-slogan {
     margin-left: 0;
     width: 100%;
@@ -680,6 +688,7 @@ div#top-slogan{
     letter-spacing: 0;
     line-height: 1.2em;
     padding-right:1em;
+    margin-bottom: 0;
 }
 #portal-header #portal-breadcrumbs{
     margin: 1em auto 1.5em;
@@ -713,8 +722,12 @@ div#top-slogan{
 #accueil .bloc-collection-slider{
     margin-bottom: 10%;
 }
+
+#accueil .bloc-collection.agenda{
+    margin-bottom: 6%;
+}
+
 #accueil .bloc-document{
-    padding: 2em;
     background: rgba(255,255,255,0.7);
 }
 .template-folderview #portal-top {
@@ -802,6 +815,11 @@ li.bloc-item a h3::after{
 .main-homepage.template-folderview #top-slogan-inner {
     margin-right: -2000px;
     padding-top: 10px;
+}
+
+div#top-slogan-inner {
+    bottom: 0;
+    position: absolute;
 }
 
 .main-homepage.template-folderview  #top-logo {
@@ -1071,13 +1089,13 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
 }
 
 #accueil #flex.slider-unique-titre .carousel {
-    top: 5em;
+    top: 4.5em;
     position: absolute;
 }
 
 #content #accueil #flex.slider-unique-titre .carousel .flex-caption > h2{
     font-size: 1.5em;
-    line-height: 1.75em;
+    line-height: 2em;
     margin-top: -0.5em;
     font-weight: bold;
 }
@@ -1295,13 +1313,13 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
 #content p {
     margin-right: 2em;
 }
+
+#content #parent-fieldname-text header + p:first-of-type {
+    margin-top: 1em;
+}
 			
 #content #parent-fieldname-text p:first-child {
     margin-top: 1.5em;
-}
-			
-#content p:last-child{
-   margin-bottom:1.5em;
 }
 			
 .bloc-main {
@@ -1409,7 +1427,7 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
     background: #dfe8f7 none repeat scroll 0 0;
     content: "";
     display: block;
-    height: 106%;
+    height: 98%;
     position: absolute;
     right: -5%;
     top:11%;
@@ -1419,7 +1437,7 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
     background: #dfe8f7 none repeat scroll 0 0;
     content: "";
     display: block;
-    height: 106%;
+    height: 98%;
     left: 100%;
     top:11%;
     position: absolute;
@@ -1708,8 +1726,8 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
 .agenda .voir-tout-content,
 .media-homepage .voir-tout-content{
     display: inline-block;
-    margin-left: 45%;
     text-align: center;
+    width:100%;
 }
 .media-homepage .voir-tout-content{
     margin-bottom:3em;
@@ -1717,7 +1735,6 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
 }
 .agenda .voir-tout,
 .media-homepage .voir-tout {
-    right: 50%;
     top: 5%;
 }
 /*   SLIDER VIDEO   */
@@ -2016,7 +2033,7 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
 #portal-columns .footer-mini-site {
     background: #f1d2ef none repeat scroll 0 0;
     float: left;
-    margin: 6em 0 -7em;
+    margin: 6em 0 -4em;
     padding: 5em 0;
     width: 100%;
     position: relative;

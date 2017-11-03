@@ -1,6 +1,47 @@
+// eguichet
+
+.eguichet {
+    background: #0e2240;
+    padding: 0.75em 1em;
+    float: right;
+    color: white !important;
+    z-index: 1;
+    position: relative;
+}
+
+#portal-columns #content a.eguichet:hover{
+    color:#fff !important;
+}
+
+a.eguichet::before {
+    content: '\f291';
+    font-family: fontello;
+    margin-right: 0.75em;
+}
+
+// focus
+#visual-portal-wrapper .portletNavigationTree a:focus {
+    outline: thin none;
+    color: black !important;
+}
 
 div#form-widgets-texte {
     padding-top: 1em;
+}
+
+.image-right {
+    margin: 2em;
+}
+    
+.image-right img{
+    max-width:100%;
+}
+
+.image figcaption {
+    text-align: center;
+    padding: 0.5em;
+    font-weight: bold;
+    color: grey;
 }
 
 #portal-footer-wrapper ul#portal-siteactions {
@@ -95,6 +136,7 @@ body,
 .portlet.portletNavigationTree a,
 .portlet-static-liens-utiles h3,
 .portlet-static-liens-utiles a,
+.searchResults dt a,
 h1,
 h2,
 h3 {
@@ -103,7 +145,7 @@ h3 {
 
 h2 {
     color: #0e2240;
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 0.25em;
     padding-top: 1em;
     margin-top:0;
@@ -1065,6 +1107,15 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
     position: absolute;
     top: -6em;
 }
+#organization #other-contacts .contact-photo img {
+    width: 20px;
+}
+
+#organization #other-contacts #contact-held-position,
+#organization #other-contacts #contact-label{
+    display: none;
+}
+
 .faceted-widget.faceted-layout-widget.section-affichage label[title="Vue annuaire"]::before {
     content: "\f00b";
     font-family: fontello;
@@ -1184,7 +1235,7 @@ dl.portalMessage dt::after {
     max-width: 175px;
 }
 
-#contact-schedule, #person > .contact-details {
+#contact-schedule, #person > .contact-details, div.field#photo {
     background: #fdf6fd none repeat scroll 0 0;
     border-left: 5px solid #f1d3ee;
     box-sizing: border-box;
@@ -1194,6 +1245,16 @@ dl.portalMessage dt::after {
     padding: 2em 0.5em 1em 3em;
     width: 103%;
     margin-top:-1.5em;
+}
+
+.portaltype-person div.field#photo {
+    margin-bottom: 1em;
+    padding-top: 4em !important;
+}
+
+.portaltype-organization #leaflet-content-viewlet,
+.portaltype-person #leaflet-content-viewlet{
+    padding-right: 0;
 }
 
 .contact-details, #contact-schedule .Schedule {
@@ -1230,7 +1291,7 @@ dl.portalMessage dt::after {
     bottom: -2.5em;
     color: white;
     font-weight: bold;
-    padding: 0.5em 5em 0.5em 1em;
+    padding: 0.5em 5em 0.75em 1em;
     position: absolute;
     right: -162%;
 }
@@ -1422,6 +1483,10 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     margin: 0;
 }
 
+.related-contact .photo {
+    padding-bottom: 1em;
+}
+
 .coordinates {
     background: #fdf6fd none repeat scroll 0 0;
     border-left: 0.5em solid #f1d3ee;
@@ -1591,6 +1656,17 @@ div#viewlet-below-content-body {
     font-weight: bold;
     margin-top:2em;
     font-family: Montserrat;
+}
+
+.agenda .voir-tout-content {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#content #accueil .agenda a.voir-tout{
+    right:auto;
+    float:none;
 }
 
 #content #accueil .agenda a.voir-tout:hover,
