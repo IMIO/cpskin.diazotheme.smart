@@ -124,10 +124,6 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
     width: 38%;
 }
 
-.in-minisite-in-portal #portal-logo > img {
-			    width: 25%;
-}
-
 .nav-is-stuck #portal-logo > img {
     width: 60%;
 }
@@ -161,7 +157,7 @@ body.main-homepage.template-folderview #visual-portal-wrapper{
 }*/
 #top-banner img{
     max-width: 100%;
-    filter:grayscale(25%);
+    filter: grayscale(25%);
 }
 #top-logo-navigation-actions > div {
     display: inline-block;
@@ -610,7 +606,19 @@ li.sfHover > span > a{
 }
 
 .nav-is-stuck #top-logo-navigation-actions .top-navigation-actions::before,
-.in-minisite-in-portal #top-navigation::before{
+.in-minisite-in-portal #top-navigation::before,
+.subsection-social-cohesion-sociale #top-navigation::before,
+.subsection-territoire-mobilite #top-navigation::before,
+.subsection-education-enseignement-artistique-academie-des-beaux-arts #top-navigation::before,
+.subsection-tourisme-centres-dinformation-touristique-centre-information-touristique #top-navigation::before,
+.subsection-territoire-environnement #top-navigation::before,
+.subsection-plein-air-parc-attractif-reine-fabiola #top-navigation::before,
+.subsection-administration-services-communaux-sports #top-navigation::before,
+.subsection-education-enseignement-artistique-conservatoire-balthasar-florence #top-navigation::before,
+.subsection-tourisme-citadelle-de-namur #top-navigation::before,
+.subsection-culture-lectures-bibliotheques #top-navigation::before,
+.subsection-territoire-pavillon-de-lamenagement-urbain #top-navigation::before,
+.subsection-territoire-energie #top-navigation::before {
     background: #0e213f none repeat scroll 0 0;
     bottom: 0;
     content: "";
@@ -709,10 +717,34 @@ div#top-slogan{
 }
 .main-homepage.template-folderview #top-logo-navigation-actions #portal-breadcrumbs,
 .template-folderview.in-minisite-in-portal #top-logo-navigation-actions #portal-breadcrumbs,
+.template-folderview.subsection-social-cohesion-sociale #top-logo-navigation-actions #portal-breadcrumbs,
+.template-folderview.subsection-territoire-mobilite #top-logo-navigation-actions #portal-breadcrumbs,
+.template-folderview.subsection-education-enseignement-artistique-academie-des-beaux-arts #top-logo-navigation-actions #portal-breadcrumbs,
+.template-folderview.subsection-tourisme-centres-dinformation-touristique-centre-information-touristique #top-logo-navigation-actions #portal-breadcrumbs,
+.template-folderview.subsection-territoire-environnement #top-logo-navigation-actions #portal-breadcrumbs,
+.template-folderview.subsection-plein-air-parc-attractif-reine-fabiola #top-logo-navigation-actions #portal-breadcrumbs,
+.template-folderview.subsection-administration-services-communaux-sports #top-logo-navigation-actions #portal-breadcrumbs,
+.template-folderview.subsection-education-enseignement-artistique-conservatoire-balthasar-florence #top-logo-navigation-actions #portal-breadcrumbs,
+.template-folderview.subsection-tourisme-citadelle-de-namur #top-logo-navigation-actions #portal-breadcrumbs,
+.template-folderview.subsection-culture-lectures-bibliotheques #top-logo-navigation-actions #portal-breadcrumbs,
+.template-folderview.subsection-territoire-pavillon-de-lamenagement-urbain #top-logo-navigation-actions #portal-breadcrumbs,
+.template-folderview.subsection-territoire-energie #top-logo-navigation-actions #portal-breadcrumbs,
 .template-folderview.in-minisite-out-portal #top-logo-navigation-actions #portal-breadcrumbs{
     display:none;
 }
-.in-minisite-in-portal #top-logo-navigation-actions #portal-breadcrumbs
+.in-minisite-in-portal #top-logo-navigation-actions #portal-breadcrumbs,
+.subsection-social-cohesion-sociale #top-logo-navigation-actions #portal-breadcrumbs,
+.subsection-territoire-mobilite #top-logo-navigation-actions #portal-breadcrumbs,
+.subsection-education-enseignement-artistique-academie-des-beaux-arts #top-logo-navigation-actions #portal-breadcrumbs,
+.subsection-tourisme-centres-dinformation-touristique-centre-information-touristique #top-logo-navigation-actions #portal-breadcrumbs,
+.subsection-territoire-environnement #top-logo-navigation-actions #portal-breadcrumbs,
+.subsection-plein-air-parc-attractif-reine-fabiola #top-logo-navigation-actions #portal-breadcrumbs,
+.subsection-administration-services-communaux-sports #top-logo-navigation-actions #portal-breadcrumbs,
+.subsection-education-enseignement-artistique-conservatoire-balthasar-florence #top-logo-navigation-actions #portal-breadcrumbs,
+.subsection-tourisme-citadelle-de-namur #top-logo-navigation-actions #portal-breadcrumbs,
+.subsection-culture-lectures-bibliotheques #top-logo-navigation-actions #portal-breadcrumbs,
+.subsection-territoire-pavillon-de-lamenagement-urbain #top-logo-navigation-actions #portal-breadcrumbs,
+.subsection-territoire-energie #top-logo-navigation-actions #portal-breadcrumbs,
 .in-minisite-out-portal #top-logo-navigation-actions #portal-breadcrumbs{
     position: relative;
     z-index: 1;
@@ -1251,6 +1283,7 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
     font-weight: bold;
     padding: 6% 42% 0;
     width: 46%;
+    max-height: 100%;
 }
 
 
@@ -1759,6 +1792,7 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
     top: -2em;
     transform: none;
     transition: none 0s ease 0s ;
+    max-height: 100%;
 }
 #accueil .element-en-evidence .medialink .pagecaption .description {
     display: inline-block;
@@ -2131,15 +2165,51 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
 #viewlet-minisite{
     display: none;
 }
-.in-minisite-in-portal #top-logo-navigation-actions {
+.in-minisite-in-portal #top-logo-navigation-actions,
+.subsection-social-cohesion-sociale #top-logo-navigation-actions,
+.subsection-territoire-mobilite #top-logo-navigation-actions,
+.subsection-education-enseignement-artistique-academie-des-beaux-arts #top-logo-navigation-actions,
+.subsection-tourisme-centres-dinformation-touristique-centre-information-touristique #top-logo-navigation-actions,
+.subsection-territoire-environnement #top-logo-navigation-actions,
+.subsection-plein-air-parc-attractif-reine-fabiola #top-logo-navigation-actions,
+.subsection-administration-services-communaux-sports #top-logo-navigation-actions,
+.subsection-education-enseignement-artistique-conservatoire-balthasar-florence #top-logo-navigation-actions,
+.subsection-tourisme-citadelle-de-namur #top-logo-navigation-actions,
+.subsection-culture-lectures-bibliotheques #top-logo-navigation-actions,
+.subsection-territoire-pavillon-de-lamenagement-urbain #top-logo-navigation-actions,
+.subsection-territoire-energie #top-logo-navigation-actions {
     position: relative;
     z-index:2;
 }
-.in-minisite-in-portal #top-logo {
+.in-minisite-in-portal #top-logo,
+.subsection-social-cohesion-sociale #top-logo,
+.subsection-territoire-mobilite #top-logo,
+.subsection-education-enseignement-artistique-academie-des-beaux-arts #top-logo,
+.subsection-tourisme-centres-dinformation-touristique-centre-information-touristique #top-logo,
+.subsection-territoire-environnement #top-logo,
+.subsection-plein-air-parc-attractif-reine-fabiola #top-logo,
+.subsection-administration-services-communaux-sports #top-logo,
+.subsection-education-enseignement-artistique-conservatoire-balthasar-florence #top-logo,
+.subsection-tourisme-citadelle-de-namur #top-logo,
+.subsection-culture-lectures-bibliotheques #top-logo,
+.subsection-territoire-pavillon-de-lamenagement-urbain #top-logo,
+.subsection-territoire-energie #top-logo {
     height: 75px;
     overflow: hidden;
 }
-.in-minisite-in-portal .container-minisite-globalnav-logo{
+.in-minisite-in-portal .container-minisite-globalnav-logo,
+.subsection-social-cohesion-sociale .container-minisite-globalnav-logo,
+.subsection-territoire-mobilite .container-minisite-globalnav-logo,
+.subsection-education-enseignement-artistique-academie-des-beaux-arts .container-minisite-globalnav-logo,
+.subsection-tourisme-centres-dinformation-touristique-centre-information-touristique .container-minisite-globalnav-logo,
+.subsection-territoire-environnement .container-minisite-globalnav-logo,
+.subsection-plein-air-parc-attractif-reine-fabiola .container-minisite-globalnav-logo,
+.subsection-administration-services-communaux-sports .container-minisite-globalnav-logo,
+.subsection-education-enseignement-artistique-conservatoire-balthasar-florence .container-minisite-globalnav-logo,
+.subsection-tourisme-citadelle-de-namur .container-minisite-globalnav-logo,
+.subsection-culture-lectures-bibliotheques .container-minisite-globalnav-logo,
+.subsection-territoire-pavillon-de-lamenagement-urbain .container-minisite-globalnav-logo,
+.subsection-territoire-energie .container-minisite-globalnav-logo{
     position: relative;
 }
 /*   NAVIGATION MINI SITE  */
@@ -2201,7 +2271,19 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
         z-index: 1;
         max-height:8em;
     }
-    .nav-is-Substuck .in-minisite-in-portal .container-minisite-globalnav-logo{
+    .nav-is-Substuck .in-minisite-in-portal .container-minisite-globalnav-logo,
+    .nav-is-Substuck .subsection-social-cohesion-sociale .container-minisite-globalnav-logo,
+    .nav-is-Substuck .subsection-territoire-mobilite .container-minisite-globalnav-logo,  
+    .nav-is-Substuck .subsection-education-enseignement-artistique-academie-des-beaux-arts .container-minisite-globalnav-logo,
+    .nav-is-Substuck .subsection-tourisme-centres-dinformation-touristique-centre-information-touristique .container-minisite-globalnav-logo,
+    .nav-is-Substuck .subsection-territoire-environnement .container-minisite-globalnav-logo,
+    .nav-is-Substuck .subsection-plein-air-parc-attractif-reine-fabiola .container-minisite-globalnav-logo,
+    .nav-is-Substuck .subsection-administration-services-communaux-sports .container-minisite-globalnav-logo,
+    .nav-is-Substuck .subsection-education-enseignement-artistique-conservatoire-balthasar-florence .container-minisite-globalnav-logo,
+    .nav-is-Substuck .subsection-tourisme-citadelle-de-namur .container-minisite-globalnav-logo,
+    .nav-is-Substuck .subsection-culture-lectures-bibliotheques .container-minisite-globalnav-logo,
+    .nav-is-Substuck .subsection-territoire-pavillon-de-lamenagement-urbain .container-minisite-globalnav-logo,
+    .nav-is-Substuck .subsection-territoire-energie .container-minisite-globalnav-logo     {
         top:86px;
     }
 }
@@ -2218,22 +2300,70 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
 }
 
 .in-minisite-in-portal .top-slogan-breadcrumbs,
+.subsection-social-cohesion-sociale .top-slogan-breadcrumbs,
+.subsection-territoire-mobilite .top-slogan-breadcrumbs,
+.subsection-education-enseignement-artistique-academie-des-beaux-arts .top-slogan-breadcrumbs,
+.subsection-tourisme-centres-dinformation-touristique-centre-information-touristique .top-slogan-breadcrumbs,
+.subsection-territoire-environnement .top-slogan-breadcrumbs,
+.subsection-plein-air-parc-attractif-reine-fabiola .top-slogan-breadcrumbs,
+.subsection-administration-services-communaux-sports .top-slogan-breadcrumbs,
+.subsection-education-enseignement-artistique-conservatoire-balthasar-florence .top-slogan-breadcrumbs,
+.subsection-tourisme-citadelle-de-namur .top-slogan-breadcrumbs,
+.subsection-culture-lectures-bibliotheques .top-slogan-breadcrumbs,
+.subsection-territoire-pavillon-de-lamenagement-urbain .top-slogan-breadcrumbs,
+.subsection-territoire-energie .top-slogan-breadcrumbs,
 .in-minisite-out-portal .top-slogan-breadcrumbs{
     width: 100%;
     z-index: 1;
 }
-.in-minisite-in-portal .top-slogan-breadcrumbs{
+.in-minisite-in-portal .top-slogan-breadcrumbs,
+.subsection-social-cohesion-sociale .top-slogan-breadcrumbs,
+.subsection-territoire-mobilite .top-slogan-breadcrumbs,
+.subsection-education-enseignement-artistique-academie-des-beaux-arts .top-slogan-breadcrumbs,
+.subsection-tourisme-centres-dinformation-touristique-centre-information-touristique .top-slogan-breadcrumbs,
+.subsection-territoire-environnement .top-slogan-breadcrumbs,
+.subsection-plein-air-parc-attractif-reine-fabiola .top-slogan-breadcrumbs,
+.subsection-administration-services-communaux-sports .top-slogan-breadcrumbs,
+.subsection-education-enseignement-artistique-conservatoire-balthasar-florence .top-slogan-breadcrumbs,
+.subsection-tourisme-citadelle-de-namur .top-slogan-breadcrumbs,
+.subsection-culture-lectures-bibliotheques .top-slogan-breadcrumbs,
+.subsection-territoire-pavillon-de-lamenagement-urbain .top-slogan-breadcrumbs,
+.subsection-territoire-energie .top-slogan-breadcrumbs{
     top:15em;
 }
 .in-minisite-out-portal .top-slogan-breadcrumbs{
     top:10em;
 }
 .nav-is-stuck .in-minisite-in-portal .top-slogan-breadcrumbs,
+.nav-is-stuck .subsection-social-cohesion-sociale .top-slogan-breadcrumbs,
+.nav-is-stuck .nav-is-stuck .subsection-territoire-mobilite .top-slogan-breadcrumbs,
+.nav-is-stuck .subsection-education-enseignement-artistique-academie-des-beaux-arts .top-slogan-breadcrumbs,
+.nav-is-stuck .subsection-tourisme-centres-dinformation-touristique-centre-information-touristique .top-slogan-breadcrumbs,
+.nav-is-stuck .subsection-territoire-environnement .top-slogan-breadcrumbs,
+.nav-is-stuck .subsection-plein-air-parc-attractif-reine-fabiola .top-slogan-breadcrumbs,
+.nav-is-stuck .subsection-administration-services-communaux-sports .top-slogan-breadcrumbs,
+.nav-is-stuck .subsection-education-enseignement-artistique-conservatoire-balthasar-florence .top-slogan-breadcrumbs,
+.nav-is-stuck .subsection-tourisme-citadelle-de-namur .top-slogan-breadcrumbs,
+.nav-is-stuck .subsection-culture-lectures-bibliotheques .top-slogan-breadcrumbs,
+.nav-is-stuck .subsection-territoire-pavillon-de-lamenagement-urbain .top-slogan-breadcrumbs,
+.nav-is-stuck.subsection-territoire-energie .top-slogan-breadcrumbs,
 .nav-is-stuck .in-minisite-out-portal .top-slogan-breadcrumbs{
     z-index: 0;
 }
 /*   SLIDER MINI SITE*/
 .in-minisite-in-portal #accueil #flex.slider-unique-titre .flex-container,
+.subsection-social-cohesion-sociale #accueil #flex.slider-unique-titre .flex-container,
+.subsection-territoire-mobilite #accueil #flex.slider-unique-titre .flex-container,
+.subsection-education-enseignement-artistique-academie-des-beaux-arts #accueil #flex.slider-unique-titre .flex-container,
+.subsection-tourisme-centres-dinformation-touristique-centre-information-touristique #accueil #flex.slider-unique-titre .flex-container,
+.subsection-territoire-environnement #accueil #flex.slider-unique-titre .flex-container,
+.subsection-plein-air-parc-attractif-reine-fabiola #accueil #flex.slider-unique-titre .flex-container,
+.subsection-administration-services-communaux-sports #accueil #flex.slider-unique-titre .flex-container,
+.subsection-education-enseignement-artistique-conservatoire-balthasar-florence #accueil #flex.slider-unique-titre .flex-container,
+.subsection-tourisme-citadelle-de-namur #accueil #flex.slider-unique-titre .flex-container,
+.subsection-culture-lectures-bibliotheques #accueil #flex.slider-unique-titre .flex-container,
+.subsection-territoire-pavillon-de-lamenagement-urbain #accueil #flex.slider-unique-titre .flex-container,
+.subsection-territoire-energie #accueil #flex.slider-unique-titre .flex-container,
 .in-minisite-out-portal #accueil #flex.slider-unique-titre .flex-container{
     padding-bottom:120px;
 }
