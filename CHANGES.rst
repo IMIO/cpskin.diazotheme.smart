@@ -1,7 +1,8 @@
 0.6.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Change display for sociallike whatsapp
+  [amariscal]
 
 
 0.6.6 (2017-11-06)
