@@ -1,4 +1,4 @@
-0.6.7 (unreleased)
+0.6.7 (2017-11-21)
 ------------------
 
 - Change display for sociallike whatsapp
