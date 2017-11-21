@@ -3,6 +3,9 @@
 
 - Change display for sociallike whatsapp
   [amariscal]
+  
+- Change css to .nav-is-Substuck .container-minisite-globalnav-logo for ie 11
+  [mgennart]
 
 
 0.6.6 (2017-11-06)
