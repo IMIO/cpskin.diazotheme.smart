@@ -1,7 +1,8 @@
-0.6.8 (unreleased)
+0.6.8 (2017-11-28)
 ------------------
 
-- Nothing changed yet.
+- Change padding for #right-actions-viewlet-inner and change top for #right-actions-viewlet-inner a.
+  [mgennart]
 
 
 0.6.7 (2017-11-21)
