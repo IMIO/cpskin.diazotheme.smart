@@ -293,19 +293,19 @@ dl.actionMenu.deactivated dd {
 
 #search-results .contenttype-link,
 #search-results .contenttype-link + dd,
-.LSRow .contenttype-link,
-.LSRow .contenttype-link + .LSDescr,
+.livesearchContainer .LSRow .contenttype-link,
+.livesearchContainer .LSRow .contenttype-link + .LSDescr,
 #search-results .contenttype-folder,
 #search-results .contenttype-folder + dd,
-.LSRow .contenttype-folder,
-.LSRow .contenttype-folder + .LSDescr,
+.livesearchContainer .LSRow .contenttype-folder,
+.livesearchContainer .LSRow .contenttype-folder + .LSDescr,
 #search-results-bar span:first-child,
-input[value="Folder"],
-input[value="Folder"] + label,
-input[value="Folder"] + label + br,
-input[value="Link"],
-input[value="Link"] + label,
-input[value="Link"] + label + br{
+.template-search input[value="Folder"],
+.template-search input[value="Folder"] + label,
+.template-search input[value="Folder"] + label + br,
+.template-search input[value="Link"],
+.template-search input[value="Link"] + label,
+.template-search input[value="Link"] + label + br{
     display: none;
 }
 
@@ -899,7 +899,7 @@ div#top-slogan-inner {
     color: white !important;
     text-decoration: underline;
 }
-.main-homepage iframe {
+.oembed-video iframe {
     box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.15);
     height: 400px;
     margin-left: 0em;
@@ -1822,6 +1822,7 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
     padding: 2em 0;
     position: relative;
     width:100%;
+    box-sizing: border-box;
 }
 
 .event.summary.details, .event.summary.details ul {
