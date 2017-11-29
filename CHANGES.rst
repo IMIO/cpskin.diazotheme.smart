@@ -1,3 +1,26 @@
+0.6.9 (unreleased)
+------------------
+
+- Nothing changed yet.
+
+
+0.6.8 (2017-11-28)
+------------------
+
+- Change padding for #right-actions-viewlet-inner and change top for #right-actions-viewlet-inner a.
+  [mgennart]
+
+
+0.6.7 (2017-11-21)
+------------------
+
+- Change display for sociallike whatsapp
+  [amariscal]
+  
+- Change css to .nav-is-Substuck .container-minisite-globalnav-logo for ie 11
+  [mgennart]
+
+
 0.6.6 (2017-11-06)
 ------------------
 
