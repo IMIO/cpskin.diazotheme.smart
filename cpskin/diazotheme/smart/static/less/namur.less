@@ -405,23 +405,23 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 /*   fin portlet navigation  */
 
-#formfield-form-widgets-texte label,
-#formfield-form-widgets-taxonomy_infospubliques label,
-#formfield-form-widgets-ILeadImage-image label,
-#formfield-form-widgets-ILeadImage-image_caption label,
-#form-widgets-ILeadImage-image .discreet {
+#visual-portal-wrapper #formfield-form-widgets-texte label,
+#visual-portal-wrapper #formfield-form-widgets-taxonomy_infospubliques label,
+#visual-portal-wrapper #formfield-form-widgets-ILeadImage-image label,
+#visual-portal-wrapper #formfield-form-widgets-ILeadImage-image_caption label,
+#visual-portal-wrapper #form-widgets-ILeadImage-image .discreet {
     display: none;
 }
 
-.portaltype-event #formfield-form-widgets-ILeadImage-image label {
+#visual-portal-wrapper .portaltype-event #formfield-form-widgets-ILeadImage-image label {
     display: inline;
 }
 
-#formfield-form-widgets-date_adoption_historique,
-#formfield-form-widgets-date_adoption,
-#formfield-form-widgets-date_publication_historique,
-#formfield-form-widgets-date_publication,
-#formfield-form-widgets-date_echeance {
+#visual-portal-wrapper #formfield-form-widgets-date_adoption_historique,
+#visual-portal-wrapper #formfield-form-widgets-date_adoption,
+#visual-portal-wrapper #formfield-form-widgets-date_publication_historique,
+#visual-portal-wrapper #formfield-form-widgets-date_publication,
+#visual-portal-wrapper #formfield-form-widgets-date_echeance {
     background: #3548b1 none repeat scroll 0 0;
     box-sizing: border-box;
     clear: none;
@@ -434,11 +434,11 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     z-index: 0;
 }
 
-#formfield-form-widgets-date_adoption_historique::after,
-#formfield-form-widgets-date_adoption::after,
-#formfield-form-widgets-date_publication_historique::after,
-#formfield-form-widgets-date_publication::after,
-#formfield-form-widgets-date_echeance::after {
+#visual-portal-wrapper #formfield-form-widgets-date_adoption_historique::after,
+#visual-portal-wrapper #formfield-form-widgets-date_adoption::after,
+#visual-portal-wrapper #formfield-form-widgets-date_publication_historique::after,
+#visual-portal-wrapper #formfield-form-widgets-date_publication::after,
+#visual-portal-wrapper #formfield-form-widgets-date_echeance::after {
     background: #3548b1 none repeat scroll 0 0;
     content: "";
     height: 7em;
@@ -449,13 +449,13 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     z-index: -1;
 }
 
-#formfield-form-widgets-date_adoption_historique > span,
-#formfield-form-widgets-date_adoption > span,
-#formfield-form-widgets-date_publication_historique > span,
-#formfield-form-widgets-date_publication > span,
-#formfield-form-widgets-date_echeance > span,
-.event-date > span,
-.event-dates > span{
+#visual-portal-wrapper #formfield-form-widgets-date_adoption_historique > span,
+#visual-portal-wrapper #formfield-form-widgets-date_adoption > span,
+#visual-portal-wrapper #formfield-form-widgets-date_publication_historique > span,
+#visual-portal-wrapper #formfield-form-widgets-date_publication > span,
+#visual-portal-wrapper #formfield-form-widgets-date_echeance > span,
+#visual-portal-wrapper .event-date > span,
+#visual-portal-wrapper .event-dates > span{
     background-image: url("../images/date.jpg");
     background-repeat: no-repeat;
     background-position: left center;
@@ -463,16 +463,16 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     background-size: 12px;
 }
 
-#formfield-form-widgets-date_adoption_historique label,
-#formfield-form-widgets-date_adoption label,
-#formfield-form-widgets-date_publication_historique label,
-#formfield-form-widgets-date_publication label,
-#formfield-form-widgets-date_echeance label{
+#visual-portal-wrapper #formfield-form-widgets-date_adoption_historique label,
+#visual-portal-wrapper #formfield-form-widgets-date_adoption label,
+#visual-portal-wrapper #formfield-form-widgets-date_publication_historique label,
+#visual-portal-wrapper #formfield-form-widgets-date_publication label,
+#visual-portal-wrapper #formfield-form-widgets-date_echeance label{
     color: #8bb3ee;
 }
 
 
-#formfield-form-widgets-texte_legislatif label {
+#visual-portal-wrapper #formfield-form-widgets-texte_legislatif label {
     color: #dcdcdc;
     display: block;
     padding-bottom: 1em;
@@ -481,19 +481,19 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     text-transform: uppercase;
 }
 
-#formfield-form-widgets-date_adoption_historique.empty > span,
-#formfield-form-widgets-date_adoption.empty > span,
-#formfield-form-widgets-date_publication_historique.empty > span,
-#formfield-form-widgets-date_publication.empty > span,
-#formfield-form-widgets-date_echeance.empty > span {
+#visual-portal-wrapper #formfield-form-widgets-date_adoption_historique.empty > span,
+#visual-portal-wrapper #formfield-form-widgets-date_adoption.empty > span,
+#visual-portal-wrapper #formfield-form-widgets-date_publication_historique.empty > span,
+#visual-portal-wrapper #formfield-form-widgets-date_publication.empty > span,
+#visual-portal-wrapper #formfield-form-widgets-date_echeance.empty > span {
     background:none;
 }
 
-#formfield-form-widgets-date_adoption_historique.empty:before,
-#formfield-form-widgets-date_adoption.empty:before,
-#formfield-form-widgets-date_publication_historique.empty:before,
-#formfield-form-widgets-date_publication.empty:before,
-#formfield-form-widgets-date_echeance.empty:before {
+#visual-portal-wrapper #formfield-form-widgets-date_adoption_historique.empty:before,
+#visual-portal-wrapper #formfield-form-widgets-date_adoption.empty:before,
+#visual-portal-wrapper #formfield-form-widgets-date_publication_historique.empty:before,
+#visual-portal-wrapper #formfield-form-widgets-date_publication.empty:before,
+#visual-portal-wrapper #formfield-form-widgets-date_echeance.empty:before {
     bottom: 0;
     content: "--";
     left: 4em;
@@ -616,27 +616,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     z-index: -1;
 }
 
-/*#top-banner::after{
-    background: #f3f3f3 none repeat scroll 0 0;
-    bottom: -8em;
-    content: "";
-    position: absolute;
-    left: 90%;
-    top: 8em;
-    width: 200em;
-    z-index: -1;
-}*/
-
-/*#portal-top::after {
-    background: #f3f3f3;
-    content: "";
-    height: 50em;
-    left: 50%;
-    position: absolute;
-    top: 0;
-    width: 50%;
-    z-index: -2;
-}*/
 
 .main-homepage #portal-top::after{
     display: none;
@@ -1593,11 +1572,6 @@ div#viewlet-below-content-body {
     min-width: 76px;
 }
 
-/*.schedule-widget-day:nth-child(2n) {
-    background: #f1f1f1 none repeat scroll 0 0;
-    float: left;
-}*/
-
 .activity {
     clear: both;
 }
@@ -2072,18 +2046,30 @@ div#viewlet-below-content-body {
     min-height: 2em !important;
 }
 
-#social-share::after {
+#visual-portal-wrapper #social-share::after {
     content: "\f1e0";
     font-family: fontello;
 }
 
-#social-share::after {
+#visual-portal-wrapper #social-share::after {
     content: "\f1e0";
     font-family: fontello;
     color: #0f2241;
     float: left;
     margin-top: 9px;
     margin-left: 3px;
+    padding: 0;
+    background: transparent;
+}
+#visual-portal-wrapper #other-actions [class^="icon-"]::before{
+    background: transparent;
+}
+#visual-portal-wrapper #viewlet-above-content #right-actions-viewlet #other-actions li a:before{
+    padding: 0em;
+    color: #0f2241;
+}
+#visual-portal-wrapper #right-actions-viewlet{
+    right: 0.5em;
 }
 //Citizen
 .citizen {

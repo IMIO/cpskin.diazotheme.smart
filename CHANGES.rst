@@ -1,8 +1,8 @@
-0.6.10 (unreleased)
+0.6.10 (2017-12-20)
 -------------------
 
-- Nothing changed yet.
-
+- Add id visual-portal-wrapper to widgets date.
+  [mgennart]
 
 0.6.9 (2017-12-20)
 ------------------
