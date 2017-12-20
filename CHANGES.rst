@@ -1,8 +1,8 @@
-0.6.11 (unreleased)
+0.6.11 (2017-12-20)
 -------------------
 
-- Nothing changed yet.
-
+- Change css other-actions and event-date.
+  [mgennart]
 
 0.6.10 (2017-12-20)
 -------------------
