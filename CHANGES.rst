@@ -1,8 +1,8 @@
-0.6.12 (unreleased)
+0.6.12 (2017-12-20)
 -------------------
 
-- Nothing changed yet.
-
+- Change css for agenda view.
+  [mgennart]
 
 0.6.11 (2017-12-20)
 -------------------
