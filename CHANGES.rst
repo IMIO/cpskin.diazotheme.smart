@@ -1,7 +1,8 @@
-0.6.9 (unreleased)
+0.6.9 (2017-12-20)
 ------------------
 
-- Nothing changed yet.
+- Add id visual-portal-wrapper to .faceted-widget.faceted-text-widget.section-recherche fieldset form.
+  [mgennart]
 
 
 0.6.8 (2017-11-28)
