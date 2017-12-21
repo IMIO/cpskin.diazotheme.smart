@@ -304,7 +304,13 @@ div#top-slogan{
 #portal-columns #portal-column-content{
     padding-right:47px !important;
 }
-
+.template-folderview #portal-columns #portal-column-content{
+    padding-right:0 !important;
+}
+body.template-folderview.main-homepage #visual-portal-wrapper::after{
+    right: 0%;
+    width: 100%;
+}
 #portal-column-content::after {
     top: 0em;
 }
@@ -316,6 +322,9 @@ div#top-slogan{
     min-height: 0;
 }
 /*   SLIDER UNIQUE  */
+.bloc-collection-slider.grands-dossiers.slider-unique-titre::before{
+    margin-top: 3em;
+}
 #accueil .element-en-evidence .pagecaption h3 {
     font-size: 4vw;
     max-height: 100%;
@@ -326,7 +335,16 @@ div#top-slogan{
 .homepage-service {
     min-width: 100%;
 }
+.slider-unique-titre .carousel .flex-viewport {
+    display: none;
+}
+#accueil .slider-unique-titre .flexslider ul.slides img{
+    padding-top: 0;
+}
 /*   SLIDER TITLE UNIQUE   */
+#accueil .slider-unique-titre{
+    max-width: 97%;
+}
 #accueil .slider-unique-titre .flex-container {
     margin-top: -3em;
 }
@@ -334,8 +352,13 @@ div#top-slogan{
     padding: 5% 0 6% 50%;
 }
 #visual-portal-wrapper #accueil #flex.slider-unique-titre .slider .flex-viewport .flex-caption{
-    margin-left: 10%;
+    margin-bottom: 35%;
+    margin-left: 0;
+    margin-top: 65%;
+    padding: 1em;
+    width: 88.5%;
 }
+
 /*   SLIDER MULTI   */
 #accueil #flex.slider-multiple .carousel .flex-viewport li {
     height: auto !important;
@@ -366,36 +389,25 @@ div#top-slogan{
 }
 .slider-multiple::before{
     height: 111%;
+    right: -4%;
 }
 #accueil #flex.slider-unique-titre .slider .linkimg{
-    width: 600px !important;
+    width: 385px !important;
 }
 #accueil #flex.slider-unique-titre .flex-direction-nav {
     display: none;
-}
-#accueil #flex.slider-unique-titre .slider .linkimg img{
-    width: 52% !important;
 }
 #accueil #flex.slider-unique-titre .slider .flex-viewport .flex-caption {
     margin-left: 21%;
     width: 60%;
 }
-#accueil #flex.slider-unique-titre .carousel{
-    top:-500px;
-}
 #accueil #flex.slider-unique-titre .carousel .flex-viewport ul{
     visibility: hidden;
-}
-#accueil #flex.slider-unique-titre .carousel .flex-viewport ul li .flex-caption a {
-    font-size: 25px;
-    width: 77%;
 }
 #carousel-slider .flex-viewport{
     margin-top: -10em;
 }
-.slider-unique-titre #carousel-slider .slides{
-    transform: translate3d(0px,0px,0px) !important;
-}
+
 /*   AGENDA   */
 #accueil .agenda {
     margin-top: -4em;
@@ -502,7 +514,7 @@ img.image-right {
     margin:-2em 0 0 1.5%;
 }
 .media-homepage .voir-tout-content{
-    margin-left: 32%;
+    margin-left: 20%;
 }
 /*   right action panel   */
 #right-actions-viewlet{
@@ -685,6 +697,47 @@ body.template-facetednavigation_view .contact-entry{
 .section-je-suis #content #accueil .index-2 .bloc-item {
     width: 100%;
 }
+/*   HOMEPAGE   */
+#accueil .element-en-evidence .pageleadImage{
+    position: relative;
+    width: 100%;
+}
+.element-en-evidence .pageleadImage{
+    padding-bottom: 100%;
+}
+#accueil .element-en-evidence .pagecaption h3{
+    padding: 6% 0 0 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+#accueil .element-en-evidence .pagecaption .description {
+    padding: 5% 0 19% 0;
+}
+#accueil .a-votre-service{
+    margin:0 0 0 -6%;
+    width: 110%;
+}
+.medialink .pagecaption > div{
+    width: 100%;
+    padding: 2% 0 0 0;
+}
+#content #accueil .media-homepage .bloc-item{
+    margin: 1.5% 0 1.5% 0;
+    width: 97%;
+}
+#content .media-homepage ul{
+    padding-right: 0;
+}
+#visual-portal-wrapper #accueil .element-en-evidence .medialink .pagecaption .description {
+    width: 100%;
+    margin: 1em 0 0 0%;
+    padding: 0;
+}
+#accueil li.bloc-item a.medialink .pagecaption h3 {
+    margin-top: 60%;
+    padding-left: 0;
+    padding-bottom: 4%;
+}
 /*   MINI SITES   */
 /*   header   */
 .in-minisite-in-portal #top-logo{
@@ -716,7 +769,6 @@ body.template-facetednavigation_view .contact-entry{
 /*  Content  */
 #content {
     min-height: 0px;
-/*    float:left;*/
 }
 .subsection-vie-politique .image-right {
     float: left;

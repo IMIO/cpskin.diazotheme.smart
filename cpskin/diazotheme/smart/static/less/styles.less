@@ -1484,7 +1484,7 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
     position: relative;
 }
 #accueil .agenda .standard-results {
-    display: inline-block;
+    display: flex;
     margin-bottom: 50px;
     padding: 0;
     width: 100%;
@@ -1536,16 +1536,16 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
 }
 #accueil .agenda .bloc-item:nth-child(3) .indexview-categories,
 #accueil .agenda .bloc-item:nth-child(4) .indexview-categories,
-.faceted-agenda-ungrouped-view .event-entry:nth-child(3) .indexview-categories,
-.faceted-agenda-ungrouped-view .event-entry:nth-child(4) .indexview-categories,
-.faceted-agenda-ungrouped-view .event-entry:nth-child(7) .indexview-categories,
-.faceted-agenda-ungrouped-view .event-entry:nth-child(8) .indexview-categories,
-.faceted-agenda-ungrouped-view .event-entry:nth-child(11) .indexview-categories,
-.faceted-agenda-ungrouped-view .event-entry:nth-child(12) .indexview-categories,
-.faceted-agenda-ungrouped-view .event-entry:nth-child(15) .indexview-categories,
-.faceted-agenda-ungrouped-view .event-entry:nth-child(16) .indexview-categories,
-.faceted-agenda-ungrouped-view .event-entry:nth-child(19) .indexview-categories,
-.faceted-agenda-ungrouped-view .event-entry:nth-child(20) .indexview-categories{
+#visual-portal-wrapper .faceted-agenda-ungrouped-view .event-entry:nth-child(3) .indexview-categories,
+#visual-portal-wrapper .faceted-agenda-ungrouped-view .event-entry:nth-child(4) .indexview-categories,
+#visual-portal-wrapper .faceted-agenda-ungrouped-view .event-entry:nth-child(7) .indexview-categories,
+#visual-portal-wrapper .faceted-agenda-ungrouped-view .event-entry:nth-child(8) .indexview-categories,
+#visual-portal-wrapper .faceted-agenda-ungrouped-view .event-entry:nth-child(11) .indexview-categories,
+#visual-portal-wrapper .faceted-agenda-ungrouped-view .event-entry:nth-child(12) .indexview-categories,
+#visual-portal-wrapper .faceted-agenda-ungrouped-view .event-entry:nth-child(15) .indexview-categories,
+#visual-portal-wrapper .faceted-agenda-ungrouped-view .event-entry:nth-child(16) .indexview-categories,
+#visual-portal-wrapper .faceted-agenda-ungrouped-view .event-entry:nth-child(19) .indexview-categories,
+#visual-portal-wrapper .faceted-agenda-ungrouped-view .event-entry:nth-child(20) .indexview-categories{
     margin-left: 0;
 }
 #accueil .agenda .bloc-item .pageleadImage,
@@ -1557,6 +1557,9 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
     position: absolute;
     top: 0;
     width: 50%;
+}
+#visual-portal-wrapper .event-entry .pageleadImage{
+    padding: 0 0 50% 0;
 }
 
 #accueil .agenda .bloc-item .pageleadImage:after,
@@ -1587,22 +1590,18 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
     left: 0;
     margin-left: -5.5%;
 }
-/*#accueil .agenda .bloc-item:first-child .pageleadImage:after,
-.event-entry:first-child .pageleadImage:after{
-    content: "";
-}*/
 #accueil .agenda .bloc-item:nth-child(3) .pageleadImage,
 #accueil .agenda .bloc-item:nth-child(4) .pageleadImage,
-.event-entry:nth-child(3) .pageleadImage,
-.event-entry:nth-child(4) .pageleadImage,
-.event-entry:nth-child(7) .pageleadImage,
-.event-entry:nth-child(8) .pageleadImage,
-.event-entry:nth-child(11) .pageleadImage,
-.event-entry:nth-child(12) .pageleadImage,
-.event-entry:nth-child(15) .pageleadImage,
-.event-entry:nth-child(16) .pageleadImage,
-.event-entry:nth-child(19) .pageleadImage,
-.event-entry:nth-child(20) .pageleadImage{
+#visual-portal-wrapper .event-entry:nth-child(3) .pageleadImage,
+#visual-portal-wrapper .event-entry:nth-child(4) .pageleadImage,
+#visual-portal-wrapper .event-entry:nth-child(7) .pageleadImage,
+#visual-portal-wrapper .event-entry:nth-child(8) .pageleadImage,
+#visual-portal-wrapper .event-entry:nth-child(11) .pageleadImage,
+#visual-portal-wrapper .event-entry:nth-child(12) .pageleadImage,
+#visual-portal-wrapper .event-entry:nth-child(15) .pageleadImage,
+#visual-portal-wrapper .event-entry:nth-child(16) .pageleadImage,
+#visual-portal-wrapper .event-entry:nth-child(19) .pageleadImage,
+#visual-portal-wrapper .event-entry:nth-child(20) .pageleadImage{
     margin-left: 50%;
 }
 #accueil .agenda .bloc-item h3,
@@ -1639,30 +1638,30 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
 }
 #accueil .agenda .bloc-item:nth-child(3) h3,
 #accueil .agenda .bloc-item:nth-child(4) h3,
-.event-entry:nth-child(3) h3,
-.event-entry:nth-child(4) h3,
-.event-entry:nth-child(7) h3,
-.event-entry:nth-child(8) h3,
-.event-entry:nth-child(11) h3,
-.event-entry:nth-child(12) h3,
-.event-entry:nth-child(15) h3,
-.event-entry:nth-child(16) h3,
-.event-entry:nth-child(19) h3,
-.event-entry:nth-child(20) h3{
+#visual-portal-wrapper .event-entry:nth-child(3) h3,
+#visual-portal-wrapper .event-entry:nth-child(4) h3,
+#visual-portal-wrapper .event-entry:nth-child(7) h3,
+#visual-portal-wrapper .event-entry:nth-child(8) h3,
+#visual-portal-wrapper .event-entry:nth-child(11) h3,
+#visual-portal-wrapper .event-entry:nth-child(12) h3,
+#visual-portal-wrapper .event-entry:nth-child(15) h3,
+#visual-portal-wrapper .event-entry:nth-child(16) h3,
+#visual-portal-wrapper .event-entry:nth-child(19) h3,
+#visual-portal-wrapper .event-entry:nth-child(20) h3{
     margin-left: 0;
 }
 #accueil .agenda .bloc-item:nth-child(3) .documentByLine,
 #accueil .agenda .bloc-item:nth-child(4) .documentByLine,
-.event-entry:nth-child(3) .documentByLine,
-.event-entry:nth-child(4) .documentByLine,
-.event-entry:nth-child(7) .documentByLine,
-.event-entry:nth-child(8) .documentByLine,
-.event-entry:nth-child(11) .documentByLine,
-.event-entry:nth-child(12) .documentByLine,
-.event-entry:nth-child(15) .documentByLine,
-.event-entry:nth-child(16) .documentByLine,
-.event-entry:nth-child(19) .documentByLine,
-.event-entry:nth-child(20) .documentByLine{
+#visual-portal-wrapper .event-entry:nth-child(3) .documentByLine,
+#visual-portal-wrapper .event-entry:nth-child(4) .documentByLine,
+#visual-portal-wrapper .event-entry:nth-child(7) .documentByLine,
+#visual-portal-wrapper .event-entry:nth-child(8) .documentByLine,
+#visual-portal-wrapper .event-entry:nth-child(11) .documentByLine,
+#visual-portal-wrapper .event-entry:nth-child(12) .documentByLine,
+#visual-portal-wrapper .event-entry:nth-child(15) .documentByLine,
+#visual-portal-wrapper .event-entry:nth-child(16) .documentByLine,
+#visual-portal-wrapper .event-entry:nth-child(19) .documentByLine,
+#visual-portal-wrapper .event-entry:nth-child(20) .documentByLine{
     margin-left: 0;
 }
 

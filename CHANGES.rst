@@ -1,8 +1,8 @@
-0.6.13 (unreleased)
+0.6.13 (2017-12-21)
 -------------------
 
-- Nothing changed yet.
-
+- Change css for mobile on homepage and agenda view.
+  [mgennart]
 
 0.6.12 (2017-12-20)
 -------------------

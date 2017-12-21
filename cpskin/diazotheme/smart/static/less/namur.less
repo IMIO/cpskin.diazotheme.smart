@@ -456,6 +456,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 #visual-portal-wrapper #formfield-form-widgets-date_echeance > span,
 #visual-portal-wrapper .event-date > span,
 #visual-portal-wrapper .event-dates > span{
+    color: #fff;
     background-image: url("../images/date.jpg");
     background-repeat: no-repeat;
     background-position: left center;
@@ -541,10 +542,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     padding-left:0;
 }
 
-/* .portaltype-reglement #portal-columns {
-    padding-top: 0em;
-} */
-
 .portaltype-reglement #content,
 .template-facetednavigation_view #content,
 .portaltype-event #content{
@@ -560,20 +557,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     padding-right: 1em;
 }
 
-/*#portal-columns::before {
-    background: white none repeat scroll 0 0;
-    bottom: 0;
-    content: "";
-    position: absolute;
-    right: 4.5em;
-    top: 0;
-    width: 2000px;
-    z-index: -1;
-}
-
-.section-je-suis #portal-columns::before{
-    top:4.5em;
-}*/
 
 .nav-is-stuck .main-homepage.template-folderview #top-navigation-inner{
     padding-top:2em;
@@ -790,7 +773,11 @@ fieldset, .editionComment {
     padding: 0 !important;
 }
 
-.widget-fieldset.faceted-criteria legend, .widget-fieldset.faceted-criteria dl, .widget-fieldset.faceted-criteria dl dt, .widget-fieldset.faceted-criteria dl dd, .widget-fieldset.faceted-criteria div {
+.widget-fieldset.faceted-criteria legend,
+.widget-fieldset.faceted-criteria dl,
+.widget-fieldset.faceted-criteria dl dt,
+.widget-fieldset.faceted-criteria dl dd,
+.widget-fieldset.faceted-criteria div {
     float: left;
 }
 
@@ -801,7 +788,8 @@ fieldset, .editionComment {
 }
 
 
-#content #top-area .widget-fieldset.faceted-criteria > legend, .widget-fieldset.faceted-criteria > dl {
+#content #top-area .widget-fieldset.faceted-criteria > legend,
+.widget-fieldset.faceted-criteria > dl {
     padding: 0.6em 1em 1em 0 !important;
     color: #7086a6 !important;
 }
@@ -953,8 +941,11 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
     font-weight: bold;
     padding: 0.65em 0.55em;
     text-decoration: underline;
+    font-size: 100%;
 }
-
+#visual-portal-wrapper #content #faceted-results .listingBar a{
+    font-size: 100%;
+}
 #portal-columns #portal-column-content #content div.pagination.listingBar a:hover {
     background-color: white;
     border: 1px solid #fff;
