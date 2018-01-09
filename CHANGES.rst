@@ -1,8 +1,8 @@
-0.6.14 (unreleased)
+0.6.14 (2018-01-09)
 -------------------
 
-- Nothing changed yet.
-
+- Change css for top-menu-actions.
+  [mgennart]
 
 0.6.13 (2017-12-21)
 -------------------
