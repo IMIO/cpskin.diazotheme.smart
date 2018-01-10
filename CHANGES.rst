@@ -1,7 +1,8 @@
-0.6.15 (unreleased)
+0.6.15 (2018-01-10)
 -------------------
 
-- Nothing changed yet.
+- Delete padding for #visual-portal-wrapper #messagesviewlet.
+  [mgennart]
 
 
 0.6.14 (2018-01-09)
