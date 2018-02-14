@@ -1,7 +1,8 @@
 0.6.16 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Remove useless CSS that breaks hover on cards
+  [laulaz]
 
 
 0.6.15 (2018-01-10)
