@@ -1,8 +1,10 @@
-0.6.16 (unreleased)
+0.6.16 (2018-02-22)
 -------------------
 
 - Remove useless CSS that breaks hover on cards
   [laulaz]
+- Adaptation of the css of the facted diary view in mobile.
+  [mgennart] 
 
 
 0.6.15 (2018-01-10)
