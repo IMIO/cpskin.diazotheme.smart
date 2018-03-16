@@ -1561,8 +1561,30 @@ div#viewlet-below-content-body {
 .activity {
     clear: both;
 }
+#visual-portal-wrapper #before-activity::after{
+    display: none;
+}
+#visual-portal-wrapper #activity,
+#visual-portal-wrapper .contact-ttwfields,
+#visual-portal-wrapper .addnewcontactfromorganization,
+#visual-portal-wrapper div#organization-photos{
+    width: 100%;
+}
+#visual-portal-wrapper #before-activity {
+    float: none;
+    width: 100%;
+    background: transparent;
+    padding: 2em 0em 0em 0em;
+}
 
-
+.template-facetednavigation_view  .organization-photos {
+    height: 32%;
+}
+body.template-facetednavigation_view #content .organization-entry-photos,
+body.template-facetednavigation_view #content .contact-entry-photos{
+    background-image: none !important;
+    width: 23% !important;
+}
 
 /*   Slider   */
 

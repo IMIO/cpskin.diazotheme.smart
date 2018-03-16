@@ -1,7 +1,8 @@
-0.6.18 (unreleased)
+0.6.18 (2018-03-16)
 -------------------
 
-- Nothing changed yet.
+- Change css for directory.
+  [mgennart]
 
 
 0.6.17 (2018-03-16)
