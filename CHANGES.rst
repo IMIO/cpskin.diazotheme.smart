@@ -1,7 +1,8 @@
-0.6.17 (unreleased)
+0.6.17 (2018-03-16)
 -------------------
 
-- Nothing changed yet.
+- Correction css for widget faceted and view contact.
+  [mgennart]
 
 
 0.6.16 (2018-02-22)

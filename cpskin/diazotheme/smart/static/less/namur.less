@@ -739,6 +739,7 @@ fieldset, .editionComment {
 }
 
 #portal-columns #content .section-affichage fieldset.widget-fieldset ul {
+    display: block;
     margin-top: 0;
 }
 
@@ -1002,7 +1003,7 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
     padding-left:0;
 }
 
-.section-annuaire #top-area{ 
+.section-annuaire #faceted-form #top-area{ 
     margin-right: -2em;
 }
 
@@ -1010,7 +1011,7 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
     background: transparent;
 }
 
-#top-area {
+#faceted-form #top-area {
     background: #3548b1 none repeat scroll 0 0;
     color: white;
     padding: 2em 0 2em 1em;
@@ -1018,36 +1019,13 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
     margin-left: -1em;
 }
 
-/*#center-area::before {
-    content: "";
-    top: 0;
-    position: absolute;
-    background: white;
-    bottom: 0;
-    width: 300%;
-    z-index: -1;
-    right: 4em;
-}*/
-
 .userrole-anonymous ul.pod-template {
     display: none;
 }
 
-
-#top-area::before {
-    background: #3548b1 none repeat scroll 0 0;
-    bottom: 0;
-    content: "";
-    position: absolute;
-    right: 90%;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-}
-
 #portal-column-content.width-3\:4 #top-area::before{
     display:none;
-    }
+}
 
 #content #top-area .widget-fieldset legend, #content .section-affichage .widget-fieldset ul li label, #content .faceted-criteria a {
     font-size: 100%;
@@ -1063,7 +1041,7 @@ dl.messagesviewlet-info dd, dl.messagesviewlet-warning dd, dl.messagesviewlet-si
     bottom: 0;
     content: "";
     position: absolute;
-    right: 100%;
+    right: 0;
     top: 0;
     width: 4000px;
     z-index: 0;
@@ -1298,7 +1276,7 @@ dl.portalMessage dt::after {
 }
 
 /*  Fin fiche annuaire  */
-.faceted-form #top-area .select2-container .select2-choice {
+#visual-portal-wrapper .faceted-form #top-area .select2-container .select2-choice {
     background-color: #3548b1;
     background-image: none;
     border-color: #8bb3ee;
@@ -1387,16 +1365,24 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 
 .faceted-widget.faceted-layout-widget.section-affichage {
-    bottom: -2.5em;
+    bottom: -3.95em;
     position: absolute;
-    right: 5%;
+    right: 0;
     z-index: 1;
+    width: 30%;
+    min-height: 5em;
+    margin: 0em 0 1em 0;
 }
 
+#visual-portal-wrapper #faceted-form .widget-fieldset form {
+    display: block;
+}
 #content .faceted-widget.faceted-layout-widget.section-affichage li {
     clear: none;
     min-width: 10px;
-    margin-right: 0.25em;
+    margin-right: -2.75em;
+    width: 49%;
+    text-align: left;
 }
 
 #content #top-area .faceted-widget.faceted-layout-widget.section-affichage input{
@@ -1408,12 +1394,18 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 
 #content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li label {
+    background: #3548b1;
     display: inline-block;
-    height: 18px;
+    height: 30px;
     padding-top: 0.3em;
     padding-left: 1em;
     z-index: 1;
     text-shadow: 1px 1px 3px #3548b1;
+    width: 84%;
+    color: #fff;
+}
+.faceted-widget.faceted-layout-widget.section-affichage label[title="Vue annuaire"] {
+    max-width: 65%;
 }
 
 #content #top-area .faceted-widget.faceted-layout-widget.section-affichage ul li input:checked + label {
@@ -1459,15 +1451,17 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     margin-bottom: 1em;
     margin-right: 1em;
 }
-
+#aboveContentContact .coordinates{
+    display: block;
+}
 .coordinates {
-    background: #fdf6fd none repeat scroll 0 0;
+    background: #fdf6fd none repeat scroll 0 0 !important;
     border-left: 0.5em solid #f1d3ee;
     box-sizing: border-box;
     float: left;
     margin-bottom: 2em;
     margin-left: -1.4em;
-    padding: 2em 2em 1em 2em;
+    padding: 2em 2em 1em 2em !important;
     position: relative;
     width: 100%;
     min-height:12em;
