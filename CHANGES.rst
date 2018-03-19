@@ -1,7 +1,8 @@
-0.6.19 (unreleased)
+0.6.19 (2018-03-19)
 -------------------
 
-- Nothing changed yet.
+- Adapt style for view organization.
+  [mgennart]
 
 
 0.6.18 (2018-03-16)
