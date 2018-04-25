@@ -1,8 +1,8 @@
-0.6.20 (unreleased)
+0.6.20 (2018-04-25)
 -------------------
 
-- Nothing changed yet.
-
+- Correction css for right action.
+  [mgennart]
 
 0.6.19 (2018-03-19)
 -------------------
