@@ -21,7 +21,7 @@ $(document).ready(function() {
         lastScrollTop = st;
 
         var scrolled = $(window).scrollTop();
-        document.getElementById('portal-header').style.top = scrolled / 6 + "px";
+        document.getElementById('portal-header').style.top = scrolled / 12 + "px";
     });
 
 

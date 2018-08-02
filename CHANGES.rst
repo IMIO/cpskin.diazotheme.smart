@@ -1,8 +1,8 @@
-0.6.23 (unreleased)
+0.6.23 (2018-08-02)
 -------------------
 
-- Nothing changed yet.
-
+- Change scroll to Parallax.
+  [mgennart]
 
 0.6.22 (2018-07-03)
 -------------------
