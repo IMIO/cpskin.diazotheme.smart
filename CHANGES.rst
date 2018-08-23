@@ -1,7 +1,8 @@
 0.6.24 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add uninstall profile
+  [laulaz]
 
 
 0.6.23 (2018-08-02)
