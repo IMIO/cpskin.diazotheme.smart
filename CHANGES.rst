@@ -1,3 +1,6 @@
+Changelog
+=========
+
 0.6.24 (unreleased)
 -------------------
 
@@ -10,6 +13,7 @@
 
 - Change scroll to Parallax.
   [mgennart]
+
 
 0.6.22 (2018-07-03)
 -------------------
@@ -24,11 +28,13 @@
 - Change css for footer.
   [mgennart]
 
+
 0.6.20 (2018-04-25)
 -------------------
 
 - Correction css for right action.
   [mgennart]
+
 
 0.6.19 (2018-03-19)
 -------------------
@@ -56,6 +62,7 @@
 
 - Remove useless CSS that breaks hover on cards
   [laulaz]
+
 - Adaptation of the css of the facted diary view in mobile.
   [mgennart] 
 
@@ -73,11 +80,13 @@
 - Change css for top-menu-actions.
   [mgennart]
 
+
 0.6.13 (2017-12-21)
 -------------------
 
 - Change css for mobile on homepage and agenda view.
   [mgennart]
+
 
 0.6.12 (2017-12-20)
 -------------------
@@ -85,17 +94,20 @@
 - Change css for agenda view.
   [mgennart]
 
+
 0.6.11 (2017-12-20)
 -------------------
 
 - Change css other-actions and event-date.
   [mgennart]
 
+
 0.6.10 (2017-12-20)
 -------------------
 
 - Add id visual-portal-wrapper to widgets date.
   [mgennart]
+
 
 0.6.9 (2017-12-20)
 ------------------
@@ -134,11 +146,13 @@
 - Change css
   [mgennart]
 
+
 0.6.4 (2017-10-31)
 ------------------
 
 - Change css for mobile.
   [mgennart]
+
 
 0.6.3 (2017-10-30)
 ------------------
@@ -324,6 +338,7 @@
 - Change css to mini site and homepage.
   [mgennart]
 
+
 0.5.4 (2017-07-26)
 ------------------
 
@@ -387,7 +402,6 @@
 
 
 0.1 (2017-06-30)
-
 ----------------
 
 - theme for namur
