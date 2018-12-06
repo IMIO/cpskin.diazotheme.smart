@@ -4,6 +4,9 @@ Changelog
 0.6.24 (unreleased)
 -------------------
 
+- Add class for collapsable minisite menu
+  [laulaz]
+
 - Add uninstall profile
   [laulaz]
 

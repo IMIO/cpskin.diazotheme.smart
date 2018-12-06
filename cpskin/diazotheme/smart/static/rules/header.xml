@@ -5,7 +5,7 @@
     <rules if-not="$isinminisitemode">
       <replace css:content-children="#portal-header">
         <xsl:copy-of select="./*[@id='messagesviewlet']"/>
-        <div id="top-logo-navigation-actions">
+        <div id="top-logo-navigation-actions" class="minisite-collapsable">
           <div id="top-logo-slogan">
             <div id="top-logo">
             <div id="top-logo-inner">
