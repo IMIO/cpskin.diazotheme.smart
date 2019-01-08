@@ -4,6 +4,9 @@ Changelog
 0.6.24 (unreleased)
 -------------------
 
+- Change css to use the date of publication in single title slider.
+  [mgennart]
+  
 - Add class for collapsable minisite menu
   [laulaz]
 
