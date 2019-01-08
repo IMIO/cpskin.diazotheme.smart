@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.24 (unreleased)
+0.6.24 (2019-01-08)
 -------------------
 
 - Change css to use the date of publication in single title slider.
