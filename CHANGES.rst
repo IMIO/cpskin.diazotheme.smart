@@ -4,7 +4,8 @@ Changelog
 0.6.25 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Move minisite dropdown menu to its correct position : WEBOTT-9
+  [laulaz]
 
 
 0.6.24 (2019-01-08)
