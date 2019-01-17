@@ -1975,7 +1975,6 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
     margin-top: 2em;
     position: relative;
     z-index: 1;
-    float:left;
     padding: 0 ;
 }
 
@@ -2063,31 +2062,36 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
     width: 20%;
 }
 
-#portal-columns .footer-mini-site {
+.footer-mini-site {
     background: #f1d2ef none repeat scroll 0 0;
-    float: left;
-    margin: 6em 0 -4em;
+    margin: 0 auto;
     padding: 5em 0;
-    width: 100%;
+    max-width: 1400px;
     position: relative;
-}
-
-.footer-mini-site > div:before, #accueil .footer-mini-site > div:after{
-    background: #f1d2ef none repeat scroll 0 0;
-    bottom: 0;
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 1000px;
-    z-index: 0;
-}
-
-.footer-mini-site > div:before{
-    right: 100%;
-}
-
-.footer-mini-site > div:after{
-    left: 100%;
+    &:before,
+    &:after{
+        background: #f1d2ef none repeat scroll 0 0;
+        bottom: 0;
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 1000px;
+        z-index: 0;
+    }
+    &:before{
+        right: 100%;
+    }
+    &:after{
+        left: 100%;
+    }
+    a{
+        color: #3548b1;
+        &:hover{
+            color: #0e2240 !important;
+            border-bottom: none;
+        }
+    }
+    
 }
 
 .footer-mini-site .footer-bloc.bloc-logo {
@@ -2102,12 +2106,15 @@ div#portal-column-content.position-1\:4 .slider-multiple::before{
     padding-left: 5%;
 }
 
-#portal-columns .footer-mini-site .footer-bloc > ul {
+#portal-footer-wrapper .footer-mini-site .footer-bloc > ul {
     list-style-type: none !important;
     margin-left: 0 !important;
 }
 
-#portal-columns .footer-mini-site .footer-bloc p, #portal-columns .footer-mini-site .footer-bloc h2, #portal-columns .footer-mini-site .footer-bloc h3, #portal-columns .footer-mini-site .footer-bloc h4 {
+#portal-footer-wrapper .footer-mini-site .footer-bloc p,
+#portal-footer-wrapper .footer-mini-site .footer-bloc h2,
+#portal-footer-wrapper .footer-mini-site .footer-bloc h3,
+#portal-footer-wrapper .footer-mini-site .footer-bloc h4 {
     color: #20385a;
 }
 
