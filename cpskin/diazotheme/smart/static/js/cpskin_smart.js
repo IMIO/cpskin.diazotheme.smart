@@ -10,19 +10,19 @@ $(document).ready(function() {
     var faceted = document.getElementsByClassName('faceted-results');
 
 //    Parallax
-   var lastScrollTop = 0;
-    $( window ).scroll(function() {
-        var st = $(this).scrollTop();
-        if (st > lastScrollTop){
-            scroll = "0";
-        } else {
-            scroll = "1";
-        }
-        lastScrollTop = st;
-
-        var scrolled = $(window).scrollTop();
-        document.getElementById('portal-header').style.top = scrolled / 12 + "px";
-    });
+   //var lastScrollTop = 0;
+   // $( window ).scroll(function() {
+   //     var st = $(this).scrollTop();
+   //     if (st > lastScrollTop){
+   //         scroll = "0";
+   //     } else {
+   //         scroll = "1";
+   //     }
+   //     lastScrollTop = st;
+   //
+   //     var scrolled = $(window).scrollTop();
+   //     document.getElementById('portal-header').style.top = scrolled / 12 + "px";
+   // });
 
 
 //    Slide

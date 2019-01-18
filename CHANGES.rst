@@ -7,6 +7,9 @@ Changelog
 - Move minisite dropdown menu to its correct position : WEBOTT-9
   [laulaz]
 
+- Change css for use footer document in whole minisites and not only on index view : WEB-2882
+  [mgennart]
+
 
 0.6.24 (2019-01-08)
 -------------------
