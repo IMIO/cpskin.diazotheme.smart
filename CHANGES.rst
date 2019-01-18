@@ -4,6 +4,9 @@ Changelog
 0.6.25 (unreleased)
 -------------------
 
+- Move minisite dropdown menu to its correct position : WEBOTT-9
+  [laulaz]
+
 - Change css for use footer document in whole minisites and not only on index view : WEB-2882
   [mgennart]
 
