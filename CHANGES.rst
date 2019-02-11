@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.25 (unreleased)
+0.6.25 (2019-02-11)
 -------------------
 
 - Move minisite dropdown menu to its correct position : WEBOTT-9
