@@ -4,7 +4,8 @@ Changelog
 0.6.26 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix print problems : WEB-1104
+  [laulaz]
 
 
 0.6.25 (2019-02-11)

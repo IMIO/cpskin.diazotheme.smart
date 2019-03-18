@@ -14,6 +14,10 @@ body #visual-portal-wrapper {
     width: 100%;
 }
 
+#portal-header {
+    display: block;
+}
+
 #top-logo-navigation-actions {
     position: relative;
 }
@@ -71,12 +75,21 @@ a {
 	color: black;
 }
 
+label {
+    color: rgb(14, 34, 64) !important;
+}
+
+.field span {
+    color: rgb(14, 34, 64) !important;
+}
+
 #portal-top{
     margin-bottom:0;
 }
 #portal-column-content {
 	width: 95%;
     margin-left: 0;
+    border-left: 0px solid transparent !important;
 }
 
 div.position-1\:4 {
@@ -182,7 +195,12 @@ input.context,
 #right-actions-viewlet,
 #map,
 .plone-document-byline,
-#viewlet-below-content-title {
+#viewlet-below-content-title,
+#visual-portal-wrapper #formfield-form-widgets-date_adoption_historique::after,
+#visual-portal-wrapper #formfield-form-widgets-date_adoption::after,
+#visual-portal-wrapper #formfield-form-widgets-date_publication_historique::after,
+#visual-portal-wrapper #formfield-form-widgets-date_publication::after,
+#visual-portal-wrapper #formfield-form-widgets-date_echeance::after {
 	display: none !important;
 }
 
@@ -213,4 +231,18 @@ dl.captioned {
 	float:right;
 	margin: 0 0 0.5em 1em;
 	width: 16em;
+}
+
+
+/* Reglement specific template */
+#visual-portal-wrapper #formfield-form-widgets-date_adoption_historique,
+#visual-portal-wrapper #formfield-form-widgets-date_adoption,
+#visual-portal-wrapper #formfield-form-widgets-date_publication_historique,
+#visual-portal-wrapper #formfield-form-widgets-date_publication,
+#visual-portal-wrapper #formfield-form-widgets-date_echeance {
+    background: transparent !important;
+}
+
+body.portaltype-reglement .richTextWidget {
+    padding-top: 6em;
 }
