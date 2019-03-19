@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.6.26 (unreleased)
+0.6.26 (2019-03-19)
 -------------------
 
 - Fix print problems : WEB-1104
