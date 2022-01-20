@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Installer for the cpskin.diazotheme.smart package."""
 
-version = '0.6.28.dev0'
+version = '0.6.28'
 
 from setuptools import find_packages
 from setuptools import setup
